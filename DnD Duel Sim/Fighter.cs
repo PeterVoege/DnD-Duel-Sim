@@ -217,5 +217,43 @@ namespace DnD_Duel_Sim
         public int RollWisCheck() => _rng.d20() + GetWisMod();
         public int RollChaCheck() => _rng.d20() + GetChaMod();
 
+        // Speed
+        public int GetSpeed()
+        {
+            switch (GetRace())
+            {
+                case Race.HillDwarf:
+                    return 25;
+                case Race.MountainDwarf:
+                    return 25;
+                case Race.HighElf:
+                    return 30;
+                case Race.WoodElf:
+                    return 35;
+                case Race.DarkElf:
+                    return 30;
+                case Race.LightfootHalfling:
+                    return 25;
+                case Race.StoutHalfling:
+                    return 25;
+                case Race.Human:
+                    return 30;
+                case Race.Dragonborn:
+                    return 30;
+                case Race.ForestGnome:
+                    return 25;
+                case Race.RockGnome:
+                    return 25;
+                case Race.HalfElf:
+                    return 30;
+                case Race.HalfOrc:
+                    return 30;
+                case Race.Tiefling:
+                    return 30;
+                default:
+                    return 30;
+            }
+        }
+
     }
 }

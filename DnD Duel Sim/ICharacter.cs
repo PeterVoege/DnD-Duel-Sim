@@ -153,5 +153,7 @@ namespace DnD_Duel_Sim
         int RollWisCheck();
         int RollChaCheck();
 
+        int GetSpeed();
+
     }
 }
