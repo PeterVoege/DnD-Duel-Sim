@@ -274,5 +274,22 @@ namespace DnD_Duel_Sim
         bool _secondWindAvailable;
         public bool IsSecondWindAvailable() => _secondWindAvailable;
         public void SetSecondWindAvailability(bool availability) => _secondWindAvailable = availability;
+        // Martial Archetype
+        public enum MartialArchetype
+        {
+            Champion,
+            BattleMaster,
+            EldritchKnight
+        }
+        private MartialArchetype _martialArchetype;
+        public MartialArchetype GetMartialArchetype() => _martialArchetype;
+        public void SetMartialArchetype(MartialArchetype martialArchetype) => _martialArchetype = martialArchetype;
+
+        // Champion feats
+        public bool ImprovedCritical() => GetMartialArchetype() == MartialArchetype.Champion;
+        public bool RemarkableAthlete() => (GetMartialArchetype() == MartialArchetype.Champion) && (GetLevel() >= 7);
+        // Additional fighting style.
+        public bool SuperiorCritical() => (GetMartialArchetype() == MartialArchetype.Champion) && (GetLevel() >= 15);
+        public bool Survivor() => (GetMartialArchetype() == MartialArchetype.Champion) && (GetLevel() >= 18);
     }
 }
