@@ -153,6 +153,20 @@ namespace DnD_Duel_Sim
         int RollWisCheck();
         int RollChaCheck();
 
+        int GetStrSaveMod();
+        int GetDexSaveMod();
+        int GetConSaveMod();
+        int GetIntSaveMod();
+        int GetWisSaveMod();
+        int GetChaSaveMod();
+
+        int RollStrSave();
+        int RollDexSave();
+        int RollConSave();
+        int RollIntSave();
+        int RollWisSave();
+        int RollChaSave();
+
         int AttackRoll();
         int DamageRoll();
 

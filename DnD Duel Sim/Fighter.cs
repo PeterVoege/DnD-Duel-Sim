@@ -217,6 +217,21 @@ namespace DnD_Duel_Sim
         public int RollWisCheck() => _rng.d20() + GetWisMod();
         public int RollChaCheck() => _rng.d20() + GetChaMod();
 
+        // Saving throws
+        public int GetStrSaveMod() => GetStrMod(); // Plus proficiency.
+        public int GetDexSaveMod() => GetDexMod(); // Plus proficiency.
+        public int GetConSaveMod() => GetConMod(); // Plus proficiency.
+        public int GetIntSaveMod() => GetIntMod(); // Plus proficiency.
+        public int GetWisSaveMod() => GetWisMod(); // Plus proficiency.
+        public int GetChaSaveMod() => GetChaMod(); // Plus proficiency.
+        
+        public int RollStrSave() => _rng.d20() + GetStrSaveMod();
+        public int RollDexSave() => _rng.d20() + GetDexSaveMod();
+        public int RollConSave() => _rng.d20() + GetConSaveMod();
+        public int RollIntSave() => _rng.d20() + GetIntSaveMod();
+        public int RollWisSave() => _rng.d20() + GetWisSaveMod();
+        public int RollChaSave() => _rng.d20() + GetChaSaveMod();
+
         // Attacking
         public int AttackRoll() => _rng.d20() + GetStrMod() + GetProficiencyBonus();
         public int DamageRoll() => _rng.d8() + GetStrMod();
