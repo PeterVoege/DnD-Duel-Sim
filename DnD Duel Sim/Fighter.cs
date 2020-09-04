@@ -32,6 +32,16 @@ namespace DnD_Duel_Sim
         public void SetHitDice(int hitDice) => _hitDice = hitDice;
         public int RollHitDice() => _rng.d10();
 
+        // Race
+        private Race _race;
+        public Race GetRace() => _race;
+        public void SetRace(Race race) => _race = race;
+
+        // Background
+        private Background _background;
+        public Background GetBackground() => _background;
+        public void SetBackground(Background background) => _background = background;
+
         private int _str;
         private int _dex;
         private int _con;

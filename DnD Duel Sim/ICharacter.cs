@@ -6,6 +6,40 @@ using System.Threading.Tasks;
 
 namespace DnD_Duel_Sim
 {
+    public enum Race
+    {
+        HillDwarf,
+        MountainDwarf,
+        HighElf,
+        WoodElf,
+        DarkElf,
+        LightfootHalfling,
+        StoutHalfling,
+        Human,
+        Dragonborn,
+        ForestGnome,
+        RockGnome,
+        HalfElf,
+        HalfOrc,
+        Tiefling
+    }
+    public enum Background
+    {
+        Acolyte,
+        Charlatan,
+        Criminal,
+        Entertainer,
+        FolkHero,
+        GuildArtisan,
+        Hermit,
+        Noble,
+        Outlander,
+        Sage,
+        Sailor,
+        Soldier,
+        Urchin
+    }
+
     interface ICharacter
     {
         int GetLevel();
@@ -20,6 +54,11 @@ namespace DnD_Duel_Sim
         int GetHitDice();
         void SetHitDice(int hitDice);
         int RollHitDice();
+
+        Race GetRace();
+        void SetRace(Race race);
+        Background GetBackground();
+        void SetBackground(Background background);
 
         int GetStr();
         int GetDex();
