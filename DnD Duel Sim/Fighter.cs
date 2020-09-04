@@ -8,6 +8,25 @@ namespace DnD_Duel_Sim
 {
     class Fighter : ICharacter
     {
+        // Level
+        private int _level;
+        public int GetLevel() => _level;
+        public void SetLevel(int level) => _level = level;
+
+        // Health
+        private int _maxHP;
+        public int GetMaxHP() => _maxHP;
+        public void SetMaxHP(int maxHP) => _maxHP = maxHP;
+
+        private int _HP;
+        public int GetHP() => _HP;
+        public void SetHP(int HP) => _HP = HP;
+
+        // Hit dice
+        private int _hitDice;
+        public int GetMaxHitDice() => _level;
+        public int GetHitDice() => _hitDice;
+        public void SetHitDice(int hitDice) => _hitDice = hitDice;
         private int _str;
         private int _dex;
         private int _con;

@@ -8,6 +8,17 @@ namespace DnD_Duel_Sim
 {
     interface ICharacter
     {
+        int GetLevel();
+        void SetLevel(int level);
+
+        int GetMaxHP();
+        void SetMaxHP(int maxHP);
+        int GetHP();
+        void SetHP(int HP);
+
+        int GetMaxHitDice();
+        int GetHitDice();
+        void SetHitDice(int hitDice);
         int GetStr();
         int GetDex();
         int GetCon();
