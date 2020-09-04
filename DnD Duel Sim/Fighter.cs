@@ -175,5 +175,14 @@ namespace DnD_Duel_Sim
         public int GetIntMod() => (_int - 10) / 2;
         public int GetWisMod() => (_wis - 10) / 2;
         public int GetChaMod() => (_cha - 10) / 2;
+
+        // Ability checks
+        public int RollStrCheck() => _rng.d20() + GetStrMod(); // Remarkable Athlete?
+        public int RollDexCheck() => _rng.d20() + GetDexMod();
+        public int RollConCheck() => _rng.d20() + GetConMod();
+        public int RollIntCheck() => _rng.d20() + GetIntMod();
+        public int RollWisCheck() => _rng.d20() + GetWisMod();
+        public int RollChaCheck() => _rng.d20() + GetChaMod();
+
     }
 }

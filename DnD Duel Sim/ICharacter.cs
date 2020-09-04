@@ -145,5 +145,13 @@ namespace DnD_Duel_Sim
         int GetIntMod();
         int GetWisMod();
         int GetChaMod();
+
+        int RollStrCheck();
+        int RollDexCheck();
+        int RollConCheck();
+        int RollIntCheck();
+        int RollWisCheck();
+        int RollChaCheck();
+
     }
 }
