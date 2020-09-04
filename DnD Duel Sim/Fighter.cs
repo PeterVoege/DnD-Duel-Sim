@@ -260,5 +260,19 @@ namespace DnD_Duel_Sim
             }
         }
 
+        // Fighter-specific things
+
+        // Second Wind
+        public bool SecondWindUnlocked() => true;
+        public void UseSecondWind()
+        {
+            SetHP(Math.Min(GetHP() + GetLevel() + _rng.d10(), GetMaxHP()));
+            SetSecondWindAvailability(false);
+        }
+        public int MaxSecondWind() => 10 + GetLevel(); // For determining when to use it.
+        // Cooldown
+        bool _secondWindAvailable;
+        public bool IsSecondWindAvailable() => _secondWindAvailable;
+        public void SetSecondWindAvailability(bool availability) => _secondWindAvailable = availability;
     }
 }
