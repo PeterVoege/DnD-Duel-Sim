@@ -159,5 +159,7 @@ namespace DnD_Duel_Sim
         int GetSpeed();
 
         void TakeTurn();
+        void TakeShortRest();
+        void TakeLongRest();
     }
 }

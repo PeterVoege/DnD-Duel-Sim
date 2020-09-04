@@ -323,5 +323,13 @@ namespace DnD_Duel_Sim
             
         }
 
+        public void TakeShortRest()
+        {
+            SetSecondWindAvailability(true);
+        }
+        public void TakeLongRest()
+        {
+
+        }
     }
 }
