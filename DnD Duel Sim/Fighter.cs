@@ -291,5 +291,37 @@ namespace DnD_Duel_Sim
         // Additional fighting style.
         public bool SuperiorCritical() => (GetMartialArchetype() == MartialArchetype.Champion) && (GetLevel() >= 15);
         public bool Survivor() => (GetMartialArchetype() == MartialArchetype.Champion) && (GetLevel() >= 18);
+        // Take turn
+
+        public void TakeTurn()
+        {
+            int standardActions = 1;
+            int bonusActions = 1;
+            //int distanceRemaining = GetSpeed(); // Movement not used in sim yet.
+
+            // Check options
+            // Make action
+            // Repeat until out of viable actions
+
+            // In practice, follow set orders.
+
+            standardActions--;
+            int toHit = AttackRoll();
+            // Check if hit
+            int damage = DamageRoll();
+            // Send damage data to battle controller.
+            // Check for second/third attack.
+
+            if(bonusActions > 0)
+            {
+                if (GetHP() + MaxSecondWind() <= GetMaxHP())
+                {
+                    UseSecondWind();
+                }
+            }
+            
+            
+        }
+
     }
 }
