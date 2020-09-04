@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace DnD_Duel_Sim
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
-        public Form1()
+        public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DuelSetupForm duelForm = new DuelSetupForm();
+            duelForm.Show();
         }
     }
 }
