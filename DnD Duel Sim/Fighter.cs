@@ -8,6 +8,39 @@ namespace DnD_Duel_Sim
 {
     class Fighter : ICharacter
     {
+        Fighter(ref DiceRoller rng)
+        {
+            _rng = rng;
+            _level = 1;
+            _maxHP = 10;
+            _HP = 10;
+            _hitDice = 1;
+            _race = Race.Human;
+            _background = Background.Soldier;
+            _str = 10;
+            _dex = 10;
+            _con = 10;
+            _int = 10;
+            _wis = 10;
+            _cha = 10;
+        }
+        Fighter(ref DiceRoller rng, int level, int maxHP, int HP, Race race, Background background, int Str, int Dex, int Con, int Int, int Wis, int Cha) // and so on
+        {
+            _rng = rng;
+            _level = level;
+            _maxHP = maxHP;
+            _HP = HP;
+            _hitDice = level;
+            _race = race;
+            _background = background;
+            _str = Str;
+            _dex = Dex;
+            _con = Con;
+            _int = Int;
+            _wis = Wis;
+            _cha = Cha;
+        }
+
         // Dice Roller
         private DiceRoller _rng;
         
