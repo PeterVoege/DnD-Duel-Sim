@@ -19,6 +19,8 @@ namespace DnD_Duel_Sim
         int GetMaxHitDice();
         int GetHitDice();
         void SetHitDice(int hitDice);
+        int RollHitDice();
+
         int GetStr();
         int GetDex();
         int GetCon();
