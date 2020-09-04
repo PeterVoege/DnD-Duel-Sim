@@ -153,6 +153,9 @@ namespace DnD_Duel_Sim
         int RollWisCheck();
         int RollChaCheck();
 
+        int AttackRoll();
+        int DamageRoll();
+
         int GetSpeed();
 
     }

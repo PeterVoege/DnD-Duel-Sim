@@ -217,6 +217,11 @@ namespace DnD_Duel_Sim
         public int RollWisCheck() => _rng.d20() + GetWisMod();
         public int RollChaCheck() => _rng.d20() + GetChaMod();
 
+        // Attacking
+        public int AttackRoll() => _rng.d20() + GetStrMod() + GetProficiencyBonus();
+        public int DamageRoll() => _rng.d8() + GetStrMod();
+        // Assumes static weapon, will expand later.
+
         // Speed
         public int GetSpeed()
         {
