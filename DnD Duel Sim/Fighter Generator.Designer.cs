@@ -216,6 +216,11 @@
             this.StatPointStrLabel = new System.Windows.Forms.Label();
             this.StatPointBuyBudget = new System.Windows.Forms.Label();
             this.StatPointBuyTotalBudget = new System.Windows.Forms.Label();
+            this.RaceLabel = new System.Windows.Forms.Label();
+            this.BackgroundLabel = new System.Windows.Forms.Label();
+            this.RaceSelector = new System.Windows.Forms.ComboBox();
+            this.BackgroundSelector = new System.Windows.Forms.ComboBox();
+            this.SubraceSelector = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // MartialSelectTypeBox1
@@ -2385,12 +2390,91 @@
             this.StatPointBuyTotalBudget.Text = "Total Budget: 27";
             this.StatPointBuyTotalBudget.Visible = false;
             // 
+            // RaceLabel
+            // 
+            this.RaceLabel.AutoSize = true;
+            this.RaceLabel.Location = new System.Drawing.Point(13, 37);
+            this.RaceLabel.Name = "RaceLabel";
+            this.RaceLabel.Size = new System.Drawing.Size(45, 17);
+            this.RaceLabel.TabIndex = 194;
+            this.RaceLabel.Text = "Race:";
+            // 
+            // BackgroundLabel
+            // 
+            this.BackgroundLabel.AutoSize = true;
+            this.BackgroundLabel.Location = new System.Drawing.Point(269, 41);
+            this.BackgroundLabel.Name = "BackgroundLabel";
+            this.BackgroundLabel.Size = new System.Drawing.Size(88, 17);
+            this.BackgroundLabel.TabIndex = 195;
+            this.BackgroundLabel.Text = "Background:";
+            // 
+            // RaceSelector
+            // 
+            this.RaceSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RaceSelector.FormattingEnabled = true;
+            this.RaceSelector.Items.AddRange(new object[] {
+            "Dwarf",
+            "Elf (High)",
+            "Elf (Wood)",
+            "Elf (Dark)",
+            "Halfling (Lightfoot)",
+            "Halfling (Stout)",
+            "Human",
+            "Dragonborn",
+            "Gnome (Forest)",
+            "Gnome (Rock)",
+            "Half-Elf",
+            "Half-Orc",
+            "Tiefling"});
+            this.RaceSelector.Location = new System.Drawing.Point(12, 57);
+            this.RaceSelector.Name = "RaceSelector";
+            this.RaceSelector.Size = new System.Drawing.Size(121, 24);
+            this.RaceSelector.TabIndex = 196;
+            this.RaceSelector.DropDownClosed += new System.EventHandler(this.RaceSelector_DropDownClosed);
+            // 
+            // BackgroundSelector
+            // 
+            this.BackgroundSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BackgroundSelector.FormattingEnabled = true;
+            this.BackgroundSelector.Items.AddRange(new object[] {
+            "Acolyte",
+            "Charlatan",
+            "Criminal",
+            "Entertainer",
+            "Folk Hero",
+            "Guild Artisan",
+            "Hermit",
+            "Noble",
+            "Outlander",
+            "Sage",
+            "Sailor",
+            "Soldier",
+            "Urchin"});
+            this.BackgroundSelector.Location = new System.Drawing.Point(303, 61);
+            this.BackgroundSelector.Name = "BackgroundSelector";
+            this.BackgroundSelector.Size = new System.Drawing.Size(121, 24);
+            this.BackgroundSelector.TabIndex = 197;
+            // 
+            // SubraceSelector
+            // 
+            this.SubraceSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SubraceSelector.FormattingEnabled = true;
+            this.SubraceSelector.Location = new System.Drawing.Point(12, 87);
+            this.SubraceSelector.Name = "SubraceSelector";
+            this.SubraceSelector.Size = new System.Drawing.Size(121, 24);
+            this.SubraceSelector.TabIndex = 198;
+            // 
             // Fighter_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(461, 848);
+            this.Controls.Add(this.SubraceSelector);
+            this.Controls.Add(this.BackgroundSelector);
+            this.Controls.Add(this.RaceSelector);
+            this.Controls.Add(this.BackgroundLabel);
+            this.Controls.Add(this.RaceLabel);
             this.Controls.Add(this.StatPointBuyTotalBudget);
             this.Controls.Add(this.StatPointBuyBudget);
             this.Controls.Add(this.StatPointChaLabel);
@@ -2779,5 +2863,10 @@
         private System.Windows.Forms.Label StatPointStrLabel;
         private System.Windows.Forms.Label StatPointBuyBudget;
         private System.Windows.Forms.Label StatPointBuyTotalBudget;
+        private System.Windows.Forms.Label RaceLabel;
+        private System.Windows.Forms.Label BackgroundLabel;
+        private System.Windows.Forms.ComboBox RaceSelector;
+        private System.Windows.Forms.ComboBox BackgroundSelector;
+        private System.Windows.Forms.ComboBox SubraceSelector;
     }
 }

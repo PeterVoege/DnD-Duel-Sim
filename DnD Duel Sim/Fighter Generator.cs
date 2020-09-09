@@ -1738,5 +1738,37 @@ namespace DnD_Duel_Sim
             this.Lv20HPResult.Text = "+" + _rng.d10();
             this.Lv20HPRoller.Enabled = false;
         }
+
+        private void RaceSelector_DropDownClosed(object sender, EventArgs e)
+        {
+            SubraceSelector.Items.Clear();
+            switch (RaceSelector.Text)
+            {
+                case "Dwarf":
+                    SubraceSelector.Items.Add("Hill Dwarf");
+                    SubraceSelector.Items.Add("Mountain Dwarf");
+                    SubraceSelector.Visible = true;
+                    break;
+                case "Elf":
+                    SubraceSelector.Items.Add("High Elf");
+                    SubraceSelector.Items.Add("Wood Elf");
+                    SubraceSelector.Items.Add("Dark Elf");
+                    SubraceSelector.Visible = true;
+                    break;
+                case "Halfling":
+                    SubraceSelector.Items.Add("Lightfoot Halfling");
+                    SubraceSelector.Items.Add("Stout Halfling");
+                    SubraceSelector.Visible = true;
+                    break;
+                case "Gnome":
+                    SubraceSelector.Items.Add("Forest Gnome");
+                    SubraceSelector.Items.Add("Rock Gnome");
+                    SubraceSelector.Visible = true;
+                    break;
+                default:
+                    SubraceSelector.Visible = false;
+                    break;
+            }
+        }
     }
 }
