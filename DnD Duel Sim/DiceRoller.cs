@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DnD_Duel_Sim
 {
-    class DiceRoller
+    public class DiceRoller
     {
         Random _rng;
-        DiceRoller()
+        public DiceRoller()
         {
             _rng = new Random();
         }
