@@ -71,6 +71,111 @@
             this.StatRollAllocationBox5 = new System.Windows.Forms.ComboBox();
             this.StatRollAllocationBox6 = new System.Windows.Forms.ComboBox();
             this.divider1 = new System.Windows.Forms.Label();
+            this.HPHeader = new System.Windows.Forms.Label();
+            this.Lv1HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv1HPRoller = new System.Windows.Forms.Button();
+            this.Lv1HPResult = new System.Windows.Forms.Label();
+            this.Lv1BaseHP = new System.Windows.Forms.Label();
+            this.Lv1ConHP = new System.Windows.Forms.Label();
+            this.Lv1BaseHPNum = new System.Windows.Forms.Label();
+            this.HPConGrowth = new System.Windows.Forms.Label();
+            this.Lv1HPFixed = new System.Windows.Forms.Label();
+            this.Lv1HP6 = new System.Windows.Forms.Label();
+            this.Lv2HPRoller = new System.Windows.Forms.Button();
+            this.Lv3HPRoller = new System.Windows.Forms.Button();
+            this.Lv4HPRoller = new System.Windows.Forms.Button();
+            this.Lv5HPRoller = new System.Windows.Forms.Button();
+            this.Lv6HPRoller = new System.Windows.Forms.Button();
+            this.Lv7HPRoller = new System.Windows.Forms.Button();
+            this.Lv8HPRoller = new System.Windows.Forms.Button();
+            this.Lv9HPRoller = new System.Windows.Forms.Button();
+            this.Lv10HPRoller = new System.Windows.Forms.Button();
+            this.Lv11HPRoller = new System.Windows.Forms.Button();
+            this.Lv12HPRoller = new System.Windows.Forms.Button();
+            this.Lv13HPRoller = new System.Windows.Forms.Button();
+            this.Lv14HPRoller = new System.Windows.Forms.Button();
+            this.Lv15HPRoller = new System.Windows.Forms.Button();
+            this.Lv16HPRoller = new System.Windows.Forms.Button();
+            this.Lv17HPRoller = new System.Windows.Forms.Button();
+            this.Lv18HPRoller = new System.Windows.Forms.Button();
+            this.Lv19HPRoller = new System.Windows.Forms.Button();
+            this.Lv20HPRoller = new System.Windows.Forms.Button();
+            this.Lv2HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv3HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv4HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv5HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv6HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv7HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv8HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv9HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv10HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv11HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv12HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv13HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv14HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv15HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv16HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv17HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv18HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv19HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv20HPCheckbox = new System.Windows.Forms.CheckBox();
+            this.Lv2HP6 = new System.Windows.Forms.Label();
+            this.Lv3HP6 = new System.Windows.Forms.Label();
+            this.Lv4HP6 = new System.Windows.Forms.Label();
+            this.Lv5HP6 = new System.Windows.Forms.Label();
+            this.Lv6HP6 = new System.Windows.Forms.Label();
+            this.Lv7HP6 = new System.Windows.Forms.Label();
+            this.Lv8HP6 = new System.Windows.Forms.Label();
+            this.Lv9HP6 = new System.Windows.Forms.Label();
+            this.Lv10HP6 = new System.Windows.Forms.Label();
+            this.Lv11HP6 = new System.Windows.Forms.Label();
+            this.Lv12HP6 = new System.Windows.Forms.Label();
+            this.Lv13HP6 = new System.Windows.Forms.Label();
+            this.Lv14HP6 = new System.Windows.Forms.Label();
+            this.Lv15HP6 = new System.Windows.Forms.Label();
+            this.Lv16HP6 = new System.Windows.Forms.Label();
+            this.Lv17HP6 = new System.Windows.Forms.Label();
+            this.Lv18HP6 = new System.Windows.Forms.Label();
+            this.Lv19HP6 = new System.Windows.Forms.Label();
+            this.Lv20HP6 = new System.Windows.Forms.Label();
+            this.Lv2HPResult = new System.Windows.Forms.Label();
+            this.Lv2HPFixed = new System.Windows.Forms.Label();
+            this.Lv3HPFixed = new System.Windows.Forms.Label();
+            this.Lv4HPFixed = new System.Windows.Forms.Label();
+            this.Lv5HPFixed = new System.Windows.Forms.Label();
+            this.Lv6HPFixed = new System.Windows.Forms.Label();
+            this.Lv7HPFixed = new System.Windows.Forms.Label();
+            this.Lv8HPFixed = new System.Windows.Forms.Label();
+            this.Lv9HPFixed = new System.Windows.Forms.Label();
+            this.Lv10HPFixed = new System.Windows.Forms.Label();
+            this.Lv11HPFixed = new System.Windows.Forms.Label();
+            this.Lv12HPFixed = new System.Windows.Forms.Label();
+            this.Lv13HPFixed = new System.Windows.Forms.Label();
+            this.Lv14HPFixed = new System.Windows.Forms.Label();
+            this.Lv15HPFixed = new System.Windows.Forms.Label();
+            this.Lv16HPFixed = new System.Windows.Forms.Label();
+            this.Lv17HPFixed = new System.Windows.Forms.Label();
+            this.Lv18HPFixed = new System.Windows.Forms.Label();
+            this.Lv19HPFixed = new System.Windows.Forms.Label();
+            this.Lv20HPFixed = new System.Windows.Forms.Label();
+            this.Lv3HPResult = new System.Windows.Forms.Label();
+            this.Lv4HPResult = new System.Windows.Forms.Label();
+            this.Lv5HPResult = new System.Windows.Forms.Label();
+            this.Lv6HPResult = new System.Windows.Forms.Label();
+            this.Lv7HPResult = new System.Windows.Forms.Label();
+            this.Lv8HPResult = new System.Windows.Forms.Label();
+            this.Lv9HPResult = new System.Windows.Forms.Label();
+            this.Lv10HPResult = new System.Windows.Forms.Label();
+            this.Lv11HPResult = new System.Windows.Forms.Label();
+            this.Lv12HPResult = new System.Windows.Forms.Label();
+            this.Lv13HPResult = new System.Windows.Forms.Label();
+            this.Lv14HPResult = new System.Windows.Forms.Label();
+            this.Lv15HPResult = new System.Windows.Forms.Label();
+            this.Lv16HPResult = new System.Windows.Forms.Label();
+            this.Lv17HPResult = new System.Windows.Forms.Label();
+            this.Lv18HPResult = new System.Windows.Forms.Label();
+            this.Lv19HPResult = new System.Windows.Forms.Label();
+            this.Lv20HPResult = new System.Windows.Forms.Label();
             this.StatFixedHeader = new System.Windows.Forms.Label();
             this.StatPointBuyHeader = new System.Windows.Forms.Label();
             this.StatFixedSelectType1 = new System.Windows.Forms.CheckBox();
@@ -184,6 +289,7 @@
             // 
             // LevelSelector
             // 
+            this.LevelSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LevelSelector.FormattingEnabled = true;
             this.LevelSelector.Items.AddRange(new object[] {
             "1",
@@ -206,10 +312,11 @@
             "18",
             "19",
             "20"});
-            this.LevelSelector.Location = new System.Drawing.Point(233, 35);
+            this.LevelSelector.Location = new System.Drawing.Point(186, 35);
             this.LevelSelector.Name = "LevelSelector";
             this.LevelSelector.Size = new System.Drawing.Size(58, 24);
             this.LevelSelector.TabIndex = 8;
+            this.LevelSelector.DropDownClosed += new System.EventHandler(this.LevelSelector_DropDownClosed);
             // 
             // divider2
             // 
@@ -223,7 +330,7 @@
             // levelLabel
             // 
             this.levelLabel.AutoSize = true;
-            this.levelLabel.Location = new System.Drawing.Point(181, 38);
+            this.levelLabel.Location = new System.Drawing.Point(134, 38);
             this.levelLabel.Name = "levelLabel";
             this.levelLabel.Size = new System.Drawing.Size(46, 17);
             this.levelLabel.TabIndex = 10;
@@ -597,6 +704,1148 @@
             this.divider1.Size = new System.Drawing.Size(362, 2);
             this.divider1.TabIndex = 47;
             this.divider1.Text = "divider1";
+            // 
+            // HPHeader
+            // 
+            this.HPHeader.AutoSize = true;
+            this.HPHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HPHeader.Location = new System.Drawing.Point(208, 451);
+            this.HPHeader.Name = "HPHeader";
+            this.HPHeader.Size = new System.Drawing.Size(33, 20);
+            this.HPHeader.TabIndex = 48;
+            this.HPHeader.Text = "HP";
+            // 
+            // Lv1HPCheckbox
+            // 
+            this.Lv1HPCheckbox.AutoSize = true;
+            this.Lv1HPCheckbox.Checked = true;
+            this.Lv1HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv1HPCheckbox.Location = new System.Drawing.Point(74, 534);
+            this.Lv1HPCheckbox.Name = "Lv1HPCheckbox";
+            this.Lv1HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv1HPCheckbox.TabIndex = 49;
+            this.Lv1HPCheckbox.Text = "Roll";
+            this.Lv1HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv1HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv1HPCheckbox_CheckedChanged);
+            // 
+            // Lv1HPRoller
+            // 
+            this.Lv1HPRoller.Location = new System.Drawing.Point(134, 528);
+            this.Lv1HPRoller.Name = "Lv1HPRoller";
+            this.Lv1HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv1HPRoller.TabIndex = 51;
+            this.Lv1HPRoller.TabStop = false;
+            this.Lv1HPRoller.Text = "Roll 1d10";
+            this.Lv1HPRoller.UseVisualStyleBackColor = true;
+            this.Lv1HPRoller.Click += new System.EventHandler(this.Lv1HPRoller_Click);
+            // 
+            // Lv1HPResult
+            // 
+            this.Lv1HPResult.AutoSize = true;
+            this.Lv1HPResult.Location = new System.Drawing.Point(231, 535);
+            this.Lv1HPResult.Name = "Lv1HPResult";
+            this.Lv1HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv1HPResult.TabIndex = 52;
+            // 
+            // Lv1BaseHP
+            // 
+            this.Lv1BaseHP.AutoSize = true;
+            this.Lv1BaseHP.Location = new System.Drawing.Point(154, 477);
+            this.Lv1BaseHP.Name = "Lv1BaseHP";
+            this.Lv1BaseHP.Size = new System.Drawing.Size(67, 17);
+            this.Lv1BaseHP.TabIndex = 53;
+            this.Lv1BaseHP.Text = "Base HP:";
+            // 
+            // Lv1ConHP
+            // 
+            this.Lv1ConHP.AutoSize = true;
+            this.Lv1ConHP.Location = new System.Drawing.Point(130, 503);
+            this.Lv1ConHP.Name = "Lv1ConHP";
+            this.Lv1ConHP.Size = new System.Drawing.Size(91, 17);
+            this.Lv1ConHP.TabIndex = 54;
+            this.Lv1ConHP.Text = "CON Growth:";
+            // 
+            // Lv1BaseHPNum
+            // 
+            this.Lv1BaseHPNum.AutoSize = true;
+            this.Lv1BaseHPNum.Location = new System.Drawing.Point(231, 477);
+            this.Lv1BaseHPNum.Name = "Lv1BaseHPNum";
+            this.Lv1BaseHPNum.Size = new System.Drawing.Size(24, 17);
+            this.Lv1BaseHPNum.TabIndex = 55;
+            this.Lv1BaseHPNum.Text = "10";
+            // 
+            // HPConGrowth
+            // 
+            this.HPConGrowth.AutoSize = true;
+            this.HPConGrowth.Location = new System.Drawing.Point(231, 503);
+            this.HPConGrowth.Name = "HPConGrowth";
+            this.HPConGrowth.Size = new System.Drawing.Size(0, 17);
+            this.HPConGrowth.TabIndex = 56;
+            // 
+            // Lv1HPFixed
+            // 
+            this.Lv1HPFixed.AutoSize = true;
+            this.Lv1HPFixed.Location = new System.Drawing.Point(172, 535);
+            this.Lv1HPFixed.Name = "Lv1HPFixed";
+            this.Lv1HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv1HPFixed.TabIndex = 57;
+            this.Lv1HPFixed.Text = "Fixed:";
+            this.Lv1HPFixed.Visible = false;
+            // 
+            // Lv1HP6
+            // 
+            this.Lv1HP6.AutoSize = true;
+            this.Lv1HP6.Location = new System.Drawing.Point(231, 535);
+            this.Lv1HP6.Name = "Lv1HP6";
+            this.Lv1HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv1HP6.TabIndex = 58;
+            this.Lv1HP6.Text = "6";
+            this.Lv1HP6.Visible = false;
+            // 
+            // Lv2HPRoller
+            // 
+            this.Lv2HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv2HPRoller.Name = "Lv2HPRoller";
+            this.Lv2HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv2HPRoller.TabIndex = 59;
+            this.Lv2HPRoller.TabStop = false;
+            this.Lv2HPRoller.Text = "Roll 1d10";
+            this.Lv2HPRoller.UseVisualStyleBackColor = true;
+            this.Lv2HPRoller.Visible = false;
+            this.Lv2HPRoller.Click += new System.EventHandler(this.Lv2HPRoller_Click);
+            // 
+            // Lv3HPRoller
+            // 
+            this.Lv3HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv3HPRoller.Name = "Lv3HPRoller";
+            this.Lv3HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv3HPRoller.TabIndex = 60;
+            this.Lv3HPRoller.TabStop = false;
+            this.Lv3HPRoller.Text = "Roll 1d10";
+            this.Lv3HPRoller.UseVisualStyleBackColor = true;
+            this.Lv3HPRoller.Visible = false;
+            this.Lv3HPRoller.Click += new System.EventHandler(this.Lv3HPRoller_Click);
+            // 
+            // Lv4HPRoller
+            // 
+            this.Lv4HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv4HPRoller.Name = "Lv4HPRoller";
+            this.Lv4HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv4HPRoller.TabIndex = 61;
+            this.Lv4HPRoller.TabStop = false;
+            this.Lv4HPRoller.Text = "Roll 1d10";
+            this.Lv4HPRoller.UseVisualStyleBackColor = true;
+            this.Lv4HPRoller.Visible = false;
+            this.Lv4HPRoller.Click += new System.EventHandler(this.Lv4HPRoller_Click);
+            // 
+            // Lv5HPRoller
+            // 
+            this.Lv5HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv5HPRoller.Name = "Lv5HPRoller";
+            this.Lv5HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv5HPRoller.TabIndex = 62;
+            this.Lv5HPRoller.TabStop = false;
+            this.Lv5HPRoller.Text = "Roll 1d10";
+            this.Lv5HPRoller.UseVisualStyleBackColor = true;
+            this.Lv5HPRoller.Visible = false;
+            this.Lv5HPRoller.Click += new System.EventHandler(this.Lv5HPRoller_Click);
+            // 
+            // Lv6HPRoller
+            // 
+            this.Lv6HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv6HPRoller.Name = "Lv6HPRoller";
+            this.Lv6HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv6HPRoller.TabIndex = 63;
+            this.Lv6HPRoller.TabStop = false;
+            this.Lv6HPRoller.Text = "Roll 1d10";
+            this.Lv6HPRoller.UseVisualStyleBackColor = true;
+            this.Lv6HPRoller.Visible = false;
+            this.Lv6HPRoller.Click += new System.EventHandler(this.Lv6HPRoller_Click);
+            // 
+            // Lv7HPRoller
+            // 
+            this.Lv7HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv7HPRoller.Name = "Lv7HPRoller";
+            this.Lv7HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv7HPRoller.TabIndex = 64;
+            this.Lv7HPRoller.TabStop = false;
+            this.Lv7HPRoller.Text = "Roll 1d10";
+            this.Lv7HPRoller.UseVisualStyleBackColor = true;
+            this.Lv7HPRoller.Visible = false;
+            this.Lv7HPRoller.Click += new System.EventHandler(this.Lv7HPRoller_Click);
+            // 
+            // Lv8HPRoller
+            // 
+            this.Lv8HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv8HPRoller.Name = "Lv8HPRoller";
+            this.Lv8HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv8HPRoller.TabIndex = 65;
+            this.Lv8HPRoller.TabStop = false;
+            this.Lv8HPRoller.Text = "Roll 1d10";
+            this.Lv8HPRoller.UseVisualStyleBackColor = true;
+            this.Lv8HPRoller.Visible = false;
+            this.Lv8HPRoller.Click += new System.EventHandler(this.Lv8HPRoller_Click);
+            // 
+            // Lv9HPRoller
+            // 
+            this.Lv9HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv9HPRoller.Name = "Lv9HPRoller";
+            this.Lv9HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv9HPRoller.TabIndex = 66;
+            this.Lv9HPRoller.TabStop = false;
+            this.Lv9HPRoller.Text = "Roll 1d10";
+            this.Lv9HPRoller.UseVisualStyleBackColor = true;
+            this.Lv9HPRoller.Visible = false;
+            this.Lv9HPRoller.Click += new System.EventHandler(this.Lv9HPRoller_Click);
+            // 
+            // Lv10HPRoller
+            // 
+            this.Lv10HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv10HPRoller.Name = "Lv10HPRoller";
+            this.Lv10HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv10HPRoller.TabIndex = 67;
+            this.Lv10HPRoller.TabStop = false;
+            this.Lv10HPRoller.Text = "Roll 1d10";
+            this.Lv10HPRoller.UseVisualStyleBackColor = true;
+            this.Lv10HPRoller.Visible = false;
+            this.Lv10HPRoller.Click += new System.EventHandler(this.Lv10HPRoller_Click);
+            // 
+            // Lv11HPRoller
+            // 
+            this.Lv11HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv11HPRoller.Name = "Lv11HPRoller";
+            this.Lv11HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv11HPRoller.TabIndex = 68;
+            this.Lv11HPRoller.TabStop = false;
+            this.Lv11HPRoller.Text = "Roll 1d10";
+            this.Lv11HPRoller.UseVisualStyleBackColor = true;
+            this.Lv11HPRoller.Visible = false;
+            this.Lv11HPRoller.Click += new System.EventHandler(this.Lv11HPRoller_Click);
+            // 
+            // Lv12HPRoller
+            // 
+            this.Lv12HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv12HPRoller.Name = "Lv12HPRoller";
+            this.Lv12HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv12HPRoller.TabIndex = 69;
+            this.Lv12HPRoller.TabStop = false;
+            this.Lv12HPRoller.Text = "Roll 1d10";
+            this.Lv12HPRoller.UseVisualStyleBackColor = true;
+            this.Lv12HPRoller.Visible = false;
+            this.Lv12HPRoller.Click += new System.EventHandler(this.Lv12HPRoller_Click);
+            // 
+            // Lv13HPRoller
+            // 
+            this.Lv13HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv13HPRoller.Name = "Lv13HPRoller";
+            this.Lv13HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv13HPRoller.TabIndex = 70;
+            this.Lv13HPRoller.TabStop = false;
+            this.Lv13HPRoller.Text = "Roll 1d10";
+            this.Lv13HPRoller.UseVisualStyleBackColor = true;
+            this.Lv13HPRoller.Visible = false;
+            this.Lv13HPRoller.Click += new System.EventHandler(this.Lv13HPRoller_Click);
+            // 
+            // Lv14HPRoller
+            // 
+            this.Lv14HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv14HPRoller.Name = "Lv14HPRoller";
+            this.Lv14HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv14HPRoller.TabIndex = 71;
+            this.Lv14HPRoller.TabStop = false;
+            this.Lv14HPRoller.Text = "Roll 1d10";
+            this.Lv14HPRoller.UseVisualStyleBackColor = true;
+            this.Lv14HPRoller.Visible = false;
+            this.Lv14HPRoller.Click += new System.EventHandler(this.Lv14HPRoller_Click);
+            // 
+            // Lv15HPRoller
+            // 
+            this.Lv15HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv15HPRoller.Name = "Lv15HPRoller";
+            this.Lv15HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv15HPRoller.TabIndex = 72;
+            this.Lv15HPRoller.TabStop = false;
+            this.Lv15HPRoller.Text = "Roll 1d10";
+            this.Lv15HPRoller.UseVisualStyleBackColor = true;
+            this.Lv15HPRoller.Visible = false;
+            this.Lv15HPRoller.Click += new System.EventHandler(this.Lv15HPRoller_Click);
+            // 
+            // Lv16HPRoller
+            // 
+            this.Lv16HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv16HPRoller.Name = "Lv16HPRoller";
+            this.Lv16HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv16HPRoller.TabIndex = 73;
+            this.Lv16HPRoller.TabStop = false;
+            this.Lv16HPRoller.Text = "Roll 1d10";
+            this.Lv16HPRoller.UseVisualStyleBackColor = true;
+            this.Lv16HPRoller.Visible = false;
+            this.Lv16HPRoller.Click += new System.EventHandler(this.Lv16HPRoller_Click);
+            // 
+            // Lv17HPRoller
+            // 
+            this.Lv17HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv17HPRoller.Name = "Lv17HPRoller";
+            this.Lv17HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv17HPRoller.TabIndex = 74;
+            this.Lv17HPRoller.TabStop = false;
+            this.Lv17HPRoller.Text = "Roll 1d10";
+            this.Lv17HPRoller.UseVisualStyleBackColor = true;
+            this.Lv17HPRoller.Visible = false;
+            this.Lv17HPRoller.Click += new System.EventHandler(this.Lv17HPRoller_Click);
+            // 
+            // Lv18HPRoller
+            // 
+            this.Lv18HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv18HPRoller.Name = "Lv18HPRoller";
+            this.Lv18HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv18HPRoller.TabIndex = 75;
+            this.Lv18HPRoller.TabStop = false;
+            this.Lv18HPRoller.Text = "Roll 1d10";
+            this.Lv18HPRoller.UseVisualStyleBackColor = true;
+            this.Lv18HPRoller.Visible = false;
+            this.Lv18HPRoller.Click += new System.EventHandler(this.Lv18HPRoller_Click);
+            // 
+            // Lv19HPRoller
+            // 
+            this.Lv19HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv19HPRoller.Name = "Lv19HPRoller";
+            this.Lv19HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv19HPRoller.TabIndex = 76;
+            this.Lv19HPRoller.TabStop = false;
+            this.Lv19HPRoller.Text = "Roll 1d10";
+            this.Lv19HPRoller.UseVisualStyleBackColor = true;
+            this.Lv19HPRoller.Visible = false;
+            this.Lv19HPRoller.Click += new System.EventHandler(this.Lv19HPRoller_Click);
+            // 
+            // Lv20HPRoller
+            // 
+            this.Lv20HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv20HPRoller.Name = "Lv20HPRoller";
+            this.Lv20HPRoller.Size = new System.Drawing.Size(83, 30);
+            this.Lv20HPRoller.TabIndex = 77;
+            this.Lv20HPRoller.TabStop = false;
+            this.Lv20HPRoller.Text = "Roll 1d10";
+            this.Lv20HPRoller.UseVisualStyleBackColor = true;
+            this.Lv20HPRoller.Visible = false;
+            this.Lv20HPRoller.Click += new System.EventHandler(this.Lv20HPRoller_Click);
+            // 
+            // Lv2HPCheckbox
+            // 
+            this.Lv2HPCheckbox.AutoSize = true;
+            this.Lv2HPCheckbox.Checked = true;
+            this.Lv2HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv2HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv2HPCheckbox.Name = "Lv2HPCheckbox";
+            this.Lv2HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv2HPCheckbox.TabIndex = 78;
+            this.Lv2HPCheckbox.Text = "Roll";
+            this.Lv2HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv2HPCheckbox.Visible = false;
+            this.Lv2HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv2HPCheckbox_CheckedChanged);
+            // 
+            // Lv3HPCheckbox
+            // 
+            this.Lv3HPCheckbox.AutoSize = true;
+            this.Lv3HPCheckbox.Checked = true;
+            this.Lv3HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv3HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv3HPCheckbox.Name = "Lv3HPCheckbox";
+            this.Lv3HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv3HPCheckbox.TabIndex = 79;
+            this.Lv3HPCheckbox.Text = "Roll";
+            this.Lv3HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv3HPCheckbox.Visible = false;
+            this.Lv3HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv3HPCheckbox_CheckedChanged);
+            // 
+            // Lv4HPCheckbox
+            // 
+            this.Lv4HPCheckbox.AutoSize = true;
+            this.Lv4HPCheckbox.Checked = true;
+            this.Lv4HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv4HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv4HPCheckbox.Name = "Lv4HPCheckbox";
+            this.Lv4HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv4HPCheckbox.TabIndex = 80;
+            this.Lv4HPCheckbox.Text = "Roll";
+            this.Lv4HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv4HPCheckbox.Visible = false;
+            this.Lv4HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv4HPCheckbox_CheckedChanged);
+            // 
+            // Lv5HPCheckbox
+            // 
+            this.Lv5HPCheckbox.AutoSize = true;
+            this.Lv5HPCheckbox.Checked = true;
+            this.Lv5HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv5HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv5HPCheckbox.Name = "Lv5HPCheckbox";
+            this.Lv5HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv5HPCheckbox.TabIndex = 81;
+            this.Lv5HPCheckbox.Text = "Roll";
+            this.Lv5HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv5HPCheckbox.Visible = false;
+            this.Lv5HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv5HPCheckbox_CheckedChanged);
+            // 
+            // Lv6HPCheckbox
+            // 
+            this.Lv6HPCheckbox.AutoSize = true;
+            this.Lv6HPCheckbox.Checked = true;
+            this.Lv6HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv6HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv6HPCheckbox.Name = "Lv6HPCheckbox";
+            this.Lv6HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv6HPCheckbox.TabIndex = 82;
+            this.Lv6HPCheckbox.Text = "Roll";
+            this.Lv6HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv6HPCheckbox.Visible = false;
+            this.Lv6HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv6HPCheckbox_CheckedChanged);
+            // 
+            // Lv7HPCheckbox
+            // 
+            this.Lv7HPCheckbox.AutoSize = true;
+            this.Lv7HPCheckbox.Checked = true;
+            this.Lv7HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv7HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv7HPCheckbox.Name = "Lv7HPCheckbox";
+            this.Lv7HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv7HPCheckbox.TabIndex = 83;
+            this.Lv7HPCheckbox.Text = "Roll";
+            this.Lv7HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv7HPCheckbox.Visible = false;
+            this.Lv7HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv7HPCheckbox_CheckedChanged);
+            // 
+            // Lv8HPCheckbox
+            // 
+            this.Lv8HPCheckbox.AutoSize = true;
+            this.Lv8HPCheckbox.Checked = true;
+            this.Lv8HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv8HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv8HPCheckbox.Name = "Lv8HPCheckbox";
+            this.Lv8HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv8HPCheckbox.TabIndex = 84;
+            this.Lv8HPCheckbox.Text = "Roll";
+            this.Lv8HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv8HPCheckbox.Visible = false;
+            this.Lv8HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv8HPCheckbox_CheckedChanged);
+            // 
+            // Lv9HPCheckbox
+            // 
+            this.Lv9HPCheckbox.AutoSize = true;
+            this.Lv9HPCheckbox.Checked = true;
+            this.Lv9HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv9HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv9HPCheckbox.Name = "Lv9HPCheckbox";
+            this.Lv9HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv9HPCheckbox.TabIndex = 85;
+            this.Lv9HPCheckbox.Text = "Roll";
+            this.Lv9HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv9HPCheckbox.Visible = false;
+            this.Lv9HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv9HPCheckbox_CheckedChanged);
+            // 
+            // Lv10HPCheckbox
+            // 
+            this.Lv10HPCheckbox.AutoSize = true;
+            this.Lv10HPCheckbox.Checked = true;
+            this.Lv10HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv10HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv10HPCheckbox.Name = "Lv10HPCheckbox";
+            this.Lv10HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv10HPCheckbox.TabIndex = 86;
+            this.Lv10HPCheckbox.Text = "Roll";
+            this.Lv10HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv10HPCheckbox.Visible = false;
+            this.Lv10HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv10HPCheckbox_CheckedChanged);
+            // 
+            // Lv11HPCheckbox
+            // 
+            this.Lv11HPCheckbox.AutoSize = true;
+            this.Lv11HPCheckbox.Checked = true;
+            this.Lv11HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv11HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv11HPCheckbox.Name = "Lv11HPCheckbox";
+            this.Lv11HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv11HPCheckbox.TabIndex = 87;
+            this.Lv11HPCheckbox.Text = "Roll";
+            this.Lv11HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv11HPCheckbox.Visible = false;
+            this.Lv11HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv11HPCheckbox_CheckedChanged);
+            // 
+            // Lv12HPCheckbox
+            // 
+            this.Lv12HPCheckbox.AutoSize = true;
+            this.Lv12HPCheckbox.Checked = true;
+            this.Lv12HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv12HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv12HPCheckbox.Name = "Lv12HPCheckbox";
+            this.Lv12HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv12HPCheckbox.TabIndex = 88;
+            this.Lv12HPCheckbox.Text = "Roll";
+            this.Lv12HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv12HPCheckbox.Visible = false;
+            this.Lv12HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv12HPCheckbox_CheckedChanged);
+            // 
+            // Lv13HPCheckbox
+            // 
+            this.Lv13HPCheckbox.AutoSize = true;
+            this.Lv13HPCheckbox.Checked = true;
+            this.Lv13HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv13HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv13HPCheckbox.Name = "Lv13HPCheckbox";
+            this.Lv13HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv13HPCheckbox.TabIndex = 89;
+            this.Lv13HPCheckbox.Text = "Roll";
+            this.Lv13HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv13HPCheckbox.Visible = false;
+            this.Lv13HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv13HPCheckbox_CheckedChanged);
+            // 
+            // Lv14HPCheckbox
+            // 
+            this.Lv14HPCheckbox.AutoSize = true;
+            this.Lv14HPCheckbox.Checked = true;
+            this.Lv14HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv14HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv14HPCheckbox.Name = "Lv14HPCheckbox";
+            this.Lv14HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv14HPCheckbox.TabIndex = 90;
+            this.Lv14HPCheckbox.Text = "Roll";
+            this.Lv14HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv14HPCheckbox.Visible = false;
+            this.Lv14HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv14HPCheckbox_CheckedChanged);
+            // 
+            // Lv15HPCheckbox
+            // 
+            this.Lv15HPCheckbox.AutoSize = true;
+            this.Lv15HPCheckbox.Checked = true;
+            this.Lv15HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv15HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv15HPCheckbox.Name = "Lv15HPCheckbox";
+            this.Lv15HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv15HPCheckbox.TabIndex = 91;
+            this.Lv15HPCheckbox.Text = "Roll";
+            this.Lv15HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv15HPCheckbox.Visible = false;
+            this.Lv15HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv15HPCheckbox_CheckedChanged);
+            // 
+            // Lv16HPCheckbox
+            // 
+            this.Lv16HPCheckbox.AutoSize = true;
+            this.Lv16HPCheckbox.Checked = true;
+            this.Lv16HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv16HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv16HPCheckbox.Name = "Lv16HPCheckbox";
+            this.Lv16HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv16HPCheckbox.TabIndex = 92;
+            this.Lv16HPCheckbox.Text = "Roll";
+            this.Lv16HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv16HPCheckbox.Visible = false;
+            this.Lv16HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv16HPCheckbox_CheckedChanged);
+            // 
+            // Lv17HPCheckbox
+            // 
+            this.Lv17HPCheckbox.AutoSize = true;
+            this.Lv17HPCheckbox.Checked = true;
+            this.Lv17HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv17HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv17HPCheckbox.Name = "Lv17HPCheckbox";
+            this.Lv17HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv17HPCheckbox.TabIndex = 93;
+            this.Lv17HPCheckbox.Text = "Roll";
+            this.Lv17HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv17HPCheckbox.Visible = false;
+            this.Lv17HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv17HPCheckbox_CheckedChanged);
+            // 
+            // Lv18HPCheckbox
+            // 
+            this.Lv18HPCheckbox.AutoSize = true;
+            this.Lv18HPCheckbox.Checked = true;
+            this.Lv18HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv18HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv18HPCheckbox.Name = "Lv18HPCheckbox";
+            this.Lv18HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv18HPCheckbox.TabIndex = 94;
+            this.Lv18HPCheckbox.Text = "Roll";
+            this.Lv18HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv18HPCheckbox.Visible = false;
+            this.Lv18HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv18HPCheckbox_CheckedChanged);
+            // 
+            // Lv19HPCheckbox
+            // 
+            this.Lv19HPCheckbox.AutoSize = true;
+            this.Lv19HPCheckbox.Checked = true;
+            this.Lv19HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv19HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv19HPCheckbox.Name = "Lv19HPCheckbox";
+            this.Lv19HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv19HPCheckbox.TabIndex = 95;
+            this.Lv19HPCheckbox.Text = "Roll";
+            this.Lv19HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv19HPCheckbox.Visible = false;
+            this.Lv19HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv19HPCheckbox_CheckedChanged);
+            // 
+            // Lv20HPCheckbox
+            // 
+            this.Lv20HPCheckbox.AutoSize = true;
+            this.Lv20HPCheckbox.Checked = true;
+            this.Lv20HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Lv20HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv20HPCheckbox.Name = "Lv20HPCheckbox";
+            this.Lv20HPCheckbox.Size = new System.Drawing.Size(54, 21);
+            this.Lv20HPCheckbox.TabIndex = 96;
+            this.Lv20HPCheckbox.Text = "Roll";
+            this.Lv20HPCheckbox.UseVisualStyleBackColor = true;
+            this.Lv20HPCheckbox.Visible = false;
+            this.Lv20HPCheckbox.CheckedChanged += new System.EventHandler(this.Lv20HPCheckbox_CheckedChanged);
+            // 
+            // Lv2HP6
+            // 
+            this.Lv2HP6.AutoSize = true;
+            this.Lv2HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv2HP6.Name = "Lv2HP6";
+            this.Lv2HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv2HP6.TabIndex = 97;
+            this.Lv2HP6.Text = "6";
+            this.Lv2HP6.Visible = false;
+            // 
+            // Lv3HP6
+            // 
+            this.Lv3HP6.AutoSize = true;
+            this.Lv3HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv3HP6.Name = "Lv3HP6";
+            this.Lv3HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv3HP6.TabIndex = 98;
+            this.Lv3HP6.Text = "6";
+            this.Lv3HP6.Visible = false;
+            // 
+            // Lv4HP6
+            // 
+            this.Lv4HP6.AutoSize = true;
+            this.Lv4HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv4HP6.Name = "Lv4HP6";
+            this.Lv4HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv4HP6.TabIndex = 99;
+            this.Lv4HP6.Text = "6";
+            this.Lv4HP6.Visible = false;
+            // 
+            // Lv5HP6
+            // 
+            this.Lv5HP6.AutoSize = true;
+            this.Lv5HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv5HP6.Name = "Lv5HP6";
+            this.Lv5HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv5HP6.TabIndex = 100;
+            this.Lv5HP6.Text = "6";
+            this.Lv5HP6.Visible = false;
+            // 
+            // Lv6HP6
+            // 
+            this.Lv6HP6.AutoSize = true;
+            this.Lv6HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv6HP6.Name = "Lv6HP6";
+            this.Lv6HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv6HP6.TabIndex = 101;
+            this.Lv6HP6.Text = "6";
+            this.Lv6HP6.Visible = false;
+            // 
+            // Lv7HP6
+            // 
+            this.Lv7HP6.AutoSize = true;
+            this.Lv7HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv7HP6.Name = "Lv7HP6";
+            this.Lv7HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv7HP6.TabIndex = 102;
+            this.Lv7HP6.Text = "6";
+            this.Lv7HP6.Visible = false;
+            // 
+            // Lv8HP6
+            // 
+            this.Lv8HP6.AutoSize = true;
+            this.Lv8HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv8HP6.Name = "Lv8HP6";
+            this.Lv8HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv8HP6.TabIndex = 103;
+            this.Lv8HP6.Text = "6";
+            this.Lv8HP6.Visible = false;
+            // 
+            // Lv9HP6
+            // 
+            this.Lv9HP6.AutoSize = true;
+            this.Lv9HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv9HP6.Name = "Lv9HP6";
+            this.Lv9HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv9HP6.TabIndex = 104;
+            this.Lv9HP6.Text = "6";
+            this.Lv9HP6.Visible = false;
+            // 
+            // Lv10HP6
+            // 
+            this.Lv10HP6.AutoSize = true;
+            this.Lv10HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv10HP6.Name = "Lv10HP6";
+            this.Lv10HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv10HP6.TabIndex = 105;
+            this.Lv10HP6.Text = "6";
+            this.Lv10HP6.Visible = false;
+            // 
+            // Lv11HP6
+            // 
+            this.Lv11HP6.AutoSize = true;
+            this.Lv11HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv11HP6.Name = "Lv11HP6";
+            this.Lv11HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv11HP6.TabIndex = 106;
+            this.Lv11HP6.Text = "6";
+            this.Lv11HP6.Visible = false;
+            // 
+            // Lv12HP6
+            // 
+            this.Lv12HP6.AutoSize = true;
+            this.Lv12HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv12HP6.Name = "Lv12HP6";
+            this.Lv12HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv12HP6.TabIndex = 107;
+            this.Lv12HP6.Text = "6";
+            this.Lv12HP6.Visible = false;
+            // 
+            // Lv13HP6
+            // 
+            this.Lv13HP6.AutoSize = true;
+            this.Lv13HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv13HP6.Name = "Lv13HP6";
+            this.Lv13HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv13HP6.TabIndex = 108;
+            this.Lv13HP6.Text = "6";
+            this.Lv13HP6.Visible = false;
+            // 
+            // Lv14HP6
+            // 
+            this.Lv14HP6.AutoSize = true;
+            this.Lv14HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv14HP6.Name = "Lv14HP6";
+            this.Lv14HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv14HP6.TabIndex = 109;
+            this.Lv14HP6.Text = "6";
+            this.Lv14HP6.Visible = false;
+            // 
+            // Lv15HP6
+            // 
+            this.Lv15HP6.AutoSize = true;
+            this.Lv15HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv15HP6.Name = "Lv15HP6";
+            this.Lv15HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv15HP6.TabIndex = 110;
+            this.Lv15HP6.Text = "6";
+            this.Lv15HP6.Visible = false;
+            // 
+            // Lv16HP6
+            // 
+            this.Lv16HP6.AutoSize = true;
+            this.Lv16HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv16HP6.Name = "Lv16HP6";
+            this.Lv16HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv16HP6.TabIndex = 111;
+            this.Lv16HP6.Text = "6";
+            this.Lv16HP6.Visible = false;
+            // 
+            // Lv17HP6
+            // 
+            this.Lv17HP6.AutoSize = true;
+            this.Lv17HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv17HP6.Name = "Lv17HP6";
+            this.Lv17HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv17HP6.TabIndex = 112;
+            this.Lv17HP6.Text = "6";
+            this.Lv17HP6.Visible = false;
+            // 
+            // Lv18HP6
+            // 
+            this.Lv18HP6.AutoSize = true;
+            this.Lv18HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv18HP6.Name = "Lv18HP6";
+            this.Lv18HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv18HP6.TabIndex = 113;
+            this.Lv18HP6.Text = "6";
+            this.Lv18HP6.Visible = false;
+            // 
+            // Lv19HP6
+            // 
+            this.Lv19HP6.AutoSize = true;
+            this.Lv19HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv19HP6.Name = "Lv19HP6";
+            this.Lv19HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv19HP6.TabIndex = 114;
+            this.Lv19HP6.Text = "6";
+            this.Lv19HP6.Visible = false;
+            // 
+            // Lv20HP6
+            // 
+            this.Lv20HP6.AutoSize = true;
+            this.Lv20HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv20HP6.Name = "Lv20HP6";
+            this.Lv20HP6.Size = new System.Drawing.Size(16, 17);
+            this.Lv20HP6.TabIndex = 115;
+            this.Lv20HP6.Text = "6";
+            this.Lv20HP6.Visible = false;
+            // 
+            // Lv2HPResult
+            // 
+            this.Lv2HPResult.AutoSize = true;
+            this.Lv2HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv2HPResult.Name = "Lv2HPResult";
+            this.Lv2HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv2HPResult.TabIndex = 116;
+            this.Lv2HPResult.Visible = false;
+            // 
+            // Lv2HPFixed
+            // 
+            this.Lv2HPFixed.AutoSize = true;
+            this.Lv2HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv2HPFixed.Name = "Lv2HPFixed";
+            this.Lv2HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv2HPFixed.TabIndex = 117;
+            this.Lv2HPFixed.Text = "Fixed:";
+            this.Lv2HPFixed.Visible = false;
+            // 
+            // Lv3HPFixed
+            // 
+            this.Lv3HPFixed.AutoSize = true;
+            this.Lv3HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv3HPFixed.Name = "Lv3HPFixed";
+            this.Lv3HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv3HPFixed.TabIndex = 118;
+            this.Lv3HPFixed.Text = "Fixed:";
+            this.Lv3HPFixed.Visible = false;
+            // 
+            // Lv4HPFixed
+            // 
+            this.Lv4HPFixed.AutoSize = true;
+            this.Lv4HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv4HPFixed.Name = "Lv4HPFixed";
+            this.Lv4HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv4HPFixed.TabIndex = 119;
+            this.Lv4HPFixed.Text = "Fixed:";
+            this.Lv4HPFixed.Visible = false;
+            // 
+            // Lv5HPFixed
+            // 
+            this.Lv5HPFixed.AutoSize = true;
+            this.Lv5HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv5HPFixed.Name = "Lv5HPFixed";
+            this.Lv5HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv5HPFixed.TabIndex = 120;
+            this.Lv5HPFixed.Text = "Fixed:";
+            this.Lv5HPFixed.Visible = false;
+            // 
+            // Lv6HPFixed
+            // 
+            this.Lv6HPFixed.AutoSize = true;
+            this.Lv6HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv6HPFixed.Name = "Lv6HPFixed";
+            this.Lv6HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv6HPFixed.TabIndex = 121;
+            this.Lv6HPFixed.Text = "Fixed:";
+            this.Lv6HPFixed.Visible = false;
+            // 
+            // Lv7HPFixed
+            // 
+            this.Lv7HPFixed.AutoSize = true;
+            this.Lv7HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv7HPFixed.Name = "Lv7HPFixed";
+            this.Lv7HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv7HPFixed.TabIndex = 122;
+            this.Lv7HPFixed.Text = "Fixed:";
+            this.Lv7HPFixed.Visible = false;
+            // 
+            // Lv8HPFixed
+            // 
+            this.Lv8HPFixed.AutoSize = true;
+            this.Lv8HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv8HPFixed.Name = "Lv8HPFixed";
+            this.Lv8HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv8HPFixed.TabIndex = 123;
+            this.Lv8HPFixed.Text = "Fixed:";
+            this.Lv8HPFixed.Visible = false;
+            // 
+            // Lv9HPFixed
+            // 
+            this.Lv9HPFixed.AutoSize = true;
+            this.Lv9HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv9HPFixed.Name = "Lv9HPFixed";
+            this.Lv9HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv9HPFixed.TabIndex = 124;
+            this.Lv9HPFixed.Text = "Fixed:";
+            this.Lv9HPFixed.Visible = false;
+            // 
+            // Lv10HPFixed
+            // 
+            this.Lv10HPFixed.AutoSize = true;
+            this.Lv10HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv10HPFixed.Name = "Lv10HPFixed";
+            this.Lv10HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv10HPFixed.TabIndex = 125;
+            this.Lv10HPFixed.Text = "Fixed:";
+            this.Lv10HPFixed.Visible = false;
+            // 
+            // Lv11HPFixed
+            // 
+            this.Lv11HPFixed.AutoSize = true;
+            this.Lv11HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv11HPFixed.Name = "Lv11HPFixed";
+            this.Lv11HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv11HPFixed.TabIndex = 126;
+            this.Lv11HPFixed.Text = "Fixed:";
+            this.Lv11HPFixed.Visible = false;
+            // 
+            // Lv12HPFixed
+            // 
+            this.Lv12HPFixed.AutoSize = true;
+            this.Lv12HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv12HPFixed.Name = "Lv12HPFixed";
+            this.Lv12HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv12HPFixed.TabIndex = 127;
+            this.Lv12HPFixed.Text = "Fixed:";
+            this.Lv12HPFixed.Visible = false;
+            // 
+            // Lv13HPFixed
+            // 
+            this.Lv13HPFixed.AutoSize = true;
+            this.Lv13HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv13HPFixed.Name = "Lv13HPFixed";
+            this.Lv13HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv13HPFixed.TabIndex = 128;
+            this.Lv13HPFixed.Text = "Fixed:";
+            this.Lv13HPFixed.Visible = false;
+            // 
+            // Lv14HPFixed
+            // 
+            this.Lv14HPFixed.AutoSize = true;
+            this.Lv14HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv14HPFixed.Name = "Lv14HPFixed";
+            this.Lv14HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv14HPFixed.TabIndex = 129;
+            this.Lv14HPFixed.Text = "Fixed:";
+            this.Lv14HPFixed.Visible = false;
+            // 
+            // Lv15HPFixed
+            // 
+            this.Lv15HPFixed.AutoSize = true;
+            this.Lv15HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv15HPFixed.Name = "Lv15HPFixed";
+            this.Lv15HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv15HPFixed.TabIndex = 130;
+            this.Lv15HPFixed.Text = "Fixed:";
+            this.Lv15HPFixed.Visible = false;
+            // 
+            // Lv16HPFixed
+            // 
+            this.Lv16HPFixed.AutoSize = true;
+            this.Lv16HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv16HPFixed.Name = "Lv16HPFixed";
+            this.Lv16HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv16HPFixed.TabIndex = 131;
+            this.Lv16HPFixed.Text = "Fixed:";
+            this.Lv16HPFixed.Visible = false;
+            // 
+            // Lv17HPFixed
+            // 
+            this.Lv17HPFixed.AutoSize = true;
+            this.Lv17HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv17HPFixed.Name = "Lv17HPFixed";
+            this.Lv17HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv17HPFixed.TabIndex = 132;
+            this.Lv17HPFixed.Text = "Fixed:";
+            this.Lv17HPFixed.Visible = false;
+            // 
+            // Lv18HPFixed
+            // 
+            this.Lv18HPFixed.AutoSize = true;
+            this.Lv18HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv18HPFixed.Name = "Lv18HPFixed";
+            this.Lv18HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv18HPFixed.TabIndex = 133;
+            this.Lv18HPFixed.Text = "Fixed:";
+            this.Lv18HPFixed.Visible = false;
+            // 
+            // Lv19HPFixed
+            // 
+            this.Lv19HPFixed.AutoSize = true;
+            this.Lv19HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv19HPFixed.Name = "Lv19HPFixed";
+            this.Lv19HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv19HPFixed.TabIndex = 134;
+            this.Lv19HPFixed.Text = "Fixed:";
+            this.Lv19HPFixed.Visible = false;
+            // 
+            // Lv20HPFixed
+            // 
+            this.Lv20HPFixed.AutoSize = true;
+            this.Lv20HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv20HPFixed.Name = "Lv20HPFixed";
+            this.Lv20HPFixed.Size = new System.Drawing.Size(45, 17);
+            this.Lv20HPFixed.TabIndex = 135;
+            this.Lv20HPFixed.Text = "Fixed:";
+            this.Lv20HPFixed.Visible = false;
+            // 
+            // Lv3HPResult
+            // 
+            this.Lv3HPResult.AutoSize = true;
+            this.Lv3HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv3HPResult.Name = "Lv3HPResult";
+            this.Lv3HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv3HPResult.TabIndex = 136;
+            this.Lv3HPResult.Visible = false;
+            // 
+            // Lv4HPResult
+            // 
+            this.Lv4HPResult.AutoSize = true;
+            this.Lv4HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv4HPResult.Name = "Lv4HPResult";
+            this.Lv4HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv4HPResult.TabIndex = 137;
+            this.Lv4HPResult.Visible = false;
+            // 
+            // Lv5HPResult
+            // 
+            this.Lv5HPResult.AutoSize = true;
+            this.Lv5HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv5HPResult.Name = "Lv5HPResult";
+            this.Lv5HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv5HPResult.TabIndex = 138;
+            this.Lv5HPResult.Visible = false;
+            // 
+            // Lv6HPResult
+            // 
+            this.Lv6HPResult.AutoSize = true;
+            this.Lv6HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv6HPResult.Name = "Lv6HPResult";
+            this.Lv6HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv6HPResult.TabIndex = 139;
+            this.Lv6HPResult.Visible = false;
+            // 
+            // Lv7HPResult
+            // 
+            this.Lv7HPResult.AutoSize = true;
+            this.Lv7HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv7HPResult.Name = "Lv7HPResult";
+            this.Lv7HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv7HPResult.TabIndex = 140;
+            this.Lv7HPResult.Visible = false;
+            // 
+            // Lv8HPResult
+            // 
+            this.Lv8HPResult.AutoSize = true;
+            this.Lv8HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv8HPResult.Name = "Lv8HPResult";
+            this.Lv8HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv8HPResult.TabIndex = 141;
+            this.Lv8HPResult.Visible = false;
+            // 
+            // Lv9HPResult
+            // 
+            this.Lv9HPResult.AutoSize = true;
+            this.Lv9HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv9HPResult.Name = "Lv9HPResult";
+            this.Lv9HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv9HPResult.TabIndex = 142;
+            this.Lv9HPResult.Visible = false;
+            // 
+            // Lv10HPResult
+            // 
+            this.Lv10HPResult.AutoSize = true;
+            this.Lv10HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv10HPResult.Name = "Lv10HPResult";
+            this.Lv10HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv10HPResult.TabIndex = 143;
+            this.Lv10HPResult.Visible = false;
+            // 
+            // Lv11HPResult
+            // 
+            this.Lv11HPResult.AutoSize = true;
+            this.Lv11HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv11HPResult.Name = "Lv11HPResult";
+            this.Lv11HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv11HPResult.TabIndex = 144;
+            this.Lv11HPResult.Visible = false;
+            // 
+            // Lv12HPResult
+            // 
+            this.Lv12HPResult.AutoSize = true;
+            this.Lv12HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv12HPResult.Name = "Lv12HPResult";
+            this.Lv12HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv12HPResult.TabIndex = 145;
+            this.Lv12HPResult.Visible = false;
+            // 
+            // Lv13HPResult
+            // 
+            this.Lv13HPResult.AutoSize = true;
+            this.Lv13HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv13HPResult.Name = "Lv13HPResult";
+            this.Lv13HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv13HPResult.TabIndex = 146;
+            this.Lv13HPResult.Visible = false;
+            // 
+            // Lv14HPResult
+            // 
+            this.Lv14HPResult.AutoSize = true;
+            this.Lv14HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv14HPResult.Name = "Lv14HPResult";
+            this.Lv14HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv14HPResult.TabIndex = 147;
+            this.Lv14HPResult.Visible = false;
+            // 
+            // Lv15HPResult
+            // 
+            this.Lv15HPResult.AutoSize = true;
+            this.Lv15HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv15HPResult.Name = "Lv15HPResult";
+            this.Lv15HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv15HPResult.TabIndex = 148;
+            this.Lv15HPResult.Visible = false;
+            // 
+            // Lv16HPResult
+            // 
+            this.Lv16HPResult.AutoSize = true;
+            this.Lv16HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv16HPResult.Name = "Lv16HPResult";
+            this.Lv16HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv16HPResult.TabIndex = 149;
+            this.Lv16HPResult.Visible = false;
+            // 
+            // Lv17HPResult
+            // 
+            this.Lv17HPResult.AutoSize = true;
+            this.Lv17HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv17HPResult.Name = "Lv17HPResult";
+            this.Lv17HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv17HPResult.TabIndex = 150;
+            this.Lv17HPResult.Visible = false;
+            // 
+            // Lv18HPResult
+            // 
+            this.Lv18HPResult.AutoSize = true;
+            this.Lv18HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv18HPResult.Name = "Lv18HPResult";
+            this.Lv18HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv18HPResult.TabIndex = 151;
+            this.Lv18HPResult.Visible = false;
+            // 
+            // Lv19HPResult
+            // 
+            this.Lv19HPResult.AutoSize = true;
+            this.Lv19HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv19HPResult.Name = "Lv19HPResult";
+            this.Lv19HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv19HPResult.TabIndex = 152;
+            this.Lv19HPResult.Visible = false;
+            // 
+            // Lv20HPResult
+            // 
+            this.Lv20HPResult.AutoSize = true;
+            this.Lv20HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv20HPResult.Name = "Lv20HPResult";
+            this.Lv20HPResult.Size = new System.Drawing.Size(0, 17);
+            this.Lv20HPResult.TabIndex = 153;
+            this.Lv20HPResult.Visible = false;
             // 
             // StatFixedHeader
             // 
@@ -1140,7 +2389,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.levelLabel);
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(461, 848);
             this.Controls.Add(this.StatPointBuyTotalBudget);
@@ -1183,6 +2431,111 @@
             this.Controls.Add(this.StatFixedSelectType1);
             this.Controls.Add(this.StatPointBuyHeader);
             this.Controls.Add(this.StatFixedHeader);
+            this.Controls.Add(this.Lv20HPResult);
+            this.Controls.Add(this.Lv19HPResult);
+            this.Controls.Add(this.Lv18HPResult);
+            this.Controls.Add(this.Lv17HPResult);
+            this.Controls.Add(this.Lv16HPResult);
+            this.Controls.Add(this.Lv15HPResult);
+            this.Controls.Add(this.Lv14HPResult);
+            this.Controls.Add(this.Lv13HPResult);
+            this.Controls.Add(this.Lv12HPResult);
+            this.Controls.Add(this.Lv11HPResult);
+            this.Controls.Add(this.Lv10HPResult);
+            this.Controls.Add(this.Lv9HPResult);
+            this.Controls.Add(this.Lv8HPResult);
+            this.Controls.Add(this.Lv7HPResult);
+            this.Controls.Add(this.Lv6HPResult);
+            this.Controls.Add(this.Lv5HPResult);
+            this.Controls.Add(this.Lv4HPResult);
+            this.Controls.Add(this.Lv3HPResult);
+            this.Controls.Add(this.Lv20HPFixed);
+            this.Controls.Add(this.Lv19HPFixed);
+            this.Controls.Add(this.Lv18HPFixed);
+            this.Controls.Add(this.Lv17HPFixed);
+            this.Controls.Add(this.Lv16HPFixed);
+            this.Controls.Add(this.Lv15HPFixed);
+            this.Controls.Add(this.Lv14HPFixed);
+            this.Controls.Add(this.Lv13HPFixed);
+            this.Controls.Add(this.Lv12HPFixed);
+            this.Controls.Add(this.Lv11HPFixed);
+            this.Controls.Add(this.Lv10HPFixed);
+            this.Controls.Add(this.Lv9HPFixed);
+            this.Controls.Add(this.Lv8HPFixed);
+            this.Controls.Add(this.Lv7HPFixed);
+            this.Controls.Add(this.Lv6HPFixed);
+            this.Controls.Add(this.Lv5HPFixed);
+            this.Controls.Add(this.Lv4HPFixed);
+            this.Controls.Add(this.Lv3HPFixed);
+            this.Controls.Add(this.Lv2HPFixed);
+            this.Controls.Add(this.Lv2HPResult);
+            this.Controls.Add(this.Lv20HP6);
+            this.Controls.Add(this.Lv19HP6);
+            this.Controls.Add(this.Lv18HP6);
+            this.Controls.Add(this.Lv17HP6);
+            this.Controls.Add(this.Lv16HP6);
+            this.Controls.Add(this.Lv15HP6);
+            this.Controls.Add(this.Lv14HP6);
+            this.Controls.Add(this.Lv13HP6);
+            this.Controls.Add(this.Lv12HP6);
+            this.Controls.Add(this.Lv11HP6);
+            this.Controls.Add(this.Lv10HP6);
+            this.Controls.Add(this.Lv9HP6);
+            this.Controls.Add(this.Lv8HP6);
+            this.Controls.Add(this.Lv7HP6);
+            this.Controls.Add(this.Lv6HP6);
+            this.Controls.Add(this.Lv5HP6);
+            this.Controls.Add(this.Lv4HP6);
+            this.Controls.Add(this.Lv3HP6);
+            this.Controls.Add(this.Lv2HP6);
+            this.Controls.Add(this.Lv20HPCheckbox);
+            this.Controls.Add(this.Lv19HPCheckbox);
+            this.Controls.Add(this.Lv18HPCheckbox);
+            this.Controls.Add(this.Lv17HPCheckbox);
+            this.Controls.Add(this.Lv16HPCheckbox);
+            this.Controls.Add(this.Lv15HPCheckbox);
+            this.Controls.Add(this.Lv14HPCheckbox);
+            this.Controls.Add(this.Lv13HPCheckbox);
+            this.Controls.Add(this.Lv12HPCheckbox);
+            this.Controls.Add(this.Lv11HPCheckbox);
+            this.Controls.Add(this.Lv10HPCheckbox);
+            this.Controls.Add(this.Lv9HPCheckbox);
+            this.Controls.Add(this.Lv8HPCheckbox);
+            this.Controls.Add(this.Lv7HPCheckbox);
+            this.Controls.Add(this.Lv6HPCheckbox);
+            this.Controls.Add(this.Lv5HPCheckbox);
+            this.Controls.Add(this.Lv4HPCheckbox);
+            this.Controls.Add(this.Lv3HPCheckbox);
+            this.Controls.Add(this.Lv2HPCheckbox);
+            this.Controls.Add(this.Lv20HPRoller);
+            this.Controls.Add(this.Lv19HPRoller);
+            this.Controls.Add(this.Lv18HPRoller);
+            this.Controls.Add(this.Lv17HPRoller);
+            this.Controls.Add(this.Lv16HPRoller);
+            this.Controls.Add(this.Lv15HPRoller);
+            this.Controls.Add(this.Lv14HPRoller);
+            this.Controls.Add(this.Lv13HPRoller);
+            this.Controls.Add(this.Lv12HPRoller);
+            this.Controls.Add(this.Lv11HPRoller);
+            this.Controls.Add(this.Lv10HPRoller);
+            this.Controls.Add(this.Lv9HPRoller);
+            this.Controls.Add(this.Lv8HPRoller);
+            this.Controls.Add(this.Lv7HPRoller);
+            this.Controls.Add(this.Lv6HPRoller);
+            this.Controls.Add(this.Lv5HPRoller);
+            this.Controls.Add(this.Lv4HPRoller);
+            this.Controls.Add(this.Lv3HPRoller);
+            this.Controls.Add(this.Lv2HPRoller);
+            this.Controls.Add(this.Lv1HP6);
+            this.Controls.Add(this.Lv1HPFixed);
+            this.Controls.Add(this.HPConGrowth);
+            this.Controls.Add(this.Lv1BaseHPNum);
+            this.Controls.Add(this.Lv1ConHP);
+            this.Controls.Add(this.Lv1BaseHP);
+            this.Controls.Add(this.Lv1HPResult);
+            this.Controls.Add(this.Lv1HPRoller);
+            this.Controls.Add(this.Lv1HPCheckbox);
+            this.Controls.Add(this.HPHeader);
             this.Controls.Add(this.divider1);
             this.Controls.Add(this.StatRollAllocationBox6);
             this.Controls.Add(this.StatRollAllocationBox5);
@@ -1216,6 +2569,7 @@
             this.Controls.Add(this.StatRollDiceSelectType3);
             this.Controls.Add(this.StatRollDiceSelectType2);
             this.Controls.Add(this.StatRollDiceSelectType1);
+            this.Controls.Add(this.levelLabel);
             this.Controls.Add(this.divider2);
             this.Controls.Add(this.LevelSelector);
             this.Controls.Add(this.MartialArchetypeBox3);
@@ -1280,6 +2634,111 @@
         private System.Windows.Forms.ComboBox StatRollAllocationBox5;
         private System.Windows.Forms.ComboBox StatRollAllocationBox6;
         private System.Windows.Forms.Label divider1;
+        private System.Windows.Forms.Label HPHeader;
+        private System.Windows.Forms.CheckBox Lv1HPCheckbox;
+        private System.Windows.Forms.Button Lv1HPRoller;
+        private System.Windows.Forms.Label Lv1HPResult;
+        private System.Windows.Forms.Label Lv1BaseHP;
+        private System.Windows.Forms.Label Lv1ConHP;
+        private System.Windows.Forms.Label Lv1BaseHPNum;
+        private System.Windows.Forms.Label HPConGrowth;
+        private System.Windows.Forms.Label Lv1HPFixed;
+        private System.Windows.Forms.Label Lv1HP6;
+        private System.Windows.Forms.Button Lv2HPRoller;
+        private System.Windows.Forms.Button Lv3HPRoller;
+        private System.Windows.Forms.Button Lv4HPRoller;
+        private System.Windows.Forms.Button Lv5HPRoller;
+        private System.Windows.Forms.Button Lv6HPRoller;
+        private System.Windows.Forms.Button Lv7HPRoller;
+        private System.Windows.Forms.Button Lv8HPRoller;
+        private System.Windows.Forms.Button Lv9HPRoller;
+        private System.Windows.Forms.Button Lv10HPRoller;
+        private System.Windows.Forms.Button Lv11HPRoller;
+        private System.Windows.Forms.Button Lv12HPRoller;
+        private System.Windows.Forms.Button Lv13HPRoller;
+        private System.Windows.Forms.Button Lv14HPRoller;
+        private System.Windows.Forms.Button Lv15HPRoller;
+        private System.Windows.Forms.Button Lv16HPRoller;
+        private System.Windows.Forms.Button Lv17HPRoller;
+        private System.Windows.Forms.Button Lv18HPRoller;
+        private System.Windows.Forms.Button Lv19HPRoller;
+        private System.Windows.Forms.Button Lv20HPRoller;
+        private System.Windows.Forms.CheckBox Lv2HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv3HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv4HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv5HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv6HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv7HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv8HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv9HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv10HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv11HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv12HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv13HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv14HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv15HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv16HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv17HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv18HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv19HPCheckbox;
+        private System.Windows.Forms.CheckBox Lv20HPCheckbox;
+        private System.Windows.Forms.Label Lv2HP6;
+        private System.Windows.Forms.Label Lv3HP6;
+        private System.Windows.Forms.Label Lv4HP6;
+        private System.Windows.Forms.Label Lv5HP6;
+        private System.Windows.Forms.Label Lv6HP6;
+        private System.Windows.Forms.Label Lv7HP6;
+        private System.Windows.Forms.Label Lv8HP6;
+        private System.Windows.Forms.Label Lv9HP6;
+        private System.Windows.Forms.Label Lv10HP6;
+        private System.Windows.Forms.Label Lv11HP6;
+        private System.Windows.Forms.Label Lv12HP6;
+        private System.Windows.Forms.Label Lv13HP6;
+        private System.Windows.Forms.Label Lv14HP6;
+        private System.Windows.Forms.Label Lv15HP6;
+        private System.Windows.Forms.Label Lv16HP6;
+        private System.Windows.Forms.Label Lv17HP6;
+        private System.Windows.Forms.Label Lv18HP6;
+        private System.Windows.Forms.Label Lv19HP6;
+        private System.Windows.Forms.Label Lv20HP6;
+        private System.Windows.Forms.Label Lv2HPResult;
+        private System.Windows.Forms.Label Lv2HPFixed;
+        private System.Windows.Forms.Label Lv3HPFixed;
+        private System.Windows.Forms.Label Lv4HPFixed;
+        private System.Windows.Forms.Label Lv5HPFixed;
+        private System.Windows.Forms.Label Lv6HPFixed;
+        private System.Windows.Forms.Label Lv7HPFixed;
+        private System.Windows.Forms.Label Lv8HPFixed;
+        private System.Windows.Forms.Label Lv9HPFixed;
+        private System.Windows.Forms.Label Lv10HPFixed;
+        private System.Windows.Forms.Label Lv11HPFixed;
+        private System.Windows.Forms.Label Lv12HPFixed;
+        private System.Windows.Forms.Label Lv13HPFixed;
+        private System.Windows.Forms.Label Lv14HPFixed;
+        private System.Windows.Forms.Label Lv15HPFixed;
+        private System.Windows.Forms.Label Lv16HPFixed;
+        private System.Windows.Forms.Label Lv17HPFixed;
+        private System.Windows.Forms.Label Lv18HPFixed;
+        private System.Windows.Forms.Label Lv19HPFixed;
+        private System.Windows.Forms.Label Lv20HPFixed;
+        private System.Windows.Forms.Label Lv3HPResult;
+        private System.Windows.Forms.Label Lv4HPResult;
+        private System.Windows.Forms.Label Lv5HPResult;
+        private System.Windows.Forms.Label Lv6HPResult;
+        private System.Windows.Forms.Label Lv7HPResult;
+        private System.Windows.Forms.Label Lv8HPResult;
+        private System.Windows.Forms.Label Lv9HPResult;
+        private System.Windows.Forms.Label Lv10HPResult;
+        private System.Windows.Forms.Label Lv11HPResult;
+        private System.Windows.Forms.Label Lv12HPResult;
+        private System.Windows.Forms.Label Lv13HPResult;
+        private System.Windows.Forms.Label Lv14HPResult;
+        private System.Windows.Forms.Label Lv15HPResult;
+        private System.Windows.Forms.Label Lv16HPResult;
+        private System.Windows.Forms.Label Lv17HPResult;
+        private System.Windows.Forms.Label Lv18HPResult;
+        private System.Windows.Forms.Label Lv19HPResult;
+        private System.Windows.Forms.Label Lv20HPResult;
         private System.Windows.Forms.Label StatFixedHeader;
         private System.Windows.Forms.Label StatPointBuyHeader;
         private System.Windows.Forms.CheckBox StatFixedSelectType1;
