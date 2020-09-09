@@ -745,7 +745,7 @@ namespace DnD_Duel_Sim
         {
             int offset = int.Parse(this.LevelSelector.Text); // Number of lines visible.
             int diff = (offset - _levelOffset) * 36;
-            int threshold = this.divider2.Location.Y;
+            int threshold = this.divider4.Location.Y;
 
             foreach (Control element in this.Controls)
             {
@@ -1745,30 +1745,36 @@ namespace DnD_Duel_Sim
             switch (RaceSelector.Text)
             {
                 case "Dwarf":
+                    SubraceSelector.Enabled = true;
                     SubraceSelector.Items.Add("Hill Dwarf");
                     SubraceSelector.Items.Add("Mountain Dwarf");
-                    SubraceSelector.Visible = true;
                     break;
                 case "Elf":
+                    SubraceSelector.Enabled = true;
                     SubraceSelector.Items.Add("High Elf");
                     SubraceSelector.Items.Add("Wood Elf");
                     SubraceSelector.Items.Add("Dark Elf");
-                    SubraceSelector.Visible = true;
                     break;
                 case "Halfling":
+                    SubraceSelector.Enabled = true;
                     SubraceSelector.Items.Add("Lightfoot Halfling");
                     SubraceSelector.Items.Add("Stout Halfling");
-                    SubraceSelector.Visible = true;
                     break;
                 case "Gnome":
+                    SubraceSelector.Enabled = true;
                     SubraceSelector.Items.Add("Forest Gnome");
                     SubraceSelector.Items.Add("Rock Gnome");
-                    SubraceSelector.Visible = true;
                     break;
                 default:
-                    SubraceSelector.Visible = false;
+                    SubraceSelector.Enabled = false;
                     break;
             }
+        }
+
+        private void NameButton_Click(object sender, EventArgs e)
+        {
+            FirstNameBox.Text = "RandomFirstName";
+            LastNameBox.Text = "RandomLastName";
         }
     }
 }

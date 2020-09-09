@@ -36,7 +36,7 @@
             this.MartialArchetypeBox2 = new System.Windows.Forms.CheckBox();
             this.MartialArchetypeBox3 = new System.Windows.Forms.CheckBox();
             this.LevelSelector = new System.Windows.Forms.ComboBox();
-            this.divider2 = new System.Windows.Forms.Label();
+            this.divider4 = new System.Windows.Forms.Label();
             this.levelLabel = new System.Windows.Forms.Label();
             this.StatRollDiceSelectType3 = new System.Windows.Forms.CheckBox();
             this.StatRollDiceSelectType2 = new System.Windows.Forms.CheckBox();
@@ -70,7 +70,7 @@
             this.StatRollAllocationBox4 = new System.Windows.Forms.ComboBox();
             this.StatRollAllocationBox5 = new System.Windows.Forms.ComboBox();
             this.StatRollAllocationBox6 = new System.Windows.Forms.ComboBox();
-            this.divider1 = new System.Windows.Forms.Label();
+            this.divider3 = new System.Windows.Forms.Label();
             this.HPHeader = new System.Windows.Forms.Label();
             this.Lv1HPCheckbox = new System.Windows.Forms.CheckBox();
             this.Lv1HPRoller = new System.Windows.Forms.Button();
@@ -221,6 +221,14 @@
             this.RaceSelector = new System.Windows.Forms.ComboBox();
             this.BackgroundSelector = new System.Windows.Forms.ComboBox();
             this.SubraceSelector = new System.Windows.Forms.ComboBox();
+            this.divider2 = new System.Windows.Forms.Label();
+            this.divider1 = new System.Windows.Forms.Label();
+            this.RaceBackroundHeader = new System.Windows.Forms.Label();
+            this.SubraceLabel = new System.Windows.Forms.Label();
+            this.FirstNameBox = new System.Windows.Forms.TextBox();
+            this.LastNameBox = new System.Windows.Forms.TextBox();
+            this.NameLabel = new System.Windows.Forms.Label();
+            this.NameButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MartialSelectTypeBox1
@@ -317,25 +325,25 @@
             "18",
             "19",
             "20"});
-            this.LevelSelector.Location = new System.Drawing.Point(186, 35);
+            this.LevelSelector.Location = new System.Drawing.Point(183, 28);
             this.LevelSelector.Name = "LevelSelector";
             this.LevelSelector.Size = new System.Drawing.Size(58, 24);
             this.LevelSelector.TabIndex = 8;
             this.LevelSelector.DropDownClosed += new System.EventHandler(this.LevelSelector_DropDownClosed);
             // 
-            // divider2
+            // divider4
             // 
-            this.divider2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider2.Location = new System.Drawing.Point(49, 573);
-            this.divider2.Name = "divider2";
-            this.divider2.Size = new System.Drawing.Size(362, 2);
-            this.divider2.TabIndex = 9;
-            this.divider2.Text = "divider2";
+            this.divider4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider4.Location = new System.Drawing.Point(49, 706);
+            this.divider4.Name = "divider4";
+            this.divider4.Size = new System.Drawing.Size(362, 2);
+            this.divider4.TabIndex = 9;
+            this.divider4.Text = "divider4";
             // 
             // levelLabel
             // 
             this.levelLabel.AutoSize = true;
-            this.levelLabel.Location = new System.Drawing.Point(134, 38);
+            this.levelLabel.Location = new System.Drawing.Point(134, 31);
             this.levelLabel.Name = "levelLabel";
             this.levelLabel.Size = new System.Drawing.Size(46, 17);
             this.levelLabel.TabIndex = 10;
@@ -344,7 +352,7 @@
             // StatRollDiceSelectType3
             // 
             this.StatRollDiceSelectType3.AutoSize = true;
-            this.StatRollDiceSelectType3.Location = new System.Drawing.Point(282, 183);
+            this.StatRollDiceSelectType3.Location = new System.Drawing.Point(282, 323);
             this.StatRollDiceSelectType3.Name = "StatRollDiceSelectType3";
             this.StatRollDiceSelectType3.Size = new System.Drawing.Size(67, 21);
             this.StatRollDiceSelectType3.TabIndex = 13;
@@ -355,7 +363,7 @@
             // StatRollDiceSelectType2
             // 
             this.StatRollDiceSelectType2.AutoSize = true;
-            this.StatRollDiceSelectType2.Location = new System.Drawing.Point(193, 183);
+            this.StatRollDiceSelectType2.Location = new System.Drawing.Point(193, 323);
             this.StatRollDiceSelectType2.Name = "StatRollDiceSelectType2";
             this.StatRollDiceSelectType2.Size = new System.Drawing.Size(83, 21);
             this.StatRollDiceSelectType2.TabIndex = 12;
@@ -369,7 +377,7 @@
             this.StatRollDiceSelectType1.AutoSize = true;
             this.StatRollDiceSelectType1.Checked = true;
             this.StatRollDiceSelectType1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.StatRollDiceSelectType1.Location = new System.Drawing.Point(111, 183);
+            this.StatRollDiceSelectType1.Location = new System.Drawing.Point(111, 323);
             this.StatRollDiceSelectType1.Name = "StatRollDiceSelectType1";
             this.StatRollDiceSelectType1.Size = new System.Drawing.Size(76, 21);
             this.StatRollDiceSelectType1.TabIndex = 11;
@@ -380,7 +388,7 @@
             // StatHeader
             // 
             this.StatHeader.AutoSize = true;
-            this.StatHeader.Location = new System.Drawing.Point(179, 85);
+            this.StatHeader.Location = new System.Drawing.Point(179, 236);
             this.StatHeader.Name = "StatHeader";
             this.StatHeader.Size = new System.Drawing.Size(98, 17);
             this.StatHeader.TabIndex = 14;
@@ -392,7 +400,7 @@
             this.StatAllocationSelectType1.AutoSize = true;
             this.StatAllocationSelectType1.Checked = true;
             this.StatAllocationSelectType1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.StatAllocationSelectType1.Location = new System.Drawing.Point(94, 117);
+            this.StatAllocationSelectType1.Location = new System.Drawing.Point(94, 268);
             this.StatAllocationSelectType1.Name = "StatAllocationSelectType1";
             this.StatAllocationSelectType1.Size = new System.Drawing.Size(86, 21);
             this.StatAllocationSelectType1.TabIndex = 15;
@@ -403,7 +411,7 @@
             // StatAllocationSelectType2
             // 
             this.StatAllocationSelectType2.AutoSize = true;
-            this.StatAllocationSelectType2.Location = new System.Drawing.Point(186, 117);
+            this.StatAllocationSelectType2.Location = new System.Drawing.Point(186, 268);
             this.StatAllocationSelectType2.Name = "StatAllocationSelectType2";
             this.StatAllocationSelectType2.Size = new System.Drawing.Size(88, 21);
             this.StatAllocationSelectType2.TabIndex = 16;
@@ -414,7 +422,7 @@
             // StatAllocationSelectType3
             // 
             this.StatAllocationSelectType3.AutoSize = true;
-            this.StatAllocationSelectType3.Location = new System.Drawing.Point(280, 117);
+            this.StatAllocationSelectType3.Location = new System.Drawing.Point(280, 268);
             this.StatAllocationSelectType3.Name = "StatAllocationSelectType3";
             this.StatAllocationSelectType3.Size = new System.Drawing.Size(90, 21);
             this.StatAllocationSelectType3.TabIndex = 17;
@@ -425,7 +433,7 @@
             // StatRollDiceHeader
             // 
             this.StatRollDiceHeader.AutoSize = true;
-            this.StatRollDiceHeader.Location = new System.Drawing.Point(195, 163);
+            this.StatRollDiceHeader.Location = new System.Drawing.Point(195, 303);
             this.StatRollDiceHeader.Name = "StatRollDiceHeader";
             this.StatRollDiceHeader.Size = new System.Drawing.Size(64, 17);
             this.StatRollDiceHeader.TabIndex = 18;
@@ -433,7 +441,7 @@
             // 
             // StatRoll1
             // 
-            this.StatRoll1.Location = new System.Drawing.Point(219, 217);
+            this.StatRoll1.Location = new System.Drawing.Point(219, 350);
             this.StatRoll1.Name = "StatRoll1";
             this.StatRoll1.Size = new System.Drawing.Size(50, 30);
             this.StatRoll1.TabIndex = 19;
@@ -444,7 +452,7 @@
             // 
             // StatRoll2
             // 
-            this.StatRoll2.Location = new System.Drawing.Point(219, 253);
+            this.StatRoll2.Location = new System.Drawing.Point(219, 386);
             this.StatRoll2.Name = "StatRoll2";
             this.StatRoll2.Size = new System.Drawing.Size(50, 30);
             this.StatRoll2.TabIndex = 20;
@@ -455,7 +463,7 @@
             // 
             // StatRoll3
             // 
-            this.StatRoll3.Location = new System.Drawing.Point(219, 289);
+            this.StatRoll3.Location = new System.Drawing.Point(219, 422);
             this.StatRoll3.Name = "StatRoll3";
             this.StatRoll3.Size = new System.Drawing.Size(50, 30);
             this.StatRoll3.TabIndex = 21;
@@ -466,7 +474,7 @@
             // 
             // StatRoll4
             // 
-            this.StatRoll4.Location = new System.Drawing.Point(219, 325);
+            this.StatRoll4.Location = new System.Drawing.Point(219, 458);
             this.StatRoll4.Name = "StatRoll4";
             this.StatRoll4.Size = new System.Drawing.Size(50, 30);
             this.StatRoll4.TabIndex = 22;
@@ -477,7 +485,7 @@
             // 
             // StatRoll5
             // 
-            this.StatRoll5.Location = new System.Drawing.Point(219, 361);
+            this.StatRoll5.Location = new System.Drawing.Point(219, 494);
             this.StatRoll5.Name = "StatRoll5";
             this.StatRoll5.Size = new System.Drawing.Size(50, 30);
             this.StatRoll5.TabIndex = 23;
@@ -488,7 +496,7 @@
             // 
             // StatRoll6
             // 
-            this.StatRoll6.Location = new System.Drawing.Point(219, 397);
+            this.StatRoll6.Location = new System.Drawing.Point(219, 530);
             this.StatRoll6.Name = "StatRoll6";
             this.StatRoll6.Size = new System.Drawing.Size(50, 30);
             this.StatRoll6.TabIndex = 24;
@@ -500,7 +508,7 @@
             // StatResult1
             // 
             this.StatResult1.AutoSize = true;
-            this.StatResult1.Location = new System.Drawing.Point(280, 224);
+            this.StatResult1.Location = new System.Drawing.Point(280, 357);
             this.StatResult1.Name = "StatResult1";
             this.StatResult1.Size = new System.Drawing.Size(0, 17);
             this.StatResult1.TabIndex = 25;
@@ -508,7 +516,7 @@
             // StatResult2
             // 
             this.StatResult2.AutoSize = true;
-            this.StatResult2.Location = new System.Drawing.Point(280, 260);
+            this.StatResult2.Location = new System.Drawing.Point(280, 393);
             this.StatResult2.Name = "StatResult2";
             this.StatResult2.Size = new System.Drawing.Size(0, 17);
             this.StatResult2.TabIndex = 26;
@@ -516,7 +524,7 @@
             // StatResult3
             // 
             this.StatResult3.AutoSize = true;
-            this.StatResult3.Location = new System.Drawing.Point(280, 296);
+            this.StatResult3.Location = new System.Drawing.Point(280, 429);
             this.StatResult3.Name = "StatResult3";
             this.StatResult3.Size = new System.Drawing.Size(0, 17);
             this.StatResult3.TabIndex = 27;
@@ -524,7 +532,7 @@
             // StatResult4
             // 
             this.StatResult4.AutoSize = true;
-            this.StatResult4.Location = new System.Drawing.Point(280, 332);
+            this.StatResult4.Location = new System.Drawing.Point(280, 465);
             this.StatResult4.Name = "StatResult4";
             this.StatResult4.Size = new System.Drawing.Size(0, 17);
             this.StatResult4.TabIndex = 28;
@@ -532,7 +540,7 @@
             // StatResult5
             // 
             this.StatResult5.AutoSize = true;
-            this.StatResult5.Location = new System.Drawing.Point(280, 368);
+            this.StatResult5.Location = new System.Drawing.Point(280, 501);
             this.StatResult5.Name = "StatResult5";
             this.StatResult5.Size = new System.Drawing.Size(0, 17);
             this.StatResult5.TabIndex = 29;
@@ -540,7 +548,7 @@
             // StatResult6
             // 
             this.StatResult6.AutoSize = true;
-            this.StatResult6.Location = new System.Drawing.Point(280, 404);
+            this.StatResult6.Location = new System.Drawing.Point(280, 537);
             this.StatResult6.Name = "StatResult6";
             this.StatResult6.Size = new System.Drawing.Size(0, 17);
             this.StatResult6.TabIndex = 30;
@@ -557,7 +565,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatRollAllocationBox1.Location = new System.Drawing.Point(66, 221);
+            this.StatRollAllocationBox1.Location = new System.Drawing.Point(66, 354);
             this.StatRollAllocationBox1.Name = "StatRollAllocationBox1";
             this.StatRollAllocationBox1.Size = new System.Drawing.Size(125, 24);
             this.StatRollAllocationBox1.TabIndex = 31;
@@ -575,7 +583,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatRollAllocationBox2.Location = new System.Drawing.Point(66, 257);
+            this.StatRollAllocationBox2.Location = new System.Drawing.Point(66, 390);
             this.StatRollAllocationBox2.Name = "StatRollAllocationBox2";
             this.StatRollAllocationBox2.Size = new System.Drawing.Size(125, 24);
             this.StatRollAllocationBox2.TabIndex = 32;
@@ -584,7 +592,7 @@
             // StatTotal1
             // 
             this.StatTotal1.AutoSize = true;
-            this.StatTotal1.Location = new System.Drawing.Point(366, 224);
+            this.StatTotal1.Location = new System.Drawing.Point(366, 357);
             this.StatTotal1.Name = "StatTotal1";
             this.StatTotal1.Size = new System.Drawing.Size(0, 17);
             this.StatTotal1.TabIndex = 37;
@@ -592,7 +600,7 @@
             // StatTotal2
             // 
             this.StatTotal2.AutoSize = true;
-            this.StatTotal2.Location = new System.Drawing.Point(366, 260);
+            this.StatTotal2.Location = new System.Drawing.Point(366, 393);
             this.StatTotal2.Name = "StatTotal2";
             this.StatTotal2.Size = new System.Drawing.Size(0, 17);
             this.StatTotal2.TabIndex = 38;
@@ -600,7 +608,7 @@
             // StatTotal3
             // 
             this.StatTotal3.AutoSize = true;
-            this.StatTotal3.Location = new System.Drawing.Point(366, 296);
+            this.StatTotal3.Location = new System.Drawing.Point(366, 429);
             this.StatTotal3.Name = "StatTotal3";
             this.StatTotal3.Size = new System.Drawing.Size(0, 17);
             this.StatTotal3.TabIndex = 39;
@@ -608,7 +616,7 @@
             // StatTotal4
             // 
             this.StatTotal4.AutoSize = true;
-            this.StatTotal4.Location = new System.Drawing.Point(366, 332);
+            this.StatTotal4.Location = new System.Drawing.Point(366, 465);
             this.StatTotal4.Name = "StatTotal4";
             this.StatTotal4.Size = new System.Drawing.Size(0, 17);
             this.StatTotal4.TabIndex = 40;
@@ -616,7 +624,7 @@
             // StatTotal5
             // 
             this.StatTotal5.AutoSize = true;
-            this.StatTotal5.Location = new System.Drawing.Point(366, 368);
+            this.StatTotal5.Location = new System.Drawing.Point(366, 501);
             this.StatTotal5.Name = "StatTotal5";
             this.StatTotal5.Size = new System.Drawing.Size(0, 17);
             this.StatTotal5.TabIndex = 41;
@@ -624,7 +632,7 @@
             // StatTotal6
             // 
             this.StatTotal6.AutoSize = true;
-            this.StatTotal6.Location = new System.Drawing.Point(366, 404);
+            this.StatTotal6.Location = new System.Drawing.Point(366, 537);
             this.StatTotal6.Name = "StatTotal6";
             this.StatTotal6.Size = new System.Drawing.Size(0, 17);
             this.StatTotal6.TabIndex = 42;
@@ -641,7 +649,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatRollAllocationBox3.Location = new System.Drawing.Point(66, 293);
+            this.StatRollAllocationBox3.Location = new System.Drawing.Point(66, 426);
             this.StatRollAllocationBox3.Name = "StatRollAllocationBox3";
             this.StatRollAllocationBox3.Size = new System.Drawing.Size(125, 24);
             this.StatRollAllocationBox3.TabIndex = 43;
@@ -659,7 +667,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatRollAllocationBox4.Location = new System.Drawing.Point(66, 329);
+            this.StatRollAllocationBox4.Location = new System.Drawing.Point(66, 462);
             this.StatRollAllocationBox4.Name = "StatRollAllocationBox4";
             this.StatRollAllocationBox4.Size = new System.Drawing.Size(125, 24);
             this.StatRollAllocationBox4.TabIndex = 44;
@@ -677,7 +685,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatRollAllocationBox5.Location = new System.Drawing.Point(66, 365);
+            this.StatRollAllocationBox5.Location = new System.Drawing.Point(66, 498);
             this.StatRollAllocationBox5.Name = "StatRollAllocationBox5";
             this.StatRollAllocationBox5.Size = new System.Drawing.Size(125, 24);
             this.StatRollAllocationBox5.TabIndex = 45;
@@ -695,26 +703,26 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatRollAllocationBox6.Location = new System.Drawing.Point(66, 401);
+            this.StatRollAllocationBox6.Location = new System.Drawing.Point(66, 534);
             this.StatRollAllocationBox6.Name = "StatRollAllocationBox6";
             this.StatRollAllocationBox6.Size = new System.Drawing.Size(125, 24);
             this.StatRollAllocationBox6.TabIndex = 46;
             this.StatRollAllocationBox6.DropDownClosed += new System.EventHandler(this.StatRollAllocationBox6_DropDownClosed);
             // 
-            // divider1
+            // divider3
             // 
-            this.divider1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider1.Location = new System.Drawing.Point(49, 441);
-            this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(362, 2);
-            this.divider1.TabIndex = 47;
-            this.divider1.Text = "divider1";
+            this.divider3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider3.Location = new System.Drawing.Point(49, 574);
+            this.divider3.Name = "divider3";
+            this.divider3.Size = new System.Drawing.Size(362, 2);
+            this.divider3.TabIndex = 47;
+            this.divider3.Text = "divider3";
             // 
             // HPHeader
             // 
             this.HPHeader.AutoSize = true;
             this.HPHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HPHeader.Location = new System.Drawing.Point(208, 451);
+            this.HPHeader.Location = new System.Drawing.Point(208, 584);
             this.HPHeader.Name = "HPHeader";
             this.HPHeader.Size = new System.Drawing.Size(33, 20);
             this.HPHeader.TabIndex = 48;
@@ -725,7 +733,7 @@
             this.Lv1HPCheckbox.AutoSize = true;
             this.Lv1HPCheckbox.Checked = true;
             this.Lv1HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv1HPCheckbox.Location = new System.Drawing.Point(74, 534);
+            this.Lv1HPCheckbox.Location = new System.Drawing.Point(74, 667);
             this.Lv1HPCheckbox.Name = "Lv1HPCheckbox";
             this.Lv1HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv1HPCheckbox.TabIndex = 49;
@@ -735,7 +743,7 @@
             // 
             // Lv1HPRoller
             // 
-            this.Lv1HPRoller.Location = new System.Drawing.Point(134, 528);
+            this.Lv1HPRoller.Location = new System.Drawing.Point(134, 661);
             this.Lv1HPRoller.Name = "Lv1HPRoller";
             this.Lv1HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv1HPRoller.TabIndex = 51;
@@ -747,7 +755,7 @@
             // Lv1HPResult
             // 
             this.Lv1HPResult.AutoSize = true;
-            this.Lv1HPResult.Location = new System.Drawing.Point(231, 535);
+            this.Lv1HPResult.Location = new System.Drawing.Point(231, 668);
             this.Lv1HPResult.Name = "Lv1HPResult";
             this.Lv1HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv1HPResult.TabIndex = 52;
@@ -755,7 +763,7 @@
             // Lv1BaseHP
             // 
             this.Lv1BaseHP.AutoSize = true;
-            this.Lv1BaseHP.Location = new System.Drawing.Point(154, 477);
+            this.Lv1BaseHP.Location = new System.Drawing.Point(154, 610);
             this.Lv1BaseHP.Name = "Lv1BaseHP";
             this.Lv1BaseHP.Size = new System.Drawing.Size(67, 17);
             this.Lv1BaseHP.TabIndex = 53;
@@ -764,7 +772,7 @@
             // Lv1ConHP
             // 
             this.Lv1ConHP.AutoSize = true;
-            this.Lv1ConHP.Location = new System.Drawing.Point(130, 503);
+            this.Lv1ConHP.Location = new System.Drawing.Point(130, 636);
             this.Lv1ConHP.Name = "Lv1ConHP";
             this.Lv1ConHP.Size = new System.Drawing.Size(91, 17);
             this.Lv1ConHP.TabIndex = 54;
@@ -773,7 +781,7 @@
             // Lv1BaseHPNum
             // 
             this.Lv1BaseHPNum.AutoSize = true;
-            this.Lv1BaseHPNum.Location = new System.Drawing.Point(231, 477);
+            this.Lv1BaseHPNum.Location = new System.Drawing.Point(231, 610);
             this.Lv1BaseHPNum.Name = "Lv1BaseHPNum";
             this.Lv1BaseHPNum.Size = new System.Drawing.Size(24, 17);
             this.Lv1BaseHPNum.TabIndex = 55;
@@ -782,7 +790,7 @@
             // HPConGrowth
             // 
             this.HPConGrowth.AutoSize = true;
-            this.HPConGrowth.Location = new System.Drawing.Point(231, 503);
+            this.HPConGrowth.Location = new System.Drawing.Point(231, 636);
             this.HPConGrowth.Name = "HPConGrowth";
             this.HPConGrowth.Size = new System.Drawing.Size(0, 17);
             this.HPConGrowth.TabIndex = 56;
@@ -790,7 +798,7 @@
             // Lv1HPFixed
             // 
             this.Lv1HPFixed.AutoSize = true;
-            this.Lv1HPFixed.Location = new System.Drawing.Point(172, 535);
+            this.Lv1HPFixed.Location = new System.Drawing.Point(172, 668);
             this.Lv1HPFixed.Name = "Lv1HPFixed";
             this.Lv1HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv1HPFixed.TabIndex = 57;
@@ -800,7 +808,7 @@
             // Lv1HP6
             // 
             this.Lv1HP6.AutoSize = true;
-            this.Lv1HP6.Location = new System.Drawing.Point(231, 535);
+            this.Lv1HP6.Location = new System.Drawing.Point(231, 668);
             this.Lv1HP6.Name = "Lv1HP6";
             this.Lv1HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv1HP6.TabIndex = 58;
@@ -809,7 +817,7 @@
             // 
             // Lv2HPRoller
             // 
-            this.Lv2HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv2HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv2HPRoller.Name = "Lv2HPRoller";
             this.Lv2HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv2HPRoller.TabIndex = 59;
@@ -821,7 +829,7 @@
             // 
             // Lv3HPRoller
             // 
-            this.Lv3HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv3HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv3HPRoller.Name = "Lv3HPRoller";
             this.Lv3HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv3HPRoller.TabIndex = 60;
@@ -833,7 +841,7 @@
             // 
             // Lv4HPRoller
             // 
-            this.Lv4HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv4HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv4HPRoller.Name = "Lv4HPRoller";
             this.Lv4HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv4HPRoller.TabIndex = 61;
@@ -845,7 +853,7 @@
             // 
             // Lv5HPRoller
             // 
-            this.Lv5HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv5HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv5HPRoller.Name = "Lv5HPRoller";
             this.Lv5HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv5HPRoller.TabIndex = 62;
@@ -857,7 +865,7 @@
             // 
             // Lv6HPRoller
             // 
-            this.Lv6HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv6HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv6HPRoller.Name = "Lv6HPRoller";
             this.Lv6HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv6HPRoller.TabIndex = 63;
@@ -869,7 +877,7 @@
             // 
             // Lv7HPRoller
             // 
-            this.Lv7HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv7HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv7HPRoller.Name = "Lv7HPRoller";
             this.Lv7HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv7HPRoller.TabIndex = 64;
@@ -881,7 +889,7 @@
             // 
             // Lv8HPRoller
             // 
-            this.Lv8HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv8HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv8HPRoller.Name = "Lv8HPRoller";
             this.Lv8HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv8HPRoller.TabIndex = 65;
@@ -893,7 +901,7 @@
             // 
             // Lv9HPRoller
             // 
-            this.Lv9HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv9HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv9HPRoller.Name = "Lv9HPRoller";
             this.Lv9HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv9HPRoller.TabIndex = 66;
@@ -905,7 +913,7 @@
             // 
             // Lv10HPRoller
             // 
-            this.Lv10HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv10HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv10HPRoller.Name = "Lv10HPRoller";
             this.Lv10HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv10HPRoller.TabIndex = 67;
@@ -917,7 +925,7 @@
             // 
             // Lv11HPRoller
             // 
-            this.Lv11HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv11HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv11HPRoller.Name = "Lv11HPRoller";
             this.Lv11HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv11HPRoller.TabIndex = 68;
@@ -929,7 +937,7 @@
             // 
             // Lv12HPRoller
             // 
-            this.Lv12HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv12HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv12HPRoller.Name = "Lv12HPRoller";
             this.Lv12HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv12HPRoller.TabIndex = 69;
@@ -941,7 +949,7 @@
             // 
             // Lv13HPRoller
             // 
-            this.Lv13HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv13HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv13HPRoller.Name = "Lv13HPRoller";
             this.Lv13HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv13HPRoller.TabIndex = 70;
@@ -953,7 +961,7 @@
             // 
             // Lv14HPRoller
             // 
-            this.Lv14HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv14HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv14HPRoller.Name = "Lv14HPRoller";
             this.Lv14HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv14HPRoller.TabIndex = 71;
@@ -965,7 +973,7 @@
             // 
             // Lv15HPRoller
             // 
-            this.Lv15HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv15HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv15HPRoller.Name = "Lv15HPRoller";
             this.Lv15HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv15HPRoller.TabIndex = 72;
@@ -977,7 +985,7 @@
             // 
             // Lv16HPRoller
             // 
-            this.Lv16HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv16HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv16HPRoller.Name = "Lv16HPRoller";
             this.Lv16HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv16HPRoller.TabIndex = 73;
@@ -989,7 +997,7 @@
             // 
             // Lv17HPRoller
             // 
-            this.Lv17HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv17HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv17HPRoller.Name = "Lv17HPRoller";
             this.Lv17HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv17HPRoller.TabIndex = 74;
@@ -1001,7 +1009,7 @@
             // 
             // Lv18HPRoller
             // 
-            this.Lv18HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv18HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv18HPRoller.Name = "Lv18HPRoller";
             this.Lv18HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv18HPRoller.TabIndex = 75;
@@ -1013,7 +1021,7 @@
             // 
             // Lv19HPRoller
             // 
-            this.Lv19HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv19HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv19HPRoller.Name = "Lv19HPRoller";
             this.Lv19HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv19HPRoller.TabIndex = 76;
@@ -1025,7 +1033,7 @@
             // 
             // Lv20HPRoller
             // 
-            this.Lv20HPRoller.Location = new System.Drawing.Point(300, 500);
+            this.Lv20HPRoller.Location = new System.Drawing.Point(300, 633);
             this.Lv20HPRoller.Name = "Lv20HPRoller";
             this.Lv20HPRoller.Size = new System.Drawing.Size(83, 30);
             this.Lv20HPRoller.TabIndex = 77;
@@ -1040,7 +1048,7 @@
             this.Lv2HPCheckbox.AutoSize = true;
             this.Lv2HPCheckbox.Checked = true;
             this.Lv2HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv2HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv2HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv2HPCheckbox.Name = "Lv2HPCheckbox";
             this.Lv2HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv2HPCheckbox.TabIndex = 78;
@@ -1054,7 +1062,7 @@
             this.Lv3HPCheckbox.AutoSize = true;
             this.Lv3HPCheckbox.Checked = true;
             this.Lv3HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv3HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv3HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv3HPCheckbox.Name = "Lv3HPCheckbox";
             this.Lv3HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv3HPCheckbox.TabIndex = 79;
@@ -1068,7 +1076,7 @@
             this.Lv4HPCheckbox.AutoSize = true;
             this.Lv4HPCheckbox.Checked = true;
             this.Lv4HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv4HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv4HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv4HPCheckbox.Name = "Lv4HPCheckbox";
             this.Lv4HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv4HPCheckbox.TabIndex = 80;
@@ -1082,7 +1090,7 @@
             this.Lv5HPCheckbox.AutoSize = true;
             this.Lv5HPCheckbox.Checked = true;
             this.Lv5HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv5HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv5HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv5HPCheckbox.Name = "Lv5HPCheckbox";
             this.Lv5HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv5HPCheckbox.TabIndex = 81;
@@ -1096,7 +1104,7 @@
             this.Lv6HPCheckbox.AutoSize = true;
             this.Lv6HPCheckbox.Checked = true;
             this.Lv6HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv6HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv6HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv6HPCheckbox.Name = "Lv6HPCheckbox";
             this.Lv6HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv6HPCheckbox.TabIndex = 82;
@@ -1110,7 +1118,7 @@
             this.Lv7HPCheckbox.AutoSize = true;
             this.Lv7HPCheckbox.Checked = true;
             this.Lv7HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv7HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv7HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv7HPCheckbox.Name = "Lv7HPCheckbox";
             this.Lv7HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv7HPCheckbox.TabIndex = 83;
@@ -1124,7 +1132,7 @@
             this.Lv8HPCheckbox.AutoSize = true;
             this.Lv8HPCheckbox.Checked = true;
             this.Lv8HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv8HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv8HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv8HPCheckbox.Name = "Lv8HPCheckbox";
             this.Lv8HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv8HPCheckbox.TabIndex = 84;
@@ -1138,7 +1146,7 @@
             this.Lv9HPCheckbox.AutoSize = true;
             this.Lv9HPCheckbox.Checked = true;
             this.Lv9HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv9HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv9HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv9HPCheckbox.Name = "Lv9HPCheckbox";
             this.Lv9HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv9HPCheckbox.TabIndex = 85;
@@ -1152,7 +1160,7 @@
             this.Lv10HPCheckbox.AutoSize = true;
             this.Lv10HPCheckbox.Checked = true;
             this.Lv10HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv10HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv10HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv10HPCheckbox.Name = "Lv10HPCheckbox";
             this.Lv10HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv10HPCheckbox.TabIndex = 86;
@@ -1166,7 +1174,7 @@
             this.Lv11HPCheckbox.AutoSize = true;
             this.Lv11HPCheckbox.Checked = true;
             this.Lv11HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv11HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv11HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv11HPCheckbox.Name = "Lv11HPCheckbox";
             this.Lv11HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv11HPCheckbox.TabIndex = 87;
@@ -1180,7 +1188,7 @@
             this.Lv12HPCheckbox.AutoSize = true;
             this.Lv12HPCheckbox.Checked = true;
             this.Lv12HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv12HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv12HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv12HPCheckbox.Name = "Lv12HPCheckbox";
             this.Lv12HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv12HPCheckbox.TabIndex = 88;
@@ -1194,7 +1202,7 @@
             this.Lv13HPCheckbox.AutoSize = true;
             this.Lv13HPCheckbox.Checked = true;
             this.Lv13HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv13HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv13HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv13HPCheckbox.Name = "Lv13HPCheckbox";
             this.Lv13HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv13HPCheckbox.TabIndex = 89;
@@ -1208,7 +1216,7 @@
             this.Lv14HPCheckbox.AutoSize = true;
             this.Lv14HPCheckbox.Checked = true;
             this.Lv14HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv14HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv14HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv14HPCheckbox.Name = "Lv14HPCheckbox";
             this.Lv14HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv14HPCheckbox.TabIndex = 90;
@@ -1222,7 +1230,7 @@
             this.Lv15HPCheckbox.AutoSize = true;
             this.Lv15HPCheckbox.Checked = true;
             this.Lv15HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv15HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv15HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv15HPCheckbox.Name = "Lv15HPCheckbox";
             this.Lv15HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv15HPCheckbox.TabIndex = 91;
@@ -1236,7 +1244,7 @@
             this.Lv16HPCheckbox.AutoSize = true;
             this.Lv16HPCheckbox.Checked = true;
             this.Lv16HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv16HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv16HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv16HPCheckbox.Name = "Lv16HPCheckbox";
             this.Lv16HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv16HPCheckbox.TabIndex = 92;
@@ -1250,7 +1258,7 @@
             this.Lv17HPCheckbox.AutoSize = true;
             this.Lv17HPCheckbox.Checked = true;
             this.Lv17HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv17HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv17HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv17HPCheckbox.Name = "Lv17HPCheckbox";
             this.Lv17HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv17HPCheckbox.TabIndex = 93;
@@ -1264,7 +1272,7 @@
             this.Lv18HPCheckbox.AutoSize = true;
             this.Lv18HPCheckbox.Checked = true;
             this.Lv18HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv18HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv18HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv18HPCheckbox.Name = "Lv18HPCheckbox";
             this.Lv18HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv18HPCheckbox.TabIndex = 94;
@@ -1278,7 +1286,7 @@
             this.Lv19HPCheckbox.AutoSize = true;
             this.Lv19HPCheckbox.Checked = true;
             this.Lv19HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv19HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv19HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv19HPCheckbox.Name = "Lv19HPCheckbox";
             this.Lv19HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv19HPCheckbox.TabIndex = 95;
@@ -1292,7 +1300,7 @@
             this.Lv20HPCheckbox.AutoSize = true;
             this.Lv20HPCheckbox.Checked = true;
             this.Lv20HPCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Lv20HPCheckbox.Location = new System.Drawing.Point(300, 500);
+            this.Lv20HPCheckbox.Location = new System.Drawing.Point(300, 633);
             this.Lv20HPCheckbox.Name = "Lv20HPCheckbox";
             this.Lv20HPCheckbox.Size = new System.Drawing.Size(54, 21);
             this.Lv20HPCheckbox.TabIndex = 96;
@@ -1304,7 +1312,7 @@
             // Lv2HP6
             // 
             this.Lv2HP6.AutoSize = true;
-            this.Lv2HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv2HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv2HP6.Name = "Lv2HP6";
             this.Lv2HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv2HP6.TabIndex = 97;
@@ -1314,7 +1322,7 @@
             // Lv3HP6
             // 
             this.Lv3HP6.AutoSize = true;
-            this.Lv3HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv3HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv3HP6.Name = "Lv3HP6";
             this.Lv3HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv3HP6.TabIndex = 98;
@@ -1324,7 +1332,7 @@
             // Lv4HP6
             // 
             this.Lv4HP6.AutoSize = true;
-            this.Lv4HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv4HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv4HP6.Name = "Lv4HP6";
             this.Lv4HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv4HP6.TabIndex = 99;
@@ -1334,7 +1342,7 @@
             // Lv5HP6
             // 
             this.Lv5HP6.AutoSize = true;
-            this.Lv5HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv5HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv5HP6.Name = "Lv5HP6";
             this.Lv5HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv5HP6.TabIndex = 100;
@@ -1344,7 +1352,7 @@
             // Lv6HP6
             // 
             this.Lv6HP6.AutoSize = true;
-            this.Lv6HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv6HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv6HP6.Name = "Lv6HP6";
             this.Lv6HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv6HP6.TabIndex = 101;
@@ -1354,7 +1362,7 @@
             // Lv7HP6
             // 
             this.Lv7HP6.AutoSize = true;
-            this.Lv7HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv7HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv7HP6.Name = "Lv7HP6";
             this.Lv7HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv7HP6.TabIndex = 102;
@@ -1364,7 +1372,7 @@
             // Lv8HP6
             // 
             this.Lv8HP6.AutoSize = true;
-            this.Lv8HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv8HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv8HP6.Name = "Lv8HP6";
             this.Lv8HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv8HP6.TabIndex = 103;
@@ -1374,7 +1382,7 @@
             // Lv9HP6
             // 
             this.Lv9HP6.AutoSize = true;
-            this.Lv9HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv9HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv9HP6.Name = "Lv9HP6";
             this.Lv9HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv9HP6.TabIndex = 104;
@@ -1384,7 +1392,7 @@
             // Lv10HP6
             // 
             this.Lv10HP6.AutoSize = true;
-            this.Lv10HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv10HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv10HP6.Name = "Lv10HP6";
             this.Lv10HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv10HP6.TabIndex = 105;
@@ -1394,7 +1402,7 @@
             // Lv11HP6
             // 
             this.Lv11HP6.AutoSize = true;
-            this.Lv11HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv11HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv11HP6.Name = "Lv11HP6";
             this.Lv11HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv11HP6.TabIndex = 106;
@@ -1404,7 +1412,7 @@
             // Lv12HP6
             // 
             this.Lv12HP6.AutoSize = true;
-            this.Lv12HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv12HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv12HP6.Name = "Lv12HP6";
             this.Lv12HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv12HP6.TabIndex = 107;
@@ -1414,7 +1422,7 @@
             // Lv13HP6
             // 
             this.Lv13HP6.AutoSize = true;
-            this.Lv13HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv13HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv13HP6.Name = "Lv13HP6";
             this.Lv13HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv13HP6.TabIndex = 108;
@@ -1424,7 +1432,7 @@
             // Lv14HP6
             // 
             this.Lv14HP6.AutoSize = true;
-            this.Lv14HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv14HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv14HP6.Name = "Lv14HP6";
             this.Lv14HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv14HP6.TabIndex = 109;
@@ -1434,7 +1442,7 @@
             // Lv15HP6
             // 
             this.Lv15HP6.AutoSize = true;
-            this.Lv15HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv15HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv15HP6.Name = "Lv15HP6";
             this.Lv15HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv15HP6.TabIndex = 110;
@@ -1444,7 +1452,7 @@
             // Lv16HP6
             // 
             this.Lv16HP6.AutoSize = true;
-            this.Lv16HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv16HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv16HP6.Name = "Lv16HP6";
             this.Lv16HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv16HP6.TabIndex = 111;
@@ -1454,7 +1462,7 @@
             // Lv17HP6
             // 
             this.Lv17HP6.AutoSize = true;
-            this.Lv17HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv17HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv17HP6.Name = "Lv17HP6";
             this.Lv17HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv17HP6.TabIndex = 112;
@@ -1464,7 +1472,7 @@
             // Lv18HP6
             // 
             this.Lv18HP6.AutoSize = true;
-            this.Lv18HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv18HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv18HP6.Name = "Lv18HP6";
             this.Lv18HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv18HP6.TabIndex = 113;
@@ -1474,7 +1482,7 @@
             // Lv19HP6
             // 
             this.Lv19HP6.AutoSize = true;
-            this.Lv19HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv19HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv19HP6.Name = "Lv19HP6";
             this.Lv19HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv19HP6.TabIndex = 114;
@@ -1484,7 +1492,7 @@
             // Lv20HP6
             // 
             this.Lv20HP6.AutoSize = true;
-            this.Lv20HP6.Location = new System.Drawing.Point(300, 500);
+            this.Lv20HP6.Location = new System.Drawing.Point(300, 633);
             this.Lv20HP6.Name = "Lv20HP6";
             this.Lv20HP6.Size = new System.Drawing.Size(16, 17);
             this.Lv20HP6.TabIndex = 115;
@@ -1494,7 +1502,7 @@
             // Lv2HPResult
             // 
             this.Lv2HPResult.AutoSize = true;
-            this.Lv2HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv2HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv2HPResult.Name = "Lv2HPResult";
             this.Lv2HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv2HPResult.TabIndex = 116;
@@ -1503,7 +1511,7 @@
             // Lv2HPFixed
             // 
             this.Lv2HPFixed.AutoSize = true;
-            this.Lv2HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv2HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv2HPFixed.Name = "Lv2HPFixed";
             this.Lv2HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv2HPFixed.TabIndex = 117;
@@ -1513,7 +1521,7 @@
             // Lv3HPFixed
             // 
             this.Lv3HPFixed.AutoSize = true;
-            this.Lv3HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv3HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv3HPFixed.Name = "Lv3HPFixed";
             this.Lv3HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv3HPFixed.TabIndex = 118;
@@ -1523,7 +1531,7 @@
             // Lv4HPFixed
             // 
             this.Lv4HPFixed.AutoSize = true;
-            this.Lv4HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv4HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv4HPFixed.Name = "Lv4HPFixed";
             this.Lv4HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv4HPFixed.TabIndex = 119;
@@ -1533,7 +1541,7 @@
             // Lv5HPFixed
             // 
             this.Lv5HPFixed.AutoSize = true;
-            this.Lv5HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv5HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv5HPFixed.Name = "Lv5HPFixed";
             this.Lv5HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv5HPFixed.TabIndex = 120;
@@ -1543,7 +1551,7 @@
             // Lv6HPFixed
             // 
             this.Lv6HPFixed.AutoSize = true;
-            this.Lv6HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv6HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv6HPFixed.Name = "Lv6HPFixed";
             this.Lv6HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv6HPFixed.TabIndex = 121;
@@ -1553,7 +1561,7 @@
             // Lv7HPFixed
             // 
             this.Lv7HPFixed.AutoSize = true;
-            this.Lv7HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv7HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv7HPFixed.Name = "Lv7HPFixed";
             this.Lv7HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv7HPFixed.TabIndex = 122;
@@ -1563,7 +1571,7 @@
             // Lv8HPFixed
             // 
             this.Lv8HPFixed.AutoSize = true;
-            this.Lv8HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv8HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv8HPFixed.Name = "Lv8HPFixed";
             this.Lv8HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv8HPFixed.TabIndex = 123;
@@ -1573,7 +1581,7 @@
             // Lv9HPFixed
             // 
             this.Lv9HPFixed.AutoSize = true;
-            this.Lv9HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv9HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv9HPFixed.Name = "Lv9HPFixed";
             this.Lv9HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv9HPFixed.TabIndex = 124;
@@ -1583,7 +1591,7 @@
             // Lv10HPFixed
             // 
             this.Lv10HPFixed.AutoSize = true;
-            this.Lv10HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv10HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv10HPFixed.Name = "Lv10HPFixed";
             this.Lv10HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv10HPFixed.TabIndex = 125;
@@ -1593,7 +1601,7 @@
             // Lv11HPFixed
             // 
             this.Lv11HPFixed.AutoSize = true;
-            this.Lv11HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv11HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv11HPFixed.Name = "Lv11HPFixed";
             this.Lv11HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv11HPFixed.TabIndex = 126;
@@ -1603,7 +1611,7 @@
             // Lv12HPFixed
             // 
             this.Lv12HPFixed.AutoSize = true;
-            this.Lv12HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv12HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv12HPFixed.Name = "Lv12HPFixed";
             this.Lv12HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv12HPFixed.TabIndex = 127;
@@ -1613,7 +1621,7 @@
             // Lv13HPFixed
             // 
             this.Lv13HPFixed.AutoSize = true;
-            this.Lv13HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv13HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv13HPFixed.Name = "Lv13HPFixed";
             this.Lv13HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv13HPFixed.TabIndex = 128;
@@ -1623,7 +1631,7 @@
             // Lv14HPFixed
             // 
             this.Lv14HPFixed.AutoSize = true;
-            this.Lv14HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv14HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv14HPFixed.Name = "Lv14HPFixed";
             this.Lv14HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv14HPFixed.TabIndex = 129;
@@ -1633,7 +1641,7 @@
             // Lv15HPFixed
             // 
             this.Lv15HPFixed.AutoSize = true;
-            this.Lv15HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv15HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv15HPFixed.Name = "Lv15HPFixed";
             this.Lv15HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv15HPFixed.TabIndex = 130;
@@ -1643,7 +1651,7 @@
             // Lv16HPFixed
             // 
             this.Lv16HPFixed.AutoSize = true;
-            this.Lv16HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv16HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv16HPFixed.Name = "Lv16HPFixed";
             this.Lv16HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv16HPFixed.TabIndex = 131;
@@ -1653,7 +1661,7 @@
             // Lv17HPFixed
             // 
             this.Lv17HPFixed.AutoSize = true;
-            this.Lv17HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv17HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv17HPFixed.Name = "Lv17HPFixed";
             this.Lv17HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv17HPFixed.TabIndex = 132;
@@ -1663,7 +1671,7 @@
             // Lv18HPFixed
             // 
             this.Lv18HPFixed.AutoSize = true;
-            this.Lv18HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv18HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv18HPFixed.Name = "Lv18HPFixed";
             this.Lv18HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv18HPFixed.TabIndex = 133;
@@ -1673,7 +1681,7 @@
             // Lv19HPFixed
             // 
             this.Lv19HPFixed.AutoSize = true;
-            this.Lv19HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv19HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv19HPFixed.Name = "Lv19HPFixed";
             this.Lv19HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv19HPFixed.TabIndex = 134;
@@ -1683,7 +1691,7 @@
             // Lv20HPFixed
             // 
             this.Lv20HPFixed.AutoSize = true;
-            this.Lv20HPFixed.Location = new System.Drawing.Point(300, 500);
+            this.Lv20HPFixed.Location = new System.Drawing.Point(300, 633);
             this.Lv20HPFixed.Name = "Lv20HPFixed";
             this.Lv20HPFixed.Size = new System.Drawing.Size(45, 17);
             this.Lv20HPFixed.TabIndex = 135;
@@ -1693,7 +1701,7 @@
             // Lv3HPResult
             // 
             this.Lv3HPResult.AutoSize = true;
-            this.Lv3HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv3HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv3HPResult.Name = "Lv3HPResult";
             this.Lv3HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv3HPResult.TabIndex = 136;
@@ -1702,7 +1710,7 @@
             // Lv4HPResult
             // 
             this.Lv4HPResult.AutoSize = true;
-            this.Lv4HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv4HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv4HPResult.Name = "Lv4HPResult";
             this.Lv4HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv4HPResult.TabIndex = 137;
@@ -1711,7 +1719,7 @@
             // Lv5HPResult
             // 
             this.Lv5HPResult.AutoSize = true;
-            this.Lv5HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv5HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv5HPResult.Name = "Lv5HPResult";
             this.Lv5HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv5HPResult.TabIndex = 138;
@@ -1720,7 +1728,7 @@
             // Lv6HPResult
             // 
             this.Lv6HPResult.AutoSize = true;
-            this.Lv6HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv6HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv6HPResult.Name = "Lv6HPResult";
             this.Lv6HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv6HPResult.TabIndex = 139;
@@ -1729,7 +1737,7 @@
             // Lv7HPResult
             // 
             this.Lv7HPResult.AutoSize = true;
-            this.Lv7HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv7HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv7HPResult.Name = "Lv7HPResult";
             this.Lv7HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv7HPResult.TabIndex = 140;
@@ -1738,7 +1746,7 @@
             // Lv8HPResult
             // 
             this.Lv8HPResult.AutoSize = true;
-            this.Lv8HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv8HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv8HPResult.Name = "Lv8HPResult";
             this.Lv8HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv8HPResult.TabIndex = 141;
@@ -1747,7 +1755,7 @@
             // Lv9HPResult
             // 
             this.Lv9HPResult.AutoSize = true;
-            this.Lv9HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv9HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv9HPResult.Name = "Lv9HPResult";
             this.Lv9HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv9HPResult.TabIndex = 142;
@@ -1756,7 +1764,7 @@
             // Lv10HPResult
             // 
             this.Lv10HPResult.AutoSize = true;
-            this.Lv10HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv10HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv10HPResult.Name = "Lv10HPResult";
             this.Lv10HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv10HPResult.TabIndex = 143;
@@ -1765,7 +1773,7 @@
             // Lv11HPResult
             // 
             this.Lv11HPResult.AutoSize = true;
-            this.Lv11HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv11HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv11HPResult.Name = "Lv11HPResult";
             this.Lv11HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv11HPResult.TabIndex = 144;
@@ -1774,7 +1782,7 @@
             // Lv12HPResult
             // 
             this.Lv12HPResult.AutoSize = true;
-            this.Lv12HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv12HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv12HPResult.Name = "Lv12HPResult";
             this.Lv12HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv12HPResult.TabIndex = 145;
@@ -1783,7 +1791,7 @@
             // Lv13HPResult
             // 
             this.Lv13HPResult.AutoSize = true;
-            this.Lv13HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv13HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv13HPResult.Name = "Lv13HPResult";
             this.Lv13HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv13HPResult.TabIndex = 146;
@@ -1792,7 +1800,7 @@
             // Lv14HPResult
             // 
             this.Lv14HPResult.AutoSize = true;
-            this.Lv14HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv14HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv14HPResult.Name = "Lv14HPResult";
             this.Lv14HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv14HPResult.TabIndex = 147;
@@ -1801,7 +1809,7 @@
             // Lv15HPResult
             // 
             this.Lv15HPResult.AutoSize = true;
-            this.Lv15HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv15HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv15HPResult.Name = "Lv15HPResult";
             this.Lv15HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv15HPResult.TabIndex = 148;
@@ -1810,7 +1818,7 @@
             // Lv16HPResult
             // 
             this.Lv16HPResult.AutoSize = true;
-            this.Lv16HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv16HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv16HPResult.Name = "Lv16HPResult";
             this.Lv16HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv16HPResult.TabIndex = 149;
@@ -1819,7 +1827,7 @@
             // Lv17HPResult
             // 
             this.Lv17HPResult.AutoSize = true;
-            this.Lv17HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv17HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv17HPResult.Name = "Lv17HPResult";
             this.Lv17HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv17HPResult.TabIndex = 150;
@@ -1828,7 +1836,7 @@
             // Lv18HPResult
             // 
             this.Lv18HPResult.AutoSize = true;
-            this.Lv18HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv18HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv18HPResult.Name = "Lv18HPResult";
             this.Lv18HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv18HPResult.TabIndex = 151;
@@ -1837,7 +1845,7 @@
             // Lv19HPResult
             // 
             this.Lv19HPResult.AutoSize = true;
-            this.Lv19HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv19HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv19HPResult.Name = "Lv19HPResult";
             this.Lv19HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv19HPResult.TabIndex = 152;
@@ -1846,7 +1854,7 @@
             // Lv20HPResult
             // 
             this.Lv20HPResult.AutoSize = true;
-            this.Lv20HPResult.Location = new System.Drawing.Point(300, 500);
+            this.Lv20HPResult.Location = new System.Drawing.Point(300, 633);
             this.Lv20HPResult.Name = "Lv20HPResult";
             this.Lv20HPResult.Size = new System.Drawing.Size(0, 17);
             this.Lv20HPResult.TabIndex = 153;
@@ -1855,7 +1863,7 @@
             // StatFixedHeader
             // 
             this.StatFixedHeader.AutoSize = true;
-            this.StatFixedHeader.Location = new System.Drawing.Point(195, 163);
+            this.StatFixedHeader.Location = new System.Drawing.Point(195, 303);
             this.StatFixedHeader.Name = "StatFixedHeader";
             this.StatFixedHeader.Size = new System.Drawing.Size(66, 17);
             this.StatFixedHeader.TabIndex = 154;
@@ -1865,7 +1873,7 @@
             // StatPointBuyHeader
             // 
             this.StatPointBuyHeader.AutoSize = true;
-            this.StatPointBuyHeader.Location = new System.Drawing.Point(194, 163);
+            this.StatPointBuyHeader.Location = new System.Drawing.Point(194, 303);
             this.StatPointBuyHeader.Name = "StatPointBuyHeader";
             this.StatPointBuyHeader.Size = new System.Drawing.Size(68, 17);
             this.StatPointBuyHeader.TabIndex = 155;
@@ -1878,7 +1886,7 @@
             this.StatFixedSelectType1.AutoSize = true;
             this.StatFixedSelectType1.Checked = true;
             this.StatFixedSelectType1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.StatFixedSelectType1.Location = new System.Drawing.Point(111, 183);
+            this.StatFixedSelectType1.Location = new System.Drawing.Point(111, 323);
             this.StatFixedSelectType1.Name = "StatFixedSelectType1";
             this.StatFixedSelectType1.Size = new System.Drawing.Size(76, 21);
             this.StatFixedSelectType1.TabIndex = 156;
@@ -1890,7 +1898,7 @@
             // StatFixedSelectType2
             // 
             this.StatFixedSelectType2.AutoSize = true;
-            this.StatFixedSelectType2.Location = new System.Drawing.Point(193, 183);
+            this.StatFixedSelectType2.Location = new System.Drawing.Point(193, 323);
             this.StatFixedSelectType2.Name = "StatFixedSelectType2";
             this.StatFixedSelectType2.Size = new System.Drawing.Size(83, 21);
             this.StatFixedSelectType2.TabIndex = 157;
@@ -1902,7 +1910,7 @@
             // StatFixedSelectType3
             // 
             this.StatFixedSelectType3.AutoSize = true;
-            this.StatFixedSelectType3.Location = new System.Drawing.Point(282, 183);
+            this.StatFixedSelectType3.Location = new System.Drawing.Point(282, 323);
             this.StatFixedSelectType3.Name = "StatFixedSelectType3";
             this.StatFixedSelectType3.Size = new System.Drawing.Size(71, 21);
             this.StatFixedSelectType3.TabIndex = 158;
@@ -1917,7 +1925,7 @@
             this.StatPointBuySelectType1.AutoSize = true;
             this.StatPointBuySelectType1.Checked = true;
             this.StatPointBuySelectType1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.StatPointBuySelectType1.Location = new System.Drawing.Point(111, 183);
+            this.StatPointBuySelectType1.Location = new System.Drawing.Point(111, 323);
             this.StatPointBuySelectType1.Name = "StatPointBuySelectType1";
             this.StatPointBuySelectType1.Size = new System.Drawing.Size(76, 21);
             this.StatPointBuySelectType1.TabIndex = 159;
@@ -1929,7 +1937,7 @@
             // StatPointBuySelectType2
             // 
             this.StatPointBuySelectType2.AutoSize = true;
-            this.StatPointBuySelectType2.Location = new System.Drawing.Point(193, 183);
+            this.StatPointBuySelectType2.Location = new System.Drawing.Point(193, 323);
             this.StatPointBuySelectType2.Name = "StatPointBuySelectType2";
             this.StatPointBuySelectType2.Size = new System.Drawing.Size(83, 21);
             this.StatPointBuySelectType2.TabIndex = 160;
@@ -1941,7 +1949,7 @@
             // StatPointBuySelectType3
             // 
             this.StatPointBuySelectType3.AutoSize = true;
-            this.StatPointBuySelectType3.Location = new System.Drawing.Point(282, 183);
+            this.StatPointBuySelectType3.Location = new System.Drawing.Point(282, 323);
             this.StatPointBuySelectType3.Name = "StatPointBuySelectType3";
             this.StatPointBuySelectType3.Size = new System.Drawing.Size(71, 21);
             this.StatPointBuySelectType3.TabIndex = 161;
@@ -1953,7 +1961,7 @@
             // StatFixed1
             // 
             this.StatFixed1.AutoSize = true;
-            this.StatFixed1.Location = new System.Drawing.Point(147, 224);
+            this.StatFixed1.Location = new System.Drawing.Point(147, 357);
             this.StatFixed1.Name = "StatFixed1";
             this.StatFixed1.Size = new System.Drawing.Size(24, 17);
             this.StatFixed1.TabIndex = 162;
@@ -1963,7 +1971,7 @@
             // StatFixed5
             // 
             this.StatFixed5.AutoSize = true;
-            this.StatFixed5.Location = new System.Drawing.Point(147, 368);
+            this.StatFixed5.Location = new System.Drawing.Point(147, 501);
             this.StatFixed5.Name = "StatFixed5";
             this.StatFixed5.Size = new System.Drawing.Size(24, 17);
             this.StatFixed5.TabIndex = 163;
@@ -1973,7 +1981,7 @@
             // StatFixed4
             // 
             this.StatFixed4.AutoSize = true;
-            this.StatFixed4.Location = new System.Drawing.Point(147, 332);
+            this.StatFixed4.Location = new System.Drawing.Point(147, 465);
             this.StatFixed4.Name = "StatFixed4";
             this.StatFixed4.Size = new System.Drawing.Size(24, 17);
             this.StatFixed4.TabIndex = 164;
@@ -1983,7 +1991,7 @@
             // StatFixed3
             // 
             this.StatFixed3.AutoSize = true;
-            this.StatFixed3.Location = new System.Drawing.Point(147, 296);
+            this.StatFixed3.Location = new System.Drawing.Point(147, 429);
             this.StatFixed3.Name = "StatFixed3";
             this.StatFixed3.Size = new System.Drawing.Size(24, 17);
             this.StatFixed3.TabIndex = 165;
@@ -1993,7 +2001,7 @@
             // StatFixed2
             // 
             this.StatFixed2.AutoSize = true;
-            this.StatFixed2.Location = new System.Drawing.Point(147, 260);
+            this.StatFixed2.Location = new System.Drawing.Point(147, 393);
             this.StatFixed2.Name = "StatFixed2";
             this.StatFixed2.Size = new System.Drawing.Size(24, 17);
             this.StatFixed2.TabIndex = 166;
@@ -2003,7 +2011,7 @@
             // StatFixed6
             // 
             this.StatFixed6.AutoSize = true;
-            this.StatFixed6.Location = new System.Drawing.Point(148, 404);
+            this.StatFixed6.Location = new System.Drawing.Point(148, 537);
             this.StatFixed6.Name = "StatFixed6";
             this.StatFixed6.Size = new System.Drawing.Size(16, 17);
             this.StatFixed6.TabIndex = 167;
@@ -2022,7 +2030,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatFixedAllocationBox6.Location = new System.Drawing.Point(191, 401);
+            this.StatFixedAllocationBox6.Location = new System.Drawing.Point(191, 534);
             this.StatFixedAllocationBox6.Name = "StatFixedAllocationBox6";
             this.StatFixedAllocationBox6.Size = new System.Drawing.Size(125, 24);
             this.StatFixedAllocationBox6.TabIndex = 173;
@@ -2041,7 +2049,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatFixedAllocationBox5.Location = new System.Drawing.Point(191, 365);
+            this.StatFixedAllocationBox5.Location = new System.Drawing.Point(191, 498);
             this.StatFixedAllocationBox5.Name = "StatFixedAllocationBox5";
             this.StatFixedAllocationBox5.Size = new System.Drawing.Size(125, 24);
             this.StatFixedAllocationBox5.TabIndex = 172;
@@ -2060,7 +2068,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatFixedAllocationBox4.Location = new System.Drawing.Point(191, 329);
+            this.StatFixedAllocationBox4.Location = new System.Drawing.Point(191, 462);
             this.StatFixedAllocationBox4.Name = "StatFixedAllocationBox4";
             this.StatFixedAllocationBox4.Size = new System.Drawing.Size(125, 24);
             this.StatFixedAllocationBox4.TabIndex = 171;
@@ -2079,7 +2087,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatFixedAllocationBox3.Location = new System.Drawing.Point(191, 293);
+            this.StatFixedAllocationBox3.Location = new System.Drawing.Point(191, 426);
             this.StatFixedAllocationBox3.Name = "StatFixedAllocationBox3";
             this.StatFixedAllocationBox3.Size = new System.Drawing.Size(125, 24);
             this.StatFixedAllocationBox3.TabIndex = 170;
@@ -2098,7 +2106,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatFixedAllocationBox2.Location = new System.Drawing.Point(191, 257);
+            this.StatFixedAllocationBox2.Location = new System.Drawing.Point(191, 390);
             this.StatFixedAllocationBox2.Name = "StatFixedAllocationBox2";
             this.StatFixedAllocationBox2.Size = new System.Drawing.Size(125, 24);
             this.StatFixedAllocationBox2.TabIndex = 169;
@@ -2117,7 +2125,7 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.StatFixedAllocationBox1.Location = new System.Drawing.Point(191, 221);
+            this.StatFixedAllocationBox1.Location = new System.Drawing.Point(191, 354);
             this.StatFixedAllocationBox1.Name = "StatFixedAllocationBox1";
             this.StatFixedAllocationBox1.Size = new System.Drawing.Size(125, 24);
             this.StatFixedAllocationBox1.TabIndex = 168;
@@ -2138,7 +2146,7 @@
             "13",
             "14",
             "15"});
-            this.StatPointAllocationBox1.Location = new System.Drawing.Point(215, 221);
+            this.StatPointAllocationBox1.Location = new System.Drawing.Point(215, 354);
             this.StatPointAllocationBox1.Name = "StatPointAllocationBox1";
             this.StatPointAllocationBox1.Size = new System.Drawing.Size(53, 24);
             this.StatPointAllocationBox1.TabIndex = 174;
@@ -2159,7 +2167,7 @@
             "13",
             "14",
             "15"});
-            this.StatPointAllocationBox2.Location = new System.Drawing.Point(215, 257);
+            this.StatPointAllocationBox2.Location = new System.Drawing.Point(215, 390);
             this.StatPointAllocationBox2.Name = "StatPointAllocationBox2";
             this.StatPointAllocationBox2.Size = new System.Drawing.Size(53, 24);
             this.StatPointAllocationBox2.TabIndex = 175;
@@ -2180,7 +2188,7 @@
             "13",
             "14",
             "15"});
-            this.StatPointAllocationBox3.Location = new System.Drawing.Point(215, 293);
+            this.StatPointAllocationBox3.Location = new System.Drawing.Point(215, 426);
             this.StatPointAllocationBox3.Name = "StatPointAllocationBox3";
             this.StatPointAllocationBox3.Size = new System.Drawing.Size(53, 24);
             this.StatPointAllocationBox3.TabIndex = 176;
@@ -2201,7 +2209,7 @@
             "13",
             "14",
             "15"});
-            this.StatPointAllocationBox4.Location = new System.Drawing.Point(215, 329);
+            this.StatPointAllocationBox4.Location = new System.Drawing.Point(215, 462);
             this.StatPointAllocationBox4.Name = "StatPointAllocationBox4";
             this.StatPointAllocationBox4.Size = new System.Drawing.Size(53, 24);
             this.StatPointAllocationBox4.TabIndex = 177;
@@ -2222,7 +2230,7 @@
             "13",
             "14",
             "15"});
-            this.StatPointAllocationBox5.Location = new System.Drawing.Point(215, 365);
+            this.StatPointAllocationBox5.Location = new System.Drawing.Point(215, 498);
             this.StatPointAllocationBox5.Name = "StatPointAllocationBox5";
             this.StatPointAllocationBox5.Size = new System.Drawing.Size(53, 24);
             this.StatPointAllocationBox5.TabIndex = 178;
@@ -2243,7 +2251,7 @@
             "13",
             "14",
             "15"});
-            this.StatPointAllocationBox6.Location = new System.Drawing.Point(215, 401);
+            this.StatPointAllocationBox6.Location = new System.Drawing.Point(215, 534);
             this.StatPointAllocationBox6.Name = "StatPointAllocationBox6";
             this.StatPointAllocationBox6.Size = new System.Drawing.Size(53, 24);
             this.StatPointAllocationBox6.TabIndex = 179;
@@ -2253,7 +2261,7 @@
             // StatPointCost1
             // 
             this.StatPointCost1.AutoSize = true;
-            this.StatPointCost1.Location = new System.Drawing.Point(279, 224);
+            this.StatPointCost1.Location = new System.Drawing.Point(279, 357);
             this.StatPointCost1.Name = "StatPointCost1";
             this.StatPointCost1.Size = new System.Drawing.Size(44, 17);
             this.StatPointCost1.TabIndex = 180;
@@ -2263,7 +2271,7 @@
             // StatPointCost2
             // 
             this.StatPointCost2.AutoSize = true;
-            this.StatPointCost2.Location = new System.Drawing.Point(279, 260);
+            this.StatPointCost2.Location = new System.Drawing.Point(279, 393);
             this.StatPointCost2.Name = "StatPointCost2";
             this.StatPointCost2.Size = new System.Drawing.Size(44, 17);
             this.StatPointCost2.TabIndex = 181;
@@ -2273,7 +2281,7 @@
             // StatPointCost3
             // 
             this.StatPointCost3.AutoSize = true;
-            this.StatPointCost3.Location = new System.Drawing.Point(279, 296);
+            this.StatPointCost3.Location = new System.Drawing.Point(279, 429);
             this.StatPointCost3.Name = "StatPointCost3";
             this.StatPointCost3.Size = new System.Drawing.Size(44, 17);
             this.StatPointCost3.TabIndex = 182;
@@ -2283,7 +2291,7 @@
             // StatPointCost4
             // 
             this.StatPointCost4.AutoSize = true;
-            this.StatPointCost4.Location = new System.Drawing.Point(279, 332);
+            this.StatPointCost4.Location = new System.Drawing.Point(279, 465);
             this.StatPointCost4.Name = "StatPointCost4";
             this.StatPointCost4.Size = new System.Drawing.Size(44, 17);
             this.StatPointCost4.TabIndex = 183;
@@ -2293,7 +2301,7 @@
             // StatPointCost5
             // 
             this.StatPointCost5.AutoSize = true;
-            this.StatPointCost5.Location = new System.Drawing.Point(279, 368);
+            this.StatPointCost5.Location = new System.Drawing.Point(279, 501);
             this.StatPointCost5.Name = "StatPointCost5";
             this.StatPointCost5.Size = new System.Drawing.Size(44, 17);
             this.StatPointCost5.TabIndex = 184;
@@ -2303,7 +2311,7 @@
             // StatPointCost6
             // 
             this.StatPointCost6.AutoSize = true;
-            this.StatPointCost6.Location = new System.Drawing.Point(279, 404);
+            this.StatPointCost6.Location = new System.Drawing.Point(279, 537);
             this.StatPointCost6.Name = "StatPointCost6";
             this.StatPointCost6.Size = new System.Drawing.Size(44, 17);
             this.StatPointCost6.TabIndex = 185;
@@ -2313,7 +2321,7 @@
             // StatPointChaLabel
             // 
             this.StatPointChaLabel.AutoSize = true;
-            this.StatPointChaLabel.Location = new System.Drawing.Point(124, 404);
+            this.StatPointChaLabel.Location = new System.Drawing.Point(124, 537);
             this.StatPointChaLabel.Name = "StatPointChaLabel";
             this.StatPointChaLabel.Size = new System.Drawing.Size(67, 17);
             this.StatPointChaLabel.TabIndex = 191;
@@ -2323,7 +2331,7 @@
             // StatPointWisLabel
             // 
             this.StatPointWisLabel.AutoSize = true;
-            this.StatPointWisLabel.Location = new System.Drawing.Point(124, 368);
+            this.StatPointWisLabel.Location = new System.Drawing.Point(124, 501);
             this.StatPointWisLabel.Name = "StatPointWisLabel";
             this.StatPointWisLabel.Size = new System.Drawing.Size(58, 17);
             this.StatPointWisLabel.TabIndex = 190;
@@ -2333,7 +2341,7 @@
             // StatPointIntLabel
             // 
             this.StatPointIntLabel.AutoSize = true;
-            this.StatPointIntLabel.Location = new System.Drawing.Point(124, 332);
+            this.StatPointIntLabel.Location = new System.Drawing.Point(124, 465);
             this.StatPointIntLabel.Name = "StatPointIntLabel";
             this.StatPointIntLabel.Size = new System.Drawing.Size(79, 17);
             this.StatPointIntLabel.TabIndex = 189;
@@ -2343,7 +2351,7 @@
             // StatPointConLabel
             // 
             this.StatPointConLabel.AutoSize = true;
-            this.StatPointConLabel.Location = new System.Drawing.Point(124, 296);
+            this.StatPointConLabel.Location = new System.Drawing.Point(124, 429);
             this.StatPointConLabel.Name = "StatPointConLabel";
             this.StatPointConLabel.Size = new System.Drawing.Size(82, 17);
             this.StatPointConLabel.TabIndex = 188;
@@ -2353,7 +2361,7 @@
             // StatPointDexLabel
             // 
             this.StatPointDexLabel.AutoSize = true;
-            this.StatPointDexLabel.Location = new System.Drawing.Point(124, 260);
+            this.StatPointDexLabel.Location = new System.Drawing.Point(124, 393);
             this.StatPointDexLabel.Name = "StatPointDexLabel";
             this.StatPointDexLabel.Size = new System.Drawing.Size(63, 17);
             this.StatPointDexLabel.TabIndex = 187;
@@ -2363,7 +2371,7 @@
             // StatPointStrLabel
             // 
             this.StatPointStrLabel.AutoSize = true;
-            this.StatPointStrLabel.Location = new System.Drawing.Point(124, 224);
+            this.StatPointStrLabel.Location = new System.Drawing.Point(124, 357);
             this.StatPointStrLabel.Name = "StatPointStrLabel";
             this.StatPointStrLabel.Size = new System.Drawing.Size(62, 17);
             this.StatPointStrLabel.TabIndex = 186;
@@ -2373,7 +2381,7 @@
             // StatPointBuyBudget
             // 
             this.StatPointBuyBudget.AutoSize = true;
-            this.StatPointBuyBudget.Location = new System.Drawing.Point(279, 163);
+            this.StatPointBuyBudget.Location = new System.Drawing.Point(279, 303);
             this.StatPointBuyBudget.Name = "StatPointBuyBudget";
             this.StatPointBuyBudget.Size = new System.Drawing.Size(99, 17);
             this.StatPointBuyBudget.TabIndex = 192;
@@ -2383,7 +2391,7 @@
             // StatPointBuyTotalBudget
             // 
             this.StatPointBuyTotalBudget.AutoSize = true;
-            this.StatPointBuyTotalBudget.Location = new System.Drawing.Point(71, 163);
+            this.StatPointBuyTotalBudget.Location = new System.Drawing.Point(71, 303);
             this.StatPointBuyTotalBudget.Name = "StatPointBuyTotalBudget";
             this.StatPointBuyTotalBudget.Size = new System.Drawing.Size(113, 17);
             this.StatPointBuyTotalBudget.TabIndex = 193;
@@ -2393,7 +2401,7 @@
             // RaceLabel
             // 
             this.RaceLabel.AutoSize = true;
-            this.RaceLabel.Location = new System.Drawing.Point(13, 37);
+            this.RaceLabel.Location = new System.Drawing.Point(100, 131);
             this.RaceLabel.Name = "RaceLabel";
             this.RaceLabel.Size = new System.Drawing.Size(45, 17);
             this.RaceLabel.TabIndex = 194;
@@ -2402,7 +2410,7 @@
             // BackgroundLabel
             // 
             this.BackgroundLabel.AutoSize = true;
-            this.BackgroundLabel.Location = new System.Drawing.Point(269, 41);
+            this.BackgroundLabel.Location = new System.Drawing.Point(57, 191);
             this.BackgroundLabel.Name = "BackgroundLabel";
             this.BackgroundLabel.Size = new System.Drawing.Size(88, 17);
             this.BackgroundLabel.TabIndex = 195;
@@ -2414,19 +2422,15 @@
             this.RaceSelector.FormattingEnabled = true;
             this.RaceSelector.Items.AddRange(new object[] {
             "Dwarf",
-            "Elf (High)",
-            "Elf (Wood)",
-            "Elf (Dark)",
-            "Halfling (Lightfoot)",
-            "Halfling (Stout)",
+            "Elf",
+            "Halfling",
             "Human",
             "Dragonborn",
-            "Gnome (Forest)",
-            "Gnome (Rock)",
+            "Gnome",
             "Half-Elf",
             "Half-Orc",
             "Tiefling"});
-            this.RaceSelector.Location = new System.Drawing.Point(12, 57);
+            this.RaceSelector.Location = new System.Drawing.Point(151, 128);
             this.RaceSelector.Name = "RaceSelector";
             this.RaceSelector.Size = new System.Drawing.Size(121, 24);
             this.RaceSelector.TabIndex = 196;
@@ -2450,7 +2454,7 @@
             "Sailor",
             "Soldier",
             "Urchin"});
-            this.BackgroundSelector.Location = new System.Drawing.Point(303, 61);
+            this.BackgroundSelector.Location = new System.Drawing.Point(151, 188);
             this.BackgroundSelector.Name = "BackgroundSelector";
             this.BackgroundSelector.Size = new System.Drawing.Size(121, 24);
             this.BackgroundSelector.TabIndex = 197;
@@ -2458,11 +2462,81 @@
             // SubraceSelector
             // 
             this.SubraceSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SubraceSelector.Enabled = false;
             this.SubraceSelector.FormattingEnabled = true;
-            this.SubraceSelector.Location = new System.Drawing.Point(12, 87);
+            this.SubraceSelector.Location = new System.Drawing.Point(151, 158);
             this.SubraceSelector.Name = "SubraceSelector";
             this.SubraceSelector.Size = new System.Drawing.Size(121, 24);
             this.SubraceSelector.TabIndex = 198;
+            // 
+            // divider2
+            // 
+            this.divider2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider2.Location = new System.Drawing.Point(49, 226);
+            this.divider2.Name = "divider2";
+            this.divider2.Size = new System.Drawing.Size(362, 2);
+            this.divider2.TabIndex = 199;
+            this.divider2.Text = "divider2";
+            // 
+            // divider1
+            // 
+            this.divider1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider1.Location = new System.Drawing.Point(49, 63);
+            this.divider1.Name = "divider1";
+            this.divider1.Size = new System.Drawing.Size(362, 2);
+            this.divider1.TabIndex = 200;
+            this.divider1.Text = "divider1";
+            // 
+            // RaceBackroundHeader
+            // 
+            this.RaceBackroundHeader.AutoSize = true;
+            this.RaceBackroundHeader.Location = new System.Drawing.Point(195, 75);
+            this.RaceBackroundHeader.Name = "RaceBackroundHeader";
+            this.RaceBackroundHeader.Size = new System.Drawing.Size(51, 17);
+            this.RaceBackroundHeader.TabIndex = 201;
+            this.RaceBackroundHeader.Text = "Details";
+            // 
+            // SubraceLabel
+            // 
+            this.SubraceLabel.AutoSize = true;
+            this.SubraceLabel.Location = new System.Drawing.Point(80, 161);
+            this.SubraceLabel.Name = "SubraceLabel";
+            this.SubraceLabel.Size = new System.Drawing.Size(65, 17);
+            this.SubraceLabel.TabIndex = 202;
+            this.SubraceLabel.Text = "Subrace:";
+            // 
+            // FirstNameBox
+            // 
+            this.FirstNameBox.Location = new System.Drawing.Point(112, 100);
+            this.FirstNameBox.Name = "FirstNameBox";
+            this.FirstNameBox.Size = new System.Drawing.Size(100, 22);
+            this.FirstNameBox.TabIndex = 203;
+            // 
+            // LastNameBox
+            // 
+            this.LastNameBox.Location = new System.Drawing.Point(218, 100);
+            this.LastNameBox.Name = "LastNameBox";
+            this.LastNameBox.Size = new System.Drawing.Size(100, 22);
+            this.LastNameBox.TabIndex = 204;
+            // 
+            // NameLabel
+            // 
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Location = new System.Drawing.Point(57, 103);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(49, 17);
+            this.NameLabel.TabIndex = 205;
+            this.NameLabel.Text = "Name:";
+            // 
+            // NameButton
+            // 
+            this.NameButton.Location = new System.Drawing.Point(324, 96);
+            this.NameButton.Name = "NameButton";
+            this.NameButton.Size = new System.Drawing.Size(75, 30);
+            this.NameButton.TabIndex = 206;
+            this.NameButton.Text = "Random";
+            this.NameButton.UseVisualStyleBackColor = true;
+            this.NameButton.Click += new System.EventHandler(this.NameButton_Click);
             // 
             // Fighter_Generator
             // 
@@ -2470,6 +2544,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(461, 848);
+            this.Controls.Add(this.NameButton);
+            this.Controls.Add(this.NameLabel);
+            this.Controls.Add(this.LastNameBox);
+            this.Controls.Add(this.FirstNameBox);
+            this.Controls.Add(this.SubraceLabel);
+            this.Controls.Add(this.RaceBackroundHeader);
+            this.Controls.Add(this.divider1);
+            this.Controls.Add(this.divider2);
             this.Controls.Add(this.SubraceSelector);
             this.Controls.Add(this.BackgroundSelector);
             this.Controls.Add(this.RaceSelector);
@@ -2620,7 +2702,7 @@
             this.Controls.Add(this.Lv1HPRoller);
             this.Controls.Add(this.Lv1HPCheckbox);
             this.Controls.Add(this.HPHeader);
-            this.Controls.Add(this.divider1);
+            this.Controls.Add(this.divider3);
             this.Controls.Add(this.StatRollAllocationBox6);
             this.Controls.Add(this.StatRollAllocationBox5);
             this.Controls.Add(this.StatRollAllocationBox4);
@@ -2654,7 +2736,7 @@
             this.Controls.Add(this.StatRollDiceSelectType2);
             this.Controls.Add(this.StatRollDiceSelectType1);
             this.Controls.Add(this.levelLabel);
-            this.Controls.Add(this.divider2);
+            this.Controls.Add(this.divider4);
             this.Controls.Add(this.LevelSelector);
             this.Controls.Add(this.MartialArchetypeBox3);
             this.Controls.Add(this.MartialArchetypeBox2);
@@ -2683,7 +2765,7 @@
         private System.Windows.Forms.CheckBox MartialArchetypeBox2;
         private System.Windows.Forms.CheckBox MartialArchetypeBox3;
         private System.Windows.Forms.ComboBox LevelSelector;
-        private System.Windows.Forms.Label divider2;
+        private System.Windows.Forms.Label divider4;
         private System.Windows.Forms.Label levelLabel;
         private System.Windows.Forms.CheckBox StatRollDiceSelectType3;
         private System.Windows.Forms.CheckBox StatRollDiceSelectType2;
@@ -2717,7 +2799,7 @@
         private System.Windows.Forms.ComboBox StatRollAllocationBox4;
         private System.Windows.Forms.ComboBox StatRollAllocationBox5;
         private System.Windows.Forms.ComboBox StatRollAllocationBox6;
-        private System.Windows.Forms.Label divider1;
+        private System.Windows.Forms.Label divider3;
         private System.Windows.Forms.Label HPHeader;
         private System.Windows.Forms.CheckBox Lv1HPCheckbox;
         private System.Windows.Forms.Button Lv1HPRoller;
@@ -2868,5 +2950,13 @@
         private System.Windows.Forms.ComboBox RaceSelector;
         private System.Windows.Forms.ComboBox BackgroundSelector;
         private System.Windows.Forms.ComboBox SubraceSelector;
+        private System.Windows.Forms.Label divider2;
+        private System.Windows.Forms.Label divider1;
+        private System.Windows.Forms.Label RaceBackroundHeader;
+        private System.Windows.Forms.Label SubraceLabel;
+        private System.Windows.Forms.TextBox FirstNameBox;
+        private System.Windows.Forms.TextBox LastNameBox;
+        private System.Windows.Forms.Label NameLabel;
+        private System.Windows.Forms.Button NameButton;
     }
 }
