@@ -464,8 +464,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 679);
             this.Controls.Add(this.levelLabel);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(461, 848);
             this.Controls.Add(this.divider1);
             this.Controls.Add(this.StatRollAllocationBox6);
             this.Controls.Add(this.StatRollAllocationBox5);
@@ -502,6 +503,8 @@
             this.Controls.Add(this.MartialSelectTypeBox1);
             this.MaximizeBox = false;
             this.Name = "Fighter_Generator";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Fighter Generator";
             this.ResumeLayout(false);
             this.PerformLayout();
