@@ -15,11 +15,13 @@ namespace DnD_Duel_Sim
         public DuelSetupForm()
         {
             InitializeComponent();
+            _rng = new DiceRoller();
         }
+        DiceRoller _rng;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Fighter_Generator fighter1Form = new Fighter_Generator();
+            Fighter_Generator fighter1Form = new Fighter_Generator(ref _rng);
             fighter1Form.Show();
         }
     }
