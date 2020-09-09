@@ -15,6 +15,8 @@ namespace DnD_Duel_Sim
         public Fighter_Generator(ref DiceRoller rng)
         {
             InitializeComponent();
+            _rng = rng;
+        DiceRoller _rng;
         private void StatRoll1_Click(object sender, EventArgs e)
         {
             int[] dice = {_rng.d6(), _rng.d6(), _rng.d6(), _rng.d6()};
