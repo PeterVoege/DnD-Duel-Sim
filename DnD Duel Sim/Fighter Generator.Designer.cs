@@ -28,86 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.MartialSelectTypeBox1 = new System.Windows.Forms.CheckBox();
+            this.MartialSelectTypeBox2 = new System.Windows.Forms.CheckBox();
+            this.MartialSelectTypeBox3 = new System.Windows.Forms.CheckBox();
+            this.MartialArchetypeHeader = new System.Windows.Forms.Label();
+            this.MartialArchetypeBox1 = new System.Windows.Forms.CheckBox();
+            this.MartialArchetypeBox2 = new System.Windows.Forms.CheckBox();
+            this.MartialArchetypeBox3 = new System.Windows.Forms.CheckBox();
             this.LevelSelector = new System.Windows.Forms.ComboBox();
-            this.divider1 = new System.Windows.Forms.Label();
+            this.divider2 = new System.Windows.Forms.Label();
             this.levelLabel = new System.Windows.Forms.Label();
+            this.divider1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // checkBox1
+            // MartialSelectTypeBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(151, 251);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(76, 21);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Manual";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.MartialSelectTypeBox1.AutoSize = true;
+            this.MartialSelectTypeBox1.Location = new System.Drawing.Point(115, 783);
+            this.MartialSelectTypeBox1.Name = "MartialSelectTypeBox1";
+            this.MartialSelectTypeBox1.Size = new System.Drawing.Size(76, 21);
+            this.MartialSelectTypeBox1.TabIndex = 0;
+            this.MartialSelectTypeBox1.Text = "Manual";
+            this.MartialSelectTypeBox1.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // MartialSelectTypeBox2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(233, 251);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(83, 21);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "Random";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.MartialSelectTypeBox2.AutoSize = true;
+            this.MartialSelectTypeBox2.Location = new System.Drawing.Point(197, 783);
+            this.MartialSelectTypeBox2.Name = "MartialSelectTypeBox2";
+            this.MartialSelectTypeBox2.Size = new System.Drawing.Size(83, 21);
+            this.MartialSelectTypeBox2.TabIndex = 2;
+            this.MartialSelectTypeBox2.Text = "Random";
+            this.MartialSelectTypeBox2.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // MartialSelectTypeBox3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(322, 251);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(71, 21);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Preset";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.MartialSelectTypeBox3.AutoSize = true;
+            this.MartialSelectTypeBox3.Location = new System.Drawing.Point(286, 783);
+            this.MartialSelectTypeBox3.Name = "MartialSelectTypeBox3";
+            this.MartialSelectTypeBox3.Size = new System.Drawing.Size(71, 21);
+            this.MartialSelectTypeBox3.TabIndex = 3;
+            this.MartialSelectTypeBox3.Text = "Preset";
+            this.MartialSelectTypeBox3.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // MartialArchetypeHeader
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(198, 231);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Martial Archetype";
+            this.MartialArchetypeHeader.AutoSize = true;
+            this.MartialArchetypeHeader.Location = new System.Drawing.Point(162, 763);
+            this.MartialArchetypeHeader.Name = "MartialArchetypeHeader";
+            this.MartialArchetypeHeader.Size = new System.Drawing.Size(118, 17);
+            this.MartialArchetypeHeader.TabIndex = 4;
+            this.MartialArchetypeHeader.Text = "Martial Archetype";
             // 
-            // checkBox4
+            // MartialArchetypeBox1
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(102, 289);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(93, 21);
-            this.checkBox4.TabIndex = 5;
-            this.checkBox4.Text = "Champion";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.MartialArchetypeBox1.AutoSize = true;
+            this.MartialArchetypeBox1.Location = new System.Drawing.Point(66, 821);
+            this.MartialArchetypeBox1.Name = "MartialArchetypeBox1";
+            this.MartialArchetypeBox1.Size = new System.Drawing.Size(93, 21);
+            this.MartialArchetypeBox1.TabIndex = 5;
+            this.MartialArchetypeBox1.Text = "Champion";
+            this.MartialArchetypeBox1.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // MartialArchetypeBox2
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(201, 289);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(113, 21);
-            this.checkBox5.TabIndex = 6;
-            this.checkBox5.Text = "Battle Master";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.MartialArchetypeBox2.AutoSize = true;
+            this.MartialArchetypeBox2.Location = new System.Drawing.Point(165, 821);
+            this.MartialArchetypeBox2.Name = "MartialArchetypeBox2";
+            this.MartialArchetypeBox2.Size = new System.Drawing.Size(113, 21);
+            this.MartialArchetypeBox2.TabIndex = 6;
+            this.MartialArchetypeBox2.Text = "Battle Master";
+            this.MartialArchetypeBox2.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // MartialArchetypeBox3
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(320, 289);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(121, 21);
-            this.checkBox6.TabIndex = 7;
-            this.checkBox6.Text = "Eldritch Knight";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.MartialArchetypeBox3.AutoSize = true;
+            this.MartialArchetypeBox3.Location = new System.Drawing.Point(284, 821);
+            this.MartialArchetypeBox3.Name = "MartialArchetypeBox3";
+            this.MartialArchetypeBox3.Size = new System.Drawing.Size(121, 21);
+            this.MartialArchetypeBox3.TabIndex = 7;
+            this.MartialArchetypeBox3.Text = "Eldritch Knight";
+            this.MartialArchetypeBox3.UseVisualStyleBackColor = true;
             // 
             // LevelSelector
             // 
@@ -138,14 +139,14 @@
             this.LevelSelector.Size = new System.Drawing.Size(58, 24);
             this.LevelSelector.TabIndex = 8;
             // 
-            // divider1
+            // divider2
             // 
-            this.divider1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider1.Location = new System.Drawing.Point(88, 216);
-            this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(362, 2);
-            this.divider1.TabIndex = 9;
-            this.divider1.Text = "label2";
+            this.divider2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider2.Location = new System.Drawing.Point(49, 573);
+            this.divider2.Name = "divider2";
+            this.divider2.Size = new System.Drawing.Size(362, 2);
+            this.divider2.TabIndex = 9;
+            this.divider2.Text = "divider2";
             // 
             // levelLabel
             // 
@@ -156,6 +157,15 @@
             this.levelLabel.TabIndex = 10;
             this.levelLabel.Text = "Level:";
             // 
+            // divider1
+            // 
+            this.divider1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider1.Location = new System.Drawing.Point(49, 441);
+            this.divider1.Name = "divider1";
+            this.divider1.Size = new System.Drawing.Size(362, 2);
+            this.divider1.TabIndex = 47;
+            this.divider1.Text = "divider1";
+            // 
             // Fighter_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -163,14 +173,16 @@
             this.ClientSize = new System.Drawing.Size(548, 679);
             this.Controls.Add(this.levelLabel);
             this.Controls.Add(this.divider1);
+            this.Controls.Add(this.divider2);
             this.Controls.Add(this.LevelSelector);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.MartialArchetypeBox3);
+            this.Controls.Add(this.MartialArchetypeBox2);
+            this.Controls.Add(this.MartialArchetypeBox1);
+            this.Controls.Add(this.MartialArchetypeHeader);
+            this.Controls.Add(this.MartialSelectTypeBox3);
+            this.Controls.Add(this.MartialSelectTypeBox2);
+            this.Controls.Add(this.MartialSelectTypeBox1);
+            this.MaximizeBox = false;
             this.Name = "Fighter_Generator";
             this.Text = "Fighter Generator";
             this.ResumeLayout(false);
@@ -180,15 +192,16 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox MartialSelectTypeBox1;
+        private System.Windows.Forms.CheckBox MartialSelectTypeBox2;
+        private System.Windows.Forms.CheckBox MartialSelectTypeBox3;
+        private System.Windows.Forms.Label MartialArchetypeHeader;
+        private System.Windows.Forms.CheckBox MartialArchetypeBox1;
+        private System.Windows.Forms.CheckBox MartialArchetypeBox2;
+        private System.Windows.Forms.CheckBox MartialArchetypeBox3;
         private System.Windows.Forms.ComboBox LevelSelector;
-        private System.Windows.Forms.Label divider1;
+        private System.Windows.Forms.Label divider2;
         private System.Windows.Forms.Label levelLabel;
+        private System.Windows.Forms.Label divider1;
     }
 }
