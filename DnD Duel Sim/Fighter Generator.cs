@@ -200,6 +200,7 @@ namespace DnD_Duel_Sim
 
                 StatAllocationModeVisibilityManager(1);
             }
+            this.CalculateConGrowth();
         }
         private void StatAllocationSelectType2_CheckedChanged(object sender, EventArgs e)
         {
@@ -215,6 +216,7 @@ namespace DnD_Duel_Sim
 
                 StatAllocationModeVisibilityManager(2);
             }
+            this.CalculateConGrowth();
         }
         private void StatAllocationSelectType3_CheckedChanged(object sender, EventArgs e)
         {
@@ -230,6 +232,7 @@ namespace DnD_Duel_Sim
 
                 StatAllocationModeVisibilityManager(3);
             }
+            this.CalculateConGrowth();
         }
 
         // Dice roll
@@ -281,6 +284,7 @@ namespace DnD_Duel_Sim
             int statTotal1 = dice[3] + dice[2] + dice[1];
             this.StatTotal1.Text = statTotal1.ToString();
             this.StatRoll1.Enabled = false;
+            this.CalculateConGrowth();
         }
         private void StatRoll2_Click(object sender, EventArgs e)
         {
@@ -290,6 +294,7 @@ namespace DnD_Duel_Sim
             int statTotal2 = dice[3] + dice[2] + dice[1];
             this.StatTotal2.Text = statTotal2.ToString();
             this.StatRoll2.Enabled = false;
+            this.CalculateConGrowth();
         }
         private void StatRoll3_Click(object sender, EventArgs e)
         {
@@ -299,6 +304,7 @@ namespace DnD_Duel_Sim
             int statTotal3 = dice[3] + dice[2] + dice[1];
             this.StatTotal3.Text = statTotal3.ToString();
             this.StatRoll3.Enabled = false;
+            this.CalculateConGrowth();
         }
         private void StatRoll4_Click(object sender, EventArgs e)
         {
@@ -308,6 +314,7 @@ namespace DnD_Duel_Sim
             int statTotal4 = dice[3] + dice[2] + dice[1];
             this.StatTotal4.Text = statTotal4.ToString();
             this.StatRoll4.Enabled = false;
+            this.CalculateConGrowth();
         }
         private void StatRoll5_Click(object sender, EventArgs e)
         {
@@ -317,6 +324,7 @@ namespace DnD_Duel_Sim
             int statTotal5 = dice[3] + dice[2] + dice[1];
             this.StatTotal5.Text = statTotal5.ToString();
             this.StatRoll5.Enabled = false;
+            this.CalculateConGrowth();
         }
         private void StatRoll6_Click(object sender, EventArgs e)
         {
@@ -326,6 +334,7 @@ namespace DnD_Duel_Sim
             int statTotal6 = dice[3] + dice[2] + dice[1];
             this.StatTotal6.Text = statTotal6.ToString();
             this.StatRoll6.Enabled = false;
+            this.CalculateConGrowth();
         }
 
         private void StatRollAllocationBox1_DropDownClosed(object sender, EventArgs e)
@@ -676,6 +685,7 @@ namespace DnD_Duel_Sim
                 StatPointCost3.Text = "Cost: ";
             }
             StatPointBuyBudget.Text = "Points Left: " + (27 - GetStatPointBuyTotal());
+            this.CalculateConGrowth(); // Because this is the Constitution row
         }
         private void StatPointAllocationBox4_DropDownClosed(object sender, EventArgs e)
         {
@@ -763,18 +773,29 @@ namespace DnD_Duel_Sim
         private void CalculateConGrowth()
         {
             string con = "0";
-            if (this.StatRollAllocationBox1.Text == "Constitution" &&
-                StatTotal1.Text != "") { con = StatTotal1.Text; }
-            else if (this.StatRollAllocationBox2.Text == "Constitution" &&
-                StatTotal2.Text != "") { con = StatTotal2.Text; }
-            else if (this.StatRollAllocationBox3.Text == "Constitution" &&
-                StatTotal3.Text != "") { con = StatTotal3.Text; }
-            else if (this.StatRollAllocationBox4.Text == "Constitution" &&
-                StatTotal4.Text != "") { con = StatTotal4.Text; }
-            else if (this.StatRollAllocationBox5.Text == "Constitution" &&
-                StatTotal5.Text != "") { con = StatTotal5.Text; }
-            else if (this.StatRollAllocationBox6.Text == "Constitution" &&
-                StatTotal6.Text != "") { con = StatTotal6.Text; }
+
+            if (StatAllocationSelectType1.Checked)
+            {
+                if (this.StatRollAllocationBox1.Text == "Constitution" && StatTotal1.Text != "") { con = StatTotal1.Text; }
+                else if (this.StatRollAllocationBox2.Text == "Constitution" && StatTotal2.Text != "") { con = StatTotal2.Text; }
+                else if (this.StatRollAllocationBox3.Text == "Constitution" && StatTotal3.Text != "") { con = StatTotal3.Text; }
+                else if (this.StatRollAllocationBox4.Text == "Constitution" && StatTotal4.Text != "") { con = StatTotal4.Text; }
+                else if (this.StatRollAllocationBox5.Text == "Constitution" && StatTotal5.Text != "") { con = StatTotal5.Text; }
+                else if (this.StatRollAllocationBox6.Text == "Constitution" && StatTotal6.Text != "") { con = StatTotal6.Text; }
+            }
+            else if (StatAllocationSelectType2.Checked)
+            {
+                if(this.StatFixedAllocationBox1.Text == "Constitution") { con = StatFixed1.Text; }
+                else if(this.StatFixedAllocationBox2.Text == "Constitution") { con = StatFixed2.Text; }
+                else if(this.StatFixedAllocationBox3.Text == "Constitution") { con = StatFixed3.Text; }
+                else if(this.StatFixedAllocationBox4.Text == "Constitution") { con = StatFixed4.Text; }
+                else if(this.StatFixedAllocationBox5.Text == "Constitution") { con = StatFixed5.Text; }
+                else if(this.StatFixedAllocationBox6.Text == "Constitution") { con = StatFixed6.Text; }
+            }
+            else if (StatAllocationSelectType3.Checked)
+            {
+                if (StatPointAllocationBox3.Text != "") { con = StatPointAllocationBox3.Text; }
+            }
 
             if (con != "0")
             {
