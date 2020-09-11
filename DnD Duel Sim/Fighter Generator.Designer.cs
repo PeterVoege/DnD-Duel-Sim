@@ -229,12 +229,57 @@
             this.LastNameBox = new System.Windows.Forms.TextBox();
             this.NameLabel = new System.Windows.Forms.Label();
             this.NameButton = new System.Windows.Forms.Button();
+            this.FightingStyleSelector = new System.Windows.Forms.ComboBox();
+            this.FightingStyleLabel = new System.Windows.Forms.Label();
+            this.SecondWindLabel = new System.Windows.Forms.Label();
+            this.Lv1Label = new System.Windows.Forms.Label();
+            this.divider5 = new System.Windows.Forms.Label();
+            this.divider6 = new System.Windows.Forms.Label();
+            this.Lv2Label = new System.Windows.Forms.Label();
+            this.ActionSurgeLabel = new System.Windows.Forms.Label();
+            this.Lv3Label = new System.Windows.Forms.Label();
+            this.divider7 = new System.Windows.Forms.Label();
+            this.Lv4Label = new System.Windows.Forms.Label();
+            this.Lv5Label = new System.Windows.Forms.Label();
+            this.Lv6Label = new System.Windows.Forms.Label();
+            this.Lv7Label = new System.Windows.Forms.Label();
+            this.Lv8Label = new System.Windows.Forms.Label();
+            this.Lv9Label = new System.Windows.Forms.Label();
+            this.Lv10Label = new System.Windows.Forms.Label();
+            this.Lv11Label = new System.Windows.Forms.Label();
+            this.Lv12Label = new System.Windows.Forms.Label();
+            this.Lv13Label = new System.Windows.Forms.Label();
+            this.Lv14Label = new System.Windows.Forms.Label();
+            this.Lv15Label = new System.Windows.Forms.Label();
+            this.Lv16Label = new System.Windows.Forms.Label();
+            this.Lv17Label = new System.Windows.Forms.Label();
+            this.Lv18Label = new System.Windows.Forms.Label();
+            this.Lv19Label = new System.Windows.Forms.Label();
+            this.Lv20Label = new System.Windows.Forms.Label();
+            this.divider8 = new System.Windows.Forms.Label();
+            this.divider9 = new System.Windows.Forms.Label();
+            this.divider10 = new System.Windows.Forms.Label();
+            this.divider11 = new System.Windows.Forms.Label();
+            this.divider12 = new System.Windows.Forms.Label();
+            this.divider13 = new System.Windows.Forms.Label();
+            this.divider14 = new System.Windows.Forms.Label();
+            this.divider15 = new System.Windows.Forms.Label();
+            this.divider16 = new System.Windows.Forms.Label();
+            this.divider17 = new System.Windows.Forms.Label();
+            this.divider18 = new System.Windows.Forms.Label();
+            this.divider19 = new System.Windows.Forms.Label();
+            this.divider20 = new System.Windows.Forms.Label();
+            this.divider21 = new System.Windows.Forms.Label();
+            this.divider22 = new System.Windows.Forms.Label();
+            this.divider23 = new System.Windows.Forms.Label();
+            this.divider24 = new System.Windows.Forms.Label();
+            this.FinishButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MartialSelectTypeBox1
             // 
             this.MartialSelectTypeBox1.AutoSize = true;
-            this.MartialSelectTypeBox1.Location = new System.Drawing.Point(115, 783);
+            this.MartialSelectTypeBox1.Location = new System.Drawing.Point(121, 944);
             this.MartialSelectTypeBox1.Name = "MartialSelectTypeBox1";
             this.MartialSelectTypeBox1.Size = new System.Drawing.Size(76, 21);
             this.MartialSelectTypeBox1.TabIndex = 0;
@@ -244,7 +289,7 @@
             // MartialSelectTypeBox2
             // 
             this.MartialSelectTypeBox2.AutoSize = true;
-            this.MartialSelectTypeBox2.Location = new System.Drawing.Point(197, 783);
+            this.MartialSelectTypeBox2.Location = new System.Drawing.Point(203, 944);
             this.MartialSelectTypeBox2.Name = "MartialSelectTypeBox2";
             this.MartialSelectTypeBox2.Size = new System.Drawing.Size(83, 21);
             this.MartialSelectTypeBox2.TabIndex = 2;
@@ -254,7 +299,7 @@
             // MartialSelectTypeBox3
             // 
             this.MartialSelectTypeBox3.AutoSize = true;
-            this.MartialSelectTypeBox3.Location = new System.Drawing.Point(286, 783);
+            this.MartialSelectTypeBox3.Location = new System.Drawing.Point(292, 944);
             this.MartialSelectTypeBox3.Name = "MartialSelectTypeBox3";
             this.MartialSelectTypeBox3.Size = new System.Drawing.Size(71, 21);
             this.MartialSelectTypeBox3.TabIndex = 3;
@@ -264,7 +309,7 @@
             // MartialArchetypeHeader
             // 
             this.MartialArchetypeHeader.AutoSize = true;
-            this.MartialArchetypeHeader.Location = new System.Drawing.Point(162, 763);
+            this.MartialArchetypeHeader.Location = new System.Drawing.Point(168, 917);
             this.MartialArchetypeHeader.Name = "MartialArchetypeHeader";
             this.MartialArchetypeHeader.Size = new System.Drawing.Size(118, 17);
             this.MartialArchetypeHeader.TabIndex = 4;
@@ -273,7 +318,7 @@
             // MartialArchetypeBox1
             // 
             this.MartialArchetypeBox1.AutoSize = true;
-            this.MartialArchetypeBox1.Location = new System.Drawing.Point(66, 821);
+            this.MartialArchetypeBox1.Location = new System.Drawing.Point(72, 975);
             this.MartialArchetypeBox1.Name = "MartialArchetypeBox1";
             this.MartialArchetypeBox1.Size = new System.Drawing.Size(93, 21);
             this.MartialArchetypeBox1.TabIndex = 5;
@@ -283,7 +328,7 @@
             // MartialArchetypeBox2
             // 
             this.MartialArchetypeBox2.AutoSize = true;
-            this.MartialArchetypeBox2.Location = new System.Drawing.Point(165, 821);
+            this.MartialArchetypeBox2.Location = new System.Drawing.Point(171, 975);
             this.MartialArchetypeBox2.Name = "MartialArchetypeBox2";
             this.MartialArchetypeBox2.Size = new System.Drawing.Size(113, 21);
             this.MartialArchetypeBox2.TabIndex = 6;
@@ -293,7 +338,7 @@
             // MartialArchetypeBox3
             // 
             this.MartialArchetypeBox3.AutoSize = true;
-            this.MartialArchetypeBox3.Location = new System.Drawing.Point(284, 821);
+            this.MartialArchetypeBox3.Location = new System.Drawing.Point(290, 975);
             this.MartialArchetypeBox3.Name = "MartialArchetypeBox3";
             this.MartialArchetypeBox3.Size = new System.Drawing.Size(121, 21);
             this.MartialArchetypeBox3.TabIndex = 7;
@@ -334,7 +379,7 @@
             // divider4
             // 
             this.divider4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider4.Location = new System.Drawing.Point(49, 706);
+            this.divider4.Location = new System.Drawing.Point(50, 704);
             this.divider4.Name = "divider4";
             this.divider4.Size = new System.Drawing.Size(362, 2);
             this.divider4.TabIndex = 9;
@@ -712,7 +757,7 @@
             // divider3
             // 
             this.divider3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider3.Location = new System.Drawing.Point(49, 574);
+            this.divider3.Location = new System.Drawing.Point(50, 574);
             this.divider3.Name = "divider3";
             this.divider3.Size = new System.Drawing.Size(362, 2);
             this.divider3.TabIndex = 47;
@@ -2472,7 +2517,7 @@
             // divider2
             // 
             this.divider2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider2.Location = new System.Drawing.Point(49, 226);
+            this.divider2.Location = new System.Drawing.Point(50, 226);
             this.divider2.Name = "divider2";
             this.divider2.Size = new System.Drawing.Size(362, 2);
             this.divider2.TabIndex = 199;
@@ -2481,7 +2526,7 @@
             // divider1
             // 
             this.divider1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider1.Location = new System.Drawing.Point(49, 63);
+            this.divider1.Location = new System.Drawing.Point(50, 63);
             this.divider1.Name = "divider1";
             this.divider1.Size = new System.Drawing.Size(362, 2);
             this.divider1.TabIndex = 200;
@@ -2538,12 +2583,490 @@
             this.NameButton.UseVisualStyleBackColor = true;
             this.NameButton.Click += new System.EventHandler(this.NameButton_Click);
             // 
+            // FightingStyleSelector
+            // 
+            this.FightingStyleSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FightingStyleSelector.FormattingEnabled = true;
+            this.FightingStyleSelector.Items.AddRange(new object[] {
+            "Archery",
+            "Defense",
+            "Dueling",
+            "Great Weapon Fighting",
+            "Protection",
+            "Two-Weapon Fighting"});
+            this.FightingStyleSelector.Location = new System.Drawing.Point(187, 744);
+            this.FightingStyleSelector.Name = "FightingStyleSelector";
+            this.FightingStyleSelector.Size = new System.Drawing.Size(168, 24);
+            this.FightingStyleSelector.TabIndex = 207;
+            // 
+            // FightingStyleLabel
+            // 
+            this.FightingStyleLabel.AutoSize = true;
+            this.FightingStyleLabel.Location = new System.Drawing.Point(84, 747);
+            this.FightingStyleLabel.Name = "FightingStyleLabel";
+            this.FightingStyleLabel.Size = new System.Drawing.Size(97, 17);
+            this.FightingStyleLabel.TabIndex = 208;
+            this.FightingStyleLabel.Text = "Fighting Style:";
+            // 
+            // SecondWindLabel
+            // 
+            this.SecondWindLabel.AutoSize = true;
+            this.SecondWindLabel.Location = new System.Drawing.Point(178, 783);
+            this.SecondWindLabel.Name = "SecondWindLabel";
+            this.SecondWindLabel.Size = new System.Drawing.Size(92, 17);
+            this.SecondWindLabel.TabIndex = 209;
+            this.SecondWindLabel.Text = "Second Wind";
+            // 
+            // Lv1Label
+            // 
+            this.Lv1Label.AutoSize = true;
+            this.Lv1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv1Label.Location = new System.Drawing.Point(199, 711);
+            this.Lv1Label.Name = "Lv1Label";
+            this.Lv1Label.Size = new System.Drawing.Size(54, 25);
+            this.Lv1Label.TabIndex = 210;
+            this.Lv1Label.Text = "Lv. 1";
+            // 
+            // divider5
+            // 
+            this.divider5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider5.Location = new System.Drawing.Point(50, 812);
+            this.divider5.Name = "divider5";
+            this.divider5.Size = new System.Drawing.Size(362, 2);
+            this.divider5.TabIndex = 211;
+            this.divider5.Text = "label1";
+            // 
+            // divider6
+            // 
+            this.divider6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider6.Location = new System.Drawing.Point(50, 880);
+            this.divider6.Name = "divider6";
+            this.divider6.Size = new System.Drawing.Size(362, 2);
+            this.divider6.TabIndex = 212;
+            this.divider6.Text = "label1";
+            // 
+            // Lv2Label
+            // 
+            this.Lv2Label.AutoSize = true;
+            this.Lv2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv2Label.Location = new System.Drawing.Point(199, 819);
+            this.Lv2Label.Name = "Lv2Label";
+            this.Lv2Label.Size = new System.Drawing.Size(54, 25);
+            this.Lv2Label.TabIndex = 213;
+            this.Lv2Label.Text = "Lv. 2";
+            // 
+            // ActionSurgeLabel
+            // 
+            this.ActionSurgeLabel.AutoSize = true;
+            this.ActionSurgeLabel.Location = new System.Drawing.Point(181, 851);
+            this.ActionSurgeLabel.Name = "ActionSurgeLabel";
+            this.ActionSurgeLabel.Size = new System.Drawing.Size(89, 17);
+            this.ActionSurgeLabel.TabIndex = 214;
+            this.ActionSurgeLabel.Text = "Action Surge";
+            // 
+            // Lv3Label
+            // 
+            this.Lv3Label.AutoSize = true;
+            this.Lv3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv3Label.Location = new System.Drawing.Point(199, 887);
+            this.Lv3Label.Name = "Lv3Label";
+            this.Lv3Label.Size = new System.Drawing.Size(54, 25);
+            this.Lv3Label.TabIndex = 215;
+            this.Lv3Label.Text = "Lv. 3";
+            // 
+            // divider7
+            // 
+            this.divider7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider7.Location = new System.Drawing.Point(50, 1005);
+            this.divider7.Name = "divider7";
+            this.divider7.Size = new System.Drawing.Size(362, 2);
+            this.divider7.TabIndex = 216;
+            this.divider7.Text = "label1";
+            // 
+            // Lv4Label
+            // 
+            this.Lv4Label.AutoSize = true;
+            this.Lv4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv4Label.Location = new System.Drawing.Point(194, 1012);
+            this.Lv4Label.Name = "Lv4Label";
+            this.Lv4Label.Size = new System.Drawing.Size(54, 25);
+            this.Lv4Label.TabIndex = 217;
+            this.Lv4Label.Text = "Lv. 4";
+            // 
+            // Lv5Label
+            // 
+            this.Lv5Label.AutoSize = true;
+            this.Lv5Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv5Label.Location = new System.Drawing.Point(194, 1047);
+            this.Lv5Label.Name = "Lv5Label";
+            this.Lv5Label.Size = new System.Drawing.Size(54, 25);
+            this.Lv5Label.TabIndex = 218;
+            this.Lv5Label.Text = "Lv. 5";
+            // 
+            // Lv6Label
+            // 
+            this.Lv6Label.AutoSize = true;
+            this.Lv6Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv6Label.Location = new System.Drawing.Point(194, 1082);
+            this.Lv6Label.Name = "Lv6Label";
+            this.Lv6Label.Size = new System.Drawing.Size(54, 25);
+            this.Lv6Label.TabIndex = 219;
+            this.Lv6Label.Text = "Lv. 6";
+            // 
+            // Lv7Label
+            // 
+            this.Lv7Label.AutoSize = true;
+            this.Lv7Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv7Label.Location = new System.Drawing.Point(194, 1117);
+            this.Lv7Label.Name = "Lv7Label";
+            this.Lv7Label.Size = new System.Drawing.Size(54, 25);
+            this.Lv7Label.TabIndex = 220;
+            this.Lv7Label.Text = "Lv. 7";
+            // 
+            // Lv8Label
+            // 
+            this.Lv8Label.AutoSize = true;
+            this.Lv8Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv8Label.Location = new System.Drawing.Point(194, 1152);
+            this.Lv8Label.Name = "Lv8Label";
+            this.Lv8Label.Size = new System.Drawing.Size(54, 25);
+            this.Lv8Label.TabIndex = 221;
+            this.Lv8Label.Text = "Lv. 8";
+            // 
+            // Lv9Label
+            // 
+            this.Lv9Label.AutoSize = true;
+            this.Lv9Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv9Label.Location = new System.Drawing.Point(194, 1187);
+            this.Lv9Label.Name = "Lv9Label";
+            this.Lv9Label.Size = new System.Drawing.Size(54, 25);
+            this.Lv9Label.TabIndex = 222;
+            this.Lv9Label.Text = "Lv. 9";
+            // 
+            // Lv10Label
+            // 
+            this.Lv10Label.AutoSize = true;
+            this.Lv10Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv10Label.Location = new System.Drawing.Point(194, 1222);
+            this.Lv10Label.Name = "Lv10Label";
+            this.Lv10Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv10Label.TabIndex = 223;
+            this.Lv10Label.Text = "Lv. 10";
+            // 
+            // Lv11Label
+            // 
+            this.Lv11Label.AutoSize = true;
+            this.Lv11Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv11Label.Location = new System.Drawing.Point(194, 1257);
+            this.Lv11Label.Name = "Lv11Label";
+            this.Lv11Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv11Label.TabIndex = 224;
+            this.Lv11Label.Text = "Lv. 11";
+            // 
+            // Lv12Label
+            // 
+            this.Lv12Label.AutoSize = true;
+            this.Lv12Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv12Label.Location = new System.Drawing.Point(194, 1292);
+            this.Lv12Label.Name = "Lv12Label";
+            this.Lv12Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv12Label.TabIndex = 225;
+            this.Lv12Label.Text = "Lv. 12";
+            // 
+            // Lv13Label
+            // 
+            this.Lv13Label.AutoSize = true;
+            this.Lv13Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv13Label.Location = new System.Drawing.Point(194, 1327);
+            this.Lv13Label.Name = "Lv13Label";
+            this.Lv13Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv13Label.TabIndex = 226;
+            this.Lv13Label.Text = "Lv. 13";
+            // 
+            // Lv14Label
+            // 
+            this.Lv14Label.AutoSize = true;
+            this.Lv14Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv14Label.Location = new System.Drawing.Point(194, 1362);
+            this.Lv14Label.Name = "Lv14Label";
+            this.Lv14Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv14Label.TabIndex = 227;
+            this.Lv14Label.Text = "Lv. 14";
+            // 
+            // Lv15Label
+            // 
+            this.Lv15Label.AutoSize = true;
+            this.Lv15Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv15Label.Location = new System.Drawing.Point(194, 1397);
+            this.Lv15Label.Name = "Lv15Label";
+            this.Lv15Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv15Label.TabIndex = 228;
+            this.Lv15Label.Text = "Lv. 15";
+            // 
+            // Lv16Label
+            // 
+            this.Lv16Label.AutoSize = true;
+            this.Lv16Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv16Label.Location = new System.Drawing.Point(194, 1432);
+            this.Lv16Label.Name = "Lv16Label";
+            this.Lv16Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv16Label.TabIndex = 229;
+            this.Lv16Label.Text = "Lv. 16";
+            // 
+            // Lv17Label
+            // 
+            this.Lv17Label.AutoSize = true;
+            this.Lv17Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv17Label.Location = new System.Drawing.Point(194, 1467);
+            this.Lv17Label.Name = "Lv17Label";
+            this.Lv17Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv17Label.TabIndex = 230;
+            this.Lv17Label.Text = "Lv. 17";
+            // 
+            // Lv18Label
+            // 
+            this.Lv18Label.AutoSize = true;
+            this.Lv18Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv18Label.Location = new System.Drawing.Point(194, 1502);
+            this.Lv18Label.Name = "Lv18Label";
+            this.Lv18Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv18Label.TabIndex = 231;
+            this.Lv18Label.Text = "Lv. 18";
+            // 
+            // Lv19Label
+            // 
+            this.Lv19Label.AutoSize = true;
+            this.Lv19Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv19Label.Location = new System.Drawing.Point(194, 1537);
+            this.Lv19Label.Name = "Lv19Label";
+            this.Lv19Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv19Label.TabIndex = 232;
+            this.Lv19Label.Text = "Lv. 19";
+            // 
+            // Lv20Label
+            // 
+            this.Lv20Label.AutoSize = true;
+            this.Lv20Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lv20Label.Location = new System.Drawing.Point(194, 1572);
+            this.Lv20Label.Name = "Lv20Label";
+            this.Lv20Label.Size = new System.Drawing.Size(65, 25);
+            this.Lv20Label.TabIndex = 233;
+            this.Lv20Label.Text = "Lv. 20";
+            // 
+            // divider8
+            // 
+            this.divider8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider8.Location = new System.Drawing.Point(50, 1040);
+            this.divider8.Name = "divider8";
+            this.divider8.Size = new System.Drawing.Size(362, 2);
+            this.divider8.TabIndex = 234;
+            this.divider8.Text = "label1";
+            // 
+            // divider9
+            // 
+            this.divider9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider9.Location = new System.Drawing.Point(50, 1075);
+            this.divider9.Name = "divider9";
+            this.divider9.Size = new System.Drawing.Size(362, 2);
+            this.divider9.TabIndex = 235;
+            this.divider9.Text = "label2";
+            // 
+            // divider10
+            // 
+            this.divider10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider10.Location = new System.Drawing.Point(50, 1110);
+            this.divider10.Name = "divider10";
+            this.divider10.Size = new System.Drawing.Size(362, 2);
+            this.divider10.TabIndex = 236;
+            this.divider10.Text = "label3";
+            // 
+            // divider11
+            // 
+            this.divider11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider11.Location = new System.Drawing.Point(50, 1145);
+            this.divider11.Name = "divider11";
+            this.divider11.Size = new System.Drawing.Size(362, 2);
+            this.divider11.TabIndex = 237;
+            this.divider11.Text = "label4";
+            // 
+            // divider12
+            // 
+            this.divider12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider12.Location = new System.Drawing.Point(50, 1180);
+            this.divider12.Name = "divider12";
+            this.divider12.Size = new System.Drawing.Size(362, 2);
+            this.divider12.TabIndex = 238;
+            this.divider12.Text = "label5";
+            // 
+            // divider13
+            // 
+            this.divider13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider13.Location = new System.Drawing.Point(50, 1215);
+            this.divider13.Name = "divider13";
+            this.divider13.Size = new System.Drawing.Size(362, 2);
+            this.divider13.TabIndex = 239;
+            this.divider13.Text = "label6";
+            // 
+            // divider14
+            // 
+            this.divider14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider14.Location = new System.Drawing.Point(50, 1250);
+            this.divider14.Name = "divider14";
+            this.divider14.Size = new System.Drawing.Size(362, 2);
+            this.divider14.TabIndex = 240;
+            this.divider14.Text = "label7";
+            // 
+            // divider15
+            // 
+            this.divider15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider15.Location = new System.Drawing.Point(50, 1285);
+            this.divider15.Name = "divider15";
+            this.divider15.Size = new System.Drawing.Size(362, 2);
+            this.divider15.TabIndex = 241;
+            this.divider15.Text = "label8";
+            // 
+            // divider16
+            // 
+            this.divider16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider16.Location = new System.Drawing.Point(50, 1320);
+            this.divider16.Name = "divider16";
+            this.divider16.Size = new System.Drawing.Size(362, 2);
+            this.divider16.TabIndex = 242;
+            this.divider16.Text = "label9";
+            // 
+            // divider17
+            // 
+            this.divider17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider17.Location = new System.Drawing.Point(50, 1355);
+            this.divider17.Name = "divider17";
+            this.divider17.Size = new System.Drawing.Size(362, 2);
+            this.divider17.TabIndex = 243;
+            this.divider17.Text = "label10";
+            // 
+            // divider18
+            // 
+            this.divider18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider18.Location = new System.Drawing.Point(50, 1390);
+            this.divider18.Name = "divider18";
+            this.divider18.Size = new System.Drawing.Size(362, 2);
+            this.divider18.TabIndex = 244;
+            this.divider18.Text = "label11";
+            // 
+            // divider19
+            // 
+            this.divider19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider19.Location = new System.Drawing.Point(50, 1425);
+            this.divider19.Name = "divider19";
+            this.divider19.Size = new System.Drawing.Size(362, 2);
+            this.divider19.TabIndex = 245;
+            this.divider19.Text = "label12";
+            // 
+            // divider20
+            // 
+            this.divider20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider20.Location = new System.Drawing.Point(50, 1460);
+            this.divider20.Name = "divider20";
+            this.divider20.Size = new System.Drawing.Size(362, 2);
+            this.divider20.TabIndex = 246;
+            this.divider20.Text = "label13";
+            // 
+            // divider21
+            // 
+            this.divider21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider21.Location = new System.Drawing.Point(50, 1495);
+            this.divider21.Name = "divider21";
+            this.divider21.Size = new System.Drawing.Size(362, 2);
+            this.divider21.TabIndex = 247;
+            this.divider21.Text = "label14";
+            // 
+            // divider22
+            // 
+            this.divider22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider22.Location = new System.Drawing.Point(50, 1530);
+            this.divider22.Name = "divider22";
+            this.divider22.Size = new System.Drawing.Size(362, 2);
+            this.divider22.TabIndex = 248;
+            this.divider22.Text = "label15";
+            // 
+            // divider23
+            // 
+            this.divider23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider23.Location = new System.Drawing.Point(50, 1565);
+            this.divider23.Name = "divider23";
+            this.divider23.Size = new System.Drawing.Size(362, 2);
+            this.divider23.TabIndex = 249;
+            this.divider23.Text = "label16";
+            // 
+            // divider24
+            // 
+            this.divider24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.divider24.Location = new System.Drawing.Point(50, 1600);
+            this.divider24.Name = "divider24";
+            this.divider24.Size = new System.Drawing.Size(362, 2);
+            this.divider24.TabIndex = 250;
+            this.divider24.Text = "label17";
+            // 
+            // FinishButton
+            // 
+            this.FinishButton.Location = new System.Drawing.Point(189, 1607);
+            this.FinishButton.Name = "FinishButton";
+            this.FinishButton.Size = new System.Drawing.Size(80, 30);
+            this.FinishButton.TabIndex = 251;
+            this.FinishButton.Text = "Generate";
+            this.FinishButton.UseVisualStyleBackColor = true;
+            // 
             // Fighter_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.AutoScrollMargin = new System.Drawing.Size(0, 10);
             this.ClientSize = new System.Drawing.Size(461, 848);
+            this.Controls.Add(this.FinishButton);
+            this.Controls.Add(this.divider24);
+            this.Controls.Add(this.divider23);
+            this.Controls.Add(this.divider22);
+            this.Controls.Add(this.divider21);
+            this.Controls.Add(this.divider20);
+            this.Controls.Add(this.divider19);
+            this.Controls.Add(this.divider18);
+            this.Controls.Add(this.divider17);
+            this.Controls.Add(this.divider16);
+            this.Controls.Add(this.divider15);
+            this.Controls.Add(this.divider14);
+            this.Controls.Add(this.divider13);
+            this.Controls.Add(this.divider12);
+            this.Controls.Add(this.divider11);
+            this.Controls.Add(this.divider10);
+            this.Controls.Add(this.divider9);
+            this.Controls.Add(this.divider8);
+            this.Controls.Add(this.Lv20Label);
+            this.Controls.Add(this.Lv19Label);
+            this.Controls.Add(this.Lv18Label);
+            this.Controls.Add(this.Lv17Label);
+            this.Controls.Add(this.Lv16Label);
+            this.Controls.Add(this.Lv15Label);
+            this.Controls.Add(this.Lv14Label);
+            this.Controls.Add(this.Lv13Label);
+            this.Controls.Add(this.Lv12Label);
+            this.Controls.Add(this.Lv11Label);
+            this.Controls.Add(this.Lv10Label);
+            this.Controls.Add(this.Lv9Label);
+            this.Controls.Add(this.Lv8Label);
+            this.Controls.Add(this.Lv7Label);
+            this.Controls.Add(this.Lv6Label);
+            this.Controls.Add(this.Lv5Label);
+            this.Controls.Add(this.Lv4Label);
+            this.Controls.Add(this.divider7);
+            this.Controls.Add(this.Lv3Label);
+            this.Controls.Add(this.ActionSurgeLabel);
+            this.Controls.Add(this.Lv2Label);
+            this.Controls.Add(this.divider6);
+            this.Controls.Add(this.divider5);
+            this.Controls.Add(this.Lv1Label);
+            this.Controls.Add(this.SecondWindLabel);
+            this.Controls.Add(this.FightingStyleLabel);
+            this.Controls.Add(this.FightingStyleSelector);
             this.Controls.Add(this.NameButton);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.LastNameBox);
@@ -2958,5 +3481,50 @@
         private System.Windows.Forms.TextBox LastNameBox;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Button NameButton;
+        private System.Windows.Forms.ComboBox FightingStyleSelector;
+        private System.Windows.Forms.Label FightingStyleLabel;
+        private System.Windows.Forms.Label SecondWindLabel;
+        private System.Windows.Forms.Label Lv1Label;
+        private System.Windows.Forms.Label divider5;
+        private System.Windows.Forms.Label divider6;
+        private System.Windows.Forms.Label Lv2Label;
+        private System.Windows.Forms.Label ActionSurgeLabel;
+        private System.Windows.Forms.Label Lv3Label;
+        private System.Windows.Forms.Label divider7;
+        private System.Windows.Forms.Label Lv4Label;
+        private System.Windows.Forms.Label Lv5Label;
+        private System.Windows.Forms.Label Lv6Label;
+        private System.Windows.Forms.Label Lv7Label;
+        private System.Windows.Forms.Label Lv8Label;
+        private System.Windows.Forms.Label Lv9Label;
+        private System.Windows.Forms.Label Lv10Label;
+        private System.Windows.Forms.Label Lv11Label;
+        private System.Windows.Forms.Label Lv12Label;
+        private System.Windows.Forms.Label Lv13Label;
+        private System.Windows.Forms.Label Lv14Label;
+        private System.Windows.Forms.Label Lv15Label;
+        private System.Windows.Forms.Label Lv16Label;
+        private System.Windows.Forms.Label Lv17Label;
+        private System.Windows.Forms.Label Lv18Label;
+        private System.Windows.Forms.Label Lv19Label;
+        private System.Windows.Forms.Label Lv20Label;
+        private System.Windows.Forms.Label divider8;
+        private System.Windows.Forms.Label divider9;
+        private System.Windows.Forms.Label divider10;
+        private System.Windows.Forms.Label divider11;
+        private System.Windows.Forms.Label divider12;
+        private System.Windows.Forms.Label divider13;
+        private System.Windows.Forms.Label divider14;
+        private System.Windows.Forms.Label divider15;
+        private System.Windows.Forms.Label divider16;
+        private System.Windows.Forms.Label divider17;
+        private System.Windows.Forms.Label divider18;
+        private System.Windows.Forms.Label divider19;
+        private System.Windows.Forms.Label divider20;
+        private System.Windows.Forms.Label divider21;
+        private System.Windows.Forms.Label divider22;
+        private System.Windows.Forms.Label divider23;
+        private System.Windows.Forms.Label divider24;
+        private System.Windows.Forms.Button FinishButton;
     }
 }
