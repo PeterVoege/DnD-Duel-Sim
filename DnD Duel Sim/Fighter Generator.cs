@@ -1797,5 +1797,48 @@ namespace DnD_Duel_Sim
             FirstNameBox.Text = "RandomFirstName";
             LastNameBox.Text = "RandomLastName";
         }
+
+        private void MartialArchetypeBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (MartialArchetypeBox1.Checked)
+            {
+                MartialArchetypeBox1.AutoCheck = false;
+
+                MartialArchetypeBox2.Checked = false;
+                MartialArchetypeBox2.AutoCheck = true;
+
+                MartialArchetypeBox3.Checked = false;
+                MartialArchetypeBox3.AutoCheck = true;
+            }
+            ImprovedCriticalLabel.Visible = true;
+        }
+        private void MartialArchetypeBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (MartialArchetypeBox2.Checked)
+            {
+                MartialArchetypeBox1.Checked = false;
+                MartialArchetypeBox1.AutoCheck = true;
+
+                MartialArchetypeBox2.AutoCheck = false;
+
+                MartialArchetypeBox3.Checked = false;
+                MartialArchetypeBox3.AutoCheck = true;
+            }
+            ImprovedCriticalLabel.Visible = false;
+        }
+        private void MartialArchetypeBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (MartialArchetypeBox3.Checked)
+            {
+                MartialArchetypeBox1.Checked = false;
+                MartialArchetypeBox1.AutoCheck = true;
+
+                MartialArchetypeBox2.Checked = false;
+                MartialArchetypeBox2.AutoCheck = true;
+
+                MartialArchetypeBox3.AutoCheck = false;
+            }
+            ImprovedCriticalLabel.Visible = false;
+        }
     }
 }

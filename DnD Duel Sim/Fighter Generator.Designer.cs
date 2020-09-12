@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MartialSelectTypeBox1 = new System.Windows.Forms.CheckBox();
-            this.MartialSelectTypeBox2 = new System.Windows.Forms.CheckBox();
-            this.MartialSelectTypeBox3 = new System.Windows.Forms.CheckBox();
             this.MartialArchetypeHeader = new System.Windows.Forms.Label();
             this.MartialArchetypeBox1 = new System.Windows.Forms.CheckBox();
             this.MartialArchetypeBox2 = new System.Windows.Forms.CheckBox();
@@ -274,37 +271,152 @@
             this.divider23 = new System.Windows.Forms.Label();
             this.divider24 = new System.Windows.Forms.Label();
             this.FinishButton = new System.Windows.Forms.Button();
+            this.ImprovedCriticalLabel = new System.Windows.Forms.Label();
+            this.SurvivorLabel = new System.Windows.Forms.Label();
+            this.SuperiorCriticalLabel = new System.Windows.Forms.Label();
+            this.RemarkableAthleteLabel = new System.Windows.Forms.Label();
+            this.AdditionalFightingStyleLabel = new System.Windows.Forms.Label();
+            this.AdditionalFightingStyleSelector = new System.Windows.Forms.ComboBox();
+            this.ExtraAttackLabel1 = new System.Windows.Forms.Label();
+            this.ExtraAttackLabel2 = new System.Windows.Forms.Label();
+            this.ExtraAttackLabel3 = new System.Windows.Forms.Label();
+            this.IndomitableLabel1 = new System.Windows.Forms.Label();
+            this.IndomitableLabel2 = new System.Windows.Forms.Label();
+            this.IndomitableLabel3 = new System.Windows.Forms.Label();
+            this.AbilityImprovementLabel1 = new System.Windows.Forms.Label();
+            this.AbilityImprovementLabel2 = new System.Windows.Forms.Label();
+            this.AbilityImprovementLabel3 = new System.Windows.Forms.Label();
+            this.AbilityImprovementLabel4 = new System.Windows.Forms.Label();
+            this.AbilityImprovementLabel5 = new System.Windows.Forms.Label();
+            this.AbilityImprovementLabel6 = new System.Windows.Forms.Label();
+            this.AbilityImprovementLabel7 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrLabel1 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexLabel1 = new System.Windows.Forms.Label();
+            this.AbilityScoreConLabel1 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntLabel1 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisLabel1 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaLabel1 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrLabel2 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrLabel3 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrLabel4 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrLabel5 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrLabel6 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrLabel7 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexLabel2 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexLabel3 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexLabel4 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexLabel5 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexLabel6 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexLabel7 = new System.Windows.Forms.Label();
+            this.AbilityScoreConLabel2 = new System.Windows.Forms.Label();
+            this.AbilityScoreConLabel3 = new System.Windows.Forms.Label();
+            this.AbilityScoreConLabel4 = new System.Windows.Forms.Label();
+            this.AbilityScoreConLabel5 = new System.Windows.Forms.Label();
+            this.AbilityScoreConLabel6 = new System.Windows.Forms.Label();
+            this.AbilityScoreConLabel7 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaLabel2 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisLabel2 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntLabel2 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaLabel3 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisLabel3 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntLabel3 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaLabel4 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisLabel4 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntLabel4 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaLabel5 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisLabel5 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntLabel5 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaLabel6 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisLabel6 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntLabel6 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaLabel7 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisLabel7 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntLabel7 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrBox1 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreStrBox2 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreStrBox3 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreStrBox4 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreStrBox5 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreStrBox6 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreStrBox7 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreDexBox1 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreConBox1 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreIntBox1 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreWisBox1 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreChaBox1 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreStrNum1 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexNum1 = new System.Windows.Forms.Label();
+            this.AbilityScoreConNum1 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntNum1 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisNum1 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaNum1 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaBox2 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreWisBox2 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreIntBox2 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreConBox2 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreDexBox2 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreChaBox3 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreWisBox3 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreIntBox3 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreConBox3 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreDexBox3 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreChaBox4 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreWisBox4 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreIntBox4 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreConBox4 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreDexBox4 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreChaBox5 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreWisBox5 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreIntBox5 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreConBox5 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreDexBox5 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreChaBox6 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreWisBox6 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreIntBox6 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreConBox6 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreDexBox6 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreChaBox7 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreWisBox7 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreIntBox7 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreConBox7 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreDexBox7 = new System.Windows.Forms.ComboBox();
+            this.AbilityScoreChaNum2 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisNum2 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntNum2 = new System.Windows.Forms.Label();
+            this.AbilityScoreConNum2 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexNum2 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrNum2 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaNum3 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisNum3 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntNum3 = new System.Windows.Forms.Label();
+            this.AbilityScoreConNum3 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexNum3 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrNum3 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaNum4 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisNum4 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntNum4 = new System.Windows.Forms.Label();
+            this.AbilityScoreConNum4 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexNum4 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrNum4 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaNum5 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisNum5 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntNum5 = new System.Windows.Forms.Label();
+            this.AbilityScoreConNum5 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexNum5 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrNum5 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaNum6 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisNum6 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntNum6 = new System.Windows.Forms.Label();
+            this.AbilityScoreConNum6 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexNum6 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrNum6 = new System.Windows.Forms.Label();
+            this.AbilityScoreChaNum7 = new System.Windows.Forms.Label();
+            this.AbilityScoreWisNum7 = new System.Windows.Forms.Label();
+            this.AbilityScoreIntNum7 = new System.Windows.Forms.Label();
+            this.AbilityScoreConNum7 = new System.Windows.Forms.Label();
+            this.AbilityScoreDexNum7 = new System.Windows.Forms.Label();
+            this.AbilityScoreStrNum7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // MartialSelectTypeBox1
-            // 
-            this.MartialSelectTypeBox1.AutoSize = true;
-            this.MartialSelectTypeBox1.Location = new System.Drawing.Point(121, 944);
-            this.MartialSelectTypeBox1.Name = "MartialSelectTypeBox1";
-            this.MartialSelectTypeBox1.Size = new System.Drawing.Size(76, 21);
-            this.MartialSelectTypeBox1.TabIndex = 0;
-            this.MartialSelectTypeBox1.Text = "Manual";
-            this.MartialSelectTypeBox1.UseVisualStyleBackColor = true;
-            // 
-            // MartialSelectTypeBox2
-            // 
-            this.MartialSelectTypeBox2.AutoSize = true;
-            this.MartialSelectTypeBox2.Location = new System.Drawing.Point(203, 944);
-            this.MartialSelectTypeBox2.Name = "MartialSelectTypeBox2";
-            this.MartialSelectTypeBox2.Size = new System.Drawing.Size(83, 21);
-            this.MartialSelectTypeBox2.TabIndex = 2;
-            this.MartialSelectTypeBox2.Text = "Random";
-            this.MartialSelectTypeBox2.UseVisualStyleBackColor = true;
-            // 
-            // MartialSelectTypeBox3
-            // 
-            this.MartialSelectTypeBox3.AutoSize = true;
-            this.MartialSelectTypeBox3.Location = new System.Drawing.Point(292, 944);
-            this.MartialSelectTypeBox3.Name = "MartialSelectTypeBox3";
-            this.MartialSelectTypeBox3.Size = new System.Drawing.Size(71, 21);
-            this.MartialSelectTypeBox3.TabIndex = 3;
-            this.MartialSelectTypeBox3.Text = "Preset";
-            this.MartialSelectTypeBox3.UseVisualStyleBackColor = true;
             // 
             // MartialArchetypeHeader
             // 
@@ -317,33 +429,39 @@
             // 
             // MartialArchetypeBox1
             // 
+            this.MartialArchetypeBox1.AutoCheck = false;
             this.MartialArchetypeBox1.AutoSize = true;
-            this.MartialArchetypeBox1.Location = new System.Drawing.Point(72, 975);
+            this.MartialArchetypeBox1.Checked = true;
+            this.MartialArchetypeBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.MartialArchetypeBox1.Location = new System.Drawing.Point(73, 941);
             this.MartialArchetypeBox1.Name = "MartialArchetypeBox1";
             this.MartialArchetypeBox1.Size = new System.Drawing.Size(93, 21);
             this.MartialArchetypeBox1.TabIndex = 5;
             this.MartialArchetypeBox1.Text = "Champion";
             this.MartialArchetypeBox1.UseVisualStyleBackColor = true;
+            this.MartialArchetypeBox1.CheckedChanged += new System.EventHandler(this.MartialArchetypeBox1_CheckedChanged);
             // 
             // MartialArchetypeBox2
             // 
             this.MartialArchetypeBox2.AutoSize = true;
-            this.MartialArchetypeBox2.Location = new System.Drawing.Point(171, 975);
+            this.MartialArchetypeBox2.Location = new System.Drawing.Point(172, 941);
             this.MartialArchetypeBox2.Name = "MartialArchetypeBox2";
             this.MartialArchetypeBox2.Size = new System.Drawing.Size(113, 21);
             this.MartialArchetypeBox2.TabIndex = 6;
             this.MartialArchetypeBox2.Text = "Battle Master";
             this.MartialArchetypeBox2.UseVisualStyleBackColor = true;
+            this.MartialArchetypeBox2.CheckedChanged += new System.EventHandler(this.MartialArchetypeBox2_CheckedChanged);
             // 
             // MartialArchetypeBox3
             // 
             this.MartialArchetypeBox3.AutoSize = true;
-            this.MartialArchetypeBox3.Location = new System.Drawing.Point(290, 975);
+            this.MartialArchetypeBox3.Location = new System.Drawing.Point(291, 941);
             this.MartialArchetypeBox3.Name = "MartialArchetypeBox3";
             this.MartialArchetypeBox3.Size = new System.Drawing.Size(121, 21);
             this.MartialArchetypeBox3.TabIndex = 7;
             this.MartialArchetypeBox3.Text = "Eldritch Knight";
             this.MartialArchetypeBox3.UseVisualStyleBackColor = true;
+            this.MartialArchetypeBox3.CheckedChanged += new System.EventHandler(this.MartialArchetypeBox3_CheckedChanged);
             // 
             // LevelSelector
             // 
@@ -2677,7 +2795,7 @@
             // divider7
             // 
             this.divider7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider7.Location = new System.Drawing.Point(50, 1005);
+            this.divider7.Location = new System.Drawing.Point(50, 1000);
             this.divider7.Name = "divider7";
             this.divider7.Size = new System.Drawing.Size(362, 2);
             this.divider7.TabIndex = 216;
@@ -2687,7 +2805,7 @@
             // 
             this.Lv4Label.AutoSize = true;
             this.Lv4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv4Label.Location = new System.Drawing.Point(194, 1012);
+            this.Lv4Label.Location = new System.Drawing.Point(194, 1007);
             this.Lv4Label.Name = "Lv4Label";
             this.Lv4Label.Size = new System.Drawing.Size(54, 25);
             this.Lv4Label.TabIndex = 217;
@@ -2697,7 +2815,7 @@
             // 
             this.Lv5Label.AutoSize = true;
             this.Lv5Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv5Label.Location = new System.Drawing.Point(194, 1047);
+            this.Lv5Label.Location = new System.Drawing.Point(194, 1133);
             this.Lv5Label.Name = "Lv5Label";
             this.Lv5Label.Size = new System.Drawing.Size(54, 25);
             this.Lv5Label.TabIndex = 218;
@@ -2707,7 +2825,7 @@
             // 
             this.Lv6Label.AutoSize = true;
             this.Lv6Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv6Label.Location = new System.Drawing.Point(194, 1082);
+            this.Lv6Label.Location = new System.Drawing.Point(194, 1193);
             this.Lv6Label.Name = "Lv6Label";
             this.Lv6Label.Size = new System.Drawing.Size(54, 25);
             this.Lv6Label.TabIndex = 219;
@@ -2717,7 +2835,7 @@
             // 
             this.Lv7Label.AutoSize = true;
             this.Lv7Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv7Label.Location = new System.Drawing.Point(194, 1117);
+            this.Lv7Label.Location = new System.Drawing.Point(194, 1320);
             this.Lv7Label.Name = "Lv7Label";
             this.Lv7Label.Size = new System.Drawing.Size(54, 25);
             this.Lv7Label.TabIndex = 220;
@@ -2727,7 +2845,7 @@
             // 
             this.Lv8Label.AutoSize = true;
             this.Lv8Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv8Label.Location = new System.Drawing.Point(194, 1152);
+            this.Lv8Label.Location = new System.Drawing.Point(194, 1375);
             this.Lv8Label.Name = "Lv8Label";
             this.Lv8Label.Size = new System.Drawing.Size(54, 25);
             this.Lv8Label.TabIndex = 221;
@@ -2737,7 +2855,7 @@
             // 
             this.Lv9Label.AutoSize = true;
             this.Lv9Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv9Label.Location = new System.Drawing.Point(194, 1187);
+            this.Lv9Label.Location = new System.Drawing.Point(194, 1498);
             this.Lv9Label.Name = "Lv9Label";
             this.Lv9Label.Size = new System.Drawing.Size(54, 25);
             this.Lv9Label.TabIndex = 222;
@@ -2747,7 +2865,7 @@
             // 
             this.Lv10Label.AutoSize = true;
             this.Lv10Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv10Label.Location = new System.Drawing.Point(194, 1222);
+            this.Lv10Label.Location = new System.Drawing.Point(194, 1549);
             this.Lv10Label.Name = "Lv10Label";
             this.Lv10Label.Size = new System.Drawing.Size(65, 25);
             this.Lv10Label.TabIndex = 223;
@@ -2757,7 +2875,7 @@
             // 
             this.Lv11Label.AutoSize = true;
             this.Lv11Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv11Label.Location = new System.Drawing.Point(194, 1257);
+            this.Lv11Label.Location = new System.Drawing.Point(194, 1636);
             this.Lv11Label.Name = "Lv11Label";
             this.Lv11Label.Size = new System.Drawing.Size(65, 25);
             this.Lv11Label.TabIndex = 224;
@@ -2767,7 +2885,7 @@
             // 
             this.Lv12Label.AutoSize = true;
             this.Lv12Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv12Label.Location = new System.Drawing.Point(194, 1292);
+            this.Lv12Label.Location = new System.Drawing.Point(194, 1695);
             this.Lv12Label.Name = "Lv12Label";
             this.Lv12Label.Size = new System.Drawing.Size(65, 25);
             this.Lv12Label.TabIndex = 225;
@@ -2777,7 +2895,7 @@
             // 
             this.Lv13Label.AutoSize = true;
             this.Lv13Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv13Label.Location = new System.Drawing.Point(194, 1327);
+            this.Lv13Label.Location = new System.Drawing.Point(194, 1825);
             this.Lv13Label.Name = "Lv13Label";
             this.Lv13Label.Size = new System.Drawing.Size(65, 25);
             this.Lv13Label.TabIndex = 226;
@@ -2787,7 +2905,7 @@
             // 
             this.Lv14Label.AutoSize = true;
             this.Lv14Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv14Label.Location = new System.Drawing.Point(194, 1362);
+            this.Lv14Label.Location = new System.Drawing.Point(194, 1879);
             this.Lv14Label.Name = "Lv14Label";
             this.Lv14Label.Size = new System.Drawing.Size(65, 25);
             this.Lv14Label.TabIndex = 227;
@@ -2797,7 +2915,7 @@
             // 
             this.Lv15Label.AutoSize = true;
             this.Lv15Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv15Label.Location = new System.Drawing.Point(194, 1397);
+            this.Lv15Label.Location = new System.Drawing.Point(194, 2012);
             this.Lv15Label.Name = "Lv15Label";
             this.Lv15Label.Size = new System.Drawing.Size(65, 25);
             this.Lv15Label.TabIndex = 228;
@@ -2807,7 +2925,7 @@
             // 
             this.Lv16Label.AutoSize = true;
             this.Lv16Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv16Label.Location = new System.Drawing.Point(194, 1432);
+            this.Lv16Label.Location = new System.Drawing.Point(194, 2069);
             this.Lv16Label.Name = "Lv16Label";
             this.Lv16Label.Size = new System.Drawing.Size(65, 25);
             this.Lv16Label.TabIndex = 229;
@@ -2817,7 +2935,7 @@
             // 
             this.Lv17Label.AutoSize = true;
             this.Lv17Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv17Label.Location = new System.Drawing.Point(194, 1467);
+            this.Lv17Label.Location = new System.Drawing.Point(194, 2192);
             this.Lv17Label.Name = "Lv17Label";
             this.Lv17Label.Size = new System.Drawing.Size(65, 25);
             this.Lv17Label.TabIndex = 230;
@@ -2827,7 +2945,7 @@
             // 
             this.Lv18Label.AutoSize = true;
             this.Lv18Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv18Label.Location = new System.Drawing.Point(194, 1502);
+            this.Lv18Label.Location = new System.Drawing.Point(194, 2246);
             this.Lv18Label.Name = "Lv18Label";
             this.Lv18Label.Size = new System.Drawing.Size(65, 25);
             this.Lv18Label.TabIndex = 231;
@@ -2837,7 +2955,7 @@
             // 
             this.Lv19Label.AutoSize = true;
             this.Lv19Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv19Label.Location = new System.Drawing.Point(194, 1537);
+            this.Lv19Label.Location = new System.Drawing.Point(194, 2307);
             this.Lv19Label.Name = "Lv19Label";
             this.Lv19Label.Size = new System.Drawing.Size(65, 25);
             this.Lv19Label.TabIndex = 232;
@@ -2847,7 +2965,7 @@
             // 
             this.Lv20Label.AutoSize = true;
             this.Lv20Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv20Label.Location = new System.Drawing.Point(194, 1572);
+            this.Lv20Label.Location = new System.Drawing.Point(194, 2430);
             this.Lv20Label.Name = "Lv20Label";
             this.Lv20Label.Size = new System.Drawing.Size(65, 25);
             this.Lv20Label.TabIndex = 233;
@@ -2856,7 +2974,7 @@
             // divider8
             // 
             this.divider8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider8.Location = new System.Drawing.Point(50, 1040);
+            this.divider8.Location = new System.Drawing.Point(50, 1126);
             this.divider8.Name = "divider8";
             this.divider8.Size = new System.Drawing.Size(362, 2);
             this.divider8.TabIndex = 234;
@@ -2865,7 +2983,7 @@
             // divider9
             // 
             this.divider9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider9.Location = new System.Drawing.Point(50, 1075);
+            this.divider9.Location = new System.Drawing.Point(50, 1186);
             this.divider9.Name = "divider9";
             this.divider9.Size = new System.Drawing.Size(362, 2);
             this.divider9.TabIndex = 235;
@@ -2874,7 +2992,7 @@
             // divider10
             // 
             this.divider10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider10.Location = new System.Drawing.Point(50, 1110);
+            this.divider10.Location = new System.Drawing.Point(50, 1313);
             this.divider10.Name = "divider10";
             this.divider10.Size = new System.Drawing.Size(362, 2);
             this.divider10.TabIndex = 236;
@@ -2883,7 +3001,7 @@
             // divider11
             // 
             this.divider11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider11.Location = new System.Drawing.Point(50, 1145);
+            this.divider11.Location = new System.Drawing.Point(50, 1368);
             this.divider11.Name = "divider11";
             this.divider11.Size = new System.Drawing.Size(362, 2);
             this.divider11.TabIndex = 237;
@@ -2892,7 +3010,7 @@
             // divider12
             // 
             this.divider12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider12.Location = new System.Drawing.Point(50, 1180);
+            this.divider12.Location = new System.Drawing.Point(50, 1491);
             this.divider12.Name = "divider12";
             this.divider12.Size = new System.Drawing.Size(362, 2);
             this.divider12.TabIndex = 238;
@@ -2901,7 +3019,7 @@
             // divider13
             // 
             this.divider13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider13.Location = new System.Drawing.Point(50, 1215);
+            this.divider13.Location = new System.Drawing.Point(50, 1542);
             this.divider13.Name = "divider13";
             this.divider13.Size = new System.Drawing.Size(362, 2);
             this.divider13.TabIndex = 239;
@@ -2910,7 +3028,7 @@
             // divider14
             // 
             this.divider14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider14.Location = new System.Drawing.Point(50, 1250);
+            this.divider14.Location = new System.Drawing.Point(50, 1629);
             this.divider14.Name = "divider14";
             this.divider14.Size = new System.Drawing.Size(362, 2);
             this.divider14.TabIndex = 240;
@@ -2919,7 +3037,7 @@
             // divider15
             // 
             this.divider15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider15.Location = new System.Drawing.Point(50, 1285);
+            this.divider15.Location = new System.Drawing.Point(50, 1688);
             this.divider15.Name = "divider15";
             this.divider15.Size = new System.Drawing.Size(362, 2);
             this.divider15.TabIndex = 241;
@@ -2928,7 +3046,7 @@
             // divider16
             // 
             this.divider16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider16.Location = new System.Drawing.Point(50, 1320);
+            this.divider16.Location = new System.Drawing.Point(50, 1818);
             this.divider16.Name = "divider16";
             this.divider16.Size = new System.Drawing.Size(362, 2);
             this.divider16.TabIndex = 242;
@@ -2937,7 +3055,7 @@
             // divider17
             // 
             this.divider17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider17.Location = new System.Drawing.Point(50, 1355);
+            this.divider17.Location = new System.Drawing.Point(50, 1872);
             this.divider17.Name = "divider17";
             this.divider17.Size = new System.Drawing.Size(362, 2);
             this.divider17.TabIndex = 243;
@@ -2946,7 +3064,7 @@
             // divider18
             // 
             this.divider18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider18.Location = new System.Drawing.Point(50, 1390);
+            this.divider18.Location = new System.Drawing.Point(50, 2005);
             this.divider18.Name = "divider18";
             this.divider18.Size = new System.Drawing.Size(362, 2);
             this.divider18.TabIndex = 244;
@@ -2955,7 +3073,7 @@
             // divider19
             // 
             this.divider19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider19.Location = new System.Drawing.Point(50, 1425);
+            this.divider19.Location = new System.Drawing.Point(50, 2062);
             this.divider19.Name = "divider19";
             this.divider19.Size = new System.Drawing.Size(362, 2);
             this.divider19.TabIndex = 245;
@@ -2964,7 +3082,7 @@
             // divider20
             // 
             this.divider20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider20.Location = new System.Drawing.Point(50, 1460);
+            this.divider20.Location = new System.Drawing.Point(50, 2185);
             this.divider20.Name = "divider20";
             this.divider20.Size = new System.Drawing.Size(362, 2);
             this.divider20.TabIndex = 246;
@@ -2973,7 +3091,7 @@
             // divider21
             // 
             this.divider21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider21.Location = new System.Drawing.Point(50, 1495);
+            this.divider21.Location = new System.Drawing.Point(50, 2239);
             this.divider21.Name = "divider21";
             this.divider21.Size = new System.Drawing.Size(362, 2);
             this.divider21.TabIndex = 247;
@@ -2982,7 +3100,7 @@
             // divider22
             // 
             this.divider22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider22.Location = new System.Drawing.Point(50, 1530);
+            this.divider22.Location = new System.Drawing.Point(50, 2300);
             this.divider22.Name = "divider22";
             this.divider22.Size = new System.Drawing.Size(362, 2);
             this.divider22.TabIndex = 248;
@@ -2991,7 +3109,7 @@
             // divider23
             // 
             this.divider23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider23.Location = new System.Drawing.Point(50, 1565);
+            this.divider23.Location = new System.Drawing.Point(50, 2423);
             this.divider23.Name = "divider23";
             this.divider23.Size = new System.Drawing.Size(362, 2);
             this.divider23.TabIndex = 249;
@@ -3000,7 +3118,7 @@
             // divider24
             // 
             this.divider24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider24.Location = new System.Drawing.Point(50, 1600);
+            this.divider24.Location = new System.Drawing.Point(50, 2474);
             this.divider24.Name = "divider24";
             this.divider24.Size = new System.Drawing.Size(362, 2);
             this.divider24.TabIndex = 250;
@@ -3008,12 +3126,1492 @@
             // 
             // FinishButton
             // 
-            this.FinishButton.Location = new System.Drawing.Point(189, 1607);
+            this.FinishButton.Location = new System.Drawing.Point(189, 2481);
             this.FinishButton.Name = "FinishButton";
             this.FinishButton.Size = new System.Drawing.Size(80, 30);
             this.FinishButton.TabIndex = 251;
             this.FinishButton.Text = "Generate";
             this.FinishButton.UseVisualStyleBackColor = true;
+            // 
+            // ImprovedCriticalLabel
+            // 
+            this.ImprovedCriticalLabel.AutoSize = true;
+            this.ImprovedCriticalLabel.Location = new System.Drawing.Point(109, 973);
+            this.ImprovedCriticalLabel.Name = "ImprovedCriticalLabel";
+            this.ImprovedCriticalLabel.Size = new System.Drawing.Size(236, 17);
+            this.ImprovedCriticalLabel.TabIndex = 252;
+            this.ImprovedCriticalLabel.Text = "Champion Feature: Improved Critical";
+            // 
+            // SurvivorLabel
+            // 
+            this.SurvivorLabel.AutoSize = true;
+            this.SurvivorLabel.Location = new System.Drawing.Point(139, 2271);
+            this.SurvivorLabel.Name = "SurvivorLabel";
+            this.SurvivorLabel.Size = new System.Drawing.Size(184, 17);
+            this.SurvivorLabel.TabIndex = 253;
+            this.SurvivorLabel.Text = "Champion Feature: Survivor";
+            // 
+            // SuperiorCriticalLabel
+            // 
+            this.SuperiorCriticalLabel.AutoSize = true;
+            this.SuperiorCriticalLabel.Location = new System.Drawing.Point(122, 2037);
+            this.SuperiorCriticalLabel.Name = "SuperiorCriticalLabel";
+            this.SuperiorCriticalLabel.Size = new System.Drawing.Size(232, 17);
+            this.SuperiorCriticalLabel.TabIndex = 254;
+            this.SuperiorCriticalLabel.Text = "Champion Feature: Superior Critical";
+            // 
+            // RemarkableAthleteLabel
+            // 
+            this.RemarkableAthleteLabel.AutoSize = true;
+            this.RemarkableAthleteLabel.Location = new System.Drawing.Point(104, 1345);
+            this.RemarkableAthleteLabel.Name = "RemarkableAthleteLabel";
+            this.RemarkableAthleteLabel.Size = new System.Drawing.Size(256, 17);
+            this.RemarkableAthleteLabel.TabIndex = 255;
+            this.RemarkableAthleteLabel.Text = "Champion Feature: Remarkable Athlete";
+            // 
+            // AdditionalFightingStyleLabel
+            // 
+            this.AdditionalFightingStyleLabel.AutoSize = true;
+            this.AdditionalFightingStyleLabel.Location = new System.Drawing.Point(93, 1574);
+            this.AdditionalFightingStyleLabel.Name = "AdditionalFightingStyleLabel";
+            this.AdditionalFightingStyleLabel.Size = new System.Drawing.Size(283, 17);
+            this.AdditionalFightingStyleLabel.TabIndex = 256;
+            this.AdditionalFightingStyleLabel.Text = "Champion Feature: Additional Fighting Style";
+            // 
+            // AdditionalFightingStyleSelector
+            // 
+            this.AdditionalFightingStyleSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AdditionalFightingStyleSelector.FormattingEnabled = true;
+            this.AdditionalFightingStyleSelector.Items.AddRange(new object[] {
+            "Archery",
+            "Defense",
+            "Dueling",
+            "Great Weapon Fighting",
+            "Protection",
+            "Two-Weapon Fighting"});
+            this.AdditionalFightingStyleSelector.Location = new System.Drawing.Point(140, 1596);
+            this.AdditionalFightingStyleSelector.Name = "AdditionalFightingStyleSelector";
+            this.AdditionalFightingStyleSelector.Size = new System.Drawing.Size(168, 24);
+            this.AdditionalFightingStyleSelector.TabIndex = 257;
+            // 
+            // ExtraAttackLabel1
+            // 
+            this.ExtraAttackLabel1.AutoSize = true;
+            this.ExtraAttackLabel1.Location = new System.Drawing.Point(181, 1158);
+            this.ExtraAttackLabel1.Name = "ExtraAttackLabel1";
+            this.ExtraAttackLabel1.Size = new System.Drawing.Size(83, 17);
+            this.ExtraAttackLabel1.TabIndex = 258;
+            this.ExtraAttackLabel1.Text = "Extra Attack";
+            // 
+            // ExtraAttackLabel2
+            // 
+            this.ExtraAttackLabel2.AutoSize = true;
+            this.ExtraAttackLabel2.Location = new System.Drawing.Point(186, 1661);
+            this.ExtraAttackLabel2.Name = "ExtraAttackLabel2";
+            this.ExtraAttackLabel2.Size = new System.Drawing.Size(83, 17);
+            this.ExtraAttackLabel2.TabIndex = 259;
+            this.ExtraAttackLabel2.Text = "Extra Attack";
+            // 
+            // ExtraAttackLabel3
+            // 
+            this.ExtraAttackLabel3.AutoSize = true;
+            this.ExtraAttackLabel3.Location = new System.Drawing.Point(185, 2455);
+            this.ExtraAttackLabel3.Name = "ExtraAttackLabel3";
+            this.ExtraAttackLabel3.Size = new System.Drawing.Size(83, 17);
+            this.ExtraAttackLabel3.TabIndex = 260;
+            this.ExtraAttackLabel3.Text = "Extra Attack";
+            // 
+            // IndomitableLabel1
+            // 
+            this.IndomitableLabel1.AutoSize = true;
+            this.IndomitableLabel1.Location = new System.Drawing.Point(185, 1523);
+            this.IndomitableLabel1.Name = "IndomitableLabel1";
+            this.IndomitableLabel1.Size = new System.Drawing.Size(80, 17);
+            this.IndomitableLabel1.TabIndex = 261;
+            this.IndomitableLabel1.Text = "Indomitable";
+            // 
+            // IndomitableLabel2
+            // 
+            this.IndomitableLabel2.AutoSize = true;
+            this.IndomitableLabel2.Location = new System.Drawing.Point(162, 1850);
+            this.IndomitableLabel2.Name = "IndomitableLabel2";
+            this.IndomitableLabel2.Size = new System.Drawing.Size(139, 17);
+            this.IndomitableLabel2.TabIndex = 262;
+            this.IndomitableLabel2.Text = "Indomitable Upgrade";
+            // 
+            // IndomitableLabel3
+            // 
+            this.IndomitableLabel3.AutoSize = true;
+            this.IndomitableLabel3.Location = new System.Drawing.Point(163, 2217);
+            this.IndomitableLabel3.Name = "IndomitableLabel3";
+            this.IndomitableLabel3.Size = new System.Drawing.Size(139, 17);
+            this.IndomitableLabel3.TabIndex = 263;
+            this.IndomitableLabel3.Text = "Indomitable Upgrade";
+            // 
+            // AbilityImprovementLabel1
+            // 
+            this.AbilityImprovementLabel1.AutoSize = true;
+            this.AbilityImprovementLabel1.Location = new System.Drawing.Point(145, 1032);
+            this.AbilityImprovementLabel1.Name = "AbilityImprovementLabel1";
+            this.AbilityImprovementLabel1.Size = new System.Drawing.Size(171, 17);
+            this.AbilityImprovementLabel1.TabIndex = 264;
+            this.AbilityImprovementLabel1.Text = "Ability Score Improvement";
+            // 
+            // AbilityImprovementLabel2
+            // 
+            this.AbilityImprovementLabel2.AutoSize = true;
+            this.AbilityImprovementLabel2.Location = new System.Drawing.Point(144, 1218);
+            this.AbilityImprovementLabel2.Name = "AbilityImprovementLabel2";
+            this.AbilityImprovementLabel2.Size = new System.Drawing.Size(171, 17);
+            this.AbilityImprovementLabel2.TabIndex = 265;
+            this.AbilityImprovementLabel2.Text = "Ability Score Improvement";
+            // 
+            // AbilityImprovementLabel3
+            // 
+            this.AbilityImprovementLabel3.AutoSize = true;
+            this.AbilityImprovementLabel3.Location = new System.Drawing.Point(146, 1400);
+            this.AbilityImprovementLabel3.Name = "AbilityImprovementLabel3";
+            this.AbilityImprovementLabel3.Size = new System.Drawing.Size(171, 17);
+            this.AbilityImprovementLabel3.TabIndex = 266;
+            this.AbilityImprovementLabel3.Text = "Ability Score Improvement";
+            // 
+            // AbilityImprovementLabel4
+            // 
+            this.AbilityImprovementLabel4.AutoSize = true;
+            this.AbilityImprovementLabel4.Location = new System.Drawing.Point(152, 1720);
+            this.AbilityImprovementLabel4.Name = "AbilityImprovementLabel4";
+            this.AbilityImprovementLabel4.Size = new System.Drawing.Size(171, 17);
+            this.AbilityImprovementLabel4.TabIndex = 267;
+            this.AbilityImprovementLabel4.Text = "Ability Score Improvement";
+            // 
+            // AbilityImprovementLabel5
+            // 
+            this.AbilityImprovementLabel5.AutoSize = true;
+            this.AbilityImprovementLabel5.Location = new System.Drawing.Point(155, 1904);
+            this.AbilityImprovementLabel5.Name = "AbilityImprovementLabel5";
+            this.AbilityImprovementLabel5.Size = new System.Drawing.Size(171, 17);
+            this.AbilityImprovementLabel5.TabIndex = 268;
+            this.AbilityImprovementLabel5.Text = "Ability Score Improvement";
+            // 
+            // AbilityImprovementLabel6
+            // 
+            this.AbilityImprovementLabel6.AutoSize = true;
+            this.AbilityImprovementLabel6.Location = new System.Drawing.Point(153, 2094);
+            this.AbilityImprovementLabel6.Name = "AbilityImprovementLabel6";
+            this.AbilityImprovementLabel6.Size = new System.Drawing.Size(171, 17);
+            this.AbilityImprovementLabel6.TabIndex = 269;
+            this.AbilityImprovementLabel6.Text = "Ability Score Improvement";
+            // 
+            // AbilityImprovementLabel7
+            // 
+            this.AbilityImprovementLabel7.AutoSize = true;
+            this.AbilityImprovementLabel7.Location = new System.Drawing.Point(149, 2332);
+            this.AbilityImprovementLabel7.Name = "AbilityImprovementLabel7";
+            this.AbilityImprovementLabel7.Size = new System.Drawing.Size(171, 17);
+            this.AbilityImprovementLabel7.TabIndex = 270;
+            this.AbilityImprovementLabel7.Text = "Ability Score Improvement";
+            // 
+            // AbilityScoreStrLabel1
+            // 
+            this.AbilityScoreStrLabel1.AutoSize = true;
+            this.AbilityScoreStrLabel1.Location = new System.Drawing.Point(75, 1054);
+            this.AbilityScoreStrLabel1.Name = "AbilityScoreStrLabel1";
+            this.AbilityScoreStrLabel1.Size = new System.Drawing.Size(26, 17);
+            this.AbilityScoreStrLabel1.TabIndex = 271;
+            this.AbilityScoreStrLabel1.Text = "Str";
+            // 
+            // AbilityScoreDexLabel1
+            // 
+            this.AbilityScoreDexLabel1.AutoSize = true;
+            this.AbilityScoreDexLabel1.Location = new System.Drawing.Point(127, 1054);
+            this.AbilityScoreDexLabel1.Name = "AbilityScoreDexLabel1";
+            this.AbilityScoreDexLabel1.Size = new System.Drawing.Size(32, 17);
+            this.AbilityScoreDexLabel1.TabIndex = 272;
+            this.AbilityScoreDexLabel1.Text = "Dex";
+            // 
+            // AbilityScoreConLabel1
+            // 
+            this.AbilityScoreConLabel1.AutoSize = true;
+            this.AbilityScoreConLabel1.Location = new System.Drawing.Point(183, 1054);
+            this.AbilityScoreConLabel1.Name = "AbilityScoreConLabel1";
+            this.AbilityScoreConLabel1.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreConLabel1.TabIndex = 273;
+            this.AbilityScoreConLabel1.Text = "Con";
+            // 
+            // AbilityScoreIntLabel1
+            // 
+            this.AbilityScoreIntLabel1.AutoSize = true;
+            this.AbilityScoreIntLabel1.Location = new System.Drawing.Point(243, 1054);
+            this.AbilityScoreIntLabel1.Name = "AbilityScoreIntLabel1";
+            this.AbilityScoreIntLabel1.Size = new System.Drawing.Size(23, 17);
+            this.AbilityScoreIntLabel1.TabIndex = 274;
+            this.AbilityScoreIntLabel1.Text = "Int";
+            // 
+            // AbilityScoreWisLabel1
+            // 
+            this.AbilityScoreWisLabel1.AutoSize = true;
+            this.AbilityScoreWisLabel1.Location = new System.Drawing.Point(294, 1054);
+            this.AbilityScoreWisLabel1.Name = "AbilityScoreWisLabel1";
+            this.AbilityScoreWisLabel1.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisLabel1.TabIndex = 275;
+            this.AbilityScoreWisLabel1.Text = "Wis";
+            // 
+            // AbilityScoreChaLabel1
+            // 
+            this.AbilityScoreChaLabel1.AutoSize = true;
+            this.AbilityScoreChaLabel1.Location = new System.Drawing.Point(347, 1054);
+            this.AbilityScoreChaLabel1.Name = "AbilityScoreChaLabel1";
+            this.AbilityScoreChaLabel1.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreChaLabel1.TabIndex = 276;
+            this.AbilityScoreChaLabel1.Text = "Cha";
+            // 
+            // AbilityScoreStrLabel2
+            // 
+            this.AbilityScoreStrLabel2.AutoSize = true;
+            this.AbilityScoreStrLabel2.Location = new System.Drawing.Point(75, 1239);
+            this.AbilityScoreStrLabel2.Name = "AbilityScoreStrLabel2";
+            this.AbilityScoreStrLabel2.Size = new System.Drawing.Size(26, 17);
+            this.AbilityScoreStrLabel2.TabIndex = 277;
+            this.AbilityScoreStrLabel2.Text = "Str";
+            // 
+            // AbilityScoreStrLabel3
+            // 
+            this.AbilityScoreStrLabel3.AutoSize = true;
+            this.AbilityScoreStrLabel3.Location = new System.Drawing.Point(75, 1417);
+            this.AbilityScoreStrLabel3.Name = "AbilityScoreStrLabel3";
+            this.AbilityScoreStrLabel3.Size = new System.Drawing.Size(26, 17);
+            this.AbilityScoreStrLabel3.TabIndex = 278;
+            this.AbilityScoreStrLabel3.Text = "Str";
+            // 
+            // AbilityScoreStrLabel4
+            // 
+            this.AbilityScoreStrLabel4.AutoSize = true;
+            this.AbilityScoreStrLabel4.Location = new System.Drawing.Point(75, 1747);
+            this.AbilityScoreStrLabel4.Name = "AbilityScoreStrLabel4";
+            this.AbilityScoreStrLabel4.Size = new System.Drawing.Size(26, 17);
+            this.AbilityScoreStrLabel4.TabIndex = 279;
+            this.AbilityScoreStrLabel4.Text = "Str";
+            // 
+            // AbilityScoreStrLabel5
+            // 
+            this.AbilityScoreStrLabel5.AutoSize = true;
+            this.AbilityScoreStrLabel5.Location = new System.Drawing.Point(75, 1933);
+            this.AbilityScoreStrLabel5.Name = "AbilityScoreStrLabel5";
+            this.AbilityScoreStrLabel5.Size = new System.Drawing.Size(26, 17);
+            this.AbilityScoreStrLabel5.TabIndex = 280;
+            this.AbilityScoreStrLabel5.Text = "Str";
+            // 
+            // AbilityScoreStrLabel6
+            // 
+            this.AbilityScoreStrLabel6.AutoSize = true;
+            this.AbilityScoreStrLabel6.Location = new System.Drawing.Point(75, 2114);
+            this.AbilityScoreStrLabel6.Name = "AbilityScoreStrLabel6";
+            this.AbilityScoreStrLabel6.Size = new System.Drawing.Size(26, 17);
+            this.AbilityScoreStrLabel6.TabIndex = 281;
+            this.AbilityScoreStrLabel6.Text = "Str";
+            // 
+            // AbilityScoreStrLabel7
+            // 
+            this.AbilityScoreStrLabel7.AutoSize = true;
+            this.AbilityScoreStrLabel7.Location = new System.Drawing.Point(75, 2353);
+            this.AbilityScoreStrLabel7.Name = "AbilityScoreStrLabel7";
+            this.AbilityScoreStrLabel7.Size = new System.Drawing.Size(26, 17);
+            this.AbilityScoreStrLabel7.TabIndex = 282;
+            this.AbilityScoreStrLabel7.Text = "Str";
+            // 
+            // AbilityScoreDexLabel2
+            // 
+            this.AbilityScoreDexLabel2.AutoSize = true;
+            this.AbilityScoreDexLabel2.Location = new System.Drawing.Point(127, 1239);
+            this.AbilityScoreDexLabel2.Name = "AbilityScoreDexLabel2";
+            this.AbilityScoreDexLabel2.Size = new System.Drawing.Size(32, 17);
+            this.AbilityScoreDexLabel2.TabIndex = 283;
+            this.AbilityScoreDexLabel2.Text = "Dex";
+            // 
+            // AbilityScoreDexLabel3
+            // 
+            this.AbilityScoreDexLabel3.AutoSize = true;
+            this.AbilityScoreDexLabel3.Location = new System.Drawing.Point(127, 1417);
+            this.AbilityScoreDexLabel3.Name = "AbilityScoreDexLabel3";
+            this.AbilityScoreDexLabel3.Size = new System.Drawing.Size(32, 17);
+            this.AbilityScoreDexLabel3.TabIndex = 284;
+            this.AbilityScoreDexLabel3.Text = "Dex";
+            // 
+            // AbilityScoreDexLabel4
+            // 
+            this.AbilityScoreDexLabel4.AutoSize = true;
+            this.AbilityScoreDexLabel4.Location = new System.Drawing.Point(127, 1747);
+            this.AbilityScoreDexLabel4.Name = "AbilityScoreDexLabel4";
+            this.AbilityScoreDexLabel4.Size = new System.Drawing.Size(32, 17);
+            this.AbilityScoreDexLabel4.TabIndex = 285;
+            this.AbilityScoreDexLabel4.Text = "Dex";
+            // 
+            // AbilityScoreDexLabel5
+            // 
+            this.AbilityScoreDexLabel5.AutoSize = true;
+            this.AbilityScoreDexLabel5.Location = new System.Drawing.Point(127, 1933);
+            this.AbilityScoreDexLabel5.Name = "AbilityScoreDexLabel5";
+            this.AbilityScoreDexLabel5.Size = new System.Drawing.Size(32, 17);
+            this.AbilityScoreDexLabel5.TabIndex = 286;
+            this.AbilityScoreDexLabel5.Text = "Dex";
+            // 
+            // AbilityScoreDexLabel6
+            // 
+            this.AbilityScoreDexLabel6.AutoSize = true;
+            this.AbilityScoreDexLabel6.Location = new System.Drawing.Point(127, 2114);
+            this.AbilityScoreDexLabel6.Name = "AbilityScoreDexLabel6";
+            this.AbilityScoreDexLabel6.Size = new System.Drawing.Size(32, 17);
+            this.AbilityScoreDexLabel6.TabIndex = 287;
+            this.AbilityScoreDexLabel6.Text = "Dex";
+            // 
+            // AbilityScoreDexLabel7
+            // 
+            this.AbilityScoreDexLabel7.AutoSize = true;
+            this.AbilityScoreDexLabel7.Location = new System.Drawing.Point(127, 2353);
+            this.AbilityScoreDexLabel7.Name = "AbilityScoreDexLabel7";
+            this.AbilityScoreDexLabel7.Size = new System.Drawing.Size(32, 17);
+            this.AbilityScoreDexLabel7.TabIndex = 288;
+            this.AbilityScoreDexLabel7.Text = "Dex";
+            // 
+            // AbilityScoreConLabel2
+            // 
+            this.AbilityScoreConLabel2.AutoSize = true;
+            this.AbilityScoreConLabel2.Location = new System.Drawing.Point(183, 1239);
+            this.AbilityScoreConLabel2.Name = "AbilityScoreConLabel2";
+            this.AbilityScoreConLabel2.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreConLabel2.TabIndex = 289;
+            this.AbilityScoreConLabel2.Text = "Con";
+            // 
+            // AbilityScoreConLabel3
+            // 
+            this.AbilityScoreConLabel3.AutoSize = true;
+            this.AbilityScoreConLabel3.Location = new System.Drawing.Point(183, 1417);
+            this.AbilityScoreConLabel3.Name = "AbilityScoreConLabel3";
+            this.AbilityScoreConLabel3.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreConLabel3.TabIndex = 290;
+            this.AbilityScoreConLabel3.Text = "Con";
+            // 
+            // AbilityScoreConLabel4
+            // 
+            this.AbilityScoreConLabel4.AutoSize = true;
+            this.AbilityScoreConLabel4.Location = new System.Drawing.Point(183, 1747);
+            this.AbilityScoreConLabel4.Name = "AbilityScoreConLabel4";
+            this.AbilityScoreConLabel4.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreConLabel4.TabIndex = 291;
+            this.AbilityScoreConLabel4.Text = "Con";
+            // 
+            // AbilityScoreConLabel5
+            // 
+            this.AbilityScoreConLabel5.AutoSize = true;
+            this.AbilityScoreConLabel5.Location = new System.Drawing.Point(183, 1933);
+            this.AbilityScoreConLabel5.Name = "AbilityScoreConLabel5";
+            this.AbilityScoreConLabel5.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreConLabel5.TabIndex = 292;
+            this.AbilityScoreConLabel5.Text = "Con";
+            // 
+            // AbilityScoreConLabel6
+            // 
+            this.AbilityScoreConLabel6.AutoSize = true;
+            this.AbilityScoreConLabel6.Location = new System.Drawing.Point(183, 2114);
+            this.AbilityScoreConLabel6.Name = "AbilityScoreConLabel6";
+            this.AbilityScoreConLabel6.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreConLabel6.TabIndex = 293;
+            this.AbilityScoreConLabel6.Text = "Con";
+            // 
+            // AbilityScoreConLabel7
+            // 
+            this.AbilityScoreConLabel7.AutoSize = true;
+            this.AbilityScoreConLabel7.Location = new System.Drawing.Point(183, 2353);
+            this.AbilityScoreConLabel7.Name = "AbilityScoreConLabel7";
+            this.AbilityScoreConLabel7.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreConLabel7.TabIndex = 294;
+            this.AbilityScoreConLabel7.Text = "Con";
+            // 
+            // AbilityScoreChaLabel2
+            // 
+            this.AbilityScoreChaLabel2.AutoSize = true;
+            this.AbilityScoreChaLabel2.Location = new System.Drawing.Point(347, 1239);
+            this.AbilityScoreChaLabel2.Name = "AbilityScoreChaLabel2";
+            this.AbilityScoreChaLabel2.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreChaLabel2.TabIndex = 297;
+            this.AbilityScoreChaLabel2.Text = "Cha";
+            // 
+            // AbilityScoreWisLabel2
+            // 
+            this.AbilityScoreWisLabel2.AutoSize = true;
+            this.AbilityScoreWisLabel2.Location = new System.Drawing.Point(294, 1239);
+            this.AbilityScoreWisLabel2.Name = "AbilityScoreWisLabel2";
+            this.AbilityScoreWisLabel2.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisLabel2.TabIndex = 296;
+            this.AbilityScoreWisLabel2.Text = "Wis";
+            // 
+            // AbilityScoreIntLabel2
+            // 
+            this.AbilityScoreIntLabel2.AutoSize = true;
+            this.AbilityScoreIntLabel2.Location = new System.Drawing.Point(243, 1239);
+            this.AbilityScoreIntLabel2.Name = "AbilityScoreIntLabel2";
+            this.AbilityScoreIntLabel2.Size = new System.Drawing.Size(23, 17);
+            this.AbilityScoreIntLabel2.TabIndex = 295;
+            this.AbilityScoreIntLabel2.Text = "Int";
+            // 
+            // AbilityScoreChaLabel3
+            // 
+            this.AbilityScoreChaLabel3.AutoSize = true;
+            this.AbilityScoreChaLabel3.Location = new System.Drawing.Point(347, 1417);
+            this.AbilityScoreChaLabel3.Name = "AbilityScoreChaLabel3";
+            this.AbilityScoreChaLabel3.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreChaLabel3.TabIndex = 300;
+            this.AbilityScoreChaLabel3.Text = "Cha";
+            // 
+            // AbilityScoreWisLabel3
+            // 
+            this.AbilityScoreWisLabel3.AutoSize = true;
+            this.AbilityScoreWisLabel3.Location = new System.Drawing.Point(294, 1417);
+            this.AbilityScoreWisLabel3.Name = "AbilityScoreWisLabel3";
+            this.AbilityScoreWisLabel3.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisLabel3.TabIndex = 299;
+            this.AbilityScoreWisLabel3.Text = "Wis";
+            // 
+            // AbilityScoreIntLabel3
+            // 
+            this.AbilityScoreIntLabel3.AutoSize = true;
+            this.AbilityScoreIntLabel3.Location = new System.Drawing.Point(243, 1417);
+            this.AbilityScoreIntLabel3.Name = "AbilityScoreIntLabel3";
+            this.AbilityScoreIntLabel3.Size = new System.Drawing.Size(23, 17);
+            this.AbilityScoreIntLabel3.TabIndex = 298;
+            this.AbilityScoreIntLabel3.Text = "Int";
+            // 
+            // AbilityScoreChaLabel4
+            // 
+            this.AbilityScoreChaLabel4.AutoSize = true;
+            this.AbilityScoreChaLabel4.Location = new System.Drawing.Point(347, 1747);
+            this.AbilityScoreChaLabel4.Name = "AbilityScoreChaLabel4";
+            this.AbilityScoreChaLabel4.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreChaLabel4.TabIndex = 303;
+            this.AbilityScoreChaLabel4.Text = "Cha";
+            // 
+            // AbilityScoreWisLabel4
+            // 
+            this.AbilityScoreWisLabel4.AutoSize = true;
+            this.AbilityScoreWisLabel4.Location = new System.Drawing.Point(294, 1747);
+            this.AbilityScoreWisLabel4.Name = "AbilityScoreWisLabel4";
+            this.AbilityScoreWisLabel4.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisLabel4.TabIndex = 302;
+            this.AbilityScoreWisLabel4.Text = "Wis";
+            // 
+            // AbilityScoreIntLabel4
+            // 
+            this.AbilityScoreIntLabel4.AutoSize = true;
+            this.AbilityScoreIntLabel4.Location = new System.Drawing.Point(243, 1747);
+            this.AbilityScoreIntLabel4.Name = "AbilityScoreIntLabel4";
+            this.AbilityScoreIntLabel4.Size = new System.Drawing.Size(23, 17);
+            this.AbilityScoreIntLabel4.TabIndex = 301;
+            this.AbilityScoreIntLabel4.Text = "Int";
+            // 
+            // AbilityScoreChaLabel5
+            // 
+            this.AbilityScoreChaLabel5.AutoSize = true;
+            this.AbilityScoreChaLabel5.Location = new System.Drawing.Point(347, 1933);
+            this.AbilityScoreChaLabel5.Name = "AbilityScoreChaLabel5";
+            this.AbilityScoreChaLabel5.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreChaLabel5.TabIndex = 306;
+            this.AbilityScoreChaLabel5.Text = "Cha";
+            // 
+            // AbilityScoreWisLabel5
+            // 
+            this.AbilityScoreWisLabel5.AutoSize = true;
+            this.AbilityScoreWisLabel5.Location = new System.Drawing.Point(294, 1933);
+            this.AbilityScoreWisLabel5.Name = "AbilityScoreWisLabel5";
+            this.AbilityScoreWisLabel5.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisLabel5.TabIndex = 305;
+            this.AbilityScoreWisLabel5.Text = "Wis";
+            // 
+            // AbilityScoreIntLabel5
+            // 
+            this.AbilityScoreIntLabel5.AutoSize = true;
+            this.AbilityScoreIntLabel5.Location = new System.Drawing.Point(243, 1933);
+            this.AbilityScoreIntLabel5.Name = "AbilityScoreIntLabel5";
+            this.AbilityScoreIntLabel5.Size = new System.Drawing.Size(23, 17);
+            this.AbilityScoreIntLabel5.TabIndex = 304;
+            this.AbilityScoreIntLabel5.Text = "Int";
+            // 
+            // AbilityScoreChaLabel6
+            // 
+            this.AbilityScoreChaLabel6.AutoSize = true;
+            this.AbilityScoreChaLabel6.Location = new System.Drawing.Point(347, 2114);
+            this.AbilityScoreChaLabel6.Name = "AbilityScoreChaLabel6";
+            this.AbilityScoreChaLabel6.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreChaLabel6.TabIndex = 309;
+            this.AbilityScoreChaLabel6.Text = "Cha";
+            // 
+            // AbilityScoreWisLabel6
+            // 
+            this.AbilityScoreWisLabel6.AutoSize = true;
+            this.AbilityScoreWisLabel6.Location = new System.Drawing.Point(294, 2114);
+            this.AbilityScoreWisLabel6.Name = "AbilityScoreWisLabel6";
+            this.AbilityScoreWisLabel6.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisLabel6.TabIndex = 308;
+            this.AbilityScoreWisLabel6.Text = "Wis";
+            // 
+            // AbilityScoreIntLabel6
+            // 
+            this.AbilityScoreIntLabel6.AutoSize = true;
+            this.AbilityScoreIntLabel6.Location = new System.Drawing.Point(243, 2114);
+            this.AbilityScoreIntLabel6.Name = "AbilityScoreIntLabel6";
+            this.AbilityScoreIntLabel6.Size = new System.Drawing.Size(23, 17);
+            this.AbilityScoreIntLabel6.TabIndex = 307;
+            this.AbilityScoreIntLabel6.Text = "Int";
+            // 
+            // AbilityScoreChaLabel7
+            // 
+            this.AbilityScoreChaLabel7.AutoSize = true;
+            this.AbilityScoreChaLabel7.Location = new System.Drawing.Point(347, 2353);
+            this.AbilityScoreChaLabel7.Name = "AbilityScoreChaLabel7";
+            this.AbilityScoreChaLabel7.Size = new System.Drawing.Size(33, 17);
+            this.AbilityScoreChaLabel7.TabIndex = 312;
+            this.AbilityScoreChaLabel7.Text = "Cha";
+            // 
+            // AbilityScoreWisLabel7
+            // 
+            this.AbilityScoreWisLabel7.AutoSize = true;
+            this.AbilityScoreWisLabel7.Location = new System.Drawing.Point(294, 2353);
+            this.AbilityScoreWisLabel7.Name = "AbilityScoreWisLabel7";
+            this.AbilityScoreWisLabel7.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisLabel7.TabIndex = 311;
+            this.AbilityScoreWisLabel7.Text = "Wis";
+            // 
+            // AbilityScoreIntLabel7
+            // 
+            this.AbilityScoreIntLabel7.AutoSize = true;
+            this.AbilityScoreIntLabel7.Location = new System.Drawing.Point(243, 2353);
+            this.AbilityScoreIntLabel7.Name = "AbilityScoreIntLabel7";
+            this.AbilityScoreIntLabel7.Size = new System.Drawing.Size(23, 17);
+            this.AbilityScoreIntLabel7.TabIndex = 310;
+            this.AbilityScoreIntLabel7.Text = "Int";
+            // 
+            // AbilityScoreStrBox1
+            // 
+            this.AbilityScoreStrBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreStrBox1.FormattingEnabled = true;
+            this.AbilityScoreStrBox1.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreStrBox1.Location = new System.Drawing.Point(65, 1074);
+            this.AbilityScoreStrBox1.Name = "AbilityScoreStrBox1";
+            this.AbilityScoreStrBox1.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreStrBox1.TabIndex = 313;
+            // 
+            // AbilityScoreStrBox2
+            // 
+            this.AbilityScoreStrBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreStrBox2.FormattingEnabled = true;
+            this.AbilityScoreStrBox2.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreStrBox2.Location = new System.Drawing.Point(65, 1259);
+            this.AbilityScoreStrBox2.Name = "AbilityScoreStrBox2";
+            this.AbilityScoreStrBox2.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreStrBox2.TabIndex = 314;
+            // 
+            // AbilityScoreStrBox3
+            // 
+            this.AbilityScoreStrBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreStrBox3.FormattingEnabled = true;
+            this.AbilityScoreStrBox3.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreStrBox3.Location = new System.Drawing.Point(65, 1437);
+            this.AbilityScoreStrBox3.Name = "AbilityScoreStrBox3";
+            this.AbilityScoreStrBox3.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreStrBox3.TabIndex = 315;
+            // 
+            // AbilityScoreStrBox4
+            // 
+            this.AbilityScoreStrBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreStrBox4.FormattingEnabled = true;
+            this.AbilityScoreStrBox4.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreStrBox4.Location = new System.Drawing.Point(65, 1767);
+            this.AbilityScoreStrBox4.Name = "AbilityScoreStrBox4";
+            this.AbilityScoreStrBox4.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreStrBox4.TabIndex = 316;
+            // 
+            // AbilityScoreStrBox5
+            // 
+            this.AbilityScoreStrBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreStrBox5.FormattingEnabled = true;
+            this.AbilityScoreStrBox5.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreStrBox5.Location = new System.Drawing.Point(65, 1953);
+            this.AbilityScoreStrBox5.Name = "AbilityScoreStrBox5";
+            this.AbilityScoreStrBox5.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreStrBox5.TabIndex = 317;
+            // 
+            // AbilityScoreStrBox6
+            // 
+            this.AbilityScoreStrBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreStrBox6.FormattingEnabled = true;
+            this.AbilityScoreStrBox6.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreStrBox6.Location = new System.Drawing.Point(65, 2134);
+            this.AbilityScoreStrBox6.Name = "AbilityScoreStrBox6";
+            this.AbilityScoreStrBox6.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreStrBox6.TabIndex = 318;
+            // 
+            // AbilityScoreStrBox7
+            // 
+            this.AbilityScoreStrBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreStrBox7.FormattingEnabled = true;
+            this.AbilityScoreStrBox7.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreStrBox7.Location = new System.Drawing.Point(65, 2373);
+            this.AbilityScoreStrBox7.Name = "AbilityScoreStrBox7";
+            this.AbilityScoreStrBox7.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreStrBox7.TabIndex = 319;
+            // 
+            // AbilityScoreDexBox1
+            // 
+            this.AbilityScoreDexBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreDexBox1.FormattingEnabled = true;
+            this.AbilityScoreDexBox1.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreDexBox1.Location = new System.Drawing.Point(120, 1074);
+            this.AbilityScoreDexBox1.Name = "AbilityScoreDexBox1";
+            this.AbilityScoreDexBox1.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreDexBox1.TabIndex = 320;
+            // 
+            // AbilityScoreConBox1
+            // 
+            this.AbilityScoreConBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreConBox1.FormattingEnabled = true;
+            this.AbilityScoreConBox1.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreConBox1.Location = new System.Drawing.Point(175, 1074);
+            this.AbilityScoreConBox1.Name = "AbilityScoreConBox1";
+            this.AbilityScoreConBox1.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreConBox1.TabIndex = 321;
+            // 
+            // AbilityScoreIntBox1
+            // 
+            this.AbilityScoreIntBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreIntBox1.FormattingEnabled = true;
+            this.AbilityScoreIntBox1.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreIntBox1.Location = new System.Drawing.Point(230, 1074);
+            this.AbilityScoreIntBox1.Name = "AbilityScoreIntBox1";
+            this.AbilityScoreIntBox1.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreIntBox1.TabIndex = 322;
+            // 
+            // AbilityScoreWisBox1
+            // 
+            this.AbilityScoreWisBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreWisBox1.FormattingEnabled = true;
+            this.AbilityScoreWisBox1.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreWisBox1.Location = new System.Drawing.Point(285, 1074);
+            this.AbilityScoreWisBox1.Name = "AbilityScoreWisBox1";
+            this.AbilityScoreWisBox1.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreWisBox1.TabIndex = 323;
+            // 
+            // AbilityScoreChaBox1
+            // 
+            this.AbilityScoreChaBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreChaBox1.FormattingEnabled = true;
+            this.AbilityScoreChaBox1.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreChaBox1.Location = new System.Drawing.Point(340, 1074);
+            this.AbilityScoreChaBox1.Name = "AbilityScoreChaBox1";
+            this.AbilityScoreChaBox1.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreChaBox1.TabIndex = 324;
+            // 
+            // AbilityScoreStrNum1
+            // 
+            this.AbilityScoreStrNum1.AutoSize = true;
+            this.AbilityScoreStrNum1.Location = new System.Drawing.Point(74, 1101);
+            this.AbilityScoreStrNum1.Name = "AbilityScoreStrNum1";
+            this.AbilityScoreStrNum1.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreStrNum1.TabIndex = 325;
+            this.AbilityScoreStrNum1.Text = "N/A";
+            // 
+            // AbilityScoreDexNum1
+            // 
+            this.AbilityScoreDexNum1.AutoSize = true;
+            this.AbilityScoreDexNum1.Location = new System.Drawing.Point(130, 1101);
+            this.AbilityScoreDexNum1.Name = "AbilityScoreDexNum1";
+            this.AbilityScoreDexNum1.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreDexNum1.TabIndex = 326;
+            this.AbilityScoreDexNum1.Text = "N/A";
+            // 
+            // AbilityScoreConNum1
+            // 
+            this.AbilityScoreConNum1.AutoSize = true;
+            this.AbilityScoreConNum1.Location = new System.Drawing.Point(186, 1101);
+            this.AbilityScoreConNum1.Name = "AbilityScoreConNum1";
+            this.AbilityScoreConNum1.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreConNum1.TabIndex = 327;
+            this.AbilityScoreConNum1.Text = "N/A";
+            // 
+            // AbilityScoreIntNum1
+            // 
+            this.AbilityScoreIntNum1.AutoSize = true;
+            this.AbilityScoreIntNum1.Location = new System.Drawing.Point(239, 1101);
+            this.AbilityScoreIntNum1.Name = "AbilityScoreIntNum1";
+            this.AbilityScoreIntNum1.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreIntNum1.TabIndex = 328;
+            this.AbilityScoreIntNum1.Text = "N/A";
+            // 
+            // AbilityScoreWisNum1
+            // 
+            this.AbilityScoreWisNum1.AutoSize = true;
+            this.AbilityScoreWisNum1.Location = new System.Drawing.Point(294, 1101);
+            this.AbilityScoreWisNum1.Name = "AbilityScoreWisNum1";
+            this.AbilityScoreWisNum1.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisNum1.TabIndex = 329;
+            this.AbilityScoreWisNum1.Text = "N/A";
+            // 
+            // AbilityScoreChaNum1
+            // 
+            this.AbilityScoreChaNum1.AutoSize = true;
+            this.AbilityScoreChaNum1.Location = new System.Drawing.Point(349, 1101);
+            this.AbilityScoreChaNum1.Name = "AbilityScoreChaNum1";
+            this.AbilityScoreChaNum1.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreChaNum1.TabIndex = 330;
+            this.AbilityScoreChaNum1.Text = "N/A";
+            // 
+            // AbilityScoreChaBox2
+            // 
+            this.AbilityScoreChaBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreChaBox2.FormattingEnabled = true;
+            this.AbilityScoreChaBox2.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreChaBox2.Location = new System.Drawing.Point(340, 1259);
+            this.AbilityScoreChaBox2.Name = "AbilityScoreChaBox2";
+            this.AbilityScoreChaBox2.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreChaBox2.TabIndex = 335;
+            // 
+            // AbilityScoreWisBox2
+            // 
+            this.AbilityScoreWisBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreWisBox2.FormattingEnabled = true;
+            this.AbilityScoreWisBox2.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreWisBox2.Location = new System.Drawing.Point(285, 1259);
+            this.AbilityScoreWisBox2.Name = "AbilityScoreWisBox2";
+            this.AbilityScoreWisBox2.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreWisBox2.TabIndex = 334;
+            // 
+            // AbilityScoreIntBox2
+            // 
+            this.AbilityScoreIntBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreIntBox2.FormattingEnabled = true;
+            this.AbilityScoreIntBox2.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreIntBox2.Location = new System.Drawing.Point(230, 1259);
+            this.AbilityScoreIntBox2.Name = "AbilityScoreIntBox2";
+            this.AbilityScoreIntBox2.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreIntBox2.TabIndex = 333;
+            // 
+            // AbilityScoreConBox2
+            // 
+            this.AbilityScoreConBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreConBox2.FormattingEnabled = true;
+            this.AbilityScoreConBox2.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreConBox2.Location = new System.Drawing.Point(175, 1259);
+            this.AbilityScoreConBox2.Name = "AbilityScoreConBox2";
+            this.AbilityScoreConBox2.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreConBox2.TabIndex = 332;
+            // 
+            // AbilityScoreDexBox2
+            // 
+            this.AbilityScoreDexBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreDexBox2.FormattingEnabled = true;
+            this.AbilityScoreDexBox2.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreDexBox2.Location = new System.Drawing.Point(120, 1259);
+            this.AbilityScoreDexBox2.Name = "AbilityScoreDexBox2";
+            this.AbilityScoreDexBox2.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreDexBox2.TabIndex = 331;
+            // 
+            // AbilityScoreChaBox3
+            // 
+            this.AbilityScoreChaBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreChaBox3.FormattingEnabled = true;
+            this.AbilityScoreChaBox3.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreChaBox3.Location = new System.Drawing.Point(340, 1437);
+            this.AbilityScoreChaBox3.Name = "AbilityScoreChaBox3";
+            this.AbilityScoreChaBox3.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreChaBox3.TabIndex = 340;
+            // 
+            // AbilityScoreWisBox3
+            // 
+            this.AbilityScoreWisBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreWisBox3.FormattingEnabled = true;
+            this.AbilityScoreWisBox3.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreWisBox3.Location = new System.Drawing.Point(285, 1437);
+            this.AbilityScoreWisBox3.Name = "AbilityScoreWisBox3";
+            this.AbilityScoreWisBox3.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreWisBox3.TabIndex = 339;
+            // 
+            // AbilityScoreIntBox3
+            // 
+            this.AbilityScoreIntBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreIntBox3.FormattingEnabled = true;
+            this.AbilityScoreIntBox3.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreIntBox3.Location = new System.Drawing.Point(230, 1437);
+            this.AbilityScoreIntBox3.Name = "AbilityScoreIntBox3";
+            this.AbilityScoreIntBox3.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreIntBox3.TabIndex = 338;
+            // 
+            // AbilityScoreConBox3
+            // 
+            this.AbilityScoreConBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreConBox3.FormattingEnabled = true;
+            this.AbilityScoreConBox3.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreConBox3.Location = new System.Drawing.Point(175, 1437);
+            this.AbilityScoreConBox3.Name = "AbilityScoreConBox3";
+            this.AbilityScoreConBox3.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreConBox3.TabIndex = 337;
+            // 
+            // AbilityScoreDexBox3
+            // 
+            this.AbilityScoreDexBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreDexBox3.FormattingEnabled = true;
+            this.AbilityScoreDexBox3.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreDexBox3.Location = new System.Drawing.Point(120, 1437);
+            this.AbilityScoreDexBox3.Name = "AbilityScoreDexBox3";
+            this.AbilityScoreDexBox3.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreDexBox3.TabIndex = 336;
+            // 
+            // AbilityScoreChaBox4
+            // 
+            this.AbilityScoreChaBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreChaBox4.FormattingEnabled = true;
+            this.AbilityScoreChaBox4.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreChaBox4.Location = new System.Drawing.Point(340, 1767);
+            this.AbilityScoreChaBox4.Name = "AbilityScoreChaBox4";
+            this.AbilityScoreChaBox4.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreChaBox4.TabIndex = 345;
+            // 
+            // AbilityScoreWisBox4
+            // 
+            this.AbilityScoreWisBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreWisBox4.FormattingEnabled = true;
+            this.AbilityScoreWisBox4.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreWisBox4.Location = new System.Drawing.Point(285, 1767);
+            this.AbilityScoreWisBox4.Name = "AbilityScoreWisBox4";
+            this.AbilityScoreWisBox4.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreWisBox4.TabIndex = 344;
+            // 
+            // AbilityScoreIntBox4
+            // 
+            this.AbilityScoreIntBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreIntBox4.FormattingEnabled = true;
+            this.AbilityScoreIntBox4.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreIntBox4.Location = new System.Drawing.Point(230, 1767);
+            this.AbilityScoreIntBox4.Name = "AbilityScoreIntBox4";
+            this.AbilityScoreIntBox4.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreIntBox4.TabIndex = 343;
+            // 
+            // AbilityScoreConBox4
+            // 
+            this.AbilityScoreConBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreConBox4.FormattingEnabled = true;
+            this.AbilityScoreConBox4.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreConBox4.Location = new System.Drawing.Point(175, 1767);
+            this.AbilityScoreConBox4.Name = "AbilityScoreConBox4";
+            this.AbilityScoreConBox4.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreConBox4.TabIndex = 342;
+            // 
+            // AbilityScoreDexBox4
+            // 
+            this.AbilityScoreDexBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreDexBox4.FormattingEnabled = true;
+            this.AbilityScoreDexBox4.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreDexBox4.Location = new System.Drawing.Point(120, 1767);
+            this.AbilityScoreDexBox4.Name = "AbilityScoreDexBox4";
+            this.AbilityScoreDexBox4.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreDexBox4.TabIndex = 341;
+            // 
+            // AbilityScoreChaBox5
+            // 
+            this.AbilityScoreChaBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreChaBox5.FormattingEnabled = true;
+            this.AbilityScoreChaBox5.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreChaBox5.Location = new System.Drawing.Point(340, 1953);
+            this.AbilityScoreChaBox5.Name = "AbilityScoreChaBox5";
+            this.AbilityScoreChaBox5.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreChaBox5.TabIndex = 350;
+            // 
+            // AbilityScoreWisBox5
+            // 
+            this.AbilityScoreWisBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreWisBox5.FormattingEnabled = true;
+            this.AbilityScoreWisBox5.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreWisBox5.Location = new System.Drawing.Point(285, 1953);
+            this.AbilityScoreWisBox5.Name = "AbilityScoreWisBox5";
+            this.AbilityScoreWisBox5.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreWisBox5.TabIndex = 349;
+            // 
+            // AbilityScoreIntBox5
+            // 
+            this.AbilityScoreIntBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreIntBox5.FormattingEnabled = true;
+            this.AbilityScoreIntBox5.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreIntBox5.Location = new System.Drawing.Point(230, 1953);
+            this.AbilityScoreIntBox5.Name = "AbilityScoreIntBox5";
+            this.AbilityScoreIntBox5.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreIntBox5.TabIndex = 348;
+            // 
+            // AbilityScoreConBox5
+            // 
+            this.AbilityScoreConBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreConBox5.FormattingEnabled = true;
+            this.AbilityScoreConBox5.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreConBox5.Location = new System.Drawing.Point(175, 1953);
+            this.AbilityScoreConBox5.Name = "AbilityScoreConBox5";
+            this.AbilityScoreConBox5.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreConBox5.TabIndex = 347;
+            // 
+            // AbilityScoreDexBox5
+            // 
+            this.AbilityScoreDexBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreDexBox5.FormattingEnabled = true;
+            this.AbilityScoreDexBox5.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreDexBox5.Location = new System.Drawing.Point(120, 1953);
+            this.AbilityScoreDexBox5.Name = "AbilityScoreDexBox5";
+            this.AbilityScoreDexBox5.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreDexBox5.TabIndex = 346;
+            // 
+            // AbilityScoreChaBox6
+            // 
+            this.AbilityScoreChaBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreChaBox6.FormattingEnabled = true;
+            this.AbilityScoreChaBox6.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreChaBox6.Location = new System.Drawing.Point(340, 2134);
+            this.AbilityScoreChaBox6.Name = "AbilityScoreChaBox6";
+            this.AbilityScoreChaBox6.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreChaBox6.TabIndex = 355;
+            // 
+            // AbilityScoreWisBox6
+            // 
+            this.AbilityScoreWisBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreWisBox6.FormattingEnabled = true;
+            this.AbilityScoreWisBox6.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreWisBox6.Location = new System.Drawing.Point(285, 2134);
+            this.AbilityScoreWisBox6.Name = "AbilityScoreWisBox6";
+            this.AbilityScoreWisBox6.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreWisBox6.TabIndex = 354;
+            // 
+            // AbilityScoreIntBox6
+            // 
+            this.AbilityScoreIntBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreIntBox6.FormattingEnabled = true;
+            this.AbilityScoreIntBox6.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreIntBox6.Location = new System.Drawing.Point(230, 2134);
+            this.AbilityScoreIntBox6.Name = "AbilityScoreIntBox6";
+            this.AbilityScoreIntBox6.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreIntBox6.TabIndex = 353;
+            // 
+            // AbilityScoreConBox6
+            // 
+            this.AbilityScoreConBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreConBox6.FormattingEnabled = true;
+            this.AbilityScoreConBox6.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreConBox6.Location = new System.Drawing.Point(175, 2134);
+            this.AbilityScoreConBox6.Name = "AbilityScoreConBox6";
+            this.AbilityScoreConBox6.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreConBox6.TabIndex = 352;
+            // 
+            // AbilityScoreDexBox6
+            // 
+            this.AbilityScoreDexBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreDexBox6.FormattingEnabled = true;
+            this.AbilityScoreDexBox6.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreDexBox6.Location = new System.Drawing.Point(120, 2134);
+            this.AbilityScoreDexBox6.Name = "AbilityScoreDexBox6";
+            this.AbilityScoreDexBox6.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreDexBox6.TabIndex = 351;
+            // 
+            // AbilityScoreChaBox7
+            // 
+            this.AbilityScoreChaBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreChaBox7.FormattingEnabled = true;
+            this.AbilityScoreChaBox7.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreChaBox7.Location = new System.Drawing.Point(340, 2373);
+            this.AbilityScoreChaBox7.Name = "AbilityScoreChaBox7";
+            this.AbilityScoreChaBox7.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreChaBox7.TabIndex = 360;
+            // 
+            // AbilityScoreWisBox7
+            // 
+            this.AbilityScoreWisBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreWisBox7.FormattingEnabled = true;
+            this.AbilityScoreWisBox7.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreWisBox7.Location = new System.Drawing.Point(285, 2373);
+            this.AbilityScoreWisBox7.Name = "AbilityScoreWisBox7";
+            this.AbilityScoreWisBox7.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreWisBox7.TabIndex = 359;
+            // 
+            // AbilityScoreIntBox7
+            // 
+            this.AbilityScoreIntBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreIntBox7.FormattingEnabled = true;
+            this.AbilityScoreIntBox7.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreIntBox7.Location = new System.Drawing.Point(230, 2373);
+            this.AbilityScoreIntBox7.Name = "AbilityScoreIntBox7";
+            this.AbilityScoreIntBox7.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreIntBox7.TabIndex = 358;
+            // 
+            // AbilityScoreConBox7
+            // 
+            this.AbilityScoreConBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreConBox7.FormattingEnabled = true;
+            this.AbilityScoreConBox7.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreConBox7.Location = new System.Drawing.Point(175, 2373);
+            this.AbilityScoreConBox7.Name = "AbilityScoreConBox7";
+            this.AbilityScoreConBox7.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreConBox7.TabIndex = 357;
+            // 
+            // AbilityScoreDexBox7
+            // 
+            this.AbilityScoreDexBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AbilityScoreDexBox7.FormattingEnabled = true;
+            this.AbilityScoreDexBox7.Items.AddRange(new object[] {
+            "+0",
+            "+1",
+            "+2"});
+            this.AbilityScoreDexBox7.Location = new System.Drawing.Point(120, 2373);
+            this.AbilityScoreDexBox7.Name = "AbilityScoreDexBox7";
+            this.AbilityScoreDexBox7.Size = new System.Drawing.Size(49, 24);
+            this.AbilityScoreDexBox7.TabIndex = 356;
+            // 
+            // AbilityScoreChaNum2
+            // 
+            this.AbilityScoreChaNum2.AutoSize = true;
+            this.AbilityScoreChaNum2.Location = new System.Drawing.Point(349, 1286);
+            this.AbilityScoreChaNum2.Name = "AbilityScoreChaNum2";
+            this.AbilityScoreChaNum2.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreChaNum2.TabIndex = 366;
+            this.AbilityScoreChaNum2.Text = "N/A";
+            // 
+            // AbilityScoreWisNum2
+            // 
+            this.AbilityScoreWisNum2.AutoSize = true;
+            this.AbilityScoreWisNum2.Location = new System.Drawing.Point(294, 1286);
+            this.AbilityScoreWisNum2.Name = "AbilityScoreWisNum2";
+            this.AbilityScoreWisNum2.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisNum2.TabIndex = 365;
+            this.AbilityScoreWisNum2.Text = "N/A";
+            // 
+            // AbilityScoreIntNum2
+            // 
+            this.AbilityScoreIntNum2.AutoSize = true;
+            this.AbilityScoreIntNum2.Location = new System.Drawing.Point(239, 1286);
+            this.AbilityScoreIntNum2.Name = "AbilityScoreIntNum2";
+            this.AbilityScoreIntNum2.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreIntNum2.TabIndex = 364;
+            this.AbilityScoreIntNum2.Text = "N/A";
+            // 
+            // AbilityScoreConNum2
+            // 
+            this.AbilityScoreConNum2.AutoSize = true;
+            this.AbilityScoreConNum2.Location = new System.Drawing.Point(186, 1286);
+            this.AbilityScoreConNum2.Name = "AbilityScoreConNum2";
+            this.AbilityScoreConNum2.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreConNum2.TabIndex = 363;
+            this.AbilityScoreConNum2.Text = "N/A";
+            // 
+            // AbilityScoreDexNum2
+            // 
+            this.AbilityScoreDexNum2.AutoSize = true;
+            this.AbilityScoreDexNum2.Location = new System.Drawing.Point(130, 1286);
+            this.AbilityScoreDexNum2.Name = "AbilityScoreDexNum2";
+            this.AbilityScoreDexNum2.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreDexNum2.TabIndex = 362;
+            this.AbilityScoreDexNum2.Text = "N/A";
+            // 
+            // AbilityScoreStrNum2
+            // 
+            this.AbilityScoreStrNum2.AutoSize = true;
+            this.AbilityScoreStrNum2.Location = new System.Drawing.Point(74, 1286);
+            this.AbilityScoreStrNum2.Name = "AbilityScoreStrNum2";
+            this.AbilityScoreStrNum2.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreStrNum2.TabIndex = 361;
+            this.AbilityScoreStrNum2.Text = "N/A";
+            // 
+            // AbilityScoreChaNum3
+            // 
+            this.AbilityScoreChaNum3.AutoSize = true;
+            this.AbilityScoreChaNum3.Location = new System.Drawing.Point(349, 1464);
+            this.AbilityScoreChaNum3.Name = "AbilityScoreChaNum3";
+            this.AbilityScoreChaNum3.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreChaNum3.TabIndex = 372;
+            this.AbilityScoreChaNum3.Text = "N/A";
+            // 
+            // AbilityScoreWisNum3
+            // 
+            this.AbilityScoreWisNum3.AutoSize = true;
+            this.AbilityScoreWisNum3.Location = new System.Drawing.Point(294, 1464);
+            this.AbilityScoreWisNum3.Name = "AbilityScoreWisNum3";
+            this.AbilityScoreWisNum3.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisNum3.TabIndex = 371;
+            this.AbilityScoreWisNum3.Text = "N/A";
+            // 
+            // AbilityScoreIntNum3
+            // 
+            this.AbilityScoreIntNum3.AutoSize = true;
+            this.AbilityScoreIntNum3.Location = new System.Drawing.Point(239, 1464);
+            this.AbilityScoreIntNum3.Name = "AbilityScoreIntNum3";
+            this.AbilityScoreIntNum3.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreIntNum3.TabIndex = 370;
+            this.AbilityScoreIntNum3.Text = "N/A";
+            // 
+            // AbilityScoreConNum3
+            // 
+            this.AbilityScoreConNum3.AutoSize = true;
+            this.AbilityScoreConNum3.Location = new System.Drawing.Point(186, 1464);
+            this.AbilityScoreConNum3.Name = "AbilityScoreConNum3";
+            this.AbilityScoreConNum3.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreConNum3.TabIndex = 369;
+            this.AbilityScoreConNum3.Text = "N/A";
+            // 
+            // AbilityScoreDexNum3
+            // 
+            this.AbilityScoreDexNum3.AutoSize = true;
+            this.AbilityScoreDexNum3.Location = new System.Drawing.Point(130, 1464);
+            this.AbilityScoreDexNum3.Name = "AbilityScoreDexNum3";
+            this.AbilityScoreDexNum3.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreDexNum3.TabIndex = 368;
+            this.AbilityScoreDexNum3.Text = "N/A";
+            // 
+            // AbilityScoreStrNum3
+            // 
+            this.AbilityScoreStrNum3.AutoSize = true;
+            this.AbilityScoreStrNum3.Location = new System.Drawing.Point(74, 1464);
+            this.AbilityScoreStrNum3.Name = "AbilityScoreStrNum3";
+            this.AbilityScoreStrNum3.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreStrNum3.TabIndex = 367;
+            this.AbilityScoreStrNum3.Text = "N/A";
+            // 
+            // AbilityScoreChaNum4
+            // 
+            this.AbilityScoreChaNum4.AutoSize = true;
+            this.AbilityScoreChaNum4.Location = new System.Drawing.Point(349, 1794);
+            this.AbilityScoreChaNum4.Name = "AbilityScoreChaNum4";
+            this.AbilityScoreChaNum4.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreChaNum4.TabIndex = 378;
+            this.AbilityScoreChaNum4.Text = "N/A";
+            // 
+            // AbilityScoreWisNum4
+            // 
+            this.AbilityScoreWisNum4.AutoSize = true;
+            this.AbilityScoreWisNum4.Location = new System.Drawing.Point(294, 1794);
+            this.AbilityScoreWisNum4.Name = "AbilityScoreWisNum4";
+            this.AbilityScoreWisNum4.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisNum4.TabIndex = 377;
+            this.AbilityScoreWisNum4.Text = "N/A";
+            // 
+            // AbilityScoreIntNum4
+            // 
+            this.AbilityScoreIntNum4.AutoSize = true;
+            this.AbilityScoreIntNum4.Location = new System.Drawing.Point(239, 1794);
+            this.AbilityScoreIntNum4.Name = "AbilityScoreIntNum4";
+            this.AbilityScoreIntNum4.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreIntNum4.TabIndex = 376;
+            this.AbilityScoreIntNum4.Text = "N/A";
+            // 
+            // AbilityScoreConNum4
+            // 
+            this.AbilityScoreConNum4.AutoSize = true;
+            this.AbilityScoreConNum4.Location = new System.Drawing.Point(186, 1794);
+            this.AbilityScoreConNum4.Name = "AbilityScoreConNum4";
+            this.AbilityScoreConNum4.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreConNum4.TabIndex = 375;
+            this.AbilityScoreConNum4.Text = "N/A";
+            // 
+            // AbilityScoreDexNum4
+            // 
+            this.AbilityScoreDexNum4.AutoSize = true;
+            this.AbilityScoreDexNum4.Location = new System.Drawing.Point(130, 1794);
+            this.AbilityScoreDexNum4.Name = "AbilityScoreDexNum4";
+            this.AbilityScoreDexNum4.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreDexNum4.TabIndex = 374;
+            this.AbilityScoreDexNum4.Text = "N/A";
+            // 
+            // AbilityScoreStrNum4
+            // 
+            this.AbilityScoreStrNum4.AutoSize = true;
+            this.AbilityScoreStrNum4.Location = new System.Drawing.Point(74, 1794);
+            this.AbilityScoreStrNum4.Name = "AbilityScoreStrNum4";
+            this.AbilityScoreStrNum4.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreStrNum4.TabIndex = 373;
+            this.AbilityScoreStrNum4.Text = "N/A";
+            // 
+            // AbilityScoreChaNum5
+            // 
+            this.AbilityScoreChaNum5.AutoSize = true;
+            this.AbilityScoreChaNum5.Location = new System.Drawing.Point(349, 1980);
+            this.AbilityScoreChaNum5.Name = "AbilityScoreChaNum5";
+            this.AbilityScoreChaNum5.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreChaNum5.TabIndex = 384;
+            this.AbilityScoreChaNum5.Text = "N/A";
+            // 
+            // AbilityScoreWisNum5
+            // 
+            this.AbilityScoreWisNum5.AutoSize = true;
+            this.AbilityScoreWisNum5.Location = new System.Drawing.Point(294, 1980);
+            this.AbilityScoreWisNum5.Name = "AbilityScoreWisNum5";
+            this.AbilityScoreWisNum5.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisNum5.TabIndex = 383;
+            this.AbilityScoreWisNum5.Text = "N/A";
+            // 
+            // AbilityScoreIntNum5
+            // 
+            this.AbilityScoreIntNum5.AutoSize = true;
+            this.AbilityScoreIntNum5.Location = new System.Drawing.Point(239, 1980);
+            this.AbilityScoreIntNum5.Name = "AbilityScoreIntNum5";
+            this.AbilityScoreIntNum5.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreIntNum5.TabIndex = 382;
+            this.AbilityScoreIntNum5.Text = "N/A";
+            // 
+            // AbilityScoreConNum5
+            // 
+            this.AbilityScoreConNum5.AutoSize = true;
+            this.AbilityScoreConNum5.Location = new System.Drawing.Point(186, 1980);
+            this.AbilityScoreConNum5.Name = "AbilityScoreConNum5";
+            this.AbilityScoreConNum5.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreConNum5.TabIndex = 381;
+            this.AbilityScoreConNum5.Text = "N/A";
+            // 
+            // AbilityScoreDexNum5
+            // 
+            this.AbilityScoreDexNum5.AutoSize = true;
+            this.AbilityScoreDexNum5.Location = new System.Drawing.Point(130, 1980);
+            this.AbilityScoreDexNum5.Name = "AbilityScoreDexNum5";
+            this.AbilityScoreDexNum5.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreDexNum5.TabIndex = 380;
+            this.AbilityScoreDexNum5.Text = "N/A";
+            // 
+            // AbilityScoreStrNum5
+            // 
+            this.AbilityScoreStrNum5.AutoSize = true;
+            this.AbilityScoreStrNum5.Location = new System.Drawing.Point(74, 1980);
+            this.AbilityScoreStrNum5.Name = "AbilityScoreStrNum5";
+            this.AbilityScoreStrNum5.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreStrNum5.TabIndex = 379;
+            this.AbilityScoreStrNum5.Text = "N/A";
+            // 
+            // AbilityScoreChaNum6
+            // 
+            this.AbilityScoreChaNum6.AutoSize = true;
+            this.AbilityScoreChaNum6.Location = new System.Drawing.Point(349, 2161);
+            this.AbilityScoreChaNum6.Name = "AbilityScoreChaNum6";
+            this.AbilityScoreChaNum6.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreChaNum6.TabIndex = 390;
+            this.AbilityScoreChaNum6.Text = "N/A";
+            // 
+            // AbilityScoreWisNum6
+            // 
+            this.AbilityScoreWisNum6.AutoSize = true;
+            this.AbilityScoreWisNum6.Location = new System.Drawing.Point(294, 2161);
+            this.AbilityScoreWisNum6.Name = "AbilityScoreWisNum6";
+            this.AbilityScoreWisNum6.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisNum6.TabIndex = 389;
+            this.AbilityScoreWisNum6.Text = "N/A";
+            // 
+            // AbilityScoreIntNum6
+            // 
+            this.AbilityScoreIntNum6.AutoSize = true;
+            this.AbilityScoreIntNum6.Location = new System.Drawing.Point(239, 2161);
+            this.AbilityScoreIntNum6.Name = "AbilityScoreIntNum6";
+            this.AbilityScoreIntNum6.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreIntNum6.TabIndex = 388;
+            this.AbilityScoreIntNum6.Text = "N/A";
+            // 
+            // AbilityScoreConNum6
+            // 
+            this.AbilityScoreConNum6.AutoSize = true;
+            this.AbilityScoreConNum6.Location = new System.Drawing.Point(186, 2161);
+            this.AbilityScoreConNum6.Name = "AbilityScoreConNum6";
+            this.AbilityScoreConNum6.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreConNum6.TabIndex = 387;
+            this.AbilityScoreConNum6.Text = "N/A";
+            // 
+            // AbilityScoreDexNum6
+            // 
+            this.AbilityScoreDexNum6.AutoSize = true;
+            this.AbilityScoreDexNum6.Location = new System.Drawing.Point(130, 2161);
+            this.AbilityScoreDexNum6.Name = "AbilityScoreDexNum6";
+            this.AbilityScoreDexNum6.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreDexNum6.TabIndex = 386;
+            this.AbilityScoreDexNum6.Text = "N/A";
+            // 
+            // AbilityScoreStrNum6
+            // 
+            this.AbilityScoreStrNum6.AutoSize = true;
+            this.AbilityScoreStrNum6.Location = new System.Drawing.Point(74, 2161);
+            this.AbilityScoreStrNum6.Name = "AbilityScoreStrNum6";
+            this.AbilityScoreStrNum6.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreStrNum6.TabIndex = 385;
+            this.AbilityScoreStrNum6.Text = "N/A";
+            // 
+            // AbilityScoreChaNum7
+            // 
+            this.AbilityScoreChaNum7.AutoSize = true;
+            this.AbilityScoreChaNum7.Location = new System.Drawing.Point(349, 2400);
+            this.AbilityScoreChaNum7.Name = "AbilityScoreChaNum7";
+            this.AbilityScoreChaNum7.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreChaNum7.TabIndex = 396;
+            this.AbilityScoreChaNum7.Text = "N/A";
+            // 
+            // AbilityScoreWisNum7
+            // 
+            this.AbilityScoreWisNum7.AutoSize = true;
+            this.AbilityScoreWisNum7.Location = new System.Drawing.Point(294, 2400);
+            this.AbilityScoreWisNum7.Name = "AbilityScoreWisNum7";
+            this.AbilityScoreWisNum7.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreWisNum7.TabIndex = 395;
+            this.AbilityScoreWisNum7.Text = "N/A";
+            // 
+            // AbilityScoreIntNum7
+            // 
+            this.AbilityScoreIntNum7.AutoSize = true;
+            this.AbilityScoreIntNum7.Location = new System.Drawing.Point(239, 2400);
+            this.AbilityScoreIntNum7.Name = "AbilityScoreIntNum7";
+            this.AbilityScoreIntNum7.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreIntNum7.TabIndex = 394;
+            this.AbilityScoreIntNum7.Text = "N/A";
+            // 
+            // AbilityScoreConNum7
+            // 
+            this.AbilityScoreConNum7.AutoSize = true;
+            this.AbilityScoreConNum7.Location = new System.Drawing.Point(186, 2400);
+            this.AbilityScoreConNum7.Name = "AbilityScoreConNum7";
+            this.AbilityScoreConNum7.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreConNum7.TabIndex = 393;
+            this.AbilityScoreConNum7.Text = "N/A";
+            // 
+            // AbilityScoreDexNum7
+            // 
+            this.AbilityScoreDexNum7.AutoSize = true;
+            this.AbilityScoreDexNum7.Location = new System.Drawing.Point(130, 2400);
+            this.AbilityScoreDexNum7.Name = "AbilityScoreDexNum7";
+            this.AbilityScoreDexNum7.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreDexNum7.TabIndex = 392;
+            this.AbilityScoreDexNum7.Text = "N/A";
+            // 
+            // AbilityScoreStrNum7
+            // 
+            this.AbilityScoreStrNum7.AutoSize = true;
+            this.AbilityScoreStrNum7.Location = new System.Drawing.Point(74, 2400);
+            this.AbilityScoreStrNum7.Name = "AbilityScoreStrNum7";
+            this.AbilityScoreStrNum7.Size = new System.Drawing.Size(31, 17);
+            this.AbilityScoreStrNum7.TabIndex = 391;
+            this.AbilityScoreStrNum7.Text = "N/A";
             // 
             // Fighter_Generator
             // 
@@ -3022,6 +4620,151 @@
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 10);
             this.ClientSize = new System.Drawing.Size(461, 848);
+            this.Controls.Add(this.AbilityScoreChaNum7);
+            this.Controls.Add(this.AbilityScoreWisNum7);
+            this.Controls.Add(this.AbilityScoreIntNum7);
+            this.Controls.Add(this.AbilityScoreConNum7);
+            this.Controls.Add(this.AbilityScoreDexNum7);
+            this.Controls.Add(this.AbilityScoreStrNum7);
+            this.Controls.Add(this.AbilityScoreChaNum6);
+            this.Controls.Add(this.AbilityScoreWisNum6);
+            this.Controls.Add(this.AbilityScoreIntNum6);
+            this.Controls.Add(this.AbilityScoreConNum6);
+            this.Controls.Add(this.AbilityScoreDexNum6);
+            this.Controls.Add(this.AbilityScoreStrNum6);
+            this.Controls.Add(this.AbilityScoreChaNum5);
+            this.Controls.Add(this.AbilityScoreWisNum5);
+            this.Controls.Add(this.AbilityScoreIntNum5);
+            this.Controls.Add(this.AbilityScoreConNum5);
+            this.Controls.Add(this.AbilityScoreDexNum5);
+            this.Controls.Add(this.AbilityScoreStrNum5);
+            this.Controls.Add(this.AbilityScoreChaNum4);
+            this.Controls.Add(this.AbilityScoreWisNum4);
+            this.Controls.Add(this.AbilityScoreIntNum4);
+            this.Controls.Add(this.AbilityScoreConNum4);
+            this.Controls.Add(this.AbilityScoreDexNum4);
+            this.Controls.Add(this.AbilityScoreStrNum4);
+            this.Controls.Add(this.AbilityScoreChaNum3);
+            this.Controls.Add(this.AbilityScoreWisNum3);
+            this.Controls.Add(this.AbilityScoreIntNum3);
+            this.Controls.Add(this.AbilityScoreConNum3);
+            this.Controls.Add(this.AbilityScoreDexNum3);
+            this.Controls.Add(this.AbilityScoreStrNum3);
+            this.Controls.Add(this.AbilityScoreChaNum2);
+            this.Controls.Add(this.AbilityScoreWisNum2);
+            this.Controls.Add(this.AbilityScoreIntNum2);
+            this.Controls.Add(this.AbilityScoreConNum2);
+            this.Controls.Add(this.AbilityScoreDexNum2);
+            this.Controls.Add(this.AbilityScoreStrNum2);
+            this.Controls.Add(this.AbilityScoreChaBox7);
+            this.Controls.Add(this.AbilityScoreWisBox7);
+            this.Controls.Add(this.AbilityScoreIntBox7);
+            this.Controls.Add(this.AbilityScoreConBox7);
+            this.Controls.Add(this.AbilityScoreDexBox7);
+            this.Controls.Add(this.AbilityScoreChaBox6);
+            this.Controls.Add(this.AbilityScoreWisBox6);
+            this.Controls.Add(this.AbilityScoreIntBox6);
+            this.Controls.Add(this.AbilityScoreConBox6);
+            this.Controls.Add(this.AbilityScoreDexBox6);
+            this.Controls.Add(this.AbilityScoreChaBox5);
+            this.Controls.Add(this.AbilityScoreWisBox5);
+            this.Controls.Add(this.AbilityScoreIntBox5);
+            this.Controls.Add(this.AbilityScoreConBox5);
+            this.Controls.Add(this.AbilityScoreDexBox5);
+            this.Controls.Add(this.AbilityScoreChaBox4);
+            this.Controls.Add(this.AbilityScoreWisBox4);
+            this.Controls.Add(this.AbilityScoreIntBox4);
+            this.Controls.Add(this.AbilityScoreConBox4);
+            this.Controls.Add(this.AbilityScoreDexBox4);
+            this.Controls.Add(this.AbilityScoreChaBox3);
+            this.Controls.Add(this.AbilityScoreWisBox3);
+            this.Controls.Add(this.AbilityScoreIntBox3);
+            this.Controls.Add(this.AbilityScoreConBox3);
+            this.Controls.Add(this.AbilityScoreDexBox3);
+            this.Controls.Add(this.AbilityScoreChaBox2);
+            this.Controls.Add(this.AbilityScoreWisBox2);
+            this.Controls.Add(this.AbilityScoreIntBox2);
+            this.Controls.Add(this.AbilityScoreConBox2);
+            this.Controls.Add(this.AbilityScoreDexBox2);
+            this.Controls.Add(this.AbilityScoreChaNum1);
+            this.Controls.Add(this.AbilityScoreWisNum1);
+            this.Controls.Add(this.AbilityScoreIntNum1);
+            this.Controls.Add(this.AbilityScoreConNum1);
+            this.Controls.Add(this.AbilityScoreDexNum1);
+            this.Controls.Add(this.AbilityScoreStrNum1);
+            this.Controls.Add(this.AbilityScoreChaBox1);
+            this.Controls.Add(this.AbilityScoreWisBox1);
+            this.Controls.Add(this.AbilityScoreIntBox1);
+            this.Controls.Add(this.AbilityScoreConBox1);
+            this.Controls.Add(this.AbilityScoreDexBox1);
+            this.Controls.Add(this.AbilityScoreStrBox7);
+            this.Controls.Add(this.AbilityScoreStrBox6);
+            this.Controls.Add(this.AbilityScoreStrBox5);
+            this.Controls.Add(this.AbilityScoreStrBox4);
+            this.Controls.Add(this.AbilityScoreStrBox3);
+            this.Controls.Add(this.AbilityScoreStrBox2);
+            this.Controls.Add(this.AbilityScoreStrBox1);
+            this.Controls.Add(this.AbilityScoreChaLabel7);
+            this.Controls.Add(this.AbilityScoreWisLabel7);
+            this.Controls.Add(this.AbilityScoreIntLabel7);
+            this.Controls.Add(this.AbilityScoreChaLabel6);
+            this.Controls.Add(this.AbilityScoreWisLabel6);
+            this.Controls.Add(this.AbilityScoreIntLabel6);
+            this.Controls.Add(this.AbilityScoreChaLabel5);
+            this.Controls.Add(this.AbilityScoreWisLabel5);
+            this.Controls.Add(this.AbilityScoreIntLabel5);
+            this.Controls.Add(this.AbilityScoreChaLabel4);
+            this.Controls.Add(this.AbilityScoreWisLabel4);
+            this.Controls.Add(this.AbilityScoreIntLabel4);
+            this.Controls.Add(this.AbilityScoreChaLabel3);
+            this.Controls.Add(this.AbilityScoreWisLabel3);
+            this.Controls.Add(this.AbilityScoreIntLabel3);
+            this.Controls.Add(this.AbilityScoreChaLabel2);
+            this.Controls.Add(this.AbilityScoreWisLabel2);
+            this.Controls.Add(this.AbilityScoreIntLabel2);
+            this.Controls.Add(this.AbilityScoreConLabel7);
+            this.Controls.Add(this.AbilityScoreConLabel6);
+            this.Controls.Add(this.AbilityScoreConLabel5);
+            this.Controls.Add(this.AbilityScoreConLabel4);
+            this.Controls.Add(this.AbilityScoreConLabel3);
+            this.Controls.Add(this.AbilityScoreConLabel2);
+            this.Controls.Add(this.AbilityScoreDexLabel7);
+            this.Controls.Add(this.AbilityScoreDexLabel6);
+            this.Controls.Add(this.AbilityScoreDexLabel5);
+            this.Controls.Add(this.AbilityScoreDexLabel4);
+            this.Controls.Add(this.AbilityScoreDexLabel3);
+            this.Controls.Add(this.AbilityScoreDexLabel2);
+            this.Controls.Add(this.AbilityScoreStrLabel7);
+            this.Controls.Add(this.AbilityScoreStrLabel6);
+            this.Controls.Add(this.AbilityScoreStrLabel5);
+            this.Controls.Add(this.AbilityScoreStrLabel4);
+            this.Controls.Add(this.AbilityScoreStrLabel3);
+            this.Controls.Add(this.AbilityScoreStrLabel2);
+            this.Controls.Add(this.AbilityScoreChaLabel1);
+            this.Controls.Add(this.AbilityScoreWisLabel1);
+            this.Controls.Add(this.AbilityScoreIntLabel1);
+            this.Controls.Add(this.AbilityScoreConLabel1);
+            this.Controls.Add(this.AbilityScoreDexLabel1);
+            this.Controls.Add(this.AbilityScoreStrLabel1);
+            this.Controls.Add(this.AbilityImprovementLabel7);
+            this.Controls.Add(this.AbilityImprovementLabel6);
+            this.Controls.Add(this.AbilityImprovementLabel5);
+            this.Controls.Add(this.AbilityImprovementLabel4);
+            this.Controls.Add(this.AbilityImprovementLabel3);
+            this.Controls.Add(this.AbilityImprovementLabel2);
+            this.Controls.Add(this.AbilityImprovementLabel1);
+            this.Controls.Add(this.IndomitableLabel3);
+            this.Controls.Add(this.IndomitableLabel2);
+            this.Controls.Add(this.IndomitableLabel1);
+            this.Controls.Add(this.ExtraAttackLabel3);
+            this.Controls.Add(this.ExtraAttackLabel2);
+            this.Controls.Add(this.ExtraAttackLabel1);
+            this.Controls.Add(this.AdditionalFightingStyleSelector);
+            this.Controls.Add(this.AdditionalFightingStyleLabel);
+            this.Controls.Add(this.RemarkableAthleteLabel);
+            this.Controls.Add(this.SuperiorCriticalLabel);
+            this.Controls.Add(this.SurvivorLabel);
+            this.Controls.Add(this.ImprovedCriticalLabel);
             this.Controls.Add(this.FinishButton);
             this.Controls.Add(this.divider24);
             this.Controls.Add(this.divider23);
@@ -3265,9 +5008,6 @@
             this.Controls.Add(this.MartialArchetypeBox2);
             this.Controls.Add(this.MartialArchetypeBox1);
             this.Controls.Add(this.MartialArchetypeHeader);
-            this.Controls.Add(this.MartialSelectTypeBox3);
-            this.Controls.Add(this.MartialSelectTypeBox2);
-            this.Controls.Add(this.MartialSelectTypeBox1);
             this.MaximizeBox = false;
             this.Name = "Fighter_Generator";
             this.ShowIcon = false;
@@ -3279,10 +5019,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.CheckBox MartialSelectTypeBox1;
-        private System.Windows.Forms.CheckBox MartialSelectTypeBox2;
-        private System.Windows.Forms.CheckBox MartialSelectTypeBox3;
         private System.Windows.Forms.Label MartialArchetypeHeader;
         private System.Windows.Forms.CheckBox MartialArchetypeBox1;
         private System.Windows.Forms.CheckBox MartialArchetypeBox2;
@@ -3526,5 +5262,150 @@
         private System.Windows.Forms.Label divider23;
         private System.Windows.Forms.Label divider24;
         private System.Windows.Forms.Button FinishButton;
+        private System.Windows.Forms.Label ImprovedCriticalLabel;
+        private System.Windows.Forms.Label SurvivorLabel;
+        private System.Windows.Forms.Label SuperiorCriticalLabel;
+        private System.Windows.Forms.Label RemarkableAthleteLabel;
+        private System.Windows.Forms.Label AdditionalFightingStyleLabel;
+        private System.Windows.Forms.ComboBox AdditionalFightingStyleSelector;
+        private System.Windows.Forms.Label ExtraAttackLabel1;
+        private System.Windows.Forms.Label ExtraAttackLabel2;
+        private System.Windows.Forms.Label ExtraAttackLabel3;
+        private System.Windows.Forms.Label IndomitableLabel1;
+        private System.Windows.Forms.Label IndomitableLabel2;
+        private System.Windows.Forms.Label IndomitableLabel3;
+        private System.Windows.Forms.Label AbilityImprovementLabel1;
+        private System.Windows.Forms.Label AbilityImprovementLabel2;
+        private System.Windows.Forms.Label AbilityImprovementLabel3;
+        private System.Windows.Forms.Label AbilityImprovementLabel4;
+        private System.Windows.Forms.Label AbilityImprovementLabel5;
+        private System.Windows.Forms.Label AbilityImprovementLabel6;
+        private System.Windows.Forms.Label AbilityImprovementLabel7;
+        private System.Windows.Forms.Label AbilityScoreStrLabel1;
+        private System.Windows.Forms.Label AbilityScoreDexLabel1;
+        private System.Windows.Forms.Label AbilityScoreConLabel1;
+        private System.Windows.Forms.Label AbilityScoreIntLabel1;
+        private System.Windows.Forms.Label AbilityScoreWisLabel1;
+        private System.Windows.Forms.Label AbilityScoreChaLabel1;
+        private System.Windows.Forms.Label AbilityScoreStrLabel2;
+        private System.Windows.Forms.Label AbilityScoreStrLabel3;
+        private System.Windows.Forms.Label AbilityScoreStrLabel4;
+        private System.Windows.Forms.Label AbilityScoreStrLabel5;
+        private System.Windows.Forms.Label AbilityScoreStrLabel6;
+        private System.Windows.Forms.Label AbilityScoreStrLabel7;
+        private System.Windows.Forms.Label AbilityScoreDexLabel2;
+        private System.Windows.Forms.Label AbilityScoreDexLabel3;
+        private System.Windows.Forms.Label AbilityScoreDexLabel4;
+        private System.Windows.Forms.Label AbilityScoreDexLabel5;
+        private System.Windows.Forms.Label AbilityScoreDexLabel6;
+        private System.Windows.Forms.Label AbilityScoreDexLabel7;
+        private System.Windows.Forms.Label AbilityScoreConLabel2;
+        private System.Windows.Forms.Label AbilityScoreConLabel3;
+        private System.Windows.Forms.Label AbilityScoreConLabel4;
+        private System.Windows.Forms.Label AbilityScoreConLabel5;
+        private System.Windows.Forms.Label AbilityScoreConLabel6;
+        private System.Windows.Forms.Label AbilityScoreConLabel7;
+        private System.Windows.Forms.Label AbilityScoreChaLabel2;
+        private System.Windows.Forms.Label AbilityScoreWisLabel2;
+        private System.Windows.Forms.Label AbilityScoreIntLabel2;
+        private System.Windows.Forms.Label AbilityScoreChaLabel3;
+        private System.Windows.Forms.Label AbilityScoreWisLabel3;
+        private System.Windows.Forms.Label AbilityScoreIntLabel3;
+        private System.Windows.Forms.Label AbilityScoreChaLabel4;
+        private System.Windows.Forms.Label AbilityScoreWisLabel4;
+        private System.Windows.Forms.Label AbilityScoreIntLabel4;
+        private System.Windows.Forms.Label AbilityScoreChaLabel5;
+        private System.Windows.Forms.Label AbilityScoreWisLabel5;
+        private System.Windows.Forms.Label AbilityScoreIntLabel5;
+        private System.Windows.Forms.Label AbilityScoreChaLabel6;
+        private System.Windows.Forms.Label AbilityScoreWisLabel6;
+        private System.Windows.Forms.Label AbilityScoreIntLabel6;
+        private System.Windows.Forms.Label AbilityScoreChaLabel7;
+        private System.Windows.Forms.Label AbilityScoreWisLabel7;
+        private System.Windows.Forms.Label AbilityScoreIntLabel7;
+        private System.Windows.Forms.ComboBox AbilityScoreStrBox1;
+        private System.Windows.Forms.ComboBox AbilityScoreStrBox2;
+        private System.Windows.Forms.ComboBox AbilityScoreStrBox3;
+        private System.Windows.Forms.ComboBox AbilityScoreStrBox4;
+        private System.Windows.Forms.ComboBox AbilityScoreStrBox5;
+        private System.Windows.Forms.ComboBox AbilityScoreStrBox6;
+        private System.Windows.Forms.ComboBox AbilityScoreStrBox7;
+        private System.Windows.Forms.ComboBox AbilityScoreDexBox1;
+        private System.Windows.Forms.ComboBox AbilityScoreConBox1;
+        private System.Windows.Forms.ComboBox AbilityScoreIntBox1;
+        private System.Windows.Forms.ComboBox AbilityScoreWisBox1;
+        private System.Windows.Forms.ComboBox AbilityScoreChaBox1;
+        private System.Windows.Forms.Label AbilityScoreStrNum1;
+        private System.Windows.Forms.Label AbilityScoreDexNum1;
+        private System.Windows.Forms.Label AbilityScoreConNum1;
+        private System.Windows.Forms.Label AbilityScoreIntNum1;
+        private System.Windows.Forms.Label AbilityScoreWisNum1;
+        private System.Windows.Forms.Label AbilityScoreChaNum1;
+        private System.Windows.Forms.ComboBox AbilityScoreChaBox2;
+        private System.Windows.Forms.ComboBox AbilityScoreWisBox2;
+        private System.Windows.Forms.ComboBox AbilityScoreIntBox2;
+        private System.Windows.Forms.ComboBox AbilityScoreConBox2;
+        private System.Windows.Forms.ComboBox AbilityScoreDexBox2;
+        private System.Windows.Forms.ComboBox AbilityScoreChaBox3;
+        private System.Windows.Forms.ComboBox AbilityScoreWisBox3;
+        private System.Windows.Forms.ComboBox AbilityScoreIntBox3;
+        private System.Windows.Forms.ComboBox AbilityScoreConBox3;
+        private System.Windows.Forms.ComboBox AbilityScoreDexBox3;
+        private System.Windows.Forms.ComboBox AbilityScoreChaBox4;
+        private System.Windows.Forms.ComboBox AbilityScoreWisBox4;
+        private System.Windows.Forms.ComboBox AbilityScoreIntBox4;
+        private System.Windows.Forms.ComboBox AbilityScoreConBox4;
+        private System.Windows.Forms.ComboBox AbilityScoreDexBox4;
+        private System.Windows.Forms.ComboBox AbilityScoreChaBox5;
+        private System.Windows.Forms.ComboBox AbilityScoreWisBox5;
+        private System.Windows.Forms.ComboBox AbilityScoreIntBox5;
+        private System.Windows.Forms.ComboBox AbilityScoreConBox5;
+        private System.Windows.Forms.ComboBox AbilityScoreDexBox5;
+        private System.Windows.Forms.ComboBox AbilityScoreChaBox6;
+        private System.Windows.Forms.ComboBox AbilityScoreWisBox6;
+        private System.Windows.Forms.ComboBox AbilityScoreIntBox6;
+        private System.Windows.Forms.ComboBox AbilityScoreConBox6;
+        private System.Windows.Forms.ComboBox AbilityScoreDexBox6;
+        private System.Windows.Forms.ComboBox AbilityScoreChaBox7;
+        private System.Windows.Forms.ComboBox AbilityScoreWisBox7;
+        private System.Windows.Forms.ComboBox AbilityScoreIntBox7;
+        private System.Windows.Forms.ComboBox AbilityScoreConBox7;
+        private System.Windows.Forms.ComboBox AbilityScoreDexBox7;
+        private System.Windows.Forms.Label AbilityScoreChaNum2;
+        private System.Windows.Forms.Label AbilityScoreWisNum2;
+        private System.Windows.Forms.Label AbilityScoreIntNum2;
+        private System.Windows.Forms.Label AbilityScoreConNum2;
+        private System.Windows.Forms.Label AbilityScoreDexNum2;
+        private System.Windows.Forms.Label AbilityScoreStrNum2;
+        private System.Windows.Forms.Label AbilityScoreChaNum3;
+        private System.Windows.Forms.Label AbilityScoreWisNum3;
+        private System.Windows.Forms.Label AbilityScoreIntNum3;
+        private System.Windows.Forms.Label AbilityScoreConNum3;
+        private System.Windows.Forms.Label AbilityScoreDexNum3;
+        private System.Windows.Forms.Label AbilityScoreStrNum3;
+        private System.Windows.Forms.Label AbilityScoreChaNum4;
+        private System.Windows.Forms.Label AbilityScoreWisNum4;
+        private System.Windows.Forms.Label AbilityScoreIntNum4;
+        private System.Windows.Forms.Label AbilityScoreConNum4;
+        private System.Windows.Forms.Label AbilityScoreDexNum4;
+        private System.Windows.Forms.Label AbilityScoreStrNum4;
+        private System.Windows.Forms.Label AbilityScoreChaNum5;
+        private System.Windows.Forms.Label AbilityScoreWisNum5;
+        private System.Windows.Forms.Label AbilityScoreIntNum5;
+        private System.Windows.Forms.Label AbilityScoreConNum5;
+        private System.Windows.Forms.Label AbilityScoreDexNum5;
+        private System.Windows.Forms.Label AbilityScoreStrNum5;
+        private System.Windows.Forms.Label AbilityScoreChaNum6;
+        private System.Windows.Forms.Label AbilityScoreWisNum6;
+        private System.Windows.Forms.Label AbilityScoreIntNum6;
+        private System.Windows.Forms.Label AbilityScoreConNum6;
+        private System.Windows.Forms.Label AbilityScoreDexNum6;
+        private System.Windows.Forms.Label AbilityScoreStrNum6;
+        private System.Windows.Forms.Label AbilityScoreChaNum7;
+        private System.Windows.Forms.Label AbilityScoreWisNum7;
+        private System.Windows.Forms.Label AbilityScoreIntNum7;
+        private System.Windows.Forms.Label AbilityScoreConNum7;
+        private System.Windows.Forms.Label AbilityScoreDexNum7;
+        private System.Windows.Forms.Label AbilityScoreStrNum7;
     }
 }
