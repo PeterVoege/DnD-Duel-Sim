@@ -748,6 +748,327 @@ namespace DnD_Duel_Sim
             StatPointBuyBudget.Text = "Points Left: " + (27 - GetStatPointBuyTotal());
         }
 
+        private int[] GetStartingStats()
+        {
+            int[] stats = new int[6] { 0, 0, 0, 0, 0, 0 };
+
+            if (this.StatAllocationSelectType1.Checked)
+            {
+                // See which rows have been rolled and assigned, and grab the rolled values.
+                if (StatTotal1.Text != "")
+                {
+                    switch (StatRollAllocationBox1.Text)
+                    {
+                        case "Strength":
+                            stats[0] = int.Parse(StatTotal1.Text);
+                            break;
+                        case "Dexterity":
+                            stats[1] = int.Parse(StatTotal1.Text);
+                            break;
+                        case "Constitution":
+                            stats[2] = int.Parse(StatTotal1.Text);
+                            break;
+                        case "Intelligence":
+                            stats[3] = int.Parse(StatTotal1.Text);
+                            break;
+                        case "Wisdom":
+                            stats[4] = int.Parse(StatTotal1.Text);
+                            break;
+                        case "Charisma":
+                            stats[5] = int.Parse(StatTotal1.Text);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                if (StatTotal2.Text != "")
+                {
+                    switch (StatRollAllocationBox2.Text)
+                    {
+                        case "Strength":
+                            stats[0] = int.Parse(StatTotal2.Text);
+                            break;
+                        case "Dexterity":
+                            stats[1] = int.Parse(StatTotal2.Text);
+                            break;
+                        case "Constitution":
+                            stats[2] = int.Parse(StatTotal2.Text);
+                            break;
+                        case "Intelligence":
+                            stats[3] = int.Parse(StatTotal2.Text);
+                            break;
+                        case "Wisdom":
+                            stats[4] = int.Parse(StatTotal2.Text);
+                            break;
+                        case "Charisma":
+                            stats[5] = int.Parse(StatTotal2.Text);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                if (StatTotal3.Text != "")
+                {
+                    switch (StatRollAllocationBox3.Text)
+                    {
+                        case "Strength":
+                            stats[0] = int.Parse(StatTotal3.Text);
+                            break;
+                        case "Dexterity":
+                            stats[1] = int.Parse(StatTotal3.Text);
+                            break;
+                        case "Constitution":
+                            stats[2] = int.Parse(StatTotal3.Text);
+                            break;
+                        case "Intelligence":
+                            stats[3] = int.Parse(StatTotal3.Text);
+                            break;
+                        case "Wisdom":
+                            stats[4] = int.Parse(StatTotal3.Text);
+                            break;
+                        case "Charisma":
+                            stats[5] = int.Parse(StatTotal3.Text);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                if (StatTotal4.Text != "")
+                {
+                    switch (StatRollAllocationBox4.Text)
+                    {
+                        case "Strength":
+                            stats[0] = int.Parse(StatTotal4.Text);
+                            break;
+                        case "Dexterity":
+                            stats[1] = int.Parse(StatTotal4.Text);
+                            break;
+                        case "Constitution":
+                            stats[2] = int.Parse(StatTotal4.Text);
+                            break;
+                        case "Intelligence":
+                            stats[3] = int.Parse(StatTotal4.Text);
+                            break;
+                        case "Wisdom":
+                            stats[4] = int.Parse(StatTotal4.Text);
+                            break;
+                        case "Charisma":
+                            stats[5] = int.Parse(StatTotal4.Text);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                if (StatTotal5.Text != "")
+                {
+                    switch (StatRollAllocationBox5.Text)
+                    {
+                        case "Strength":
+                            stats[0] = int.Parse(StatTotal5.Text);
+                            break;
+                        case "Dexterity":
+                            stats[1] = int.Parse(StatTotal5.Text);
+                            break;
+                        case "Constitution":
+                            stats[2] = int.Parse(StatTotal5.Text);
+                            break;
+                        case "Intelligence":
+                            stats[3] = int.Parse(StatTotal5.Text);
+                            break;
+                        case "Wisdom":
+                            stats[4] = int.Parse(StatTotal5.Text);
+                            break;
+                        case "Charisma":
+                            stats[5] = int.Parse(StatTotal5.Text);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                if (StatTotal6.Text != "")
+                {
+                    switch (StatRollAllocationBox6.Text)
+                    {
+                        case "Strength":
+                            stats[0] = int.Parse(StatTotal6.Text);
+                            break;
+                        case "Dexterity":
+                            stats[1] = int.Parse(StatTotal6.Text);
+                            break;
+                        case "Constitution":
+                            stats[2] = int.Parse(StatTotal6.Text);
+                            break;
+                        case "Intelligence":
+                            stats[3] = int.Parse(StatTotal6.Text);
+                            break;
+                        case "Wisdom":
+                            stats[4] = int.Parse(StatTotal6.Text);
+                            break;
+                        case "Charisma":
+                            stats[5] = int.Parse(StatTotal6.Text);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+            else if (this.StatAllocationSelectType2.Checked)
+            {
+                // See which rows have been assigned, and grab the assigned values.
+                switch (StatFixedAllocationBox1.Text)
+                {
+                    case "Strength":
+                        stats[0] = int.Parse(StatFixed1.Text);
+                        break;
+                    case "Dexterity":
+                        stats[1] = int.Parse(StatFixed1.Text);
+                        break;
+                    case "Constitution":
+                        stats[2] = int.Parse(StatFixed1.Text);
+                        break;
+                    case "Intelligence":
+                        stats[3] = int.Parse(StatFixed1.Text);
+                        break;
+                    case "Wisdom":
+                        stats[4] = int.Parse(StatFixed1.Text);
+                        break;
+                    case "Charisma":
+                        stats[5] = int.Parse(StatFixed1.Text);
+                        break;
+                    default:
+                        break;
+                }
+                switch (StatFixedAllocationBox2.Text)
+                {
+                    case "Strength":
+                        stats[0] = int.Parse(StatFixed2.Text);
+                        break;
+                    case "Dexterity":
+                        stats[1] = int.Parse(StatFixed2.Text);
+                        break;
+                    case "Constitution":
+                        stats[2] = int.Parse(StatFixed2.Text);
+                        break;
+                    case "Intelligence":
+                        stats[3] = int.Parse(StatFixed2.Text);
+                        break;
+                    case "Wisdom":
+                        stats[4] = int.Parse(StatFixed2.Text);
+                        break;
+                    case "Charisma":
+                        stats[5] = int.Parse(StatFixed2.Text);
+                        break;
+                    default:
+                        break;
+                }
+                switch (StatFixedAllocationBox3.Text)
+                {
+                    case "Strength":
+                        stats[0] = int.Parse(StatFixed3.Text);
+                        break;
+                    case "Dexterity":
+                        stats[1] = int.Parse(StatFixed3.Text);
+                        break;
+                    case "Constitution":
+                        stats[2] = int.Parse(StatFixed3.Text);
+                        break;
+                    case "Intelligence":
+                        stats[3] = int.Parse(StatFixed3.Text);
+                        break;
+                    case "Wisdom":
+                        stats[4] = int.Parse(StatFixed3.Text);
+                        break;
+                    case "Charisma":
+                        stats[5] = int.Parse(StatFixed3.Text);
+                        break;
+                    default:
+                        break;
+                }
+                switch (StatFixedAllocationBox4.Text)
+                {
+                    case "Strength":
+                        stats[0] = int.Parse(StatFixed4.Text);
+                        break;
+                    case "Dexterity":
+                        stats[1] = int.Parse(StatFixed4.Text);
+                        break;
+                    case "Constitution":
+                        stats[2] = int.Parse(StatFixed4.Text);
+                        break;
+                    case "Intelligence":
+                        stats[3] = int.Parse(StatFixed4.Text);
+                        break;
+                    case "Wisdom":
+                        stats[4] = int.Parse(StatFixed4.Text);
+                        break;
+                    case "Charisma":
+                        stats[5] = int.Parse(StatFixed4.Text);
+                        break;
+                    default:
+                        break;
+                }
+                switch (StatFixedAllocationBox5.Text)
+                {
+                    case "Strength":
+                        stats[0] = int.Parse(StatFixed5.Text);
+                        break;
+                    case "Dexterity":
+                        stats[1] = int.Parse(StatFixed5.Text);
+                        break;
+                    case "Constitution":
+                        stats[2] = int.Parse(StatFixed5.Text);
+                        break;
+                    case "Intelligence":
+                        stats[3] = int.Parse(StatFixed5.Text);
+                        break;
+                    case "Wisdom":
+                        stats[4] = int.Parse(StatFixed5.Text);
+                        break;
+                    case "Charisma":
+                        stats[5] = int.Parse(StatFixed5.Text);
+                        break;
+                    default:
+                        break;
+                }
+                switch (StatFixedAllocationBox6.Text)
+                {
+                    case "Strength":
+                        stats[0] = int.Parse(StatFixed6.Text);
+                        break;
+                    case "Dexterity":
+                        stats[1] = int.Parse(StatFixed6.Text);
+                        break;
+                    case "Constitution":
+                        stats[2] = int.Parse(StatFixed6.Text);
+                        break;
+                    case "Intelligence":
+                        stats[3] = int.Parse(StatFixed6.Text);
+                        break;
+                    case "Wisdom":
+                        stats[4] = int.Parse(StatFixed6.Text);
+                        break;
+                    case "Charisma":
+                        stats[5] = int.Parse(StatFixed6.Text);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else if (this.StatAllocationSelectType3.Checked)
+            {
+                // Check if each row has a definite value.
+                if (StatPointAllocationBox1.Text != "") { stats[0] = int.Parse(StatPointAllocationBox1.Text); }
+                if (StatPointAllocationBox2.Text != "") { stats[1] = int.Parse(StatPointAllocationBox2.Text); }
+                if (StatPointAllocationBox3.Text != "") { stats[2] = int.Parse(StatPointAllocationBox3.Text); }
+                if (StatPointAllocationBox4.Text != "") { stats[3] = int.Parse(StatPointAllocationBox4.Text); }
+                if (StatPointAllocationBox5.Text != "") { stats[4] = int.Parse(StatPointAllocationBox5.Text); }
+                if (StatPointAllocationBox6.Text != "") { stats[5] = int.Parse(StatPointAllocationBox6.Text); }
+            }
+            Console.WriteLine("{" + stats[0] + ", " + stats[1] + ", " + stats[2] + ", " + stats[3] + ", " + stats[4] + ", " + stats[5] + "}");
+
+            return stats;
+        }
+
         /// HP
 
         // Determines the offset created by the dynamic number of HP lines.
@@ -769,9 +1090,20 @@ namespace DnD_Duel_Sim
         }
         
         // Adjusts 'con growth' label whenever the relevant information is updated.
-        // TODO: compatibiltiy with fixed set and point buy
         private void CalculateConGrowth()
         {
+            int[] stats;
+            stats = GetStartingStats();
+
+            // Handle all ability score increases.
+
+            if (stats[2] != 0)
+            {
+                this.HPConGrowth.Text = "" + (int.Parse(this.LevelSelector.Text) * (stats[2] - 10) / 2);
+            }
+            else { this.HPConGrowth.Text = "N/A"; }
+
+            /*
             string con = "0";
 
             if (StatAllocationSelectType1.Checked)
@@ -804,6 +1136,7 @@ namespace DnD_Duel_Sim
                 this.HPConGrowth.Text = (int.Parse(this.LevelSelector.Text) * (int.Parse(con) - 10) / 2).ToString();
             }
             else { this.HPConGrowth.Text = "N/A"; }
+            */
         }
 
         // Based on how many HP lines are supposed to exist, moves the appropriate forms into place and makes them visible or not.
