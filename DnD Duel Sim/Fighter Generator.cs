@@ -18,7 +18,13 @@ namespace DnD_Duel_Sim
             _rng = rng;
             this.LevelSelector.Text = "1";
             this._levelOffset = 1;
-            CalculateConGrowth();
+            this.AbilityScoreStrBox.Text = "+0";
+            this.AbilityScoreDexBox.Text = "+0";
+            this.AbilityScoreConBox.Text = "+0";
+            this.AbilityScoreIntBox.Text = "+0";
+            this.AbilityScoreWisBox.Text = "+0";
+            this.AbilityScoreChaBox.Text = "+0";
+            this.UpdateAbilityScoreImprovement();
         }
 
         DiceRoller _rng;
@@ -27,8 +33,9 @@ namespace DnD_Duel_Sim
         // Level
         private void LevelSelector_DropDownClosed(object sender, EventArgs e)
         {
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
             this.HPOffset();
+            UpdateAbilityScoreImprovement();
         }
 
         /// Stat allocation
@@ -200,7 +207,7 @@ namespace DnD_Duel_Sim
 
                 StatAllocationModeVisibilityManager(1);
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatAllocationSelectType2_CheckedChanged(object sender, EventArgs e)
         {
@@ -216,7 +223,7 @@ namespace DnD_Duel_Sim
 
                 StatAllocationModeVisibilityManager(2);
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatAllocationSelectType3_CheckedChanged(object sender, EventArgs e)
         {
@@ -232,7 +239,7 @@ namespace DnD_Duel_Sim
 
                 StatAllocationModeVisibilityManager(3);
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
 
         // Dice roll
@@ -284,7 +291,7 @@ namespace DnD_Duel_Sim
             int statTotal1 = dice[3] + dice[2] + dice[1];
             this.StatTotal1.Text = statTotal1.ToString();
             this.StatRoll1.Enabled = false;
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatRoll2_Click(object sender, EventArgs e)
         {
@@ -294,7 +301,7 @@ namespace DnD_Duel_Sim
             int statTotal2 = dice[3] + dice[2] + dice[1];
             this.StatTotal2.Text = statTotal2.ToString();
             this.StatRoll2.Enabled = false;
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatRoll3_Click(object sender, EventArgs e)
         {
@@ -304,7 +311,7 @@ namespace DnD_Duel_Sim
             int statTotal3 = dice[3] + dice[2] + dice[1];
             this.StatTotal3.Text = statTotal3.ToString();
             this.StatRoll3.Enabled = false;
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatRoll4_Click(object sender, EventArgs e)
         {
@@ -314,7 +321,7 @@ namespace DnD_Duel_Sim
             int statTotal4 = dice[3] + dice[2] + dice[1];
             this.StatTotal4.Text = statTotal4.ToString();
             this.StatRoll4.Enabled = false;
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatRoll5_Click(object sender, EventArgs e)
         {
@@ -324,7 +331,7 @@ namespace DnD_Duel_Sim
             int statTotal5 = dice[3] + dice[2] + dice[1];
             this.StatTotal5.Text = statTotal5.ToString();
             this.StatRoll5.Enabled = false;
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatRoll6_Click(object sender, EventArgs e)
         {
@@ -334,7 +341,7 @@ namespace DnD_Duel_Sim
             int statTotal6 = dice[3] + dice[2] + dice[1];
             this.StatTotal6.Text = statTotal6.ToString();
             this.StatRoll6.Enabled = false;
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
 
         private void StatRollAllocationBox1_DropDownClosed(object sender, EventArgs e)
@@ -347,7 +354,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatRollAllocationBox1.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatRollAllocationBox2_DropDownClosed(object sender, EventArgs e)
         {
@@ -359,7 +366,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatRollAllocationBox2.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatRollAllocationBox3_DropDownClosed(object sender, EventArgs e)
         {
@@ -371,7 +378,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatRollAllocationBox3.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatRollAllocationBox4_DropDownClosed(object sender, EventArgs e)
         {
@@ -383,7 +390,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatRollAllocationBox4.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatRollAllocationBox5_DropDownClosed(object sender, EventArgs e)
         {
@@ -395,7 +402,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatRollAllocationBox5.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatRollAllocationBox6_DropDownClosed(object sender, EventArgs e)
         {
@@ -407,7 +414,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatRollAllocationBox6.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
 
         // Fixed distribution
@@ -463,7 +470,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatFixedAllocationBox1.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatFixedAllocationBox2_DropDownClosed(object sender, EventArgs e)
         {
@@ -475,7 +482,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatFixedAllocationBox2.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatFixedAllocationBox3_DropDownClosed(object sender, EventArgs e)
         {
@@ -487,7 +494,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatFixedAllocationBox3.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatFixedAllocationBox4_DropDownClosed(object sender, EventArgs e)
         {
@@ -499,7 +506,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatFixedAllocationBox4.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatFixedAllocationBox5_DropDownClosed(object sender, EventArgs e)
         {
@@ -511,7 +518,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatFixedAllocationBox5.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatFixedAllocationBox6_DropDownClosed(object sender, EventArgs e)
         {
@@ -523,7 +530,7 @@ namespace DnD_Duel_Sim
             {
                 this.StatFixedAllocationBox6.Text = " ";
             }
-            this.CalculateConGrowth();
+            this.UpdateAbilityScoreImprovement();
         }
 
         // Point buy
@@ -645,6 +652,7 @@ namespace DnD_Duel_Sim
                 StatPointCost1.Text = "Cost: ";
             }
             StatPointBuyBudget.Text = "Points Left: " + (27 - GetStatPointBuyTotal());
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatPointAllocationBox2_DropDownClosed(object sender, EventArgs e)
         {
@@ -665,6 +673,7 @@ namespace DnD_Duel_Sim
                 StatPointCost2.Text = "Cost: ";
             }
             StatPointBuyBudget.Text = "Points Left: " + (27 - GetStatPointBuyTotal());
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatPointAllocationBox3_DropDownClosed(object sender, EventArgs e)
         {
@@ -685,7 +694,7 @@ namespace DnD_Duel_Sim
                 StatPointCost3.Text = "Cost: ";
             }
             StatPointBuyBudget.Text = "Points Left: " + (27 - GetStatPointBuyTotal());
-            this.CalculateConGrowth(); // Because this is the Constitution row
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatPointAllocationBox4_DropDownClosed(object sender, EventArgs e)
         {
@@ -706,6 +715,7 @@ namespace DnD_Duel_Sim
                 StatPointCost4.Text = "Cost: ";
             }
             StatPointBuyBudget.Text = "Points Left: " + (27 - GetStatPointBuyTotal());
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatPointAllocationBox5_DropDownClosed(object sender, EventArgs e)
         {
@@ -726,6 +736,7 @@ namespace DnD_Duel_Sim
                 StatPointCost5.Text = "Cost: ";
             }
             StatPointBuyBudget.Text = "Points Left: " + (27 - GetStatPointBuyTotal());
+            this.UpdateAbilityScoreImprovement();
         }
         private void StatPointAllocationBox6_DropDownClosed(object sender, EventArgs e)
         {
@@ -746,8 +757,10 @@ namespace DnD_Duel_Sim
                 StatPointCost6.Text = "Cost: ";
             }
             StatPointBuyBudget.Text = "Points Left: " + (27 - GetStatPointBuyTotal());
+            this.UpdateAbilityScoreImprovement();
         }
 
+        // Gets the base stat allocation (after race/background, before ability score improvement) as determined by the currently selected mode of stat allocation
         private int[] GetStartingStats()
         {
             int[] stats = new int[6] { 0, 0, 0, 0, 0, 0 };
@@ -1064,9 +1077,247 @@ namespace DnD_Duel_Sim
                 if (StatPointAllocationBox5.Text != "") { stats[4] = int.Parse(StatPointAllocationBox5.Text); }
                 if (StatPointAllocationBox6.Text != "") { stats[5] = int.Parse(StatPointAllocationBox6.Text); }
             }
-            Console.WriteLine("{" + stats[0] + ", " + stats[1] + ", " + stats[2] + ", " + stats[3] + ", " + stats[4] + ", " + stats[5] + "}");
-
             return stats;
+        }
+
+        // Grabs the current state of all the dropdown boxes for ability score improvements.
+        private int[] GetAbilityScoreImprovements()
+        {
+            int[] allocatedPoints = new int[6];
+            allocatedPoints[0] = int.Parse(this.AbilityScoreStrBox.Text);
+            allocatedPoints[1] = int.Parse(this.AbilityScoreDexBox.Text);
+            allocatedPoints[2] = int.Parse(this.AbilityScoreConBox.Text);
+            allocatedPoints[3] = int.Parse(this.AbilityScoreIntBox.Text);
+            allocatedPoints[4] = int.Parse(this.AbilityScoreWisBox.Text);
+            allocatedPoints[5] = int.Parse(this.AbilityScoreChaBox.Text);
+            return allocatedPoints;
+        }
+
+        // Resets all of the ability score dropdown boxes to "+0"
+        private void ClearAbilityScoreImprovements()
+        {
+            this.AbilityScoreStrBox.Items.Clear();
+            this.AbilityScoreStrBox.Items.Add("+0");
+            this.AbilityScoreStrBox.Text = "+0";
+            this.AbilityScoreDexBox.Items.Clear();
+            this.AbilityScoreDexBox.Items.Add("+0");
+            this.AbilityScoreDexBox.Text = "+0";
+            this.AbilityScoreConBox.Items.Clear();
+            this.AbilityScoreConBox.Items.Add("+0");
+            this.AbilityScoreConBox.Text = "+0";
+            this.AbilityScoreIntBox.Items.Clear();
+            this.AbilityScoreIntBox.Items.Add("+0");
+            this.AbilityScoreIntBox.Text = "+0";
+            this.AbilityScoreWisBox.Items.Clear();
+            this.AbilityScoreWisBox.Items.Add("+0");
+            this.AbilityScoreWisBox.Text = "+0";
+            this.AbilityScoreChaBox.Items.Clear();
+            this.AbilityScoreChaBox.Items.Add("+0");
+            this.AbilityScoreChaBox.Text = "+0";
+        }
+
+        // Quick conversion from stat to the modifier it provides.
+        private int GetStatMod(int stat)
+        {
+            return stat/2 - 5;
+        }
+        
+        private void UpdateAbilityScoreImprovement()
+        {
+            /// Start by checking if distribution is valid.
+            /// If not, clear everything.
+            // Find out total points available.
+            int level = int.Parse(this.LevelSelector.Text);
+
+            // Find out total points available
+            int points = 0;
+            if (level >= 4 && AbilityScoreCheckboxLv4.Checked == true) { points += 2; }
+            if (level >= 6 && AbilityScoreCheckboxLv6.Checked == true) { points += 2; }
+            if (level >= 8 && AbilityScoreCheckboxLv8.Checked == true) { points += 2; }
+            if (level >= 12 && AbilityScoreCheckboxLv12.Checked == true) { points += 2; }
+            if (level >= 14 && AbilityScoreCheckboxLv14.Checked == true) { points += 2; }
+            if (level >= 16 && AbilityScoreCheckboxLv16.Checked == true) { points += 2; }
+            if (level >= 19 && AbilityScoreCheckboxLv19.Checked == true) { points += 2; }
+            this.AbilityScoreTotalBudget.Text = "Total Points: " + points;
+            
+            // Find out how many points are already allocated, and how much we have left in total
+            int[] allocatedPoints = GetAbilityScoreImprovements();
+            int remainingPoints = points - allocatedPoints.Sum();
+            this.AbilityScoreBudget.Text = "Points Left: " + remainingPoints;
+            
+            // Find out how much room each stat has before it caps out
+            int[] statRoom = this.GetStartingStats();
+            statRoom[0] = 20 - statRoom[0];
+            statRoom[1] = 20 - statRoom[1];
+            statRoom[2] = 20 - statRoom[2];
+            statRoom[3] = 20 - statRoom[3];
+            statRoom[4] = 20 - statRoom[4];
+            statRoom[5] = 20 - statRoom[5];
+
+            // Find out how many points can be invested into each stat, accounting for both the remaining allocated points and the 20 cap.
+            // The stat's own current allocation, naturally, does not count against itself.
+            statRoom[0] = Math.Min(statRoom[0], remainingPoints + allocatedPoints[0]);
+            statRoom[1] = Math.Min(statRoom[1], remainingPoints + allocatedPoints[1]);
+            statRoom[2] = Math.Min(statRoom[2], remainingPoints + allocatedPoints[2]);
+            statRoom[3] = Math.Min(statRoom[3], remainingPoints + allocatedPoints[3]);
+            statRoom[4] = Math.Min(statRoom[4], remainingPoints + allocatedPoints[4]);
+            statRoom[5] = Math.Min(statRoom[5], remainingPoints + allocatedPoints[5]);
+
+            // Check if sum of stats surpasses its total.
+            if (allocatedPoints.Sum() > points) { ClearAbilityScoreImprovements(); }
+
+            // Check if each stat surpasses its total.
+            if (allocatedPoints[0] > statRoom[0]) { ClearAbilityScoreImprovements(); }
+            if (allocatedPoints[1] > statRoom[1]) { ClearAbilityScoreImprovements(); }
+            if (allocatedPoints[2] > statRoom[2]) { ClearAbilityScoreImprovements(); }
+            if (allocatedPoints[3] > statRoom[3]) { ClearAbilityScoreImprovements(); }
+            if (allocatedPoints[4] > statRoom[4]) { ClearAbilityScoreImprovements(); }
+            if (allocatedPoints[5] > statRoom[5]) { ClearAbilityScoreImprovements(); }
+            
+            // Now that we know the distribution is valid (one way or another), update the boxes to fit.
+            UpdateAbilityScoreBoxes(statRoom);
+        }
+        
+        // Updates the dropdown boxes in accordance with the new configuration of improvements.
+        // Validity check has already been done, and while this function may reset a boost to zero it will never break anything.
+        private void UpdateAbilityScoreBoxes(int[] statRoom)
+        {
+            // Enable/disable the boxes based on whether it's got a real allocation.
+            int[] stats = this.GetStartingStats();
+            int[] allocatedPoints = this.GetAbilityScoreImprovements();
+            if (stats[0] == 0) // Strength
+            {
+                this.AbilityScoreStrBox.Text = "+0";
+                this.AbilityScoreStrNum.Text = "N/A";
+                this.AbilityScoreStrMod.Text = "N/A";
+                this.AbilityScoreStrBox.Enabled = false;
+            }
+            else
+            {
+                this.AbilityScoreStrBox.Enabled = true;
+                this.AbilityScoreStrNum.Text = "" + (stats[0] + allocatedPoints[0]);
+                this.AbilityScoreStrMod.Text = "" + GetStatMod(stats[0] + allocatedPoints[0]).ToString("+0;-#");
+            }
+            if (stats[1] == 0) // Dexterity
+            {
+                this.AbilityScoreDexBox.Text = "+0";
+                this.AbilityScoreDexNum.Text = "N/A";
+                this.AbilityScoreDexMod.Text = "N/A";
+                this.AbilityScoreDexBox.Enabled = false;
+            }
+            else
+            {
+                this.AbilityScoreDexBox.Enabled = true;
+                this.AbilityScoreDexNum.Text = "" + (stats[1] + allocatedPoints[1]);
+                this.AbilityScoreDexMod.Text = "" + GetStatMod(stats[1] + allocatedPoints[1]).ToString("+0;-#");
+            }
+            if (stats[2] == 0) // Constitution
+            {
+                this.AbilityScoreConBox.Text = "+0";
+                this.AbilityScoreConNum.Text = "N/A";
+                this.AbilityScoreConMod.Text = "N/A";
+                this.AbilityScoreConBox.Enabled = false;
+            }
+            else
+            {
+                this.AbilityScoreConBox.Enabled = true;
+                this.AbilityScoreConNum.Text = "" + (stats[2] + allocatedPoints[2]);
+                this.AbilityScoreConMod.Text = "" + GetStatMod(stats[2] + allocatedPoints[2]).ToString("+0;-#");
+            }
+            if (stats[3] == 0) // Intelligence
+            {
+                this.AbilityScoreIntBox.Text = "+0";
+                this.AbilityScoreIntNum.Text = "N/A";
+                this.AbilityScoreIntMod.Text = "N/A";
+                this.AbilityScoreIntBox.Enabled = false;
+            }
+            else
+            {
+                this.AbilityScoreIntBox.Enabled = true;
+                this.AbilityScoreIntNum.Text = "" + (stats[3] + allocatedPoints[3]);
+                this.AbilityScoreIntMod.Text = "" + GetStatMod(stats[3] + allocatedPoints[3]).ToString("+0;-#");
+            }
+            if (stats[4] == 0) // Wisdom
+            {
+                this.AbilityScoreWisBox.Text = "+0";
+                this.AbilityScoreWisNum.Text = "N/A";
+                this.AbilityScoreWisMod.Text = "N/A";
+                this.AbilityScoreWisBox.Enabled = false;
+            }
+            else
+            {
+                this.AbilityScoreWisBox.Enabled = true;
+                this.AbilityScoreWisNum.Text = "" + (stats[4] + allocatedPoints[4]);
+                this.AbilityScoreWisMod.Text = "" + GetStatMod(stats[4] + allocatedPoints[4]).ToString("+0;-#");
+            }
+            if (stats[5] == 0) // Charisma
+            {
+                this.AbilityScoreChaBox.Text = "+0";
+                this.AbilityScoreChaNum.Text = "N/A";
+                this.AbilityScoreChaMod.Text = "N/A";
+                this.AbilityScoreChaBox.Enabled = false;
+            }
+            else
+            {
+                this.AbilityScoreChaBox.Enabled = true;
+                this.AbilityScoreChaNum.Text = "" + (stats[5] + allocatedPoints[5]);
+                this.AbilityScoreChaMod.Text = "" + GetStatMod(stats[5] + allocatedPoints[5]).ToString("+0;-#");
+            }
+            
+            /// Update the dropdown lists
+            // Store current values
+            string[] allocation = { this.AbilityScoreStrBox.Text, this.AbilityScoreDexBox.Text, this.AbilityScoreConBox.Text, this.AbilityScoreIntBox.Text, this.AbilityScoreWisBox.Text, this.AbilityScoreChaBox.Text };
+
+            // clear lists
+            this.ClearAbilityScoreImprovements();
+
+            // add stats up to each stat's cap
+            for(int i = 1; i <= statRoom[0]; i++) { this.AbilityScoreStrBox.Items.Add("+" + i); }
+            for(int i = 1; i <= statRoom[1]; i++) { this.AbilityScoreDexBox.Items.Add("+" + i); }
+            for(int i = 1; i <= statRoom[2]; i++) { this.AbilityScoreConBox.Items.Add("+" + i); }
+            for(int i = 1; i <= statRoom[3]; i++) { this.AbilityScoreIntBox.Items.Add("+" + i); }
+            for(int i = 1; i <= statRoom[4]; i++) { this.AbilityScoreWisBox.Items.Add("+" + i); }
+            for(int i = 1; i <= statRoom[5]; i++) { this.AbilityScoreChaBox.Items.Add("+" + i); }
+
+            // Restore allocation
+            this.AbilityScoreStrBox.Text = allocation[0];
+            this.AbilityScoreDexBox.Text = allocation[1];
+            this.AbilityScoreConBox.Text = allocation[2];
+            this.AbilityScoreIntBox.Text = allocation[3];
+            this.AbilityScoreWisBox.Text = allocation[4];
+            this.AbilityScoreChaBox.Text = allocation[5];
+
+            this.CalculateConGrowth();
+        }
+
+        private void AbilityScoreStrBox_DropDownClosed(object sender, EventArgs e)
+        {
+            UpdateAbilityScoreImprovement();
+        }
+
+        private void AbilityScoreDexBox_DropDownClosed(object sender, EventArgs e)
+        {
+            UpdateAbilityScoreImprovement();
+        }
+
+        private void AbilityScoreConBox_DropDownClosed(object sender, EventArgs e)
+        {
+            UpdateAbilityScoreImprovement();
+        }
+
+        private void AbilityScoreIntBox_DropDownClosed(object sender, EventArgs e)
+        {
+            UpdateAbilityScoreImprovement();
+        }
+
+        private void AbilityScoreWisBox_DropDownClosed(object sender, EventArgs e)
+        {
+            UpdateAbilityScoreImprovement();
+        }
+
+        private void AbilityScoreChaBox_DropDownClosed(object sender, EventArgs e)
+        {
+            UpdateAbilityScoreImprovement();
         }
 
         /// HP
@@ -1076,7 +1327,7 @@ namespace DnD_Duel_Sim
         {
             int offset = int.Parse(this.LevelSelector.Text); // Number of lines visible.
             int diff = (offset - _levelOffset) * 36;
-            int threshold = this.divider4.Location.Y;
+            int threshold = this.HPSumLabel.Location.Y;
 
             foreach (Control element in this.Controls)
             {
@@ -1092,51 +1343,24 @@ namespace DnD_Duel_Sim
         // Adjusts 'con growth' label whenever the relevant information is updated.
         private void CalculateConGrowth()
         {
-            int[] stats;
-            stats = GetStartingStats();
+            // Get con value
+            string conRaw = this.AbilityScoreConNum.Text;
+            //int[] stats;
+            //stats = GetStartingStats();
 
             // Handle all ability score increases.
 
-            if (stats[2] != 0)
+            if (int.TryParse(conRaw, out int con))
             {
-                this.HPConGrowth.Text = "" + (int.Parse(this.LevelSelector.Text) * (stats[2] - 10) / 2);
+                this.HPConGrowth.Text = "" + (int.Parse(this.LevelSelector.Text) * GetStatMod(con));
             }
             else { this.HPConGrowth.Text = "N/A"; }
 
-            /*
-            string con = "0";
-
-            if (StatAllocationSelectType1.Checked)
-            {
-                if (this.StatRollAllocationBox1.Text == "Constitution" && StatTotal1.Text != "") { con = StatTotal1.Text; }
-                else if (this.StatRollAllocationBox2.Text == "Constitution" && StatTotal2.Text != "") { con = StatTotal2.Text; }
-                else if (this.StatRollAllocationBox3.Text == "Constitution" && StatTotal3.Text != "") { con = StatTotal3.Text; }
-                else if (this.StatRollAllocationBox4.Text == "Constitution" && StatTotal4.Text != "") { con = StatTotal4.Text; }
-                else if (this.StatRollAllocationBox5.Text == "Constitution" && StatTotal5.Text != "") { con = StatTotal5.Text; }
-                else if (this.StatRollAllocationBox6.Text == "Constitution" && StatTotal6.Text != "") { con = StatTotal6.Text; }
-            }
-            else if (StatAllocationSelectType2.Checked)
-            {
-                if(this.StatFixedAllocationBox1.Text == "Constitution") { con = StatFixed1.Text; }
-                else if(this.StatFixedAllocationBox2.Text == "Constitution") { con = StatFixed2.Text; }
-                else if(this.StatFixedAllocationBox3.Text == "Constitution") { con = StatFixed3.Text; }
-                else if(this.StatFixedAllocationBox4.Text == "Constitution") { con = StatFixed4.Text; }
-                else if(this.StatFixedAllocationBox5.Text == "Constitution") { con = StatFixed5.Text; }
-                else if(this.StatFixedAllocationBox6.Text == "Constitution") { con = StatFixed6.Text; }
-            }
-            else if (StatAllocationSelectType3.Checked)
-            {
-                if (StatPointAllocationBox3.Text != "") { con = StatPointAllocationBox3.Text; }
-            }
-
-            if (con != "0")
-            {
-                //int conN = int.Parse(con);
-                //int levelN = int.Parse(this.LevelSelector.Text);
-                this.HPConGrowth.Text = (int.Parse(this.LevelSelector.Text) * (int.Parse(con) - 10) / 2).ToString();
-            }
-            else { this.HPConGrowth.Text = "N/A"; }
-            */
+            //if (stats[2] != 0)
+            //{
+            //    this.HPConGrowth.Text = "" + (int.Parse(this.LevelSelector.Text) * (stats[2] - 10) / 2);
+            //}
+            //else { this.HPConGrowth.Text = "N/A"; }
         }
 
         // Based on how many HP lines are supposed to exist, moves the appropriate forms into place and makes them visible or not.
@@ -2172,6 +2396,167 @@ namespace DnD_Duel_Sim
                 MartialArchetypeBox3.AutoCheck = false;
             }
             ImprovedCriticalLabel.Visible = false;
+        }
+
+        private void AbilityScoreCheckboxLv4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AbilityScoreCheckboxLv4.Checked)
+            {
+                AbilityScoreCheckboxLv4.AutoCheck = false;
+
+                FeatCheckboxLv4.Checked = false;
+                FeatCheckboxLv4.AutoCheck = true;
+            }
+            FeatButtonLv4.Enabled = false;
+        }
+        private void FeatCheckboxLv4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (FeatCheckboxLv4.Checked)
+            {
+                FeatCheckboxLv4.AutoCheck = false;
+
+                AbilityScoreCheckboxLv4.Checked = false;
+                AbilityScoreCheckboxLv4.AutoCheck = true;
+            }
+            FeatButtonLv4.Enabled = true;
+        }
+
+        private void AbilityScoreCheckboxLv6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AbilityScoreCheckboxLv6.Checked)
+            {
+                AbilityScoreCheckboxLv6.AutoCheck = false;
+
+                FeatCheckboxLv6.Checked = false;
+                FeatCheckboxLv6.AutoCheck = true;
+            }
+            FeatButtonLv6.Enabled = false;
+        }
+        private void FeatCheckboxLv6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (FeatCheckboxLv6.Checked)
+            {
+                FeatCheckboxLv6.AutoCheck = false;
+
+                AbilityScoreCheckboxLv6.Checked = false;
+                AbilityScoreCheckboxLv6.AutoCheck = true;
+            }
+            FeatButtonLv6.Enabled = true;
+        }
+
+        private void AbilityScoreCheckboxLv8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AbilityScoreCheckboxLv8.Checked)
+            {
+                AbilityScoreCheckboxLv8.AutoCheck = false;
+
+                FeatCheckboxLv8.Checked = false;
+                FeatCheckboxLv8.AutoCheck = true;
+            }
+            FeatButtonLv8.Enabled = false;
+        }
+        private void FeatCheckboxLv8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (FeatCheckboxLv8.Checked)
+            {
+                FeatCheckboxLv8.AutoCheck = false;
+
+                AbilityScoreCheckboxLv8.Checked = false;
+                AbilityScoreCheckboxLv8.AutoCheck = true;
+            }
+            FeatButtonLv8.Enabled = true;
+        }
+
+        private void AbilityScoreCheckboxLv12_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AbilityScoreCheckboxLv12.Checked)
+            {
+                AbilityScoreCheckboxLv12.AutoCheck = false;
+
+                FeatCheckboxLv12.Checked = false;
+                FeatCheckboxLv12.AutoCheck = true;
+            }
+            FeatButtonLv12.Enabled = false;
+        }
+        private void FeatCheckboxLv12_CheckedChanged(object sender, EventArgs e)
+        {
+            if (FeatCheckboxLv12.Checked)
+            {
+                FeatCheckboxLv12.AutoCheck = false;
+
+                AbilityScoreCheckboxLv12.Checked = false;
+                AbilityScoreCheckboxLv12.AutoCheck = true;
+            }
+            FeatButtonLv12.Enabled = true;
+        }
+
+        private void AbilityScoreCheckboxLv14_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AbilityScoreCheckboxLv14.Checked)
+            {
+                AbilityScoreCheckboxLv14.AutoCheck = false;
+
+                FeatCheckboxLv14.Checked = false;
+                FeatCheckboxLv14.AutoCheck = true;
+            }
+            FeatButtonLv14.Enabled = false;
+        }
+        private void FeatCheckboxLv14_CheckedChanged(object sender, EventArgs e)
+        {
+            if (FeatCheckboxLv14.Checked)
+            {
+                FeatCheckboxLv14.AutoCheck = false;
+
+                AbilityScoreCheckboxLv14.Checked = false;
+                AbilityScoreCheckboxLv14.AutoCheck = true;
+            }
+            FeatButtonLv14.Enabled = true;
+        }
+
+        private void AbilityScoreCheckboxLv16_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AbilityScoreCheckboxLv16.Checked)
+            {
+                AbilityScoreCheckboxLv16.AutoCheck = false;
+
+                FeatCheckboxLv16.Checked = false;
+                FeatCheckboxLv16.AutoCheck = true;
+            }
+            FeatButtonLv16.Enabled = false;
+        }
+        private void FeatCheckboxLv16_CheckedChanged(object sender, EventArgs e)
+        {
+            if (FeatCheckboxLv16.Checked)
+            {
+                FeatCheckboxLv16.AutoCheck = false;
+
+                AbilityScoreCheckboxLv16.Checked = false;
+                AbilityScoreCheckboxLv16.AutoCheck = true;
+            }
+            FeatButtonLv16.Enabled = true;
+        }
+
+        private void AbilityScoreCheckboxLv19_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AbilityScoreCheckboxLv19.Checked)
+            {
+                AbilityScoreCheckboxLv19.AutoCheck = false;
+
+                FeatCheckboxLv19.Checked = false;
+                FeatCheckboxLv19.AutoCheck = true;
+            }
+            FeatButtonLv19.Enabled = false;
+        }
+        private void FeatCheckboxLv19_CheckedChanged(object sender, EventArgs e)
+        {
+            if (FeatCheckboxLv19.Checked)
+            {
+                FeatCheckboxLv19.AutoCheck = false;
+
+                AbilityScoreCheckboxLv19.Checked = false;
+                AbilityScoreCheckboxLv19.AutoCheck = true;
+            }
+            FeatButtonLv19.Enabled = true;
         }
     }
 }
