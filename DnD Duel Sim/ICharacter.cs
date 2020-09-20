@@ -6,40 +6,6 @@ using System.Threading.Tasks;
 
 namespace DnD_Duel_Sim
 {
-    public enum Race
-    {
-        HillDwarf,
-        MountainDwarf,
-        HighElf,
-        WoodElf,
-        DarkElf,
-        LightfootHalfling,
-        StoutHalfling,
-        Human,
-        Dragonborn,
-        ForestGnome,
-        RockGnome,
-        HalfElf,
-        HalfOrc,
-        Tiefling
-    }
-    public enum Background
-    {
-        Acolyte,
-        Charlatan,
-        Criminal,
-        Entertainer,
-        FolkHero,
-        GuildArtisan,
-        Hermit,
-        Noble,
-        Outlander,
-        Sage,
-        Sailor,
-        Soldier,
-        Urchin
-    }
-
     interface ICharacter
     {
         int GetLevel();
