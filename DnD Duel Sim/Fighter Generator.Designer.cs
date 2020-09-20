@@ -338,6 +338,10 @@
             this.AbilityScoreIntMod = new System.Windows.Forms.Label();
             this.AbilityScoreWisMod = new System.Windows.Forms.Label();
             this.AbilityScoreChaMod = new System.Windows.Forms.Label();
+            this.HPSumLabel = new System.Windows.Forms.Label();
+            this.HPTotalLabel = new System.Windows.Forms.Label();
+            this.HPTotalNum = new System.Windows.Forms.Label();
+            this.HPSumNum = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MartialArchetypeHeader
@@ -877,8 +881,9 @@
             this.HPConGrowth.AutoSize = true;
             this.HPConGrowth.Location = new System.Drawing.Point(231, 776);
             this.HPConGrowth.Name = "HPConGrowth";
-            this.HPConGrowth.Size = new System.Drawing.Size(0, 17);
+            this.HPConGrowth.Size = new System.Drawing.Size(31, 17);
             this.HPConGrowth.TabIndex = 56;
+            this.HPConGrowth.Text = "N/A";
             // 
             // Lv1HPFixed
             // 
@@ -3764,6 +3769,42 @@
             this.AbilityScoreChaMod.TabIndex = 432;
             this.AbilityScoreChaMod.Text = "N/A";
             // 
+            // HPSumLabel
+            // 
+            this.HPSumLabel.AutoSize = true;
+            this.HPSumLabel.Location = new System.Drawing.Point(116, 834);
+            this.HPSumLabel.Name = "HPSumLabel";
+            this.HPSumLabel.Size = new System.Drawing.Size(105, 17);
+            this.HPSumLabel.TabIndex = 433;
+            this.HPSumLabel.Text = "Sum of Growth:";
+            // 
+            // HPTotalLabel
+            // 
+            this.HPTotalLabel.AutoSize = true;
+            this.HPTotalLabel.Location = new System.Drawing.Point(154, 856);
+            this.HPTotalLabel.Name = "HPTotalLabel";
+            this.HPTotalLabel.Size = new System.Drawing.Size(67, 17);
+            this.HPTotalLabel.TabIndex = 434;
+            this.HPTotalLabel.Text = "Total HP:";
+            // 
+            // HPTotalNum
+            // 
+            this.HPTotalNum.AutoSize = true;
+            this.HPTotalNum.Location = new System.Drawing.Point(227, 856);
+            this.HPTotalNum.Name = "HPTotalNum";
+            this.HPTotalNum.Size = new System.Drawing.Size(31, 17);
+            this.HPTotalNum.TabIndex = 435;
+            this.HPTotalNum.Text = "N/A";
+            // 
+            // HPSumNum
+            // 
+            this.HPSumNum.AutoSize = true;
+            this.HPSumNum.Location = new System.Drawing.Point(227, 834);
+            this.HPSumNum.Name = "HPSumNum";
+            this.HPSumNum.Size = new System.Drawing.Size(31, 17);
+            this.HPSumNum.TabIndex = 436;
+            this.HPSumNum.Text = "N/A";
+            // 
             // Fighter_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -3771,6 +3812,10 @@
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 10);
             this.ClientSize = new System.Drawing.Size(461, 848);
+            this.Controls.Add(this.HPSumNum);
+            this.Controls.Add(this.HPTotalNum);
+            this.Controls.Add(this.HPTotalLabel);
+            this.Controls.Add(this.HPSumLabel);
             this.Controls.Add(this.AbilityScoreChaMod);
             this.Controls.Add(this.AbilityScoreWisMod);
             this.Controls.Add(this.AbilityScoreIntMod);
@@ -4402,5 +4447,9 @@
         private System.Windows.Forms.Label AbilityScoreIntMod;
         private System.Windows.Forms.Label AbilityScoreWisMod;
         private System.Windows.Forms.Label AbilityScoreChaMod;
+        private System.Windows.Forms.Label HPSumLabel;
+        private System.Windows.Forms.Label HPTotalLabel;
+        private System.Windows.Forms.Label HPTotalNum;
+        private System.Windows.Forms.Label HPSumNum;
     }
 }

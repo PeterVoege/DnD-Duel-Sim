@@ -1287,34 +1287,29 @@ namespace DnD_Duel_Sim
             this.AbilityScoreWisBox.Text = allocation[4];
             this.AbilityScoreChaBox.Text = allocation[5];
 
-            this.CalculateConGrowth();
+            this.UpdateHP();
         }
 
         private void AbilityScoreStrBox_DropDownClosed(object sender, EventArgs e)
         {
             UpdateAbilityScoreImprovement();
         }
-
         private void AbilityScoreDexBox_DropDownClosed(object sender, EventArgs e)
         {
             UpdateAbilityScoreImprovement();
         }
-
         private void AbilityScoreConBox_DropDownClosed(object sender, EventArgs e)
         {
             UpdateAbilityScoreImprovement();
         }
-
         private void AbilityScoreIntBox_DropDownClosed(object sender, EventArgs e)
         {
             UpdateAbilityScoreImprovement();
         }
-
         private void AbilityScoreWisBox_DropDownClosed(object sender, EventArgs e)
         {
             UpdateAbilityScoreImprovement();
         }
-
         private void AbilityScoreChaBox_DropDownClosed(object sender, EventArgs e)
         {
             UpdateAbilityScoreImprovement();
@@ -1339,28 +1334,233 @@ namespace DnD_Duel_Sim
             _levelOffset = offset;
             PlaceHPDiceRollLines();
         }
+
         
         // Adjusts 'con growth' label whenever the relevant information is updated.
         private void CalculateConGrowth()
         {
             // Get con value
             string conRaw = this.AbilityScoreConNum.Text;
-            //int[] stats;
-            //stats = GetStartingStats();
 
-            // Handle all ability score increases.
-
+            // Applies the new value
             if (int.TryParse(conRaw, out int con))
             {
                 this.HPConGrowth.Text = "" + (int.Parse(this.LevelSelector.Text) * GetStatMod(con));
             }
             else { this.HPConGrowth.Text = "N/A"; }
+        }
 
-            //if (stats[2] != 0)
-            //{
-            //    this.HPConGrowth.Text = "" + (int.Parse(this.LevelSelector.Text) * (stats[2] - 10) / 2);
-            //}
-            //else { this.HPConGrowth.Text = "N/A"; }
+        // Goes level by level and sums up every
+        private int CalculateHPLevelGrowth()
+        {
+            int level = int.Parse(this.LevelSelector.Text);
+            int HPGrowth = 0;
+
+            if (level >= 1)
+            {
+                if (Lv1HPCheckbox.Checked)
+                {
+                    if (this.Lv1HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv1HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 2)
+            {
+                if (Lv2HPCheckbox.Checked)
+                {
+                    if (this.Lv2HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv2HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 3)
+            {
+                if (Lv3HPCheckbox.Checked)
+                {
+                    if (this.Lv3HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv3HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 4)
+            {
+                if (Lv4HPCheckbox.Checked)
+                {
+                    if (this.Lv4HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv4HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 5)
+            {
+                if (Lv5HPCheckbox.Checked)
+                {
+                    if (this.Lv5HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv5HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 6)
+            {
+                if (Lv6HPCheckbox.Checked)
+                {
+                    if (this.Lv6HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv6HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 7)
+            {
+                if (Lv7HPCheckbox.Checked)
+                {
+                    if (this.Lv7HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv7HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 8)
+            {
+                if (Lv8HPCheckbox.Checked)
+                {
+                    if (this.Lv8HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv8HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 9)
+            {
+                if (Lv9HPCheckbox.Checked)
+                {
+                    if (this.Lv9HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv9HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 10)
+            {
+                if (Lv10HPCheckbox.Checked)
+                {
+                    if (this.Lv10HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv10HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 11)
+            {
+                if (Lv11HPCheckbox.Checked)
+                {
+                    if (this.Lv11HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv11HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 12)
+            {
+                if (Lv12HPCheckbox.Checked)
+                {
+                    if (this.Lv12HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv12HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 13)
+            {
+                if (Lv13HPCheckbox.Checked)
+                {
+                    if (this.Lv13HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv13HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 14)
+            {
+                if (Lv14HPCheckbox.Checked)
+                {
+                    if (this.Lv14HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv14HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 15)
+            {
+                if (Lv15HPCheckbox.Checked)
+                {
+                    if (this.Lv15HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv15HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 16)
+            {
+                if (Lv16HPCheckbox.Checked)
+                {
+                    if (this.Lv16HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv16HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 17)
+            {
+                if (Lv17HPCheckbox.Checked)
+                {
+                    if (this.Lv17HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv17HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 18)
+            {
+                if (Lv18HPCheckbox.Checked)
+                {
+                    if (this.Lv18HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv18HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 19)
+            {
+                if (Lv19HPCheckbox.Checked)
+                {
+                    if (this.Lv19HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv19HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+            if (level >= 20)
+            {
+                if (Lv20HPCheckbox.Checked)
+                {
+                    if (this.Lv20HPResult.Text == "") { return -1; }
+                    else { HPGrowth += int.Parse(this.Lv20HPResult.Text); }
+                }
+                else { HPGrowth += 6; }
+            }
+
+            return HPGrowth;
+        }
+
+        // Something relevant to the HP calculations has changed, so everything will be checked and updated.
+        private void UpdateHP()
+        {
+            // Start from assumption of invalid state.
+            this.HPSumNum.Text = "N/A";
+            this.HPTotalNum.Text = "N/A";
+
+            // Then check all the obstacles along the way.
+            this.CalculateConGrowth();
+            int conGrowth;
+            if (this.HPConGrowth.Text == "N/A") { return; }
+            else { conGrowth = int.Parse(this.HPConGrowth.Text); }
+
+            // The growth from rolls/fixed growth per level.
+            int HPGrowth = CalculateHPLevelGrowth();
+            if (HPGrowth == -1) { return; }
+            else { this.HPSumNum.Text = "" + HPGrowth; }
+
+            // Things seem to be good, so let's do the summation.
+            int totalHP = 10 + conGrowth + HPGrowth;
+            this.HPTotalNum.Text = "" + totalHP;
         }
 
         // Based on how many HP lines are supposed to exist, moves the appropriate forms into place and makes them visible or not.
@@ -2138,183 +2338,223 @@ namespace DnD_Duel_Sim
         private void Lv1HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(1);
+            this.UpdateHP();
         }
         private void Lv2HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(2);
+            this.UpdateHP();
         }
         private void Lv3HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(3);
+            this.UpdateHP();
         }
         private void Lv4HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(4);
+            this.UpdateHP();
         }
         private void Lv5HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(5);
+            this.UpdateHP();
         }
         private void Lv6HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(6);
+            this.UpdateHP();
         }
         private void Lv7HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(7);
+            this.UpdateHP();
         }
         private void Lv8HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(8);
+            this.UpdateHP();
         }
         private void Lv9HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(9);
+            this.UpdateHP();
         }
         private void Lv10HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(10);
+            this.UpdateHP();
         }
         private void Lv11HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(11);
+            this.UpdateHP();
         }
         private void Lv12HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(12);
+            this.UpdateHP();
         }
         private void Lv13HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(13);
+            this.UpdateHP();
         }
         private void Lv14HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(14);
+            this.UpdateHP();
         }
         private void Lv15HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(15);
+            this.UpdateHP();
         }
         private void Lv16HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(16);
+            this.UpdateHP();
         }
         private void Lv17HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(17);
+            this.UpdateHP();
         }
         private void Lv18HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(18);
+            this.UpdateHP();
         }
         private void Lv19HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(19);
+            this.UpdateHP();
         }
         private void Lv20HPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             HPRollVisibilityManager(20);
+            this.UpdateHP();
         }
 
         private void Lv1HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv1HPResult.Text = "+" + _rng.d10();
             this.Lv1HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv2HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv2HPResult.Text = "+" + _rng.d10();
             this.Lv2HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv3HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv3HPResult.Text = "+" + _rng.d10();
             this.Lv3HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv4HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv4HPResult.Text = "+" + _rng.d10();
             this.Lv4HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv5HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv5HPResult.Text = "+" + _rng.d10();
             this.Lv5HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv6HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv6HPResult.Text = "+" + _rng.d10();
             this.Lv6HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv7HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv7HPResult.Text = "+" + _rng.d10();
             this.Lv7HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv8HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv8HPResult.Text = "+" + _rng.d10();
             this.Lv8HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv9HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv9HPResult.Text = "+" + _rng.d10();
             this.Lv9HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv10HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv10HPResult.Text = "+" + _rng.d10();
             this.Lv10HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv11HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv11HPResult.Text = "+" + _rng.d10();
             this.Lv11HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv12HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv12HPResult.Text = "+" + _rng.d10();
             this.Lv12HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv13HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv13HPResult.Text = "+" + _rng.d10();
             this.Lv13HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv14HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv14HPResult.Text = "+" + _rng.d10();
             this.Lv14HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv15HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv15HPResult.Text = "+" + _rng.d10();
             this.Lv15HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv16HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv16HPResult.Text = "+" + _rng.d10();
             this.Lv16HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv17HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv17HPResult.Text = "+" + _rng.d10();
             this.Lv17HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv18HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv18HPResult.Text = "+" + _rng.d10();
             this.Lv18HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv19HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv19HPResult.Text = "+" + _rng.d10();
             this.Lv19HPRoller.Enabled = false;
+            this.UpdateHP();
         }
         private void Lv20HPRoller_Click(object sender, EventArgs e)
         {
             this.Lv20HPResult.Text = "+" + _rng.d10();
             this.Lv20HPRoller.Enabled = false;
+            this.UpdateHP();
         }
 
         private void RaceSelector_DropDownClosed(object sender, EventArgs e)
@@ -2408,6 +2648,7 @@ namespace DnD_Duel_Sim
                 FeatCheckboxLv4.AutoCheck = true;
             }
             FeatButtonLv4.Enabled = false;
+            this.UpdateAbilityScoreImprovement();
         }
         private void FeatCheckboxLv4_CheckedChanged(object sender, EventArgs e)
         {
@@ -2419,6 +2660,7 @@ namespace DnD_Duel_Sim
                 AbilityScoreCheckboxLv4.AutoCheck = true;
             }
             FeatButtonLv4.Enabled = true;
+            this.UpdateAbilityScoreImprovement();
         }
 
         private void AbilityScoreCheckboxLv6_CheckedChanged(object sender, EventArgs e)
@@ -2431,6 +2673,7 @@ namespace DnD_Duel_Sim
                 FeatCheckboxLv6.AutoCheck = true;
             }
             FeatButtonLv6.Enabled = false;
+            this.UpdateAbilityScoreImprovement();
         }
         private void FeatCheckboxLv6_CheckedChanged(object sender, EventArgs e)
         {
@@ -2442,6 +2685,7 @@ namespace DnD_Duel_Sim
                 AbilityScoreCheckboxLv6.AutoCheck = true;
             }
             FeatButtonLv6.Enabled = true;
+            this.UpdateAbilityScoreImprovement();
         }
 
         private void AbilityScoreCheckboxLv8_CheckedChanged(object sender, EventArgs e)
@@ -2454,6 +2698,7 @@ namespace DnD_Duel_Sim
                 FeatCheckboxLv8.AutoCheck = true;
             }
             FeatButtonLv8.Enabled = false;
+            this.UpdateAbilityScoreImprovement();
         }
         private void FeatCheckboxLv8_CheckedChanged(object sender, EventArgs e)
         {
@@ -2465,6 +2710,7 @@ namespace DnD_Duel_Sim
                 AbilityScoreCheckboxLv8.AutoCheck = true;
             }
             FeatButtonLv8.Enabled = true;
+            this.UpdateAbilityScoreImprovement();
         }
 
         private void AbilityScoreCheckboxLv12_CheckedChanged(object sender, EventArgs e)
@@ -2477,6 +2723,7 @@ namespace DnD_Duel_Sim
                 FeatCheckboxLv12.AutoCheck = true;
             }
             FeatButtonLv12.Enabled = false;
+            this.UpdateAbilityScoreImprovement();
         }
         private void FeatCheckboxLv12_CheckedChanged(object sender, EventArgs e)
         {
@@ -2488,6 +2735,7 @@ namespace DnD_Duel_Sim
                 AbilityScoreCheckboxLv12.AutoCheck = true;
             }
             FeatButtonLv12.Enabled = true;
+            this.UpdateAbilityScoreImprovement();
         }
 
         private void AbilityScoreCheckboxLv14_CheckedChanged(object sender, EventArgs e)
@@ -2500,6 +2748,7 @@ namespace DnD_Duel_Sim
                 FeatCheckboxLv14.AutoCheck = true;
             }
             FeatButtonLv14.Enabled = false;
+            this.UpdateAbilityScoreImprovement();
         }
         private void FeatCheckboxLv14_CheckedChanged(object sender, EventArgs e)
         {
@@ -2511,6 +2760,7 @@ namespace DnD_Duel_Sim
                 AbilityScoreCheckboxLv14.AutoCheck = true;
             }
             FeatButtonLv14.Enabled = true;
+            this.UpdateAbilityScoreImprovement();
         }
 
         private void AbilityScoreCheckboxLv16_CheckedChanged(object sender, EventArgs e)
@@ -2523,6 +2773,7 @@ namespace DnD_Duel_Sim
                 FeatCheckboxLv16.AutoCheck = true;
             }
             FeatButtonLv16.Enabled = false;
+            this.UpdateAbilityScoreImprovement();
         }
         private void FeatCheckboxLv16_CheckedChanged(object sender, EventArgs e)
         {
@@ -2534,6 +2785,7 @@ namespace DnD_Duel_Sim
                 AbilityScoreCheckboxLv16.AutoCheck = true;
             }
             FeatButtonLv16.Enabled = true;
+            this.UpdateAbilityScoreImprovement();
         }
 
         private void AbilityScoreCheckboxLv19_CheckedChanged(object sender, EventArgs e)
@@ -2546,6 +2798,7 @@ namespace DnD_Duel_Sim
                 FeatCheckboxLv19.AutoCheck = true;
             }
             FeatButtonLv19.Enabled = false;
+            this.UpdateAbilityScoreImprovement();
         }
         private void FeatCheckboxLv19_CheckedChanged(object sender, EventArgs e)
         {
@@ -2557,6 +2810,7 @@ namespace DnD_Duel_Sim
                 AbilityScoreCheckboxLv19.AutoCheck = true;
             }
             FeatButtonLv19.Enabled = true;
+            this.UpdateAbilityScoreImprovement();
         }
     }
 }
