@@ -39,29 +39,51 @@ namespace DnD_Duel_Sim
             _int = Int;
             _wis = Wis;
             _cha = Cha;
+            /// Proficiencies (not properly initialized)
+            // 18 different skills
+            _skillProfiencies = new bool[18] { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
+            // 6 different saves
+            _saveProficiencies = new bool[6] { false, false, false, false, false, false };
+            
         }
-
-        // Dice Roller
-        private DiceRoller _rng;
         
-        // Level
+        /// Variables
+        private DiceRoller _rng;
         private int _level;
+        private int _maxHP;
+        private int _HP;
+        private int _hitDice;
         private Race _race;
         private Background _background;
+        // proficiencies
+        private bool _simpleWeaponProficiency;
+        private bool _martialWeaponProficiency;
+        private bool _lightArmorProficiency;
+        private bool _mediumArmorProficiency;
+        private bool _heavyArmorProficiency;
+        private bool _shieldsProficiency;
+        private bool[] _skillProfiencies;
+        private bool[] _saveProficiencies;
+        // Attributes
+        private int _str;
+        private int _dex;
+        private int _con;
+        private int _int;
+        private int _wis;
+        private int _cha;
+
+        // Level
         public int GetLevel() => _level;
         public void SetLevel(int level) => _level = level;
 
         // Health
-        private int _maxHP;
         public int GetMaxHP() => _maxHP;
         public void SetMaxHP(int maxHP) => _maxHP = maxHP;
 
-        private int _HP;
         public int GetHP() => _HP;
         public void SetHP(int HP) => _HP = HP;
 
         // Hit dice
-        private int _hitDice;
         public int GetMaxHitDice() => _level;
         public int GetHitDice() => _hitDice;
         public void SetHitDice(int hitDice) => _hitDice = hitDice;
@@ -75,119 +97,90 @@ namespace DnD_Duel_Sim
         public Background GetBackground() => _background;
         public void SetBackground(Background background) => _background = background;
 
-        // Proficiencies
-        // weapons
-        private bool _simpleWeaponProficiency;
-        private bool _martialWeaponProficiency;
-        // armor
-        private bool _lightArmorProficiency;
-        private bool _mediumArmorProficiency;
-        private bool _heavyArmorProficiency;
-        private bool _shieldsProficiency;
-        // str skills
-        private bool _athleticsProficiency;
-        // dex skills
-        private bool _acrobaticsProficiency;
-        private bool _sleightOfHandProficiency;
-        private bool _stealthProficiency;
-        // int skills
-        private bool _arcanaProficiency;
-        private bool _historyProficiency;
-        private bool _investigationProficiency;
-        private bool _natureProficiency;
-        private bool _religionProficiency;
-        // wis skills
-        private bool _animalHandlingProficiency;
-        private bool _insightProficiency;
-        private bool _medicineProficiency;
-        private bool _perceptionProficiency;
-        private bool _survivalProficiency;
-        // cha skills
-        private bool _deceptionProficiency;
-        private bool _intimidationProficiency;
-        private bool _performanceProficiency;
-        private bool _persuasionProficiency;
-        // saves
-        private bool _strSaveProficiency;
-        private bool _dexSaveProficiency;
-        private bool _conSaveProficiency;
-        private bool _intSaveProficiency;
-        private bool _wisSaveProficiency;
-        private bool _chaSaveProficiency;
-
+        /// Proficiencies
+        // Weapons and armor
         public bool GetSimpleWeaponProficiency() => _simpleWeaponProficiency;
-        public void SetSimpleWeaponProficiency(bool simpleWeaponProficiency) => _simpleWeaponProficiency = simpleWeaponProficiency;
         public bool GetMartialWeaponProficiency() => _martialWeaponProficiency;
-        public void SetMartialWeaponProficiency(bool martialWeaponProficiency) => _martialWeaponProficiency = martialWeaponProficiency;
         public bool GetLightArmorProficiency() => _lightArmorProficiency;
-        public void SetLightArmorProficiency(bool lightArmorProficiency) => _lightArmorProficiency = lightArmorProficiency;
         public bool GetMediumArmorProficiency() => _mediumArmorProficiency;
-        public void SetMediumArmorProficiency(bool mediumArmorProficiency) => _mediumArmorProficiency = mediumArmorProficiency;
         public bool GetHeavyArmorProficiency() => _heavyArmorProficiency;
-        public void SetHeavyArmorProficiency(bool heavyArmorProficiency) => _heavyArmorProficiency = heavyArmorProficiency;
         public bool GetShieldsProficiency() => _shieldsProficiency;
-        public void SetShieldsProficiency(bool shieldsProficiency) => _shieldsProficiency = shieldsProficiency;
-        
-        public bool GetAthleticsProficiency() => _athleticsProficiency;
-        public void SetAthleticsProficiency(bool athleticsProficiency) => _athleticsProficiency = athleticsProficiency;
-        public bool GetAcrobaticsProficiency() => _acrobaticsProficiency;
-        public void SetAcrobaticsProficiency(bool acrobaticsProficiency) => _acrobaticsProficiency = acrobaticsProficiency;
-        public bool GetSleightOfHandProficiency() => _sleightOfHandProficiency;
-        public void SetSleightOfHandProficiency(bool sleightOfHandProficiency) => _sleightOfHandProficiency = sleightOfHandProficiency;
-        public bool GetStealthProficiency() => _stealthProficiency;
-        public void SetStealthProficiency(bool stealthProficiency) => _stealthProficiency = stealthProficiency;
-        public bool GetArcanaProficiency() => _arcanaProficiency;
-        public void SetArcanaProficiency(bool arcanaProficiency) => _arcanaProficiency = arcanaProficiency;
-        public bool GetHistoryProficiency() => _historyProficiency;
-        public void SetHistoryProficiency(bool historyProficiency) => _historyProficiency = historyProficiency;
-        public bool GetInvestigationProficiency() => _investigationProficiency;
-        public void SetInvestigationProficiency(bool investigationProficiency) => _investigationProficiency = investigationProficiency;
-        public bool GetNatureProficiency() => _natureProficiency;
-        public void SetNatureProficiency(bool natureProficiency) => _natureProficiency = natureProficiency;
-        public bool GetReligionProficiency() => _religionProficiency;
-        public void SetReligionProficiency(bool religionProficiency) => _religionProficiency = religionProficiency;
-        public bool GetAnimalHandlingProficiency() => _animalHandlingProficiency;
-        public void SetAnimalHandlingProficiency(bool animalHandlingProficiency) => _animalHandlingProficiency = animalHandlingProficiency;
-        public bool GetInsightProficiency() => _insightProficiency;
-        public void SetInsightProficiency(bool insightProficiency) => _insightProficiency = insightProficiency;
-        public bool GetMedicineProficiency() => _medicineProficiency;
-        public void SetMedicineProficiency(bool medicineProficiency) => _medicineProficiency = medicineProficiency;
-        public bool GetPerceptionProficiency() => _perceptionProficiency;
-        public void SetPerceptionProficiency(bool perceptionProficiency) => _perceptionProficiency = perceptionProficiency;
-        public bool GetSurvivalProficiency() => _survivalProficiency;
-        public void SetSurvivalProficiency(bool survivalProficiency) => _survivalProficiency = survivalProficiency;
-        public bool GetDeceptionProficiency() => _deceptionProficiency;
-        public void SetDeceptionProficiency(bool deceptionProficiency) => _deceptionProficiency = deceptionProficiency;
-        public bool GetIntimidationProficiency() => _intimidationProficiency;
-        public void SetIntimidationProficiency(bool intimidationProficiency) => _intimidationProficiency = intimidationProficiency;
-        public bool GetPerformanceProficiency() => _performanceProficiency;
-        public void SetPerformanceProficiency(bool performanceProficiency) => _performanceProficiency = performanceProficiency;
-        public bool GetPersuasionProficiency() => _persuasionProficiency;
-        public void SetPersuasionProficiency(bool persuasionProficiency) => _persuasionProficiency = persuasionProficiency;
 
-        public bool GetStrSaveProficiency() => _strSaveProficiency;
-        public void SetStrSaveProficiency(bool strSaveProficiency) => _strSaveProficiency = strSaveProficiency;
-        public bool GetDexSaveProficiency() => _dexSaveProficiency;
-        public void SetDexSaveProficiency(bool dexSaveProficiency) => _dexSaveProficiency = dexSaveProficiency;
-        public bool GetConSaveProficiency() => _conSaveProficiency;
-        public void SetConSaveProficiency(bool conSaveProficiency) => _conSaveProficiency = conSaveProficiency;
-        public bool GetIntSaveProficiency() => _intSaveProficiency;
-        public void SetIntSaveProficiency(bool intSaveProficiency) => _intSaveProficiency = intSaveProficiency;
-        public bool GetWisSaveProficiency() => _wisSaveProficiency;
-        public void SetWisSaveProficiency(bool wisSaveProficiency) => _wisSaveProficiency = wisSaveProficiency;
-        public bool GetChaSaveProficiency() => _chaSaveProficiency;
-        public void SetChaSaveProficiency(bool chaSaveProficiency) => _chaSaveProficiency = chaSaveProficiency;
+        public void SetSimpleWeaponProficiency(bool newState) => _simpleWeaponProficiency = newState;
+        public void SetMartialWeaponProficiency(bool newState) => _martialWeaponProficiency = newState;
+        public void SetLightArmorProficiency(bool newState) => _lightArmorProficiency = newState;
+        public void SetMediumArmorProficiency(bool newState) => _mediumArmorProficiency = newState;
+        public void SetHeavyArmorProficiency(bool newState) => _heavyArmorProficiency = newState;
+        public void SetShieldsProficiency(bool newState) => _shieldsProficiency = newState;
+        
+        // Str skills
+        public bool GetAthleticsProficiency() => _skillProfiencies[0];
+        // Dex skills
+        public bool GetAcrobaticsProficiency() => _skillProfiencies[1];
+        public bool GetSleightOfHandProficiency() => _skillProfiencies[2];
+        public bool GetStealthProficiency() => _skillProfiencies[3];
+        // Int skills
+        public bool GetArcanaProficiency() => _skillProfiencies[4];
+        public bool GetHistoryProficiency() => _skillProfiencies[5];
+        public bool GetInvestigationProficiency() => _skillProfiencies[6];
+        public bool GetNatureProficiency() => _skillProfiencies[7];
+        public bool GetReligionProficiency() => _skillProfiencies[8];
+        // Wis skills
+        public bool GetAnimalHandlingProficiency() => _skillProfiencies[9];
+        public bool GetInsightProficiency() => _skillProfiencies[10];
+        public bool GetMedicineProficiency() => _skillProfiencies[11];
+        public bool GetPerceptionProficiency() => _skillProfiencies[12];
+        public bool GetSurvivalProficiency() => _skillProfiencies[13];
+        // Cha skills
+        public bool GetDeceptionProficiency() => _skillProfiencies[14];
+        public bool GetIntimidationProficiency() => _skillProfiencies[15];
+        public bool GetPerformanceProficiency() => _skillProfiencies[16];
+        public bool GetPersuasionProficiency() => _skillProfiencies[17];
+
+        // Str skills
+        public void SetAthleticsProficiency(bool newState) => _skillProfiencies[0] = newState;
+        // Dex skills
+        public void SetAcrobaticsProficiency(bool newState) => _skillProfiencies[1] = newState;
+        public void SetSleightOfHandProficiency(bool newState) => _skillProfiencies[2] = newState;
+        public void SetStealthProficiency(bool newState) => _skillProfiencies[3] = newState;
+        // Int skills
+        public void SetArcanaProficiency(bool newState) => _skillProfiencies[4] = newState;
+        public void SetHistoryProficiency(bool newState) => _skillProfiencies[5] = newState;
+        public void SetInvestigationProficiency(bool newState) => _skillProfiencies[6] = newState;
+        public void SetNatureProficiency(bool newState) => _skillProfiencies[7] = newState;
+        public void SetReligionProficiency(bool newState) => _skillProfiencies[8] = newState;
+        // Wis skills
+        public void SetAnimalHandlingProficiency(bool newState) => _skillProfiencies[9] = newState;
+        public void SetInsightProficiency(bool newState) => _skillProfiencies[10] = newState;
+        public void SetMedicineProficiency(bool newState) => _skillProfiencies[11] = newState;
+        public void SetPerceptionProficiency(bool newState) => _skillProfiencies[12] = newState;
+        public void SetSurvivalProficiency(bool newState) => _skillProfiencies[13] = newState;
+        // Cha skills
+        public void SetDeceptionProficiency(bool newState) => _skillProfiencies[14] = newState;
+        public void SetIntimidationProficiency(bool newState) => _skillProfiencies[15] = newState;
+        public void SetPerformanceProficiency(bool newState) => _skillProfiencies[16] = newState;
+        public void SetPersuasionProficiency(bool newState) => _skillProfiencies[17] = newState;
+
+        // Saves
+        public bool GetStrSaveProficiency() => _saveProficiencies[0];
+        public void SetStrSaveProficiency(bool newState) => _saveProficiencies[0] = newState;
+        public bool GetDexSaveProficiency() => _saveProficiencies[1];
+        public void SetDexSaveProficiency(bool newState) => _saveProficiencies[1] = newState;
+        public bool GetConSaveProficiency() => _saveProficiencies[2];
+        public void SetConSaveProficiency(bool newState) => _saveProficiencies[2] = newState;
+        public bool GetIntSaveProficiency() => _saveProficiencies[3];
+        public void SetIntSaveProficiency(bool newState) => _saveProficiencies[3] = newState;
+        public bool GetWisSaveProficiency() => _saveProficiencies[4];
+        public void SetWisSaveProficiency(bool newState) => _saveProficiencies[4] = newState;
+        public bool GetChaSaveProficiency() => _saveProficiencies[5];
+        public void SetChaSaveProficiency(bool newState) => _saveProficiencies[5] = newState;
+
 
         // Proficiency bonus.
         public int GetProficiencyBonus() => 2 + (_level - 1) / 4;
 
-        private int _str;
-        private int _dex;
-        private int _con;
-        private int _int;
-        private int _wis;
-        private int _cha;
 
+        // Attributes
         public int GetStr() => _str;
         public int GetDex() => _dex;
         public int GetCon() => _con;
@@ -202,12 +195,12 @@ namespace DnD_Duel_Sim
         public void SetWis(int Wis) => _wis = Wis;
         public void SetCha(int Cha) => _cha = Cha;
 
-        public int GetStrMod() => (_str - 10) / 2;
-        public int GetDexMod() => (_dex - 10) / 2;
-        public int GetConMod() => (_con - 10) / 2;
-        public int GetIntMod() => (_int - 10) / 2;
-        public int GetWisMod() => (_wis - 10) / 2;
-        public int GetChaMod() => (_cha - 10) / 2;
+        public int GetStrMod() => _str / 2 - 5;
+        public int GetDexMod() => _dex / 2 - 5;
+        public int GetConMod() => _con / 2 - 5;
+        public int GetIntMod() => _int / 2 - 5;
+        public int GetWisMod() => _wis / 2 - 5;
+        public int GetChaMod() => _cha / 2 - 5;
 
         // Ability checks
         public int RollStrCheck() => _rng.d20() + GetStrMod(); // Remarkable Athlete?
@@ -232,10 +225,55 @@ namespace DnD_Duel_Sim
         public int RollWisSave() => _rng.d20() + GetWisSaveMod();
         public int RollChaSave() => _rng.d20() + GetChaSaveMod();
 
+        /// Skill checks.
+        // Str skills
+        // Remarkable Athlete applies here, returning half proficiency if no regular proficiency exists.
+        public int RollAthleticsCheck() => _rng.d20() + GetStrMod() + Math.Max(
+            (GetAthleticsProficiency() ? GetProficiencyBonus() : 0), 
+            (RemarkableAthlete() ? RemarkableAthleteBonus() : 0));
+        // Dex skills
+        public int RollAcrobaticsCheck() => _rng.d20() + GetDexMod() + Math.Max(
+            (GetAcrobaticsProficiency() ? GetProficiencyBonus() : 0),
+            (RemarkableAthlete() ? RemarkableAthleteBonus() : 0));
+        public int RollSleightOfHandCheck() => _rng.d20() + GetDexMod() + Math.Max(
+            (GetSleightOfHandProficiency() ? GetProficiencyBonus() : 0),
+            (RemarkableAthlete() ? RemarkableAthleteBonus() : 0));
+        public int RollStealthCheck() => _rng.d20() + GetDexMod() + Math.Max(
+            (GetStealthProficiency() ? GetProficiencyBonus() : 0),
+            (RemarkableAthlete() ? RemarkableAthleteBonus() : 0));
+        // Int skills
+        // Remarkable Athlete stops applying here.
+        public int RollArcanaCheck() => _rng.d20() + GetIntMod() + (GetArcanaProficiency() ? GetProficiencyBonus() : 0);
+        public int RollHistoryCheck() => _rng.d20() + GetIntMod() + (GetHistoryProficiency() ? GetProficiencyBonus() : 0);
+        public int RollInvestigationCheck() => _rng.d20() + GetIntMod() + (GetInvestigationProficiency() ? GetProficiencyBonus() : 0);
+        public int RollNatureCheck() => _rng.d20() + GetIntMod() + (GetNatureProficiency() ? GetProficiencyBonus() : 0);
+        public int RollReligionCheck() => _rng.d20() + GetIntMod() + (GetReligionProficiency() ? GetProficiencyBonus() : 0);
+        // Wis skills
+        public int RollAnimalHandlingCheck() => _rng.d20() + GetWisMod() + (GetAnimalHandlingProficiency() ? GetProficiencyBonus() : 0);
+        public int RollInsightCheck() => _rng.d20() + GetWisMod() + (GetInsightProficiency() ? GetProficiencyBonus() : 0);
+        public int RollMedicineCheck() => _rng.d20() + GetWisMod() + (GetMedicineProficiency() ? GetProficiencyBonus() : 0);
+        public int RollPerceptionCheck() => _rng.d20() + GetWisMod() + (GetPerceptionProficiency() ? GetProficiencyBonus() : 0);
+        public int RollSurvivalCheck() => _rng.d20() + GetWisMod() + (GetSurvivalProficiency() ? GetProficiencyBonus() : 0);
+        // Cha skills
+        public int RollDeceptionCheck() => _rng.d20() + GetChaMod() + (GetDeceptionProficiency() ? GetProficiencyBonus() : 0);
+        public int RollIntimidationCheck() => _rng.d20() + GetChaMod() + (GetIntimidationProficiency() ? GetProficiencyBonus() : 0);
+        public int RollPerformanceCheck() => _rng.d20() + GetChaMod() + (GetPerformanceProficiency() ? GetProficiencyBonus() : 0);
+        public int RollPersuasionCheck() => _rng.d20() + GetChaMod() + (GetPersuasionProficiency() ? GetProficiencyBonus() : 0);
+
+
         // Attacking
         public int AttackRoll() => _rng.d20() + GetStrMod() + GetProficiencyBonus();
         public int DamageRoll() => _rng.d8() + GetStrMod();
         // Assumes static weapon, will expand later.
+
+        // Armor class
+        // 16 from chainmail + 2 from shield
+        public int GetArmorAC()
+        {
+            return 16;
+        }
+        public bool GetShield() => true;
+        public int GetAC() => GetArmorAC() + (GetShield() ? 2 : 0);
 
         // Speed
         public int GetSpeed()
@@ -271,6 +309,7 @@ namespace DnD_Duel_Sim
         // Champion feats
         public bool ImprovedCritical() => GetMartialArchetype() == MartialArchetype.Champion;
         public bool RemarkableAthlete() => (GetMartialArchetype() == MartialArchetype.Champion) && (GetLevel() >= 7);
+        public int RemarkableAthleteBonus() => (int)Math.Ceiling((double)GetProficiencyBonus() / 2);
         // Additional fighting style.
         public bool SuperiorCritical() => (GetMartialArchetype() == MartialArchetype.Champion) && (GetLevel() >= 15);
         public bool Survivor() => (GetMartialArchetype() == MartialArchetype.Champion) && (GetLevel() >= 18);
