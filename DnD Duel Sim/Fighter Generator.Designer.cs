@@ -342,12 +342,23 @@
             this.HPTotalLabel = new System.Windows.Forms.Label();
             this.HPTotalNum = new System.Windows.Forms.Label();
             this.HPSumNum = new System.Windows.Forms.Label();
+            this.ProficienciesLabel = new System.Windows.Forms.Label();
+            this.ProficienciesDescription = new System.Windows.Forms.Label();
+            this.AcrobaticsProfCheckbox = new System.Windows.Forms.CheckBox();
+            this.AnimalHandlingProfCheckbox = new System.Windows.Forms.CheckBox();
+            this.AthleticsProfCheckbox = new System.Windows.Forms.CheckBox();
+            this.HistoryProfCheckbox = new System.Windows.Forms.CheckBox();
+            this.InsightProfCheckbox = new System.Windows.Forms.CheckBox();
+            this.IntimidationProfCheckbox = new System.Windows.Forms.CheckBox();
+            this.PerceptionProfCheckbox = new System.Windows.Forms.CheckBox();
+            this.SurvivalProfCheckbox = new System.Windows.Forms.CheckBox();
+            this.ProficienciesChoiceLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MartialArchetypeHeader
             // 
             this.MartialArchetypeHeader.AutoSize = true;
-            this.MartialArchetypeHeader.Location = new System.Drawing.Point(168, 1072);
+            this.MartialArchetypeHeader.Location = new System.Drawing.Point(168, 1247);
             this.MartialArchetypeHeader.Name = "MartialArchetypeHeader";
             this.MartialArchetypeHeader.Size = new System.Drawing.Size(118, 17);
             this.MartialArchetypeHeader.TabIndex = 4;
@@ -359,7 +370,7 @@
             this.MartialArchetypeBox1.AutoSize = true;
             this.MartialArchetypeBox1.Checked = true;
             this.MartialArchetypeBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.MartialArchetypeBox1.Location = new System.Drawing.Point(73, 1096);
+            this.MartialArchetypeBox1.Location = new System.Drawing.Point(73, 1271);
             this.MartialArchetypeBox1.Name = "MartialArchetypeBox1";
             this.MartialArchetypeBox1.Size = new System.Drawing.Size(93, 21);
             this.MartialArchetypeBox1.TabIndex = 5;
@@ -370,7 +381,7 @@
             // MartialArchetypeBox2
             // 
             this.MartialArchetypeBox2.AutoSize = true;
-            this.MartialArchetypeBox2.Location = new System.Drawing.Point(172, 1096);
+            this.MartialArchetypeBox2.Location = new System.Drawing.Point(172, 1271);
             this.MartialArchetypeBox2.Name = "MartialArchetypeBox2";
             this.MartialArchetypeBox2.Size = new System.Drawing.Size(113, 21);
             this.MartialArchetypeBox2.TabIndex = 6;
@@ -381,7 +392,7 @@
             // MartialArchetypeBox3
             // 
             this.MartialArchetypeBox3.AutoSize = true;
-            this.MartialArchetypeBox3.Location = new System.Drawing.Point(291, 1096);
+            this.MartialArchetypeBox3.Location = new System.Drawing.Point(291, 1271);
             this.MartialArchetypeBox3.Name = "MartialArchetypeBox3";
             this.MartialArchetypeBox3.Size = new System.Drawing.Size(121, 21);
             this.MartialArchetypeBox3.TabIndex = 7;
@@ -423,7 +434,7 @@
             // divider4
             // 
             this.divider4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider4.Location = new System.Drawing.Point(50, 881);
+            this.divider4.Location = new System.Drawing.Point(50, 884);
             this.divider4.Name = "divider4";
             this.divider4.Size = new System.Drawing.Size(362, 2);
             this.divider4.TabIndex = 9;
@@ -2639,7 +2650,7 @@
             "Great Weapon Fighting",
             "Protection",
             "Two-Weapon Fighting"});
-            this.FightingStyleSelector.Location = new System.Drawing.Point(189, 916);
+            this.FightingStyleSelector.Location = new System.Drawing.Point(189, 1091);
             this.FightingStyleSelector.Name = "FightingStyleSelector";
             this.FightingStyleSelector.Size = new System.Drawing.Size(168, 24);
             this.FightingStyleSelector.TabIndex = 207;
@@ -2647,7 +2658,7 @@
             // FightingStyleLabel
             // 
             this.FightingStyleLabel.AutoSize = true;
-            this.FightingStyleLabel.Location = new System.Drawing.Point(86, 919);
+            this.FightingStyleLabel.Location = new System.Drawing.Point(86, 1094);
             this.FightingStyleLabel.Name = "FightingStyleLabel";
             this.FightingStyleLabel.Size = new System.Drawing.Size(97, 17);
             this.FightingStyleLabel.TabIndex = 208;
@@ -2656,7 +2667,7 @@
             // SecondWindLabel
             // 
             this.SecondWindLabel.AutoSize = true;
-            this.SecondWindLabel.Location = new System.Drawing.Point(176, 953);
+            this.SecondWindLabel.Location = new System.Drawing.Point(176, 1128);
             this.SecondWindLabel.Name = "SecondWindLabel";
             this.SecondWindLabel.Size = new System.Drawing.Size(92, 17);
             this.SecondWindLabel.TabIndex = 209;
@@ -2666,7 +2677,7 @@
             // 
             this.Lv1Label.AutoSize = true;
             this.Lv1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv1Label.Location = new System.Drawing.Point(199, 888);
+            this.Lv1Label.Location = new System.Drawing.Point(199, 891);
             this.Lv1Label.Name = "Lv1Label";
             this.Lv1Label.Size = new System.Drawing.Size(54, 25);
             this.Lv1Label.TabIndex = 210;
@@ -2675,7 +2686,7 @@
             // divider5
             // 
             this.divider5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider5.Location = new System.Drawing.Point(50, 978);
+            this.divider5.Location = new System.Drawing.Point(50, 1153);
             this.divider5.Name = "divider5";
             this.divider5.Size = new System.Drawing.Size(362, 2);
             this.divider5.TabIndex = 211;
@@ -2684,7 +2695,7 @@
             // divider6
             // 
             this.divider6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider6.Location = new System.Drawing.Point(50, 1035);
+            this.divider6.Location = new System.Drawing.Point(50, 1210);
             this.divider6.Name = "divider6";
             this.divider6.Size = new System.Drawing.Size(362, 2);
             this.divider6.TabIndex = 212;
@@ -2694,7 +2705,7 @@
             // 
             this.Lv2Label.AutoSize = true;
             this.Lv2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv2Label.Location = new System.Drawing.Point(199, 985);
+            this.Lv2Label.Location = new System.Drawing.Point(199, 1160);
             this.Lv2Label.Name = "Lv2Label";
             this.Lv2Label.Size = new System.Drawing.Size(54, 25);
             this.Lv2Label.TabIndex = 213;
@@ -2703,7 +2714,7 @@
             // ActionSurgeLabel
             // 
             this.ActionSurgeLabel.AutoSize = true;
-            this.ActionSurgeLabel.Location = new System.Drawing.Point(181, 1010);
+            this.ActionSurgeLabel.Location = new System.Drawing.Point(181, 1185);
             this.ActionSurgeLabel.Name = "ActionSurgeLabel";
             this.ActionSurgeLabel.Size = new System.Drawing.Size(89, 17);
             this.ActionSurgeLabel.TabIndex = 214;
@@ -2713,7 +2724,7 @@
             // 
             this.Lv3Label.AutoSize = true;
             this.Lv3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv3Label.Location = new System.Drawing.Point(199, 1042);
+            this.Lv3Label.Location = new System.Drawing.Point(199, 1217);
             this.Lv3Label.Name = "Lv3Label";
             this.Lv3Label.Size = new System.Drawing.Size(54, 25);
             this.Lv3Label.TabIndex = 215;
@@ -2722,7 +2733,7 @@
             // divider7
             // 
             this.divider7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider7.Location = new System.Drawing.Point(50, 1153);
+            this.divider7.Location = new System.Drawing.Point(50, 1328);
             this.divider7.Name = "divider7";
             this.divider7.Size = new System.Drawing.Size(362, 2);
             this.divider7.TabIndex = 216;
@@ -2732,7 +2743,7 @@
             // 
             this.Lv4Label.AutoSize = true;
             this.Lv4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv4Label.Location = new System.Drawing.Point(194, 1160);
+            this.Lv4Label.Location = new System.Drawing.Point(194, 1335);
             this.Lv4Label.Name = "Lv4Label";
             this.Lv4Label.Size = new System.Drawing.Size(54, 25);
             this.Lv4Label.TabIndex = 217;
@@ -2742,7 +2753,7 @@
             // 
             this.Lv5Label.AutoSize = true;
             this.Lv5Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv5Label.Location = new System.Drawing.Point(194, 1263);
+            this.Lv5Label.Location = new System.Drawing.Point(194, 1438);
             this.Lv5Label.Name = "Lv5Label";
             this.Lv5Label.Size = new System.Drawing.Size(54, 25);
             this.Lv5Label.TabIndex = 218;
@@ -2752,7 +2763,7 @@
             // 
             this.Lv6Label.AutoSize = true;
             this.Lv6Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv6Label.Location = new System.Drawing.Point(194, 1320);
+            this.Lv6Label.Location = new System.Drawing.Point(194, 1495);
             this.Lv6Label.Name = "Lv6Label";
             this.Lv6Label.Size = new System.Drawing.Size(54, 25);
             this.Lv6Label.TabIndex = 219;
@@ -2762,7 +2773,7 @@
             // 
             this.Lv7Label.AutoSize = true;
             this.Lv7Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv7Label.Location = new System.Drawing.Point(194, 1422);
+            this.Lv7Label.Location = new System.Drawing.Point(194, 1597);
             this.Lv7Label.Name = "Lv7Label";
             this.Lv7Label.Size = new System.Drawing.Size(54, 25);
             this.Lv7Label.TabIndex = 220;
@@ -2772,7 +2783,7 @@
             // 
             this.Lv8Label.AutoSize = true;
             this.Lv8Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv8Label.Location = new System.Drawing.Point(194, 1479);
+            this.Lv8Label.Location = new System.Drawing.Point(194, 1654);
             this.Lv8Label.Name = "Lv8Label";
             this.Lv8Label.Size = new System.Drawing.Size(54, 25);
             this.Lv8Label.TabIndex = 221;
@@ -2782,7 +2793,7 @@
             // 
             this.Lv9Label.AutoSize = true;
             this.Lv9Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv9Label.Location = new System.Drawing.Point(194, 1581);
+            this.Lv9Label.Location = new System.Drawing.Point(194, 1756);
             this.Lv9Label.Name = "Lv9Label";
             this.Lv9Label.Size = new System.Drawing.Size(54, 25);
             this.Lv9Label.TabIndex = 222;
@@ -2792,7 +2803,7 @@
             // 
             this.Lv10Label.AutoSize = true;
             this.Lv10Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv10Label.Location = new System.Drawing.Point(194, 1638);
+            this.Lv10Label.Location = new System.Drawing.Point(194, 1813);
             this.Lv10Label.Name = "Lv10Label";
             this.Lv10Label.Size = new System.Drawing.Size(65, 25);
             this.Lv10Label.TabIndex = 223;
@@ -2802,7 +2813,7 @@
             // 
             this.Lv11Label.AutoSize = true;
             this.Lv11Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv11Label.Location = new System.Drawing.Point(194, 1725);
+            this.Lv11Label.Location = new System.Drawing.Point(194, 1900);
             this.Lv11Label.Name = "Lv11Label";
             this.Lv11Label.Size = new System.Drawing.Size(65, 25);
             this.Lv11Label.TabIndex = 224;
@@ -2812,7 +2823,7 @@
             // 
             this.Lv12Label.AutoSize = true;
             this.Lv12Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv12Label.Location = new System.Drawing.Point(194, 1782);
+            this.Lv12Label.Location = new System.Drawing.Point(194, 1957);
             this.Lv12Label.Name = "Lv12Label";
             this.Lv12Label.Size = new System.Drawing.Size(65, 25);
             this.Lv12Label.TabIndex = 225;
@@ -2822,7 +2833,7 @@
             // 
             this.Lv13Label.AutoSize = true;
             this.Lv13Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv13Label.Location = new System.Drawing.Point(194, 1884);
+            this.Lv13Label.Location = new System.Drawing.Point(194, 2059);
             this.Lv13Label.Name = "Lv13Label";
             this.Lv13Label.Size = new System.Drawing.Size(65, 25);
             this.Lv13Label.TabIndex = 226;
@@ -2832,7 +2843,7 @@
             // 
             this.Lv14Label.AutoSize = true;
             this.Lv14Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv14Label.Location = new System.Drawing.Point(194, 1941);
+            this.Lv14Label.Location = new System.Drawing.Point(194, 2116);
             this.Lv14Label.Name = "Lv14Label";
             this.Lv14Label.Size = new System.Drawing.Size(65, 25);
             this.Lv14Label.TabIndex = 227;
@@ -2842,7 +2853,7 @@
             // 
             this.Lv15Label.AutoSize = true;
             this.Lv15Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv15Label.Location = new System.Drawing.Point(194, 2043);
+            this.Lv15Label.Location = new System.Drawing.Point(194, 2218);
             this.Lv15Label.Name = "Lv15Label";
             this.Lv15Label.Size = new System.Drawing.Size(65, 25);
             this.Lv15Label.TabIndex = 228;
@@ -2852,7 +2863,7 @@
             // 
             this.Lv16Label.AutoSize = true;
             this.Lv16Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv16Label.Location = new System.Drawing.Point(194, 2100);
+            this.Lv16Label.Location = new System.Drawing.Point(194, 2275);
             this.Lv16Label.Name = "Lv16Label";
             this.Lv16Label.Size = new System.Drawing.Size(65, 25);
             this.Lv16Label.TabIndex = 229;
@@ -2862,7 +2873,7 @@
             // 
             this.Lv17Label.AutoSize = true;
             this.Lv17Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv17Label.Location = new System.Drawing.Point(194, 2202);
+            this.Lv17Label.Location = new System.Drawing.Point(194, 2377);
             this.Lv17Label.Name = "Lv17Label";
             this.Lv17Label.Size = new System.Drawing.Size(65, 25);
             this.Lv17Label.TabIndex = 230;
@@ -2872,7 +2883,7 @@
             // 
             this.Lv18Label.AutoSize = true;
             this.Lv18Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv18Label.Location = new System.Drawing.Point(194, 2259);
+            this.Lv18Label.Location = new System.Drawing.Point(194, 2434);
             this.Lv18Label.Name = "Lv18Label";
             this.Lv18Label.Size = new System.Drawing.Size(65, 25);
             this.Lv18Label.TabIndex = 231;
@@ -2882,7 +2893,7 @@
             // 
             this.Lv19Label.AutoSize = true;
             this.Lv19Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv19Label.Location = new System.Drawing.Point(194, 2316);
+            this.Lv19Label.Location = new System.Drawing.Point(194, 2491);
             this.Lv19Label.Name = "Lv19Label";
             this.Lv19Label.Size = new System.Drawing.Size(65, 25);
             this.Lv19Label.TabIndex = 232;
@@ -2892,7 +2903,7 @@
             // 
             this.Lv20Label.AutoSize = true;
             this.Lv20Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lv20Label.Location = new System.Drawing.Point(194, 2418);
+            this.Lv20Label.Location = new System.Drawing.Point(194, 2593);
             this.Lv20Label.Name = "Lv20Label";
             this.Lv20Label.Size = new System.Drawing.Size(65, 25);
             this.Lv20Label.TabIndex = 233;
@@ -2901,7 +2912,7 @@
             // divider8
             // 
             this.divider8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider8.Location = new System.Drawing.Point(50, 1256);
+            this.divider8.Location = new System.Drawing.Point(50, 1431);
             this.divider8.Name = "divider8";
             this.divider8.Size = new System.Drawing.Size(362, 2);
             this.divider8.TabIndex = 234;
@@ -2910,7 +2921,7 @@
             // divider9
             // 
             this.divider9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider9.Location = new System.Drawing.Point(50, 1313);
+            this.divider9.Location = new System.Drawing.Point(50, 1488);
             this.divider9.Name = "divider9";
             this.divider9.Size = new System.Drawing.Size(362, 2);
             this.divider9.TabIndex = 235;
@@ -2919,7 +2930,7 @@
             // divider10
             // 
             this.divider10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider10.Location = new System.Drawing.Point(50, 1415);
+            this.divider10.Location = new System.Drawing.Point(50, 1590);
             this.divider10.Name = "divider10";
             this.divider10.Size = new System.Drawing.Size(362, 2);
             this.divider10.TabIndex = 236;
@@ -2928,7 +2939,7 @@
             // divider11
             // 
             this.divider11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider11.Location = new System.Drawing.Point(50, 1472);
+            this.divider11.Location = new System.Drawing.Point(50, 1647);
             this.divider11.Name = "divider11";
             this.divider11.Size = new System.Drawing.Size(362, 2);
             this.divider11.TabIndex = 237;
@@ -2937,7 +2948,7 @@
             // divider12
             // 
             this.divider12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider12.Location = new System.Drawing.Point(50, 1574);
+            this.divider12.Location = new System.Drawing.Point(50, 1749);
             this.divider12.Name = "divider12";
             this.divider12.Size = new System.Drawing.Size(362, 2);
             this.divider12.TabIndex = 238;
@@ -2946,7 +2957,7 @@
             // divider13
             // 
             this.divider13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider13.Location = new System.Drawing.Point(50, 1631);
+            this.divider13.Location = new System.Drawing.Point(50, 1806);
             this.divider13.Name = "divider13";
             this.divider13.Size = new System.Drawing.Size(362, 2);
             this.divider13.TabIndex = 239;
@@ -2955,7 +2966,7 @@
             // divider14
             // 
             this.divider14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider14.Location = new System.Drawing.Point(50, 1718);
+            this.divider14.Location = new System.Drawing.Point(50, 1893);
             this.divider14.Name = "divider14";
             this.divider14.Size = new System.Drawing.Size(362, 2);
             this.divider14.TabIndex = 240;
@@ -2964,7 +2975,7 @@
             // divider15
             // 
             this.divider15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider15.Location = new System.Drawing.Point(50, 1775);
+            this.divider15.Location = new System.Drawing.Point(50, 1950);
             this.divider15.Name = "divider15";
             this.divider15.Size = new System.Drawing.Size(362, 2);
             this.divider15.TabIndex = 241;
@@ -2973,7 +2984,7 @@
             // divider16
             // 
             this.divider16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider16.Location = new System.Drawing.Point(50, 1877);
+            this.divider16.Location = new System.Drawing.Point(50, 2052);
             this.divider16.Name = "divider16";
             this.divider16.Size = new System.Drawing.Size(362, 2);
             this.divider16.TabIndex = 242;
@@ -2982,7 +2993,7 @@
             // divider17
             // 
             this.divider17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider17.Location = new System.Drawing.Point(50, 1934);
+            this.divider17.Location = new System.Drawing.Point(50, 2109);
             this.divider17.Name = "divider17";
             this.divider17.Size = new System.Drawing.Size(362, 2);
             this.divider17.TabIndex = 243;
@@ -2991,7 +3002,7 @@
             // divider18
             // 
             this.divider18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider18.Location = new System.Drawing.Point(50, 2036);
+            this.divider18.Location = new System.Drawing.Point(50, 2211);
             this.divider18.Name = "divider18";
             this.divider18.Size = new System.Drawing.Size(362, 2);
             this.divider18.TabIndex = 244;
@@ -3000,7 +3011,7 @@
             // divider19
             // 
             this.divider19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider19.Location = new System.Drawing.Point(50, 2093);
+            this.divider19.Location = new System.Drawing.Point(50, 2268);
             this.divider19.Name = "divider19";
             this.divider19.Size = new System.Drawing.Size(362, 2);
             this.divider19.TabIndex = 245;
@@ -3009,7 +3020,7 @@
             // divider20
             // 
             this.divider20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider20.Location = new System.Drawing.Point(50, 2195);
+            this.divider20.Location = new System.Drawing.Point(50, 2370);
             this.divider20.Name = "divider20";
             this.divider20.Size = new System.Drawing.Size(362, 2);
             this.divider20.TabIndex = 246;
@@ -3018,7 +3029,7 @@
             // divider21
             // 
             this.divider21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider21.Location = new System.Drawing.Point(50, 2252);
+            this.divider21.Location = new System.Drawing.Point(50, 2427);
             this.divider21.Name = "divider21";
             this.divider21.Size = new System.Drawing.Size(362, 2);
             this.divider21.TabIndex = 247;
@@ -3027,7 +3038,7 @@
             // divider22
             // 
             this.divider22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider22.Location = new System.Drawing.Point(50, 2309);
+            this.divider22.Location = new System.Drawing.Point(50, 2484);
             this.divider22.Name = "divider22";
             this.divider22.Size = new System.Drawing.Size(362, 2);
             this.divider22.TabIndex = 248;
@@ -3036,7 +3047,7 @@
             // divider23
             // 
             this.divider23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider23.Location = new System.Drawing.Point(50, 2411);
+            this.divider23.Location = new System.Drawing.Point(50, 2586);
             this.divider23.Name = "divider23";
             this.divider23.Size = new System.Drawing.Size(362, 2);
             this.divider23.TabIndex = 249;
@@ -3045,7 +3056,7 @@
             // divider24
             // 
             this.divider24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider24.Location = new System.Drawing.Point(50, 2468);
+            this.divider24.Location = new System.Drawing.Point(50, 2643);
             this.divider24.Name = "divider24";
             this.divider24.Size = new System.Drawing.Size(362, 2);
             this.divider24.TabIndex = 250;
@@ -3054,7 +3065,7 @@
             // FinishButton
             // 
             this.FinishButton.Enabled = false;
-            this.FinishButton.Location = new System.Drawing.Point(189, 2475);
+            this.FinishButton.Location = new System.Drawing.Point(189, 2650);
             this.FinishButton.Name = "FinishButton";
             this.FinishButton.Size = new System.Drawing.Size(80, 30);
             this.FinishButton.TabIndex = 251;
@@ -3065,7 +3076,7 @@
             // ImprovedCriticalLabel
             // 
             this.ImprovedCriticalLabel.AutoSize = true;
-            this.ImprovedCriticalLabel.Location = new System.Drawing.Point(109, 1128);
+            this.ImprovedCriticalLabel.Location = new System.Drawing.Point(109, 1303);
             this.ImprovedCriticalLabel.Name = "ImprovedCriticalLabel";
             this.ImprovedCriticalLabel.Size = new System.Drawing.Size(236, 17);
             this.ImprovedCriticalLabel.TabIndex = 252;
@@ -3074,7 +3085,7 @@
             // SurvivorLabel
             // 
             this.SurvivorLabel.AutoSize = true;
-            this.SurvivorLabel.Location = new System.Drawing.Point(139, 2284);
+            this.SurvivorLabel.Location = new System.Drawing.Point(139, 2459);
             this.SurvivorLabel.Name = "SurvivorLabel";
             this.SurvivorLabel.Size = new System.Drawing.Size(184, 17);
             this.SurvivorLabel.TabIndex = 253;
@@ -3083,7 +3094,7 @@
             // SuperiorCriticalLabel
             // 
             this.SuperiorCriticalLabel.AutoSize = true;
-            this.SuperiorCriticalLabel.Location = new System.Drawing.Point(122, 2068);
+            this.SuperiorCriticalLabel.Location = new System.Drawing.Point(122, 2243);
             this.SuperiorCriticalLabel.Name = "SuperiorCriticalLabel";
             this.SuperiorCriticalLabel.Size = new System.Drawing.Size(232, 17);
             this.SuperiorCriticalLabel.TabIndex = 254;
@@ -3092,7 +3103,7 @@
             // RemarkableAthleteLabel
             // 
             this.RemarkableAthleteLabel.AutoSize = true;
-            this.RemarkableAthleteLabel.Location = new System.Drawing.Point(104, 1447);
+            this.RemarkableAthleteLabel.Location = new System.Drawing.Point(104, 1622);
             this.RemarkableAthleteLabel.Name = "RemarkableAthleteLabel";
             this.RemarkableAthleteLabel.Size = new System.Drawing.Size(256, 17);
             this.RemarkableAthleteLabel.TabIndex = 255;
@@ -3101,7 +3112,7 @@
             // AdditionalFightingStyleLabel
             // 
             this.AdditionalFightingStyleLabel.AutoSize = true;
-            this.AdditionalFightingStyleLabel.Location = new System.Drawing.Point(93, 1663);
+            this.AdditionalFightingStyleLabel.Location = new System.Drawing.Point(93, 1838);
             this.AdditionalFightingStyleLabel.Name = "AdditionalFightingStyleLabel";
             this.AdditionalFightingStyleLabel.Size = new System.Drawing.Size(283, 17);
             this.AdditionalFightingStyleLabel.TabIndex = 256;
@@ -3118,7 +3129,7 @@
             "Great Weapon Fighting",
             "Protection",
             "Two-Weapon Fighting"});
-            this.AdditionalFightingStyleSelector.Location = new System.Drawing.Point(140, 1685);
+            this.AdditionalFightingStyleSelector.Location = new System.Drawing.Point(140, 1860);
             this.AdditionalFightingStyleSelector.Name = "AdditionalFightingStyleSelector";
             this.AdditionalFightingStyleSelector.Size = new System.Drawing.Size(168, 24);
             this.AdditionalFightingStyleSelector.TabIndex = 257;
@@ -3126,7 +3137,7 @@
             // ExtraAttackLabel1
             // 
             this.ExtraAttackLabel1.AutoSize = true;
-            this.ExtraAttackLabel1.Location = new System.Drawing.Point(181, 1288);
+            this.ExtraAttackLabel1.Location = new System.Drawing.Point(181, 1463);
             this.ExtraAttackLabel1.Name = "ExtraAttackLabel1";
             this.ExtraAttackLabel1.Size = new System.Drawing.Size(83, 17);
             this.ExtraAttackLabel1.TabIndex = 258;
@@ -3135,7 +3146,7 @@
             // ExtraAttackLabel2
             // 
             this.ExtraAttackLabel2.AutoSize = true;
-            this.ExtraAttackLabel2.Location = new System.Drawing.Point(186, 1750);
+            this.ExtraAttackLabel2.Location = new System.Drawing.Point(186, 1925);
             this.ExtraAttackLabel2.Name = "ExtraAttackLabel2";
             this.ExtraAttackLabel2.Size = new System.Drawing.Size(83, 17);
             this.ExtraAttackLabel2.TabIndex = 259;
@@ -3144,7 +3155,7 @@
             // ExtraAttackLabel3
             // 
             this.ExtraAttackLabel3.AutoSize = true;
-            this.ExtraAttackLabel3.Location = new System.Drawing.Point(185, 2443);
+            this.ExtraAttackLabel3.Location = new System.Drawing.Point(185, 2618);
             this.ExtraAttackLabel3.Name = "ExtraAttackLabel3";
             this.ExtraAttackLabel3.Size = new System.Drawing.Size(83, 17);
             this.ExtraAttackLabel3.TabIndex = 260;
@@ -3153,7 +3164,7 @@
             // IndomitableLabel1
             // 
             this.IndomitableLabel1.AutoSize = true;
-            this.IndomitableLabel1.Location = new System.Drawing.Point(185, 1606);
+            this.IndomitableLabel1.Location = new System.Drawing.Point(185, 1781);
             this.IndomitableLabel1.Name = "IndomitableLabel1";
             this.IndomitableLabel1.Size = new System.Drawing.Size(80, 17);
             this.IndomitableLabel1.TabIndex = 261;
@@ -3162,7 +3173,7 @@
             // IndomitableLabel2
             // 
             this.IndomitableLabel2.AutoSize = true;
-            this.IndomitableLabel2.Location = new System.Drawing.Point(162, 1909);
+            this.IndomitableLabel2.Location = new System.Drawing.Point(162, 2084);
             this.IndomitableLabel2.Name = "IndomitableLabel2";
             this.IndomitableLabel2.Size = new System.Drawing.Size(139, 17);
             this.IndomitableLabel2.TabIndex = 262;
@@ -3171,7 +3182,7 @@
             // IndomitableLabel3
             // 
             this.IndomitableLabel3.AutoSize = true;
-            this.IndomitableLabel3.Location = new System.Drawing.Point(163, 2227);
+            this.IndomitableLabel3.Location = new System.Drawing.Point(163, 2402);
             this.IndomitableLabel3.Name = "IndomitableLabel3";
             this.IndomitableLabel3.Size = new System.Drawing.Size(139, 17);
             this.IndomitableLabel3.TabIndex = 263;
@@ -3408,7 +3419,7 @@
             this.AbilityScoreCheckboxLv4.AutoSize = true;
             this.AbilityScoreCheckboxLv4.Checked = true;
             this.AbilityScoreCheckboxLv4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AbilityScoreCheckboxLv4.Location = new System.Drawing.Point(101, 1189);
+            this.AbilityScoreCheckboxLv4.Location = new System.Drawing.Point(101, 1364);
             this.AbilityScoreCheckboxLv4.Name = "AbilityScoreCheckboxLv4";
             this.AbilityScoreCheckboxLv4.Size = new System.Drawing.Size(193, 21);
             this.AbilityScoreCheckboxLv4.TabIndex = 399;
@@ -3419,7 +3430,7 @@
             // FeatCheckboxLv4
             // 
             this.FeatCheckboxLv4.AutoSize = true;
-            this.FeatCheckboxLv4.Location = new System.Drawing.Point(300, 1189);
+            this.FeatCheckboxLv4.Location = new System.Drawing.Point(300, 1364);
             this.FeatCheckboxLv4.Name = "FeatCheckboxLv4";
             this.FeatCheckboxLv4.Size = new System.Drawing.Size(58, 21);
             this.FeatCheckboxLv4.TabIndex = 400;
@@ -3430,7 +3441,7 @@
             // FeatCheckboxLv6
             // 
             this.FeatCheckboxLv6.AutoSize = true;
-            this.FeatCheckboxLv6.Location = new System.Drawing.Point(300, 1348);
+            this.FeatCheckboxLv6.Location = new System.Drawing.Point(300, 1523);
             this.FeatCheckboxLv6.Name = "FeatCheckboxLv6";
             this.FeatCheckboxLv6.Size = new System.Drawing.Size(58, 21);
             this.FeatCheckboxLv6.TabIndex = 402;
@@ -3444,7 +3455,7 @@
             this.AbilityScoreCheckboxLv6.AutoSize = true;
             this.AbilityScoreCheckboxLv6.Checked = true;
             this.AbilityScoreCheckboxLv6.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AbilityScoreCheckboxLv6.Location = new System.Drawing.Point(101, 1348);
+            this.AbilityScoreCheckboxLv6.Location = new System.Drawing.Point(101, 1523);
             this.AbilityScoreCheckboxLv6.Name = "AbilityScoreCheckboxLv6";
             this.AbilityScoreCheckboxLv6.Size = new System.Drawing.Size(193, 21);
             this.AbilityScoreCheckboxLv6.TabIndex = 401;
@@ -3455,7 +3466,7 @@
             // FeatCheckboxLv8
             // 
             this.FeatCheckboxLv8.AutoSize = true;
-            this.FeatCheckboxLv8.Location = new System.Drawing.Point(300, 1507);
+            this.FeatCheckboxLv8.Location = new System.Drawing.Point(300, 1682);
             this.FeatCheckboxLv8.Name = "FeatCheckboxLv8";
             this.FeatCheckboxLv8.Size = new System.Drawing.Size(58, 21);
             this.FeatCheckboxLv8.TabIndex = 404;
@@ -3469,7 +3480,7 @@
             this.AbilityScoreCheckboxLv8.AutoSize = true;
             this.AbilityScoreCheckboxLv8.Checked = true;
             this.AbilityScoreCheckboxLv8.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AbilityScoreCheckboxLv8.Location = new System.Drawing.Point(101, 1507);
+            this.AbilityScoreCheckboxLv8.Location = new System.Drawing.Point(101, 1682);
             this.AbilityScoreCheckboxLv8.Name = "AbilityScoreCheckboxLv8";
             this.AbilityScoreCheckboxLv8.Size = new System.Drawing.Size(193, 21);
             this.AbilityScoreCheckboxLv8.TabIndex = 403;
@@ -3480,7 +3491,7 @@
             // FeatCheckboxLv12
             // 
             this.FeatCheckboxLv12.AutoSize = true;
-            this.FeatCheckboxLv12.Location = new System.Drawing.Point(300, 1810);
+            this.FeatCheckboxLv12.Location = new System.Drawing.Point(300, 1985);
             this.FeatCheckboxLv12.Name = "FeatCheckboxLv12";
             this.FeatCheckboxLv12.Size = new System.Drawing.Size(58, 21);
             this.FeatCheckboxLv12.TabIndex = 406;
@@ -3494,7 +3505,7 @@
             this.AbilityScoreCheckboxLv12.AutoSize = true;
             this.AbilityScoreCheckboxLv12.Checked = true;
             this.AbilityScoreCheckboxLv12.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AbilityScoreCheckboxLv12.Location = new System.Drawing.Point(101, 1810);
+            this.AbilityScoreCheckboxLv12.Location = new System.Drawing.Point(101, 1985);
             this.AbilityScoreCheckboxLv12.Name = "AbilityScoreCheckboxLv12";
             this.AbilityScoreCheckboxLv12.Size = new System.Drawing.Size(193, 21);
             this.AbilityScoreCheckboxLv12.TabIndex = 405;
@@ -3505,7 +3516,7 @@
             // FeatCheckboxLv14
             // 
             this.FeatCheckboxLv14.AutoSize = true;
-            this.FeatCheckboxLv14.Location = new System.Drawing.Point(300, 1969);
+            this.FeatCheckboxLv14.Location = new System.Drawing.Point(300, 2144);
             this.FeatCheckboxLv14.Name = "FeatCheckboxLv14";
             this.FeatCheckboxLv14.Size = new System.Drawing.Size(58, 21);
             this.FeatCheckboxLv14.TabIndex = 408;
@@ -3519,7 +3530,7 @@
             this.AbilityScoreCheckboxLv14.AutoSize = true;
             this.AbilityScoreCheckboxLv14.Checked = true;
             this.AbilityScoreCheckboxLv14.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AbilityScoreCheckboxLv14.Location = new System.Drawing.Point(101, 1969);
+            this.AbilityScoreCheckboxLv14.Location = new System.Drawing.Point(101, 2144);
             this.AbilityScoreCheckboxLv14.Name = "AbilityScoreCheckboxLv14";
             this.AbilityScoreCheckboxLv14.Size = new System.Drawing.Size(193, 21);
             this.AbilityScoreCheckboxLv14.TabIndex = 407;
@@ -3530,7 +3541,7 @@
             // FeatCheckboxLv16
             // 
             this.FeatCheckboxLv16.AutoSize = true;
-            this.FeatCheckboxLv16.Location = new System.Drawing.Point(300, 2128);
+            this.FeatCheckboxLv16.Location = new System.Drawing.Point(300, 2303);
             this.FeatCheckboxLv16.Name = "FeatCheckboxLv16";
             this.FeatCheckboxLv16.Size = new System.Drawing.Size(58, 21);
             this.FeatCheckboxLv16.TabIndex = 410;
@@ -3544,7 +3555,7 @@
             this.AbilityScoreCheckboxLv16.AutoSize = true;
             this.AbilityScoreCheckboxLv16.Checked = true;
             this.AbilityScoreCheckboxLv16.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AbilityScoreCheckboxLv16.Location = new System.Drawing.Point(101, 2128);
+            this.AbilityScoreCheckboxLv16.Location = new System.Drawing.Point(101, 2303);
             this.AbilityScoreCheckboxLv16.Name = "AbilityScoreCheckboxLv16";
             this.AbilityScoreCheckboxLv16.Size = new System.Drawing.Size(193, 21);
             this.AbilityScoreCheckboxLv16.TabIndex = 409;
@@ -3555,7 +3566,7 @@
             // FeatCheckboxLv19
             // 
             this.FeatCheckboxLv19.AutoSize = true;
-            this.FeatCheckboxLv19.Location = new System.Drawing.Point(300, 2344);
+            this.FeatCheckboxLv19.Location = new System.Drawing.Point(300, 2519);
             this.FeatCheckboxLv19.Name = "FeatCheckboxLv19";
             this.FeatCheckboxLv19.Size = new System.Drawing.Size(58, 21);
             this.FeatCheckboxLv19.TabIndex = 412;
@@ -3569,7 +3580,7 @@
             this.AbilityScoreCheckboxLv19.AutoSize = true;
             this.AbilityScoreCheckboxLv19.Checked = true;
             this.AbilityScoreCheckboxLv19.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AbilityScoreCheckboxLv19.Location = new System.Drawing.Point(101, 2344);
+            this.AbilityScoreCheckboxLv19.Location = new System.Drawing.Point(101, 2519);
             this.AbilityScoreCheckboxLv19.Name = "AbilityScoreCheckboxLv19";
             this.AbilityScoreCheckboxLv19.Size = new System.Drawing.Size(193, 21);
             this.AbilityScoreCheckboxLv19.TabIndex = 411;
@@ -3580,7 +3591,7 @@
             // FeatButtonLv4
             // 
             this.FeatButtonLv4.Enabled = false;
-            this.FeatButtonLv4.Location = new System.Drawing.Point(101, 1216);
+            this.FeatButtonLv4.Location = new System.Drawing.Point(101, 1391);
             this.FeatButtonLv4.Name = "FeatButtonLv4";
             this.FeatButtonLv4.Size = new System.Drawing.Size(95, 30);
             this.FeatButtonLv4.TabIndex = 413;
@@ -3590,7 +3601,7 @@
             // FeatButtonLv6
             // 
             this.FeatButtonLv6.Enabled = false;
-            this.FeatButtonLv6.Location = new System.Drawing.Point(101, 1375);
+            this.FeatButtonLv6.Location = new System.Drawing.Point(101, 1550);
             this.FeatButtonLv6.Name = "FeatButtonLv6";
             this.FeatButtonLv6.Size = new System.Drawing.Size(95, 30);
             this.FeatButtonLv6.TabIndex = 414;
@@ -3600,7 +3611,7 @@
             // FeatButtonLv8
             // 
             this.FeatButtonLv8.Enabled = false;
-            this.FeatButtonLv8.Location = new System.Drawing.Point(101, 1534);
+            this.FeatButtonLv8.Location = new System.Drawing.Point(101, 1709);
             this.FeatButtonLv8.Name = "FeatButtonLv8";
             this.FeatButtonLv8.Size = new System.Drawing.Size(95, 30);
             this.FeatButtonLv8.TabIndex = 415;
@@ -3610,7 +3621,7 @@
             // FeatButtonLv12
             // 
             this.FeatButtonLv12.Enabled = false;
-            this.FeatButtonLv12.Location = new System.Drawing.Point(101, 1837);
+            this.FeatButtonLv12.Location = new System.Drawing.Point(101, 2012);
             this.FeatButtonLv12.Name = "FeatButtonLv12";
             this.FeatButtonLv12.Size = new System.Drawing.Size(95, 30);
             this.FeatButtonLv12.TabIndex = 416;
@@ -3620,7 +3631,7 @@
             // FeatButtonLv14
             // 
             this.FeatButtonLv14.Enabled = false;
-            this.FeatButtonLv14.Location = new System.Drawing.Point(101, 1996);
+            this.FeatButtonLv14.Location = new System.Drawing.Point(101, 2171);
             this.FeatButtonLv14.Name = "FeatButtonLv14";
             this.FeatButtonLv14.Size = new System.Drawing.Size(95, 30);
             this.FeatButtonLv14.TabIndex = 417;
@@ -3630,7 +3641,7 @@
             // FeatButtonLv16
             // 
             this.FeatButtonLv16.Enabled = false;
-            this.FeatButtonLv16.Location = new System.Drawing.Point(101, 2155);
+            this.FeatButtonLv16.Location = new System.Drawing.Point(101, 2330);
             this.FeatButtonLv16.Name = "FeatButtonLv16";
             this.FeatButtonLv16.Size = new System.Drawing.Size(95, 30);
             this.FeatButtonLv16.TabIndex = 418;
@@ -3640,7 +3651,7 @@
             // FeatButtonLv19
             // 
             this.FeatButtonLv19.Enabled = false;
-            this.FeatButtonLv19.Location = new System.Drawing.Point(101, 2371);
+            this.FeatButtonLv19.Location = new System.Drawing.Point(101, 2546);
             this.FeatButtonLv19.Name = "FeatButtonLv19";
             this.FeatButtonLv19.Size = new System.Drawing.Size(95, 30);
             this.FeatButtonLv19.TabIndex = 419;
@@ -3651,7 +3662,7 @@
             // 
             this.FeatLabelLv4.AutoSize = true;
             this.FeatLabelLv4.Enabled = false;
-            this.FeatLabelLv4.Location = new System.Drawing.Point(202, 1223);
+            this.FeatLabelLv4.Location = new System.Drawing.Point(202, 1398);
             this.FeatLabelLv4.Name = "FeatLabelLv4";
             this.FeatLabelLv4.Size = new System.Drawing.Size(117, 17);
             this.FeatLabelLv4.TabIndex = 420;
@@ -3661,7 +3672,7 @@
             // 
             this.FeatLabelLv6.AutoSize = true;
             this.FeatLabelLv6.Enabled = false;
-            this.FeatLabelLv6.Location = new System.Drawing.Point(202, 1382);
+            this.FeatLabelLv6.Location = new System.Drawing.Point(202, 1557);
             this.FeatLabelLv6.Name = "FeatLabelLv6";
             this.FeatLabelLv6.Size = new System.Drawing.Size(117, 17);
             this.FeatLabelLv6.TabIndex = 421;
@@ -3671,7 +3682,7 @@
             // 
             this.FeatLabelLv8.AutoSize = true;
             this.FeatLabelLv8.Enabled = false;
-            this.FeatLabelLv8.Location = new System.Drawing.Point(202, 1541);
+            this.FeatLabelLv8.Location = new System.Drawing.Point(202, 1716);
             this.FeatLabelLv8.Name = "FeatLabelLv8";
             this.FeatLabelLv8.Size = new System.Drawing.Size(117, 17);
             this.FeatLabelLv8.TabIndex = 422;
@@ -3681,7 +3692,7 @@
             // 
             this.FeatLabelLv12.AutoSize = true;
             this.FeatLabelLv12.Enabled = false;
-            this.FeatLabelLv12.Location = new System.Drawing.Point(202, 1844);
+            this.FeatLabelLv12.Location = new System.Drawing.Point(202, 2019);
             this.FeatLabelLv12.Name = "FeatLabelLv12";
             this.FeatLabelLv12.Size = new System.Drawing.Size(117, 17);
             this.FeatLabelLv12.TabIndex = 423;
@@ -3691,7 +3702,7 @@
             // 
             this.FeatLabelLv14.AutoSize = true;
             this.FeatLabelLv14.Enabled = false;
-            this.FeatLabelLv14.Location = new System.Drawing.Point(202, 2003);
+            this.FeatLabelLv14.Location = new System.Drawing.Point(202, 2178);
             this.FeatLabelLv14.Name = "FeatLabelLv14";
             this.FeatLabelLv14.Size = new System.Drawing.Size(117, 17);
             this.FeatLabelLv14.TabIndex = 424;
@@ -3701,7 +3712,7 @@
             // 
             this.FeatLabelLv16.AutoSize = true;
             this.FeatLabelLv16.Enabled = false;
-            this.FeatLabelLv16.Location = new System.Drawing.Point(202, 2162);
+            this.FeatLabelLv16.Location = new System.Drawing.Point(202, 2337);
             this.FeatLabelLv16.Name = "FeatLabelLv16";
             this.FeatLabelLv16.Size = new System.Drawing.Size(117, 17);
             this.FeatLabelLv16.TabIndex = 425;
@@ -3711,7 +3722,7 @@
             // 
             this.FeatLabelLv19.AutoSize = true;
             this.FeatLabelLv19.Enabled = false;
-            this.FeatLabelLv19.Location = new System.Drawing.Point(202, 2378);
+            this.FeatLabelLv19.Location = new System.Drawing.Point(202, 2553);
             this.FeatLabelLv19.Name = "FeatLabelLv19";
             this.FeatLabelLv19.Size = new System.Drawing.Size(117, 17);
             this.FeatLabelLv19.TabIndex = 426;
@@ -3807,6 +3818,122 @@
             this.HPSumNum.TabIndex = 436;
             this.HPSumNum.Text = "N/A";
             // 
+            // ProficienciesLabel
+            // 
+            this.ProficienciesLabel.AutoSize = true;
+            this.ProficienciesLabel.Location = new System.Drawing.Point(77, 918);
+            this.ProficienciesLabel.Name = "ProficienciesLabel";
+            this.ProficienciesLabel.Size = new System.Drawing.Size(92, 17);
+            this.ProficienciesLabel.TabIndex = 437;
+            this.ProficienciesLabel.Text = "Proficiencies:";
+            // 
+            // ProficienciesDescription
+            // 
+            this.ProficienciesDescription.AutoSize = true;
+            this.ProficienciesDescription.Location = new System.Drawing.Point(175, 918);
+            this.ProficienciesDescription.Name = "ProficienciesDescription";
+            this.ProficienciesDescription.Size = new System.Drawing.Size(209, 51);
+            this.ProficienciesDescription.TabIndex = 438;
+            this.ProficienciesDescription.Text = "All armor and shields\r\nSimple and marital weapons\r\nStrength and Constitution save" +
+    "s\r\n";
+            // 
+            // AcrobaticsProfCheckbox
+            // 
+            this.AcrobaticsProfCheckbox.AutoSize = true;
+            this.AcrobaticsProfCheckbox.Location = new System.Drawing.Point(175, 979);
+            this.AcrobaticsProfCheckbox.Name = "AcrobaticsProfCheckbox";
+            this.AcrobaticsProfCheckbox.Size = new System.Drawing.Size(96, 21);
+            this.AcrobaticsProfCheckbox.TabIndex = 439;
+            this.AcrobaticsProfCheckbox.Text = "Acrobatics";
+            this.AcrobaticsProfCheckbox.UseVisualStyleBackColor = true;
+            this.AcrobaticsProfCheckbox.CheckedChanged += new System.EventHandler(this.AcrobaticsProfCheckbox_CheckedChanged);
+            // 
+            // AnimalHandlingProfCheckbox
+            // 
+            this.AnimalHandlingProfCheckbox.AutoSize = true;
+            this.AnimalHandlingProfCheckbox.Location = new System.Drawing.Point(279, 979);
+            this.AnimalHandlingProfCheckbox.Name = "AnimalHandlingProfCheckbox";
+            this.AnimalHandlingProfCheckbox.Size = new System.Drawing.Size(132, 21);
+            this.AnimalHandlingProfCheckbox.TabIndex = 440;
+            this.AnimalHandlingProfCheckbox.Text = "Animal Handling";
+            this.AnimalHandlingProfCheckbox.UseVisualStyleBackColor = true;
+            this.AnimalHandlingProfCheckbox.CheckedChanged += new System.EventHandler(this.AnimalHandlingProfCheckbox_CheckedChanged);
+            // 
+            // AthleticsProfCheckbox
+            // 
+            this.AthleticsProfCheckbox.AutoSize = true;
+            this.AthleticsProfCheckbox.Location = new System.Drawing.Point(175, 1006);
+            this.AthleticsProfCheckbox.Name = "AthleticsProfCheckbox";
+            this.AthleticsProfCheckbox.Size = new System.Drawing.Size(83, 21);
+            this.AthleticsProfCheckbox.TabIndex = 441;
+            this.AthleticsProfCheckbox.Text = "Athletics";
+            this.AthleticsProfCheckbox.UseVisualStyleBackColor = true;
+            this.AthleticsProfCheckbox.CheckedChanged += new System.EventHandler(this.AthleticsProfCheckbox_CheckedChanged);
+            // 
+            // HistoryProfCheckbox
+            // 
+            this.HistoryProfCheckbox.AutoSize = true;
+            this.HistoryProfCheckbox.Location = new System.Drawing.Point(279, 1006);
+            this.HistoryProfCheckbox.Name = "HistoryProfCheckbox";
+            this.HistoryProfCheckbox.Size = new System.Drawing.Size(74, 21);
+            this.HistoryProfCheckbox.TabIndex = 442;
+            this.HistoryProfCheckbox.Text = "History";
+            this.HistoryProfCheckbox.UseVisualStyleBackColor = true;
+            this.HistoryProfCheckbox.CheckedChanged += new System.EventHandler(this.HistoryProfCheckbox_CheckedChanged);
+            // 
+            // InsightProfCheckbox
+            // 
+            this.InsightProfCheckbox.AutoSize = true;
+            this.InsightProfCheckbox.Location = new System.Drawing.Point(175, 1033);
+            this.InsightProfCheckbox.Name = "InsightProfCheckbox";
+            this.InsightProfCheckbox.Size = new System.Drawing.Size(71, 21);
+            this.InsightProfCheckbox.TabIndex = 443;
+            this.InsightProfCheckbox.Text = "Insight";
+            this.InsightProfCheckbox.UseVisualStyleBackColor = true;
+            this.InsightProfCheckbox.CheckedChanged += new System.EventHandler(this.InsightProfCheckbox_CheckedChanged);
+            // 
+            // IntimidationProfCheckbox
+            // 
+            this.IntimidationProfCheckbox.AutoSize = true;
+            this.IntimidationProfCheckbox.Location = new System.Drawing.Point(279, 1033);
+            this.IntimidationProfCheckbox.Name = "IntimidationProfCheckbox";
+            this.IntimidationProfCheckbox.Size = new System.Drawing.Size(101, 21);
+            this.IntimidationProfCheckbox.TabIndex = 444;
+            this.IntimidationProfCheckbox.Text = "Intimidation";
+            this.IntimidationProfCheckbox.UseVisualStyleBackColor = true;
+            this.IntimidationProfCheckbox.CheckedChanged += new System.EventHandler(this.IntimidationProfCheckbox_CheckedChanged);
+            // 
+            // PerceptionProfCheckbox
+            // 
+            this.PerceptionProfCheckbox.AutoSize = true;
+            this.PerceptionProfCheckbox.Location = new System.Drawing.Point(175, 1060);
+            this.PerceptionProfCheckbox.Name = "PerceptionProfCheckbox";
+            this.PerceptionProfCheckbox.Size = new System.Drawing.Size(98, 21);
+            this.PerceptionProfCheckbox.TabIndex = 445;
+            this.PerceptionProfCheckbox.Text = "Perception";
+            this.PerceptionProfCheckbox.UseVisualStyleBackColor = true;
+            this.PerceptionProfCheckbox.CheckedChanged += new System.EventHandler(this.PerceptionProfCheckbox_CheckedChanged);
+            // 
+            // SurvivalProfCheckbox
+            // 
+            this.SurvivalProfCheckbox.AutoSize = true;
+            this.SurvivalProfCheckbox.Location = new System.Drawing.Point(279, 1060);
+            this.SurvivalProfCheckbox.Name = "SurvivalProfCheckbox";
+            this.SurvivalProfCheckbox.Size = new System.Drawing.Size(80, 21);
+            this.SurvivalProfCheckbox.TabIndex = 446;
+            this.SurvivalProfCheckbox.Text = "Survival";
+            this.SurvivalProfCheckbox.UseVisualStyleBackColor = true;
+            this.SurvivalProfCheckbox.CheckedChanged += new System.EventHandler(this.SurvivalProfCheckbox_CheckedChanged);
+            // 
+            // ProficienciesChoiceLabel
+            // 
+            this.ProficienciesChoiceLabel.AutoSize = true;
+            this.ProficienciesChoiceLabel.Location = new System.Drawing.Point(79, 980);
+            this.ProficienciesChoiceLabel.Name = "ProficienciesChoiceLabel";
+            this.ProficienciesChoiceLabel.Size = new System.Drawing.Size(90, 17);
+            this.ProficienciesChoiceLabel.TabIndex = 447;
+            this.ProficienciesChoiceLabel.Text = "Choose Two:";
+            // 
             // Fighter_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -3814,6 +3941,17 @@
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 10);
             this.ClientSize = new System.Drawing.Size(461, 848);
+            this.Controls.Add(this.ProficienciesChoiceLabel);
+            this.Controls.Add(this.SurvivalProfCheckbox);
+            this.Controls.Add(this.PerceptionProfCheckbox);
+            this.Controls.Add(this.IntimidationProfCheckbox);
+            this.Controls.Add(this.InsightProfCheckbox);
+            this.Controls.Add(this.HistoryProfCheckbox);
+            this.Controls.Add(this.AthleticsProfCheckbox);
+            this.Controls.Add(this.AnimalHandlingProfCheckbox);
+            this.Controls.Add(this.AcrobaticsProfCheckbox);
+            this.Controls.Add(this.ProficienciesDescription);
+            this.Controls.Add(this.ProficienciesLabel);
             this.Controls.Add(this.HPSumNum);
             this.Controls.Add(this.HPTotalNum);
             this.Controls.Add(this.HPTotalLabel);
@@ -4453,5 +4591,16 @@
         private System.Windows.Forms.Label HPTotalLabel;
         private System.Windows.Forms.Label HPTotalNum;
         private System.Windows.Forms.Label HPSumNum;
+        private System.Windows.Forms.Label ProficienciesLabel;
+        private System.Windows.Forms.Label ProficienciesDescription;
+        private System.Windows.Forms.CheckBox AcrobaticsProfCheckbox;
+        private System.Windows.Forms.CheckBox AnimalHandlingProfCheckbox;
+        private System.Windows.Forms.CheckBox AthleticsProfCheckbox;
+        private System.Windows.Forms.CheckBox HistoryProfCheckbox;
+        private System.Windows.Forms.CheckBox InsightProfCheckbox;
+        private System.Windows.Forms.CheckBox IntimidationProfCheckbox;
+        private System.Windows.Forms.CheckBox PerceptionProfCheckbox;
+        private System.Windows.Forms.CheckBox SurvivalProfCheckbox;
+        private System.Windows.Forms.Label ProficienciesChoiceLabel;
     }
 }

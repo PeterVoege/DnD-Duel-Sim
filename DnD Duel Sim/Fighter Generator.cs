@@ -2599,6 +2599,121 @@ namespace DnD_Duel_Sim
             LastNameBox.Text = "RandomLastName";
         }
 
+        // Disables all unchecked boxes so a third proficiency can't be added
+        private void DisableProficiencyBoxes()
+        {
+            if (!AcrobaticsProfCheckbox.Checked) { AcrobaticsProfCheckbox.Enabled = false; }
+            if (!AnimalHandlingProfCheckbox.Checked) { AnimalHandlingProfCheckbox.Enabled = false; }
+            if (!AthleticsProfCheckbox.Checked) { AthleticsProfCheckbox.Enabled = false; }
+            if (!HistoryProfCheckbox.Checked) { HistoryProfCheckbox.Enabled = false; }
+            if (!InsightProfCheckbox.Checked) { InsightProfCheckbox.Enabled = false; }
+            if (!IntimidationProfCheckbox.Checked) { IntimidationProfCheckbox.Enabled = false; }
+            if (!PerceptionProfCheckbox.Checked) { PerceptionProfCheckbox.Enabled = false; }
+            if (!SurvivalProfCheckbox.Checked) { SurvivalProfCheckbox.Enabled = false; }
+        }
+        
+        // Enables all boxes so a second proficiency can be added
+        private void EnableProficiencyBoxes()
+        {
+            AcrobaticsProfCheckbox.Enabled = true;
+            AnimalHandlingProfCheckbox.Enabled = true;
+            AthleticsProfCheckbox.Enabled = true;
+            HistoryProfCheckbox.Enabled = true;
+            InsightProfCheckbox.Enabled = true;
+            IntimidationProfCheckbox.Enabled = true;
+            PerceptionProfCheckbox.Enabled = true;
+            SurvivalProfCheckbox.Enabled = true;
+        }
+
+        private int CountProficiencySelections()
+        {
+            int count = 0;
+            
+            if (AcrobaticsProfCheckbox.Checked) { count++; }
+            if (AnimalHandlingProfCheckbox.Checked) { count++; }
+            if (AthleticsProfCheckbox.Checked) { count++; }
+            if (HistoryProfCheckbox.Checked) { count++; }
+            if (InsightProfCheckbox.Checked) { count++; }
+            if (IntimidationProfCheckbox.Checked) { count++; }
+            if (PerceptionProfCheckbox.Checked) { count++; }
+            if (SurvivalProfCheckbox.Checked) { count++; }
+
+            return count;
+        }
+        
+        private void AcrobaticsProfCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AcrobaticsProfCheckbox.Checked)
+            {
+                // check if two proficiency boxes are checked
+                if(this.CountProficiencySelections() >= 2) { this.DisableProficiencyBoxes(); }
+            }
+            else { this.EnableProficiencyBoxes(); }
+        }
+        private void AnimalHandlingProfCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AnimalHandlingProfCheckbox.Checked)
+            {
+                // check if two proficiency boxes are checked
+                if (this.CountProficiencySelections() >= 2) { this.DisableProficiencyBoxes(); }
+            }
+            else { this.EnableProficiencyBoxes(); }
+        }
+        private void AthleticsProfCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AthleticsProfCheckbox.Checked)
+            {
+                // check if two proficiency boxes are checked
+                if (this.CountProficiencySelections() >= 2) { this.DisableProficiencyBoxes(); }
+            }
+            else { this.EnableProficiencyBoxes(); }
+        }
+        private void HistoryProfCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (HistoryProfCheckbox.Checked)
+            {
+                // check if two proficiency boxes are checked
+                if (this.CountProficiencySelections() >= 2) { this.DisableProficiencyBoxes(); }
+            }
+            else { this.EnableProficiencyBoxes(); }
+        }
+        private void InsightProfCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (InsightProfCheckbox.Checked)
+            {
+                // check if two proficiency boxes are checked
+                if (this.CountProficiencySelections() >= 2) { this.DisableProficiencyBoxes(); }
+            }
+            else { this.EnableProficiencyBoxes(); }
+        }
+        private void IntimidationProfCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (IntimidationProfCheckbox.Checked)
+            {
+                // check if two proficiency boxes are checked
+                if (this.CountProficiencySelections() >= 2) { this.DisableProficiencyBoxes(); }
+            }
+            else { this.EnableProficiencyBoxes(); }
+        }
+        private void PerceptionProfCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (PerceptionProfCheckbox.Checked)
+            {
+                // check if two proficiency boxes are checked
+                if (this.CountProficiencySelections() >= 2) { this.DisableProficiencyBoxes(); }
+            }
+            else { this.EnableProficiencyBoxes(); }
+        }
+        private void SurvivalProfCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (SurvivalProfCheckbox.Checked)
+            {
+                // check if two proficiency boxes are checked
+                if (this.CountProficiencySelections() >= 2) { this.DisableProficiencyBoxes(); }
+            }
+            else { this.EnableProficiencyBoxes(); }
+        }
+
         private void MartialArchetypeBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (MartialArchetypeBox1.Checked)
@@ -2895,6 +3010,23 @@ namespace DnD_Duel_Sim
             return Background.Urchin;
         }
 
+        // Gathers what proficiencies have been selected.
+        private bool[] GetSkillProficiencies()
+        {
+            bool[] skillProficiencies = new bool[18] { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
+
+            if (AcrobaticsProfCheckbox.Checked) { skillProficiencies[1] = true; }
+            if (AnimalHandlingProfCheckbox.Checked) { skillProficiencies[9] = true; }
+            if (AthleticsProfCheckbox.Checked) { skillProficiencies[0] = true; }
+            if (HistoryProfCheckbox.Checked) { skillProficiencies[5] = true; }
+            if (InsightProfCheckbox.Checked) { skillProficiencies[10] = true; }
+            if (IntimidationProfCheckbox.Checked) { skillProficiencies[15] = true; }
+            if (PerceptionProfCheckbox.Checked) { skillProficiencies[12] = true; }
+            if (SurvivalProfCheckbox.Checked) { skillProficiencies[13] = true; }
+            
+            return skillProficiencies;
+        }
+
         // Figures out what marital archetype the fighter has.
         private MartialArchetype GetMartialArchetype()
         {
@@ -3005,7 +3137,10 @@ namespace DnD_Duel_Sim
             if(this.AbilityScoreWisNum.Text == "N/A") { return; }
             if(this.AbilityScoreChaNum.Text == "N/A") { return; }
 
-            // Check for valid martial archetype
+            // Validate skill proficiencies
+            if(this.CountProficiencySelections() != 2) { return; }
+
+            // Validate martial archetype
             if(this.GetLevel() >= 3 && !MartialArchetypeBox1.Checked && !MartialArchetypeBox2.Checked && !MartialArchetypeBox3.Checked) { return; }
 
             // All checks cleared, enable the button.
@@ -3038,13 +3173,12 @@ namespace DnD_Duel_Sim
             // TODO: assert no duplicates in selection dropdown.
 
             // Proficiencies
-            // Fighter gets all normal combat proficiencies
+            // Fighter gets all normal combat proficiencies (armor/weapons)
             bool[] combatProficiencies = new bool[6] { true, true, true, true, true, true };
             // Fighter is proficient in str and con saves.
             bool[] saveProficiencies = new bool[6] { true, false, true, false, false, false };
-            // TODO: fix
-            // skill proficiencies
-            bool[] skillProficiencies = new bool[18] { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
+            // Fighter selects two proficiencies out of eight options.
+            bool[] skillProficiencies = this.GetSkillProficiencies();
             
             // Martial Archetype
             MartialArchetype martialArchetype = GetMartialArchetype();
