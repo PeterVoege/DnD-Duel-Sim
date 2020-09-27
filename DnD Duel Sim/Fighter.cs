@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace DnD_Duel_Sim
 {
+    public enum MartialArchetype
+    {
+        None,
+        Champion,
+        BattleMaster,
+        EldritchKnight
+    }
     class Fighter : ICharacter
     {
-        Fighter(ref DiceRoller rng)
+        public Fighter(ref DiceRoller rng)
         {
             _rng = rng;
             _level = 1;
@@ -24,7 +31,7 @@ namespace DnD_Duel_Sim
             _wis = 10;
             _cha = 10;
         }
-        Fighter(ref DiceRoller rng, int level, int maxHP, int HP, Race race, Background background, int Str, int Dex, int Con, int Int, int Wis, int Cha) // and so on
+        public Fighter(ref DiceRoller rng, int level, int maxHP, int HP, Race race, Background background, int[] stats, bool[] combatProficiencies, bool[] skillProficiencies, bool[] saveProficiencies, bool[] fightingStyles, MartialArchetype martialArchetype) // and so on
         {
             _rng = rng;
             _level = level;
@@ -33,18 +40,27 @@ namespace DnD_Duel_Sim
             _hitDice = level;
             _race = race;
             _background = background;
-            _str = Str;
-            _dex = Dex;
-            _con = Con;
-            _int = Int;
-            _wis = Wis;
-            _cha = Cha;
+            _str = stats[0];
+            _dex = stats[1];
+            _con = stats[2];
+            _int = stats[3];
+            _wis = stats[4];
+            _cha = stats[5];
             /// Proficiencies (not properly initialized)
+            // By default fighter gets: all armor, shields, simple/martial weapons, str/con saves, and two selected skills.
+            _combatProficiencies = combatProficiencies;
+
             // 18 different skills
-            _skillProfiencies = new bool[18] { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
+            _skillProfiencies = skillProficiencies;
+            //_skillProfiencies = new bool[18] { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
+
             // 6 different saves
-            _saveProficiencies = new bool[6] { false, false, false, false, false, false };
-            
+            _saveProficiencies = saveProficiencies;
+            //_saveProficiencies = new bool[6] { false, false, false, false, false, false };
+
+            // Fighting styles
+
+            _martialArchetype = martialArchetype;
         }
         
         /// Variables
@@ -56,12 +72,7 @@ namespace DnD_Duel_Sim
         private Race _race;
         private Background _background;
         // proficiencies
-        private bool _simpleWeaponProficiency;
-        private bool _martialWeaponProficiency;
-        private bool _lightArmorProficiency;
-        private bool _mediumArmorProficiency;
-        private bool _heavyArmorProficiency;
-        private bool _shieldsProficiency;
+        private bool[] _combatProficiencies;
         private bool[] _skillProfiencies;
         private bool[] _saveProficiencies;
         // Attributes
@@ -99,19 +110,19 @@ namespace DnD_Duel_Sim
 
         /// Proficiencies
         // Weapons and armor
-        public bool GetSimpleWeaponProficiency() => _simpleWeaponProficiency;
-        public bool GetMartialWeaponProficiency() => _martialWeaponProficiency;
-        public bool GetLightArmorProficiency() => _lightArmorProficiency;
-        public bool GetMediumArmorProficiency() => _mediumArmorProficiency;
-        public bool GetHeavyArmorProficiency() => _heavyArmorProficiency;
-        public bool GetShieldsProficiency() => _shieldsProficiency;
+        public bool GetSimpleWeaponProficiency() => _combatProficiencies[0];
+        public bool GetMartialWeaponProficiency() => _combatProficiencies[1];
+        public bool GetLightArmorProficiency() => _combatProficiencies[2];
+        public bool GetMediumArmorProficiency() => _combatProficiencies[3];
+        public bool GetHeavyArmorProficiency() => _combatProficiencies[4];
+        public bool GetShieldsProficiency() => _combatProficiencies[5];
 
-        public void SetSimpleWeaponProficiency(bool newState) => _simpleWeaponProficiency = newState;
-        public void SetMartialWeaponProficiency(bool newState) => _martialWeaponProficiency = newState;
-        public void SetLightArmorProficiency(bool newState) => _lightArmorProficiency = newState;
-        public void SetMediumArmorProficiency(bool newState) => _mediumArmorProficiency = newState;
-        public void SetHeavyArmorProficiency(bool newState) => _heavyArmorProficiency = newState;
-        public void SetShieldsProficiency(bool newState) => _shieldsProficiency = newState;
+        public void SetSimpleWeaponProficiency(bool newState) => _combatProficiencies[0] = newState;
+        public void SetMartialWeaponProficiency(bool newState) => _combatProficiencies[1] = newState;
+        public void SetLightArmorProficiency(bool newState) => _combatProficiencies[2] = newState;
+        public void SetMediumArmorProficiency(bool newState) => _combatProficiencies[3] = newState;
+        public void SetHeavyArmorProficiency(bool newState) => _combatProficiencies[4] = newState;
+        public void SetShieldsProficiency(bool newState) => _combatProficiencies[5] = newState;
         
         // Str skills
         public bool GetAthleticsProficiency() => _skillProfiencies[0];
@@ -175,6 +186,7 @@ namespace DnD_Duel_Sim
         public bool GetChaSaveProficiency() => _saveProficiencies[5];
         public void SetChaSaveProficiency(bool newState) => _saveProficiencies[5] = newState;
 
+        // Custom proficiencies? (i.e. tools and such)
 
         // Proficiency bonus.
         public int GetProficiencyBonus() => 2 + (_level - 1) / 4;
@@ -270,10 +282,14 @@ namespace DnD_Duel_Sim
         // 16 from chainmail + 2 from shield
         public int GetArmorAC()
         {
+            // Get max of all owned options.
             return 16;
         }
         public bool GetShield() => true;
         public int GetAC() => GetArmorAC() + (GetShield() ? 2 : 0);
+
+        // Initiative
+        public int RollInitiative() => RollDexCheck();
 
         // Speed
         public int GetSpeed()
@@ -295,13 +311,11 @@ namespace DnD_Duel_Sim
         bool _secondWindAvailable;
         public bool IsSecondWindAvailable() => _secondWindAvailable;
         public void SetSecondWindAvailability(bool availability) => _secondWindAvailable = availability;
+
+        // Action Surge
+        public bool ActionSurgeUnlocked() => GetLevel() >= 2;
+
         // Martial Archetype
-        public enum MartialArchetype
-        {
-            Champion,
-            BattleMaster,
-            EldritchKnight
-        }
         private MartialArchetype _martialArchetype;
         public MartialArchetype GetMartialArchetype() => _martialArchetype;
         public void SetMartialArchetype(MartialArchetype martialArchetype) => _martialArchetype = martialArchetype;

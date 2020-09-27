@@ -3053,12 +3053,14 @@
             // 
             // FinishButton
             // 
+            this.FinishButton.Enabled = false;
             this.FinishButton.Location = new System.Drawing.Point(189, 2475);
             this.FinishButton.Name = "FinishButton";
             this.FinishButton.Size = new System.Drawing.Size(80, 30);
             this.FinishButton.TabIndex = 251;
             this.FinishButton.Text = "Generate";
             this.FinishButton.UseVisualStyleBackColor = true;
+            this.FinishButton.Click += new System.EventHandler(this.FinishButton_Click);
             // 
             // ImprovedCriticalLabel
             // 

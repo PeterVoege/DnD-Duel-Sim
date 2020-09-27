@@ -31,6 +31,10 @@ namespace DnD_Duel_Sim
         int _levelOffset;
 
         // Level
+        private int GetLevel()
+        {
+            return int.Parse(this.LevelSelector.Text);
+        }
         private void LevelSelector_DropDownClosed(object sender, EventArgs e)
         {
             this.UpdateAbilityScoreImprovement();
@@ -1127,7 +1131,7 @@ namespace DnD_Duel_Sim
             /// Start by checking if distribution is valid.
             /// If not, clear everything.
             // Find out total points available.
-            int level = int.Parse(this.LevelSelector.Text);
+            int level = this.GetLevel();
 
             // Find out total points available
             int points = 0;
@@ -1320,7 +1324,7 @@ namespace DnD_Duel_Sim
         // Determines the offset created by the dynamic number of HP lines.
         private void HPOffset()
         {
-            int offset = int.Parse(this.LevelSelector.Text); // Number of lines visible.
+            int offset = this.GetLevel(); // Number of lines visible.
             int diff = (offset - _levelOffset) * 36;
             int threshold = this.HPSumLabel.Location.Y;
 
@@ -1345,7 +1349,7 @@ namespace DnD_Duel_Sim
             // Applies the new value
             if (int.TryParse(conRaw, out int con))
             {
-                this.HPConGrowth.Text = "" + (int.Parse(this.LevelSelector.Text) * GetStatMod(con));
+                this.HPConGrowth.Text = "" + (this.GetLevel() * GetStatMod(con));
             }
             else { this.HPConGrowth.Text = "N/A"; }
         }
@@ -1353,7 +1357,7 @@ namespace DnD_Duel_Sim
         // Goes level by level and sums up every
         private int CalculateHPLevelGrowth()
         {
-            int level = int.Parse(this.LevelSelector.Text);
+            int level = this.GetLevel();
             int HPGrowth = 0;
 
             if (level >= 1)
@@ -2811,6 +2815,247 @@ namespace DnD_Duel_Sim
             }
             FeatButtonLv19.Enabled = true;
             this.UpdateAbilityScoreImprovement();
+        }
+
+        // Checks to see what the selected race is, and converts it from text to enum.
+        private Race GetRace()
+        {
+            switch (RaceSelector.Text)
+            {
+                case "Dwarf":
+                    if(this.SubraceSelector.Text == "Hill Dwarf") { return Race.HillDwarf; }
+                    else if (this.SubraceSelector.Text == "Mountain Dwarf") { return Race.MountainDwarf; }
+                    break;
+                case "Elf":
+
+                    if (this.SubraceSelector.Text == "High Elf") { return Race.HighElf; }
+                    else if (this.SubraceSelector.Text == "Wood Elf") { return Race.WoodElf; }
+                    else if (this.SubraceSelector.Text == "Dark Elf") { return Race.DarkElf; }
+                    break;
+                case "Halfling":
+                    if (this.SubraceSelector.Text == "Lightfoot Halfling") { return Race.LightfootHalfling; }
+                    else if (this.SubraceSelector.Text == "Stout Halfling") { return Race.StoutHalfling; }
+                    break;
+                case "Human":
+                    return Race.Human;
+                case "Dragonborn":
+                    return Race.Dragonborn;
+                case "Gnome":
+                    if (this.SubraceSelector.Text == "Forest Gnome") { return Race.ForestGnome; }
+                    else if (this.SubraceSelector.Text == "Rock Gnome") { return Race.RockGnome; }
+                    break;
+                case "Half-Elf":
+                    return Race.HalfElf;
+                case "Half-Orc":
+                    return Race.HalfOrc;
+                case "Tiefling":
+                    return Race.Tiefling;
+                default:
+                    break;
+            }
+            // If something goes wrong, assume human.
+            return Race.Human;
+        }
+
+        // Checks to see what the selected background is, and converts it from text to enum.
+        private Background GetBackground()
+        {
+            switch (BackgroundSelector.Text)
+            {
+                case "Acolyte":
+                    return Background.Acolyte;
+                case "Charlatan":
+                    return Background.Charlatan;
+                case "Criminal":
+                    return Background.Criminal;
+                case "Entertainer":
+                    return Background.Entertainer;
+                case "Folk Hero":
+                    return Background.FolkHero;
+                case "Guild Artisan":
+                    return Background.GuildArtisan;
+                case "Hermit":
+                    return Background.Hermit;
+                case "Noble":
+                    return Background.Noble;
+                case "Outlander":
+                    return Background.Outlander;
+                case "Sage":
+                    return Background.Sage;
+                case "Sailor":
+                    return Background.Sailor;
+                case "Soldier":
+                    return Background.Soldier;
+                case "Urchin":
+                    return Background.Urchin;
+                default:
+                    break;
+            }
+            // If something goes wrong, assume urchin.
+            return Background.Urchin;
+        }
+
+        // Figures out what marital archetype the fighter has.
+        private MartialArchetype GetMartialArchetype()
+        {
+            // Screen off fighters too young to have an archetype
+            if(this.GetLevel() < 3) { return MartialArchetype.None; }
+            // Find which box is selected
+            if (this.MartialArchetypeBox1.Checked) { return MartialArchetype.Champion; }
+            else if (this.MartialArchetypeBox2.Checked ) { return MartialArchetype.BattleMaster; }
+            else if (this.MartialArchetypeBox3.Checked ) { return MartialArchetype.EldritchKnight; }
+            // Default in case of error
+            return MartialArchetype.None;
+        }
+
+        // Figures out which fighting styles the fighter has.
+        private bool[] GetFightingStyles()
+        {
+            bool[] styles = new bool[6] { false, false, false, false, false, false };
+
+            // Base fighting style every fighter gets
+            switch (this.FightingStyleSelector.Text)
+            {
+                case "Archery":
+                    styles[0] = true;
+                    break;
+                case "Defense":
+                    styles[1] = true;
+                    break;
+                case "Dueling":
+                    styles[2] = true;
+                    break;
+                case "Great Weapon Fighting":
+                    styles[3] = true;
+                    break;
+                case "Protection":
+                    styles[4] = true;
+                    break;
+                case "Two-Weapon Fighting":
+                    styles[5] = true;
+                    break;
+                default:
+                    break;
+            }
+
+            // Extra fighting style for level 10+ Champions
+            if(this.GetLevel() >= 10 && this.MartialArchetypeBox1.Checked)
+            {
+                switch (this.AdditionalFightingStyleSelector.Text)
+                {
+                    case "Archery":
+                        styles[0] = true;
+                        break;
+                    case "Defense":
+                        styles[1] = true;
+                        break;
+                    case "Dueling":
+                        styles[2] = true;
+                        break;
+                    case "Great Weapon Fighting":
+                        styles[3] = true;
+                        break;
+                    case "Protection":
+                        styles[4] = true;
+                        break;
+                    case "Two-Weapon Fighting":
+                        styles[5] = true;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            return styles;
+        }
+
+        // Evaluates if the character is specified well enough to generate.  Enables/disables the finish button.
+        private void CheckIfComplete()
+        {
+            // Disable button.  Will only enable if all checks are cleared.
+            this.FinishButton.Enabled = false;
+
+            // Check for valid name
+            if(this.FirstNameBox.Text == "") { return; }
+            if(this.LastNameBox.Text == "") { return; }
+
+            // Validate race
+            if(this.RaceSelector.Text == "") { return; }
+            else
+            {
+                if(this.RaceSelector.Text == "Dwarf" || this.RaceSelector.Text == "Elf" || this.RaceSelector.Text == "Halfling" || this.RaceSelector.Text == "Gnome")
+                { // Validate subrace
+                    if(this.SubraceSelector.Text == "") { return; }
+                }
+            }
+            // Validate background
+            if(this.BackgroundSelector.Text == "") { return; }
+
+            // Validate level
+            if(GetLevel() < 1 || GetLevel() > 20) { return; }
+
+            // Validate HP
+            if(!int.TryParse(this.HPTotalNum.Text, out _)) { return; }
+            
+            // Validate stats
+            if(this.AbilityScoreStrNum.Text == "N/A") { return; }
+            if(this.AbilityScoreDexNum.Text == "N/A") { return; }
+            if(this.AbilityScoreConNum.Text == "N/A") { return; }
+            if(this.AbilityScoreIntNum.Text == "N/A") { return; }
+            if(this.AbilityScoreWisNum.Text == "N/A") { return; }
+            if(this.AbilityScoreChaNum.Text == "N/A") { return; }
+
+            // Check for valid martial archetype
+            if(this.GetLevel() >= 3 && !MartialArchetypeBox1.Checked && !MartialArchetypeBox2.Checked && !MartialArchetypeBox3.Checked) { return; }
+
+            // All checks cleared, enable the button.
+            this.FinishButton.Enabled = true;
+        }
+
+        // If you can click this, it is assumed that all the data is valid.
+        private void FinishButton_Click(object sender, EventArgs e)
+        {
+            // Gather all the player information
+            string fName = this.FirstNameBox.Text;
+            string lName = this.LastNameBox.Text;
+            Race race = GetRace();
+            Background background = GetBackground();
+
+            int level = this.GetLevel();
+            int HP = int.Parse(this.HPTotalNum.Text);
+            
+            // Stats
+            int[] stats = { 10, 10, 10, 10, 10, 10 };
+            stats[0] = int.Parse(this.AbilityScoreStrNum.Text);
+            stats[1] = int.Parse(this.AbilityScoreDexNum.Text);
+            stats[2] = int.Parse(this.AbilityScoreConNum.Text);
+            stats[3] = int.Parse(this.AbilityScoreIntNum.Text);
+            stats[4] = int.Parse(this.AbilityScoreWisNum.Text);
+            stats[5] = int.Parse(this.AbilityScoreChaNum.Text);
+
+            // Fighting style(s)
+            bool[] fightingStyles = GetFightingStyles();
+            // TODO: assert no duplicates in selection dropdown.
+
+            // Proficiencies
+            // Fighter gets all normal combat proficiencies
+            bool[] combatProficiencies = new bool[6] { true, true, true, true, true, true };
+            // Fighter is proficient in str and con saves.
+            bool[] saveProficiencies = new bool[6] { true, false, true, false, false, false };
+            // TODO: fix
+            // skill proficiencies
+            bool[] skillProficiencies = new bool[18] { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
+            
+            // Martial Archetype
+            MartialArchetype martialArchetype = GetMartialArchetype();
+
+            /// Unimplemented:
+            // Feats
+            // Battle Master Maneuvers (16 of them)
+            // Battle Master: student of war
+            // Everything Eldritch Knight
+
+            Fighter fighter = new Fighter(ref _rng, level, HP, HP, race, background, stats, combatProficiencies, skillProficiencies, saveProficiencies, fightingStyles, martialArchetype);
         }
     }
 }
