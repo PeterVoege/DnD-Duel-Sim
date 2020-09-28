@@ -38,8 +38,376 @@ namespace DnD_Duel_Sim
         private void LevelSelector_DropDownClosed(object sender, EventArgs e)
         {
             this.UpdateAbilityScoreImprovement();
+            this.LevelOffset();
+        }
+
+        // Ensures controls that change location based on the character's level move accordingly.
+        private void LevelOffset()
+        {
+            // Offset created by HP rows:
             this.HPOffset();
-            UpdateAbilityScoreImprovement();
+
+            // Offset for the finish button and associated divider:
+            int targetY = divider24.Location.Y;
+            switch (this.GetLevel())
+            {
+                case 1:
+                    targetY = divider5.Location.Y;
+                    break;
+                case 2:
+                    targetY = divider6.Location.Y;
+                    break;
+                case 3:
+                    targetY = divider7.Location.Y;
+                    break;
+                case 4:
+                    targetY = divider8.Location.Y;
+                    break;
+                case 5:
+                    targetY = divider9.Location.Y;
+                    break;
+                case 6:
+                    targetY = divider10.Location.Y;
+                    break;
+                case 7:
+                    targetY = divider11.Location.Y;
+                    break;
+                case 8:
+                    targetY = divider12.Location.Y;
+                    break;
+                case 9:
+                    targetY = divider13.Location.Y;
+                    break;
+                case 10:
+                    targetY = divider14.Location.Y;
+                    break;
+                case 11:
+                    targetY = divider15.Location.Y;
+                    break;
+                case 12:
+                    targetY = divider16.Location.Y;
+                    break;
+                case 13:
+                    targetY = divider17.Location.Y;
+                    break;
+                case 14:
+                    targetY = divider18.Location.Y;
+                    break;
+                case 15:
+                    targetY = divider19.Location.Y;
+                    break;
+                case 16:
+                    targetY = divider20.Location.Y;
+                    break;
+                case 17:
+                    targetY = divider21.Location.Y;
+                    break;
+                case 18:
+                    targetY = divider22.Location.Y;
+                    break;
+                case 19:
+                    targetY = divider23.Location.Y;
+                    break;
+                case 20:
+                    targetY = this.ExtraAttackLabel3.Location.Y + 20;
+                    break;
+                default:
+                    break;
+            }
+            this.divider24.Location = new Point(divider24.Location.X, targetY);
+            // Finish button is a set distance beneath the divider.
+            this.FinishButton.Location = new Point(FinishButton.Location.X, divider24.Location.Y + 7);
+
+            // Also toggle visibility as appropriate
+            this.LevelVisibilityManager();
+        }
+
+        // Hides levels that shouldn't currently be seen, and unhides levels that should.
+        private void LevelVisibilityManager()
+        {
+            int level = GetLevel();
+
+            // Level 2 controls
+            if(level >= 2)
+            {
+                this.divider5.Visible = true;
+                this.Lv2Label.Visible = true;
+                this.ActionSurgeLabel.Visible = true;
+            }
+            else
+            {
+                this.divider5.Visible = false;
+                this.Lv2Label.Visible = false;
+                this.ActionSurgeLabel.Visible = false;
+            }
+            if (level >= 3)
+            {
+                this.divider6.Visible = true;
+                this.Lv3Label.Visible = true;
+                this.MartialArchetypeHeader.Visible = true;
+                this.MartialArchetypeBox1.Visible = true;
+                this.MartialArchetypeBox2.Visible = true;
+                this.MartialArchetypeBox3.Visible = true;
+                this.ImprovedCriticalLabel.Visible = true;
+            }
+            else
+            {
+                this.divider6.Visible = false;
+                this.Lv3Label.Visible = false;
+                this.MartialArchetypeHeader.Visible = false;
+                this.MartialArchetypeBox1.Visible = false;
+                this.MartialArchetypeBox2.Visible = false;
+                this.MartialArchetypeBox3.Visible = false;
+                this.ImprovedCriticalLabel.Visible = false;
+            }
+            if (level >= 4)
+            {
+                this.divider7.Visible = true;
+                this.Lv4Label.Visible = true;
+                this.AbilityScoreCheckboxLv4.Visible = true;
+                this.FeatCheckboxLv4.Visible = true;
+                this.FeatButtonLv4.Visible = true;
+                this.FeatLabelLv4.Visible = true;
+            }
+            else
+            {
+                this.divider7.Visible = false;
+                this.Lv4Label.Visible = false;
+                this.AbilityScoreCheckboxLv4.Visible = false;
+                this.FeatCheckboxLv4.Visible = false;
+                this.FeatButtonLv4.Visible = false;
+                this.FeatLabelLv4.Visible = false;
+            }
+            if (level >= 5)
+            {
+                this.divider8.Visible = true;
+                this.Lv5Label.Visible = true;
+                this.ExtraAttackLabel1.Visible = true;
+            }
+            else
+            {
+                this.divider8.Visible = false;
+                this.Lv5Label.Visible = false;
+                this.ExtraAttackLabel1.Visible = false;
+            }
+            if (level >= 6)
+            {
+                this.divider9.Visible = true;
+                this.Lv6Label.Visible = true;
+                this.AbilityScoreCheckboxLv6.Visible = true;
+                this.FeatCheckboxLv6.Visible = true;
+                this.FeatButtonLv6.Visible = true;
+                this.FeatLabelLv6.Visible = true;
+            }
+            else
+            {
+                this.divider9.Visible = false;
+                this.Lv6Label.Visible = false;
+                this.AbilityScoreCheckboxLv6.Visible = false;
+                this.FeatCheckboxLv6.Visible = false;
+                this.FeatButtonLv6.Visible = false;
+                this.FeatLabelLv6.Visible = false;
+            }
+            if (level >= 7)
+            {
+                this.divider10.Visible = true;
+                this.Lv7Label.Visible = true;
+                this.RemarkableAthleteLabel.Visible = true;
+            }
+            else
+            {
+                this.divider10.Visible = false;
+                this.Lv7Label.Visible = false;
+                this.RemarkableAthleteLabel.Visible = false;
+            }
+            if (level >= 8)
+            {
+                this.divider11.Visible = true;
+                this.Lv8Label.Visible = true;
+                this.AbilityScoreCheckboxLv8.Visible = true;
+                this.FeatCheckboxLv8.Visible = true;
+                this.FeatButtonLv8.Visible = true;
+                this.FeatLabelLv8.Visible = true;
+            }
+            else
+            {
+                this.divider11.Visible = false;
+                this.Lv8Label.Visible = false;
+                this.AbilityScoreCheckboxLv8.Visible = false;
+                this.FeatCheckboxLv8.Visible = false;
+                this.FeatButtonLv8.Visible = false;
+                this.FeatLabelLv8.Visible = false;
+            }
+            if (level >= 9)
+            {
+                this.divider12.Visible = true;
+                this.Lv9Label.Visible = true;
+                this.IndomitableLabel1.Visible = true;
+            }
+            else
+            {
+                this.divider12.Visible = false;
+                this.Lv9Label.Visible = false;
+                this.IndomitableLabel1.Visible = false;
+            }
+            if (level >= 10)
+            {
+                this.divider13.Visible = true;
+                this.Lv10Label.Visible = true;
+                this.AdditionalFightingStyleLabel.Visible = true;
+                this.AdditionalFightingStyleSelector.Visible = true;
+            }
+            else
+            {
+                this.divider13.Visible = false;
+                this.Lv10Label.Visible = false;
+                this.AdditionalFightingStyleLabel.Visible = false;
+                this.AdditionalFightingStyleSelector.Visible = false;
+            }
+            if (level >= 11)
+            {
+                this.divider14.Visible = true;
+                this.Lv11Label.Visible = true;
+                this.ExtraAttackLabel2.Visible = true;
+            }
+            else
+            {
+                this.divider14.Visible = false;
+                this.Lv11Label.Visible = false;
+                this.ExtraAttackLabel2.Visible = false;
+            }
+            if (level >= 12)
+            {
+                this.divider15.Visible = true;
+                this.Lv12Label.Visible = true;
+                this.AbilityScoreCheckboxLv12.Visible = true;
+                this.FeatCheckboxLv12.Visible = true;
+                this.FeatButtonLv12.Visible = true;
+                this.FeatLabelLv12.Visible = true;
+            }
+            else
+            {
+                this.divider15.Visible = false;
+                this.Lv12Label.Visible = false;
+                this.AbilityScoreCheckboxLv12.Visible = false;
+                this.FeatCheckboxLv12.Visible = false;
+                this.FeatButtonLv12.Visible = false;
+                this.FeatLabelLv12.Visible = false;
+            }
+            if (level >= 13)
+            {
+                this.divider16.Visible = true;
+                this.Lv13Label.Visible = true;
+                this.IndomitableLabel2.Visible = true;
+            }
+            else
+            {
+                this.divider16.Visible = false;
+                this.Lv13Label.Visible = false;
+                this.IndomitableLabel2.Visible = false;
+            }
+            if (level >= 14)
+            {
+                this.divider17.Visible = true;
+                this.Lv14Label.Visible = true;
+                this.AbilityScoreCheckboxLv14.Visible = true;
+                this.FeatCheckboxLv14.Visible = true;
+                this.FeatButtonLv14.Visible = true;
+                this.FeatLabelLv14.Visible = true;
+            }
+            else
+            {
+                this.divider17.Visible = false;
+                this.Lv14Label.Visible = false;
+                this.AbilityScoreCheckboxLv14.Visible = false;
+                this.FeatCheckboxLv14.Visible = false;
+                this.FeatButtonLv14.Visible = false;
+                this.FeatLabelLv14.Visible = false;
+            }
+            if (level >= 15)
+            {
+                this.divider18.Visible = true;
+                this.Lv15Label.Visible = true;
+                this.SuperiorCriticalLabel.Visible = true;
+            }
+            else
+            {
+                this.divider18.Visible = false;
+                this.Lv15Label.Visible = false;
+                this.SuperiorCriticalLabel.Visible = false;
+            }
+            if (level >= 16)
+            {
+                this.divider19.Visible = true;
+                this.Lv16Label.Visible = true;
+                this.AbilityScoreCheckboxLv16.Visible = true;
+                this.FeatCheckboxLv16.Visible = true;
+                this.FeatButtonLv16.Visible = true;
+                this.FeatLabelLv16.Visible = true;
+            }
+            else
+            {
+                this.divider19.Visible = false;
+                this.Lv16Label.Visible = false;
+                this.AbilityScoreCheckboxLv16.Visible = false;
+                this.FeatCheckboxLv16.Visible = false;
+                this.FeatButtonLv16.Visible = false;
+                this.FeatLabelLv16.Visible = false;
+            }
+            if (level >= 17)
+            {
+                this.divider20.Visible = true;
+                this.Lv17Label.Visible = true;
+                this.IndomitableLabel3.Visible = true;
+            }
+            else
+            {
+                this.divider20.Visible = false;
+                this.Lv17Label.Visible = false;
+                this.IndomitableLabel3.Visible = false;
+            }
+            if (level >= 18)
+            {
+                this.divider21.Visible = true;
+                this.Lv18Label.Visible = true;
+                this.SurvivorLabel.Visible = true;
+            }
+            else
+            {
+                this.divider21.Visible = false;
+                this.Lv18Label.Visible = false;
+                this.SurvivorLabel.Visible = false;
+            }
+            if (level >= 19)
+            {
+                this.divider22.Visible = true;
+                this.Lv19Label.Visible = true;
+                this.AbilityScoreCheckboxLv19.Visible = true;
+                this.FeatCheckboxLv19.Visible = true;
+                this.FeatButtonLv19.Visible = true;
+                this.FeatLabelLv19.Visible = true;
+            }
+            else
+            {
+                this.divider22.Visible = false;
+                this.Lv19Label.Visible = false;
+                this.AbilityScoreCheckboxLv19.Visible = false;
+                this.FeatCheckboxLv19.Visible = false;
+                this.FeatButtonLv19.Visible = false;
+                this.FeatLabelLv19.Visible = false;
+            }
+            if (level >= 20)
+            {
+                this.divider23.Visible = true;
+                this.Lv20Label.Visible = true;
+                this.ExtraAttackLabel3.Visible = true;
+            }
+            else
+            {
+                this.divider23.Visible = false;
+                this.Lv20Label.Visible = false;
+                this.ExtraAttackLabel3.Visible = false;
+            }
         }
 
         /// Stat allocation
@@ -1571,7 +1939,8 @@ namespace DnD_Duel_Sim
         // For the sake of a legibile design page and avoiding bugs, the controls for lines that are not visible are moved out of the way until they are added back in again.
         private void PlaceHPDiceRollLines()
         {
-            if (_levelOffset >= 2)
+            int level = this.GetLevel();
+            if (level >= 2)
             {
                 this.Lv2HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(2);
@@ -1594,7 +1963,7 @@ namespace DnD_Duel_Sim
                 Lv2HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv2HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 3)
+            if (level >= 3)
             {
                 this.Lv3HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(3);
@@ -1617,7 +1986,7 @@ namespace DnD_Duel_Sim
                 Lv3HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv3HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 4)
+            if (level >= 4)
             {
                 this.Lv4HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(4);
@@ -1640,7 +2009,7 @@ namespace DnD_Duel_Sim
                 Lv4HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv4HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 5)
+            if (level >= 5)
             {
                 this.Lv5HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(5);
@@ -1663,7 +2032,7 @@ namespace DnD_Duel_Sim
                 Lv5HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv5HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 6)
+            if (level >= 6)
             {
                 this.Lv6HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(6);
@@ -1686,7 +2055,7 @@ namespace DnD_Duel_Sim
                 Lv6HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv6HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 7)
+            if (level >= 7)
             {
                 this.Lv7HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(7);
@@ -1709,7 +2078,7 @@ namespace DnD_Duel_Sim
                 Lv7HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv7HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 8)
+            if (level >= 8)
             {
                 this.Lv8HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(8);
@@ -1732,7 +2101,7 @@ namespace DnD_Duel_Sim
                 Lv8HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv8HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 9)
+            if (level >= 9)
             {
                 this.Lv9HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(9);
@@ -1755,7 +2124,7 @@ namespace DnD_Duel_Sim
                 Lv9HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv9HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 10)
+            if (level >= 10)
             {
                 this.Lv10HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(10);
@@ -1778,7 +2147,7 @@ namespace DnD_Duel_Sim
                 Lv10HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv10HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 11)
+            if (level >= 11)
             {
                 this.Lv11HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(11);
@@ -1801,7 +2170,7 @@ namespace DnD_Duel_Sim
                 Lv11HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv11HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 12)
+            if (level >= 12)
             {
                 this.Lv12HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(12);
@@ -1824,7 +2193,7 @@ namespace DnD_Duel_Sim
                 Lv12HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv12HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 13)
+            if (level >= 13)
             {
                 this.Lv13HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(13);
@@ -1847,7 +2216,7 @@ namespace DnD_Duel_Sim
                 Lv13HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv13HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 14)
+            if (level >= 14)
             {
                 this.Lv14HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(14);
@@ -1870,7 +2239,7 @@ namespace DnD_Duel_Sim
                 Lv14HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv14HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 15)
+            if (level >= 15)
             {
                 this.Lv15HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(15);
@@ -1893,7 +2262,7 @@ namespace DnD_Duel_Sim
                 Lv15HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv15HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 16)
+            if (level >= 16)
             {
                 this.Lv16HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(16);
@@ -1916,7 +2285,7 @@ namespace DnD_Duel_Sim
                 Lv16HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv16HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 17)
+            if (level >= 17)
             {
                 this.Lv17HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(17);
@@ -1939,7 +2308,7 @@ namespace DnD_Duel_Sim
                 Lv17HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv17HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 18)
+            if (level >= 18)
             {
                 this.Lv18HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(18);
@@ -1962,7 +2331,7 @@ namespace DnD_Duel_Sim
                 Lv18HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv18HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 19)
+            if (level >= 19)
             {
                 this.Lv19HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(19);
@@ -1985,7 +2354,7 @@ namespace DnD_Duel_Sim
                 Lv19HPFixed.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
                 Lv19HP6.Location = new Point(HPHeader.Location.X + 100, HPHeader.Location.Y + 50);
             }
-            if (_levelOffset >= 20)
+            if (level >= 20)
             {
                 this.Lv20HPCheckbox.Visible = true;
                 this.HPRollVisibilityManager(20);
