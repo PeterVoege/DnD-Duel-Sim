@@ -61,5 +61,42 @@ namespace DnD_Duel_Sim
                     return 30;
             }
         }
+
+        public static string GetString(Race race)
+        {
+            switch (race)
+            {
+                case Race.HillDwarf:
+                    return "Hill Dwarf";
+                case Race.MountainDwarf:
+                    return "Mountain Dwarf";
+                case Race.HighElf:
+                    return "High Elf";
+                case Race.WoodElf:
+                    return "Wood Elf";
+                case Race.DarkElf:
+                    return "Dark Elf";
+                case Race.LightfootHalfling:
+                    return "Lightfoot Halfling";
+                case Race.StoutHalfling:
+                    return "Stout Halfling";
+                case Race.Human:
+                    return "Human";
+                case Race.Dragonborn:
+                    return "Dragonborn";
+                case Race.ForestGnome:
+                    return "Forest Gnome";
+                case Race.RockGnome:
+                    return "Rock Gnome";
+                case Race.HalfElf:
+                    return "Half-Elf";
+                case Race.HalfOrc:
+                    return "Half-Orc";
+                case Race.Tiefling:
+                    return "Tiefling";
+                default:
+                    return "Unknown";
+            }
+        }
     }
 }

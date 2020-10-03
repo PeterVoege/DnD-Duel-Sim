@@ -12,12 +12,15 @@ namespace DnD_Duel_Sim
 {
     public partial class Fighter_Generator : Form
     {
-        public Fighter_Generator(ref DiceRoller rng)
+        public Fighter_Generator(DuelSetupForm parent, int slot, ref DiceRoller rng)
         {
             InitializeComponent();
+            _parent = parent;
+            _slot = slot;
             _rng = rng;
             this.LevelSelector.Text = "1";
             this._levelOffset = 1;
+            this.LevelOffset();
             this.AbilityScoreStrBox.Text = "+0";
             this.AbilityScoreDexBox.Text = "+0";
             this.AbilityScoreConBox.Text = "+0";
@@ -27,6 +30,8 @@ namespace DnD_Duel_Sim
             this.UpdateAbilityScoreImprovement();
         }
 
+        DuelSetupForm _parent;
+        int _slot;
         DiceRoller _rng;
         int _levelOffset;
 
@@ -1548,6 +1553,8 @@ namespace DnD_Duel_Sim
             
             // Now that we know the distribution is valid (one way or another), update the boxes to fit.
             UpdateAbilityScoreBoxes(statRoom);
+            // Re-check whole character validity.
+            this.CheckIfComplete();
         }
         
         // Updates the dropdown boxes in accordance with the new configuration of improvements.
@@ -1933,6 +1940,8 @@ namespace DnD_Duel_Sim
             // Things seem to be good, so let's do the summation.
             int totalHP = 10 + conGrowth + HPGrowth;
             this.HPTotalNum.Text = "" + totalHP;
+            
+            this.CheckIfComplete();
         }
 
         // Based on how many HP lines are supposed to exist, moves the appropriate forms into place and makes them visible or not.
@@ -2960,6 +2969,15 @@ namespace DnD_Duel_Sim
                     SubraceSelector.Enabled = false;
                     break;
             }
+            this.CheckIfComplete();
+        }
+        private void SubraceSelector_DropDownClosed(object sender, EventArgs e)
+        {
+            this.CheckIfComplete();
+        }
+        private void BackgroundSelector_DropDownClosed(object sender, EventArgs e)
+        {
+            this.CheckIfComplete();
         }
 
         private void NameButton_Click(object sender, EventArgs e)
@@ -2979,6 +2997,7 @@ namespace DnD_Duel_Sim
             if (!IntimidationProfCheckbox.Checked) { IntimidationProfCheckbox.Enabled = false; }
             if (!PerceptionProfCheckbox.Checked) { PerceptionProfCheckbox.Enabled = false; }
             if (!SurvivalProfCheckbox.Checked) { SurvivalProfCheckbox.Enabled = false; }
+            this.CheckIfComplete();
         }
         
         // Enables all boxes so a second proficiency can be added
@@ -2992,6 +3011,7 @@ namespace DnD_Duel_Sim
             IntimidationProfCheckbox.Enabled = true;
             PerceptionProfCheckbox.Enabled = true;
             SurvivalProfCheckbox.Enabled = true;
+            this.CheckIfComplete();
         }
 
         private int CountProficiencySelections()
@@ -3083,6 +3103,15 @@ namespace DnD_Duel_Sim
             else { this.EnableProficiencyBoxes(); }
         }
 
+        private void FightingStyleSelector_DropDownClosed(object sender, EventArgs e)
+        {
+            this.CheckIfComplete();
+        }
+        private void AdditionalFightingStyleSelector_DropDownClosed(object sender, EventArgs e)
+        {
+            this.CheckIfComplete();
+        }
+
         private void MartialArchetypeBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (MartialArchetypeBox1.Checked)
@@ -3096,6 +3125,7 @@ namespace DnD_Duel_Sim
                 MartialArchetypeBox3.AutoCheck = true;
             }
             ImprovedCriticalLabel.Visible = true;
+            this.CheckIfComplete();
         }
         private void MartialArchetypeBox2_CheckedChanged(object sender, EventArgs e)
         {
@@ -3110,6 +3140,7 @@ namespace DnD_Duel_Sim
                 MartialArchetypeBox3.AutoCheck = true;
             }
             ImprovedCriticalLabel.Visible = false;
+            this.CheckIfComplete();
         }
         private void MartialArchetypeBox3_CheckedChanged(object sender, EventArgs e)
         {
@@ -3124,6 +3155,7 @@ namespace DnD_Duel_Sim
                 MartialArchetypeBox3.AutoCheck = false;
             }
             ImprovedCriticalLabel.Visible = false;
+            this.CheckIfComplete();
         }
 
         private void AbilityScoreCheckboxLv4_CheckedChanged(object sender, EventArgs e)
@@ -3558,7 +3590,11 @@ namespace DnD_Duel_Sim
             // Battle Master: student of war
             // Everything Eldritch Knight
 
-            Fighter fighter = new Fighter(ref _rng, level, HP, HP, race, background, stats, combatProficiencies, skillProficiencies, saveProficiencies, fightingStyles, martialArchetype);
+            Fighter fighter = new Fighter(ref _rng, fName, lName, level, HP, HP, race, background, stats, combatProficiencies, skillProficiencies, saveProficiencies, fightingStyles, martialArchetype);
+
+            _parent.LoadCharacter(fighter, _slot); // Send back to duel form.
+
+            this.Close();
         }
     }
 }

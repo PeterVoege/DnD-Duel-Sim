@@ -21,6 +21,8 @@ namespace DnD_Duel_Sim
         public int d12() => 1 + (_rng.Next() % 12);
         public int d20() => 1 + (_rng.Next() % 20);
 
+        public int CustomDice(int size) => 1 + (_rng.Next() % size);
+
         public int Multidice(int type, int quantity)
         {
 

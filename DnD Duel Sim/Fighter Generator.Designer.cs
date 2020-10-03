@@ -2559,6 +2559,7 @@
             this.BackgroundSelector.Name = "BackgroundSelector";
             this.BackgroundSelector.Size = new System.Drawing.Size(121, 24);
             this.BackgroundSelector.TabIndex = 197;
+            this.BackgroundSelector.DropDownClosed += new System.EventHandler(this.BackgroundSelector_DropDownClosed);
             // 
             // SubraceSelector
             // 
@@ -2569,6 +2570,7 @@
             this.SubraceSelector.Name = "SubraceSelector";
             this.SubraceSelector.Size = new System.Drawing.Size(121, 24);
             this.SubraceSelector.TabIndex = 198;
+            this.SubraceSelector.DropDownClosed += new System.EventHandler(this.SubraceSelector_DropDownClosed);
             // 
             // divider2
             // 
@@ -2654,6 +2656,7 @@
             this.FightingStyleSelector.Name = "FightingStyleSelector";
             this.FightingStyleSelector.Size = new System.Drawing.Size(168, 24);
             this.FightingStyleSelector.TabIndex = 207;
+            this.FightingStyleSelector.DropDownClosed += new System.EventHandler(this.FightingStyleSelector_DropDownClosed);
             // 
             // FightingStyleLabel
             // 
@@ -3133,6 +3136,7 @@
             this.AdditionalFightingStyleSelector.Name = "AdditionalFightingStyleSelector";
             this.AdditionalFightingStyleSelector.Size = new System.Drawing.Size(168, 24);
             this.AdditionalFightingStyleSelector.TabIndex = 257;
+            this.AdditionalFightingStyleSelector.DropDownClosed += new System.EventHandler(this.AdditionalFightingStyleSelector_DropDownClosed);
             // 
             // ExtraAttackLabel1
             // 

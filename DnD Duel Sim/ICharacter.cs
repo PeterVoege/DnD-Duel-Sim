@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace DnD_Duel_Sim
 {
-    interface ICharacter
+    public interface ICharacter
     {
+        string GetFirstName();
+        void SetFirstName(string name);
+        string GetLastName();
+        void SetLastName(string name);
+
         int GetLevel();
         void SetLevel(int level);
 
