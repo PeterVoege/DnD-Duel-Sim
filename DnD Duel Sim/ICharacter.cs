@@ -20,6 +20,7 @@ namespace DnD_Duel_Sim
         void SetMaxHP(int maxHP);
         int GetHP();
         void SetHP(int HP);
+        void ChangeHP(int delta);
 
         int GetMaxHitDice();
         int GetHitDice();
@@ -140,6 +141,12 @@ namespace DnD_Duel_Sim
 
         int AttackRoll();
         int DamageRoll();
+
+        int GetArmorAC();
+        bool GetShield();
+        int GetAC();
+
+        int RollInitiative();
 
         int GetSpeed();
 

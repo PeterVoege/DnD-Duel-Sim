@@ -129,7 +129,44 @@ namespace DnD_Duel_Sim
             }
 
             // Name
-            string firstName = "John";
+            string firstName;
+            switch (_rng.d10())
+            {
+                case 1:
+                    firstName = "John";
+                    break;
+                case 2:
+                    firstName = "Jane";
+                    break;
+                case 3:
+                    firstName = "Alice";
+                    break;
+                case 4:
+                    firstName = "Bob";
+                    break;
+                case 5:
+                    firstName = "Charles";
+                    break;
+                case 6:
+                    firstName = "Emily";
+                    break;
+                case 7:
+                    firstName = "Daniel";
+                    break;
+                case 8:
+                    firstName = "Max";
+                    break;
+                case 9:
+                    firstName = "Ryan";
+                    break;
+                case 10:
+                    firstName = "Nicole";
+                    break;
+                default:
+                    firstName = "John";
+                    break;
+            }
+
             string lastName = "Smith";
 
             // Background
@@ -317,7 +354,10 @@ namespace DnD_Duel_Sim
 
         private void FightButton_Click(object sender, EventArgs e)
         {
-
+            DuelForm duel = new DuelForm(this, char1, char2);
+            duel.Show();
+            // Make duel form, pass both chars.
+            // Duel form handles actual sim and output.
         }
     }
 }
