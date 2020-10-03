@@ -31,9 +31,11 @@ namespace DnD_Duel_Sim
             _wis = 10;
             _cha = 10;
         }
-        public Fighter(ref DiceRoller rng, int level, int maxHP, int HP, Race race, Background background, int[] stats, bool[] combatProficiencies, bool[] skillProficiencies, bool[] saveProficiencies, bool[] fightingStyles, MartialArchetype martialArchetype) // and so on
+        public Fighter(ref DiceRoller rng, string fName, string lName, int level, int maxHP, int HP, Race race, Background background, int[] stats, bool[] combatProficiencies, bool[] skillProficiencies, bool[] saveProficiencies, bool[] fightingStyles, MartialArchetype martialArchetype) // and so on
         {
             _rng = rng;
+            _firstName = fName;
+            _lastName = lName;
             _level = level;
             _maxHP = maxHP;
             _HP = HP;
@@ -65,6 +67,8 @@ namespace DnD_Duel_Sim
         
         /// Variables
         private DiceRoller _rng;
+        private string _firstName;
+        private string _lastName;
         private int _level;
         private int _maxHP;
         private int _HP;
@@ -82,6 +86,12 @@ namespace DnD_Duel_Sim
         private int _int;
         private int _wis;
         private int _cha;
+
+        // Name
+        public string GetFirstName() => _firstName;
+        public void SetFirstName(string name) => _firstName = name;
+        public string GetLastName() => _lastName;
+        public void SetLastName(string name) => _lastName = name;
 
         // Level
         public int GetLevel() => _level;
