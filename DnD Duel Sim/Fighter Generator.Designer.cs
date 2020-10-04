@@ -222,8 +222,8 @@
             this.divider1 = new System.Windows.Forms.Label();
             this.RaceBackroundHeader = new System.Windows.Forms.Label();
             this.SubraceLabel = new System.Windows.Forms.Label();
-            this.FirstNameBox = new System.Windows.Forms.TextBox();
-            this.LastNameBox = new System.Windows.Forms.TextBox();
+            this.LongNameBox = new System.Windows.Forms.TextBox();
+            this.ShortNameBox = new System.Windows.Forms.TextBox();
             this.NameLabel = new System.Windows.Forms.Label();
             this.NameButton = new System.Windows.Forms.Button();
             this.FightingStyleSelector = new System.Windows.Forms.ComboBox();
@@ -2608,19 +2608,21 @@
             this.SubraceLabel.TabIndex = 202;
             this.SubraceLabel.Text = "Subrace:";
             // 
-            // FirstNameBox
+            // LongNameBox
             // 
-            this.FirstNameBox.Location = new System.Drawing.Point(112, 100);
-            this.FirstNameBox.Name = "FirstNameBox";
-            this.FirstNameBox.Size = new System.Drawing.Size(100, 22);
-            this.FirstNameBox.TabIndex = 203;
+            this.LongNameBox.Location = new System.Drawing.Point(112, 100);
+            this.LongNameBox.Name = "LongNameBox";
+            this.LongNameBox.Size = new System.Drawing.Size(100, 22);
+            this.LongNameBox.TabIndex = 203;
+            this.LongNameBox.Text = "Long Name";
             // 
-            // LastNameBox
+            // ShortNameBox
             // 
-            this.LastNameBox.Location = new System.Drawing.Point(218, 100);
-            this.LastNameBox.Name = "LastNameBox";
-            this.LastNameBox.Size = new System.Drawing.Size(100, 22);
-            this.LastNameBox.TabIndex = 204;
+            this.ShortNameBox.Location = new System.Drawing.Point(218, 100);
+            this.ShortNameBox.Name = "ShortNameBox";
+            this.ShortNameBox.Size = new System.Drawing.Size(100, 22);
+            this.ShortNameBox.TabIndex = 204;
+            this.ShortNameBox.Text = "Short Name";
             // 
             // NameLabel
             // 
@@ -4074,8 +4076,8 @@
             this.Controls.Add(this.FightingStyleSelector);
             this.Controls.Add(this.NameButton);
             this.Controls.Add(this.NameLabel);
-            this.Controls.Add(this.LastNameBox);
-            this.Controls.Add(this.FirstNameBox);
+            this.Controls.Add(this.ShortNameBox);
+            this.Controls.Add(this.LongNameBox);
             this.Controls.Add(this.SubraceLabel);
             this.Controls.Add(this.RaceBackroundHeader);
             this.Controls.Add(this.divider1);
@@ -4475,8 +4477,8 @@
         private System.Windows.Forms.Label divider1;
         private System.Windows.Forms.Label RaceBackroundHeader;
         private System.Windows.Forms.Label SubraceLabel;
-        private System.Windows.Forms.TextBox FirstNameBox;
-        private System.Windows.Forms.TextBox LastNameBox;
+        private System.Windows.Forms.TextBox LongNameBox;
+        private System.Windows.Forms.TextBox ShortNameBox;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Button NameButton;
         private System.Windows.Forms.ComboBox FightingStyleSelector;

@@ -24,14 +24,14 @@ namespace DnD_Duel_Sim
         // Displays character information
         public void RefreshChar1Text()
         {
-            this.Char1NameLabel.Text = char1.GetFirstName() + " " + char1.GetLastName();
+            this.Char1NameLabel.Text = char1.GetLongName();
             this.Char1LevelLabel.Text = ("Lv. " + char1.GetLevel()) + " Fighter";
             this.Char1RaceLabel.Text = CharRace.GetString(char1.GetRace()) + " " + CharBackground.GetString(char1.GetBackground());
             this.Char1StatsLabel.Text = char1.GetStr() + " / " + char1.GetDex() + " / " + char1.GetCon() + " / " + char1.GetInt() + " / " + char1.GetWis() + " / " + char1.GetCha();
         }
         public void RefreshChar2Text()
         {
-            this.Char2NameLabel.Text = char2.GetFirstName() + " " + char2.GetLastName();
+            this.Char2NameLabel.Text = char2.GetLongName();
             this.Char2LevelLabel.Text = ("Lv. " + char2.GetLevel()) + " Fighter";
             this.Char2RaceLabel.Text = CharRace.GetString(char2.GetRace()) + " " + CharBackground.GetString(char2.GetBackground());
             this.Char2StatsLabel.Text = char2.GetStr() + " / " + char2.GetDex() + " / " + char2.GetCon() + " / " + char2.GetInt() + " / " + char2.GetWis() + " / " + char2.GetCha();
@@ -129,45 +129,9 @@ namespace DnD_Duel_Sim
             }
 
             // Name
-            string firstName;
-            switch (_rng.d10())
-            {
-                case 1:
-                    firstName = "John";
-                    break;
-                case 2:
-                    firstName = "Jane";
-                    break;
-                case 3:
-                    firstName = "Alice";
-                    break;
-                case 4:
-                    firstName = "Bob";
-                    break;
-                case 5:
-                    firstName = "Charles";
-                    break;
-                case 6:
-                    firstName = "Emily";
-                    break;
-                case 7:
-                    firstName = "Daniel";
-                    break;
-                case 8:
-                    firstName = "Max";
-                    break;
-                case 9:
-                    firstName = "Ryan";
-                    break;
-                case 10:
-                    firstName = "Nicole";
-                    break;
-                default:
-                    firstName = "John";
-                    break;
-            }
-
-            string lastName = "Smith";
+            Tuple<string, string> name = CharRace.GetRandomName(race, ref _rng);
+            string shortName = name.Item1;
+            string longName = name.Item2;
 
             // Background
             Background background;
@@ -327,7 +291,7 @@ namespace DnD_Duel_Sim
                 fightingStyles[style2 - 1] = true;
             }
 
-            Fighter fighter = new Fighter(ref _rng, firstName, lastName, level, maxHP, maxHP, race, background, stats, combatProficiencies, skillProficiencies, saveProficiencies, fightingStyles, martialArchetype);
+            Fighter fighter = new Fighter(ref _rng, shortName, longName, level, maxHP, maxHP, race, background, stats, combatProficiencies, skillProficiencies, saveProficiencies, fightingStyles, martialArchetype);
 
             return fighter;
         }

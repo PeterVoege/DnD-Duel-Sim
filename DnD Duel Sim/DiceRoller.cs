@@ -14,6 +14,7 @@ namespace DnD_Duel_Sim
             _rng = new Random();
         }
 
+        public int CoinFlip() => 1 + (_rng.Next() % 2);
         public int d4() => 1 + (_rng.Next() % 4);
         public int d6() => 1 + (_rng.Next() % 6);
         public int d8() => 1 + (_rng.Next() % 8);

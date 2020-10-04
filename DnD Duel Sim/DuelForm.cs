@@ -21,8 +21,8 @@ namespace DnD_Duel_Sim
             log = new List<String>();
 
             // Character details.
-            this.Char1NameLabel.Text = char1.GetFirstName() + " " + char1.GetLastName();
-            this.Char2NameLabel.Text = char2.GetFirstName() + " " + char2.GetLastName();
+            this.Char1NameLabel.Text = char1.GetLongName();
+            this.Char2NameLabel.Text = char2.GetLongName();
 
             this.Char1LevelLabel.Text = ("Lv. " + char1.GetLevel()) + " Fighter";
             this.Char2LevelLabel.Text = ("Lv. " + char2.GetLevel()) + " Fighter";
@@ -37,7 +37,7 @@ namespace DnD_Duel_Sim
             this.Char2HPLabel.Text = "HP: " + char2.GetHP() + "/" + char2.GetMaxHP();
 
             // Log opening line
-            log.Add(char1.GetFirstName() + " and " + char2.GetFirstName() + " are ready to fight!\n");
+            log.Add(char1.GetShortName() + " and " + char2.GetShortName() + " are ready to fight!\n");
             this.UpdateLogOutput();
 
             // Roll initiative.
@@ -75,11 +75,11 @@ namespace DnD_Duel_Sim
             {
                 int damage = first.DamageRoll();
                 second.ChangeHP(-1 * damage);
-                log.Add(first.GetFirstName() + " strikes " + second.GetFirstName() + " for " + damage + " damage!  ");
+                log.Add(first.GetShortName() + " strikes " + second.GetShortName() + " for " + damage + " damage!  ");
             }
             else
             {
-                log.Add(first.GetFirstName() + " strikes and misses!  ");
+                log.Add(first.GetShortName() + " strikes and misses!  ");
             }
 
             // Other guy's turn.
@@ -88,11 +88,11 @@ namespace DnD_Duel_Sim
             {
                 int damage = second.DamageRoll();
                 first.ChangeHP(-1 * damage);
-                log.Add(second.GetFirstName() + " strikes " + first.GetFirstName() + " for " + damage + " damage!");
+                log.Add(second.GetShortName() + " strikes " + first.GetShortName() + " for " + damage + " damage!");
             }
             else
             {
-                log.Add(second.GetFirstName() + " strikes and misses!");
+                log.Add(second.GetShortName() + " strikes and misses!");
             }
 
             log.Add("\n");

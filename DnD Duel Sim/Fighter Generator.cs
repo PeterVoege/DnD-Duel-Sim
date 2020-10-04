@@ -2982,8 +2982,9 @@ namespace DnD_Duel_Sim
 
         private void NameButton_Click(object sender, EventArgs e)
         {
-            FirstNameBox.Text = "RandomFirstName";
-            LastNameBox.Text = "RandomLastName";
+            Tuple<string, string> name = CharRace.GetRandomName(this.GetRace(), ref _rng);
+            ShortNameBox.Text = name.Item1;
+            LongNameBox.Text = name.Item2;
         }
 
         // Disables all unchecked boxes so a third proficiency can't be added
@@ -3509,8 +3510,8 @@ namespace DnD_Duel_Sim
             this.FinishButton.Enabled = false;
 
             // Check for valid name
-            if(this.FirstNameBox.Text == "") { return; }
-            if(this.LastNameBox.Text == "") { return; }
+            if(this.LongNameBox.Text == "Long Name") { return; }
+            if(this.ShortNameBox.Text == "Short Name") { return; }
 
             // Validate race
             if(this.RaceSelector.Text == "") { return; }
@@ -3552,8 +3553,8 @@ namespace DnD_Duel_Sim
         private void FinishButton_Click(object sender, EventArgs e)
         {
             // Gather all the player information
-            string fName = this.FirstNameBox.Text;
-            string lName = this.LastNameBox.Text;
+            string fName = this.LongNameBox.Text;
+            string lName = this.ShortNameBox.Text;
             Race race = GetRace();
             Background background = GetBackground();
 
