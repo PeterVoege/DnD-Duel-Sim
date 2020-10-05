@@ -49,6 +49,7 @@
             // 
             this.CombatLog.Location = new System.Drawing.Point(52, 168);
             this.CombatLog.Name = "CombatLog";
+            this.CombatLog.ReadOnly = true;
             this.CombatLog.Size = new System.Drawing.Size(661, 222);
             this.CombatLog.TabIndex = 0;
             this.CombatLog.Text = "";

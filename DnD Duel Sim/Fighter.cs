@@ -31,15 +31,18 @@ namespace DnD_Duel_Sim
             _wis = 10;
             _cha = 10;
         }
-        public Fighter(ref DiceRoller rng, string fName, string lName, int level, int maxHP, int HP, Race race, Background background, int[] stats, bool[] combatProficiencies, bool[] skillProficiencies, bool[] saveProficiencies, bool[] fightingStyles, MartialArchetype martialArchetype) // and so on
+        public Fighter(ref DiceRoller rng, string shortName, string longName, int level, int maxHP, int HP, Race race, Background background, int[] stats, bool[] combatProficiencies, bool[] skillProficiencies, bool[] saveProficiencies, bool[] fightingStyles, MartialArchetype martialArchetype) // and so on
         {
             _rng = rng;
-            _firstName = fName;
-            _lastName = lName;
+            _shortName = shortName;
+            _longName = longName;
             _level = level;
             _maxHP = maxHP;
             _HP = HP;
             _hitDice = level;
+            _status = CharStatus.Normal;
+            _deathSavesPassed = 0;
+            _deathSavesFailed = 0;
             _race = race;
             _background = background;
             _str = stats[0];
@@ -67,12 +70,15 @@ namespace DnD_Duel_Sim
         
         /// Variables
         private DiceRoller _rng;
-        private string _firstName;
-        private string _lastName;
+        private string _shortName;
+        private string _longName;
         private int _level;
         private int _maxHP;
         private int _HP;
         private int _hitDice;
+        private CharStatus _status;
+        private int _deathSavesPassed;
+        private int _deathSavesFailed;
         private Race _race;
         private Background _background;
         // proficiencies
@@ -88,10 +94,10 @@ namespace DnD_Duel_Sim
         private int _cha;
 
         // Name
-        public string GetFirstName() => _firstName;
-        public void SetFirstName(string name) => _firstName = name;
-        public string GetLastName() => _lastName;
-        public void SetLastName(string name) => _lastName = name;
+        public string GetShortName() => _shortName;
+        public void SetShortName(string name) => _shortName = name;
+        public string GetLongName() => _longName;
+        public void SetLongName(string name) => _longName = name;
 
         // Level
         public int GetLevel() => _level;
@@ -104,11 +110,20 @@ namespace DnD_Duel_Sim
         public int GetHP() => _HP;
         public void SetHP(int HP) => _HP = HP;
 
+        public void ChangeHP(int delta) => SetHP(GetHP() + delta);
+        public void Heal(int delta) => SetHP(Math.Min(GetHP() + delta, GetMaxHP()));
+        public void Damage(int delta) => SetHP(Math.Max(GetHP() - delta, 0));
+
         // Hit dice
         public int GetMaxHitDice() => _level;
         public int GetHitDice() => _hitDice;
         public void SetHitDice(int hitDice) => _hitDice = hitDice;
         public int RollHitDice() => _rng.d10();
+
+        // Status
+        public CharStatus GetStatus() => _status;
+        public void SetStatus(CharStatus newStatus) => _status = newStatus;
+
 
         // Race
         public Race GetRace() => _race;
@@ -247,6 +262,57 @@ namespace DnD_Duel_Sim
         public int RollWisSave() => _rng.d20() + GetWisSaveMod();
         public int RollChaSave() => _rng.d20() + GetChaSaveMod();
 
+        // Death saves
+        public int GetDeathSavesFailed() => _deathSavesFailed;
+        public void SetDeathSavesFailed(int fails) => _deathSavesFailed = fails;
+        public int GetDeathSavesPassed() => _deathSavesPassed;
+        public void SetDeathSavesPassed(int passes) => _deathSavesPassed = passes;
+
+        public int RollDeathSave() => _rng.d20();
+        // Roll, revived, stabilized, died.
+        public Tuple<int, bool, bool, bool> MakeDeathSave()
+        {
+            int roll = this.RollDeathSave();
+            bool revived = false;
+            bool stabilized = false;
+            bool died = false;
+
+            if (roll == 20) // revive to 1 HP
+            {
+                this.SetHP(1);
+                SetStatus(CharStatus.Normal);
+                SetDeathSavesFailed(0);
+                SetDeathSavesPassed(0);
+                revived = true;
+            }
+            else if (roll == 1) // Two failed saves
+            {
+                this._deathSavesFailed = Math.Min(_deathSavesFailed + 2, 3);
+            }
+            else if (roll >= 10) // One passed save
+            {
+                this._deathSavesPassed = Math.Min(_deathSavesPassed + 1, 3);
+            }
+            else // One failed save
+            {
+                this._deathSavesFailed = Math.Min(_deathSavesFailed + 1, 3);
+            }
+
+            if (_deathSavesPassed >= 3) // Stabilized
+            {
+                SetStatus(CharStatus.Stable);
+                SetDeathSavesFailed(0);
+                SetDeathSavesPassed(0);
+                stabilized = true;
+            }
+            if (GetDeathSavesFailed() >= 3)
+            {
+                SetStatus(CharStatus.Dead);
+                died = true;
+            }
+            return new Tuple<int, bool, bool, bool>(roll, revived, stabilized, died);
+        }
+
         /// Skill checks.
         // Str skills
         // Remarkable Athlete applies here, returning half proficiency if no regular proficiency exists.
@@ -305,6 +371,51 @@ namespace DnD_Duel_Sim
         public int GetSpeed()
         {
             return CharRace.GetRacialSpeed(GetRace());
+        }
+
+        // falls unconscious, destabilizes, dies
+        public Tuple<bool, bool, bool> HitByAttack(int damage, bool crit) // Include damage type
+        {
+            bool unconscious = false;
+            bool destabilized = false;
+            bool dead = false;
+
+            if(this.GetStatus() == CharStatus.Normal)
+            {
+                this.Damage(damage);
+                if(GetHP() <= 0)
+                {
+                    SetStatus(CharStatus.Unconscious);
+                    unconscious = true;
+                }
+            }
+            else if(this.GetStatus() == CharStatus.Unconscious)
+            {
+                if (crit) { SetDeathSavesFailed(GetDeathSavesFailed() + 2); }
+                else { SetDeathSavesFailed(GetDeathSavesFailed() + 1); }
+
+                if(GetDeathSavesFailed() >= 3)
+                {
+                    SetStatus(CharStatus.Dead);
+                    dead = true;
+                }
+            }
+            else if(this.GetStatus() == CharStatus.Stable)
+            {
+                this.SetStatus(CharStatus.Unconscious);
+                destabilized = true;
+            }
+            else // Dead
+            {
+
+            }
+
+            return new Tuple<bool, bool, bool>(unconscious, destabilized, dead);
+        }
+
+        public bool IsDead()
+        {
+            return _status == CharStatus.Dead;
         }
 
         // Fighter-specific things

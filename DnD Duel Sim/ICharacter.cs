@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace DnD_Duel_Sim
 {
+    public enum CharStatus
+    {
+        Normal,
+        Unconscious,
+        Stable,
+        Dead
+    }
     public interface ICharacter
     {
         string GetShortName();
@@ -21,11 +28,16 @@ namespace DnD_Duel_Sim
         int GetHP();
         void SetHP(int HP);
         void ChangeHP(int delta);
+        void Heal(int delta);
+        void Damage(int delta);
 
         int GetMaxHitDice();
         int GetHitDice();
         void SetHitDice(int hitDice);
         int RollHitDice();
+
+        CharStatus GetStatus();
+        void SetStatus(CharStatus newStatus);
 
         Race GetRace();
         void SetRace(Race race);
@@ -139,6 +151,13 @@ namespace DnD_Duel_Sim
         int RollWisSave();
         int RollChaSave();
 
+        int GetDeathSavesFailed();
+        void SetDeathSavesFailed(int fails);
+        int GetDeathSavesPassed();
+        void SetDeathSavesPassed(int passes);
+        int RollDeathSave();
+        Tuple<int, bool, bool, bool> MakeDeathSave();
+
         int AttackRoll();
         int DamageRoll();
 
@@ -149,6 +168,9 @@ namespace DnD_Duel_Sim
         int RollInitiative();
 
         int GetSpeed();
+
+        Tuple<bool, bool, bool> HitByAttack(int damage, bool crit);
+        bool IsDead();
 
         void TakeTurn();
         void TakeShortRest();
