@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CharBackground.cs" />
+    <Compile Include="DamageTypes.cs" />
     <Compile Include="DiceRoller.cs" />
     <Compile Include="DuelForm.cs">
       <SubType>Form</SubType>
@@ -74,9 +75,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MagicMissile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CharRace.cs" />
+    <Compile Include="ISpell.cs" />
+    <Compile Include="SpellOverseer.cs" />
     <EmbeddedResource Include="DuelForm.resx">
       <DependentUpon>DuelForm.cs</DependentUpon>
     </EmbeddedResource>
