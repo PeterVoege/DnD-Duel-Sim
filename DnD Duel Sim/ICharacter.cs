@@ -158,7 +158,7 @@ namespace DnD_Duel_Sim
         int RollDeathSave();
         Tuple<int, bool, bool, bool> MakeDeathSave();
 
-        Tuple<int, int> AttackRoll();
+        Tuple<int, int> AttackRoll(int advantage);
         int DamageRoll(bool crit);
 
         int GetArmorAC();

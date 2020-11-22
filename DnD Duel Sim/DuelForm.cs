@@ -73,18 +73,24 @@ namespace DnD_Duel_Sim
         {
             if (friend.GetStatus() == CharStatus.Normal)
             {
-                Tuple<int, int> attackRoll = friend.AttackRoll(); // nat roll and toHit.
+                // Check enemy status for advantage
+                int advantage = 0;
+                if(foe.GetStatus() == CharStatus.Unconscious) { advantage = 1; }
+                // Roll to hit (roll, toHit)
+                Tuple<int, int> attackRoll = friend.AttackRoll(advantage);
                 if (attackRoll.Item1 == 20 || (attackRoll.Item2 > foe.GetAC() && attackRoll.Item1 != 1))
                 {
                     // Check for crit
                     bool crit = false;
-                    if (attackRoll.Item1 >= 20) { crit = true; } // Also check consciousness?
+                    if (attackRoll.Item1 >= 20 || foe.GetStatus() == CharStatus.Unconscious) { crit = true; }
+                    // Roll damage
                     int damage = friend.DamageRoll(crit);
-                    Tuple<bool, bool, bool> report = foe.HitByAttack(damage, false);
+                    Tuple<bool, bool, bool> report = foe.HitByAttack(damage, crit);
+                    // Generate message
                     log.Add(friend.GetShortName() + (crit ? " critically" : "") + " strikes " + foe.GetShortName() + " for " + damage + " damage!  ");
                     if (report.Item1) { log.Add(foe.GetShortName() + " falls unconscious!  "); }
-                    if (report.Item2) { log.Add(foe.GetShortName() + " is no longer stable!  "); }
-                    if (report.Item3) { log.Add(foe.GetShortName() + " dies!  "); }
+                    else if (report.Item2) { log.Add(foe.GetShortName() + " is no longer stable!  "); }
+                    else if (report.Item3) { log.Add(foe.GetShortName() + " dies!  "); }
                     // string report = char1.PickAction() or somesuch
                 }
                 else

@@ -352,14 +352,23 @@ namespace DnD_Duel_Sim
 
 
         // Attacking
-        public Tuple<int, int> AttackRoll()
+        public Tuple<int, int> AttackRoll(int advantage)
         {
             int roll = _rng.d20();
+            // Advantage/disadvantage roll
+            if(advantage == 1) { roll = Math.Max(roll, _rng.d20()); }
+            else if (advantage == -1) { roll = Math.Min(roll, _rng.d20()); }
+            // Apply modifiers
             int toHit = roll + GetStrMod() + GetProficiencyBonus();
             return new Tuple<int, int>(roll, toHit);
         }
-        // Advantage?
-        public int DamageRoll(bool crit) => _rng.d8() + (crit ? _rng.d8() : 0) + GetStrMod();
+        public int DamageRoll(bool crit)
+        {
+            int roll = _rng.d8();
+            int critRoll = crit ? _rng.d8() : 0;
+            int damage = roll + critRoll + GetStrMod();
+            return Math.Max(damage, 0);
+        }
         // Assumes static weapon, will expand later.
 
         // Armor class
@@ -489,7 +498,7 @@ namespace DnD_Duel_Sim
             // In practice, follow set orders.
 
             standardActions--;
-            Tuple<int, int> attackRoll = AttackRoll();
+            Tuple<int, int> attackRoll = AttackRoll(0);
             
             bool crit = (attackRoll.Item1 >= 20); // Check if crit
             // Check if hit
