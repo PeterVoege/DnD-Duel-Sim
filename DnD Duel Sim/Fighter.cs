@@ -66,6 +66,8 @@ namespace DnD_Duel_Sim
             // Fighting styles
 
             _martialArchetype = martialArchetype;
+
+            // battle master maneuvers (16)
         }
         
         /// Variables
@@ -350,8 +352,14 @@ namespace DnD_Duel_Sim
 
 
         // Attacking
-        public int AttackRoll() => _rng.d20() + GetStrMod() + GetProficiencyBonus();
-        public int DamageRoll() => _rng.d8() + GetStrMod();
+        public Tuple<int, int> AttackRoll()
+        {
+            int roll = _rng.d20();
+            int toHit = roll + GetStrMod() + GetProficiencyBonus();
+            return new Tuple<int, int>(roll, toHit);
+        }
+        // Advantage?
+        public int DamageRoll(bool crit) => _rng.d8() + (crit ? _rng.d8() : 0) + GetStrMod();
         // Assumes static weapon, will expand later.
 
         // Armor class
@@ -418,7 +426,17 @@ namespace DnD_Duel_Sim
             return _status == CharStatus.Dead;
         }
 
+        // Normal maneuvers
+
         // Fighter-specific things
+
+        // Fighting styles
+        //private bool _archery;
+        //private bool _defense;
+        //private bool _dueling;
+        //private bool _greatWeaponFighting;
+        //private bool _protection;
+        //private bool _twoWeaponFighting;
 
         // Second Wind
         public bool SecondWindUnlocked() => true;
@@ -448,6 +466,14 @@ namespace DnD_Duel_Sim
         // Additional fighting style.
         public bool SuperiorCritical() => (GetMartialArchetype() == MartialArchetype.Champion) && (GetLevel() >= 15);
         public bool Survivor() => (GetMartialArchetype() == MartialArchetype.Champion) && (GetLevel() >= 18);
+
+        // Battle Master
+        // Maneuvers
+        // Commander's Strike, Disarming Attack, Distracting Strike, Evasive Footwork, Feinting Attack, Goading Attack, Lunging Attack, Maneuvering Attack, Menacing Attack, Parry, Precision Attack, Pushing Attack, Rally, Riposte, Sweeping Attack, Trip Attack.
+
+
+        // Function to determine all actions available to Fighter?
+
         // Take turn
 
         public void TakeTurn()
@@ -463,9 +489,11 @@ namespace DnD_Duel_Sim
             // In practice, follow set orders.
 
             standardActions--;
-            int toHit = AttackRoll();
+            Tuple<int, int> attackRoll = AttackRoll();
+            
+            bool crit = (attackRoll.Item1 >= 20); // Check if crit
             // Check if hit
-            int damage = DamageRoll();
+            int damage = DamageRoll(crit);
             // Send damage data to battle controller.
             // Check for second/third attack.
 

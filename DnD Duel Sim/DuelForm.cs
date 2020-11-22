@@ -73,12 +73,15 @@ namespace DnD_Duel_Sim
         {
             if (friend.GetStatus() == CharStatus.Normal)
             {
-                // if nat 1
-                if (friend.AttackRoll() > foe.GetAC()) // or nat 20
+                Tuple<int, int> attackRoll = friend.AttackRoll(); // nat roll and toHit.
+                if (attackRoll.Item1 == 20 || (attackRoll.Item2 > foe.GetAC() && attackRoll.Item1 != 1))
                 {
-                    int damage = friend.DamageRoll();
+                    // Check for crit
+                    bool crit = false;
+                    if (attackRoll.Item1 >= 20) { crit = true; } // Also check consciousness?
+                    int damage = friend.DamageRoll(crit);
                     Tuple<bool, bool, bool> report = foe.HitByAttack(damage, false);
-                    log.Add(friend.GetShortName() + " strikes " + foe.GetShortName() + " for " + damage + " damage!  ");
+                    log.Add(friend.GetShortName() + (crit ? " critically" : "") + " strikes " + foe.GetShortName() + " for " + damage + " damage!  ");
                     if (report.Item1) { log.Add(foe.GetShortName() + " falls unconscious!  "); }
                     if (report.Item2) { log.Add(foe.GetShortName() + " is no longer stable!  "); }
                     if (report.Item3) { log.Add(foe.GetShortName() + " dies!  "); }
