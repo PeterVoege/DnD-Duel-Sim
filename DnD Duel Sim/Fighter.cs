@@ -13,9 +13,9 @@ namespace DnD_Duel_Sim
         BattleMaster,
         EldritchKnight
     }
-    class Fighter : ICharacter
+    class Fighter : Character
     {
-        public Fighter(ref DiceRoller rng)
+        public Fighter(ref DiceRoller rng) : base(ref rng)
         {
             _rng = rng;
             _level = 1;
@@ -31,7 +31,8 @@ namespace DnD_Duel_Sim
             _wis = 10;
             _cha = 10;
         }
-        public Fighter(ref DiceRoller rng, string shortName, string longName, int level, int maxHP, int HP, Race race, Background background, int[] stats, bool[] combatProficiencies, bool[] skillProficiencies, bool[] saveProficiencies, bool[] fightingStyles, MartialArchetype martialArchetype) // and so on
+        public Fighter(ref DiceRoller rng, string shortName, string longName, int level, int maxHP, int HP, Race race, Background background, int[] stats, bool[] combatProficiencies, bool[] skillProficiencies, bool[] saveProficiencies,
+            bool[] fightingStyles, MartialArchetype martialArchetype) : base(ref rng, shortName, longName, level, maxHP, HP, race, background, stats, combatProficiencies, skillProficiencies, saveProficiencies) // and so on
         {
             _rng = rng;
             _shortName = shortName;
@@ -70,373 +71,30 @@ namespace DnD_Duel_Sim
             // battle master maneuvers (16)
         }
         
-        /// Variables
-        private DiceRoller _rng;
-        private string _shortName;
-        private string _longName;
-        private int _level;
-        private int _maxHP;
-        private int _HP;
-        private int _hitDice;
-        private CharStatus _status;
-        private int _deathSavesPassed;
-        private int _deathSavesFailed;
-        private Race _race;
-        private Background _background;
-        // proficiencies
-        private bool[] _combatProficiencies;
-        private bool[] _skillProfiencies;
-        private bool[] _saveProficiencies;
-        // Attributes
-        private int _str;
-        private int _dex;
-        private int _con;
-        private int _int;
-        private int _wis;
-        private int _cha;
+        // Remarkable Athlete skill check override
+        public override int RollStrCheck() => _rng.d20() + GetStrMod(); // Remarkable Athlete?
+        public override int RollDexCheck() => _rng.d20() + GetDexMod();
+        public override int RollConCheck() => _rng.d20() + GetConMod();
+        public override int RollIntCheck() => _rng.d20() + GetIntMod();
+        public override int RollWisCheck() => _rng.d20() + GetWisMod();
+        public override int RollChaCheck() => _rng.d20() + GetChaMod();
 
-        // Name
-        public string GetShortName() => _shortName;
-        public void SetShortName(string name) => _shortName = name;
-        public string GetLongName() => _longName;
-        public void SetLongName(string name) => _longName = name;
-
-        // Level
-        public int GetLevel() => _level;
-        public void SetLevel(int level) => _level = level;
-
-        // Health
-        public int GetMaxHP() => _maxHP;
-        public void SetMaxHP(int maxHP) => _maxHP = maxHP;
-
-        public int GetHP() => _HP;
-        public void SetHP(int HP) => _HP = HP;
-
-        public void ChangeHP(int delta) => SetHP(GetHP() + delta);
-        public void Heal(int delta) => SetHP(Math.Min(GetHP() + delta, GetMaxHP()));
-        public void Damage(int delta) => SetHP(Math.Max(GetHP() - delta, 0));
-
-        // Hit dice
-        public int GetMaxHitDice() => _level;
-        public int GetHitDice() => _hitDice;
-        public void SetHitDice(int hitDice) => _hitDice = hitDice;
-        public int RollHitDice() => _rng.d10();
-
-        // Status
-        public CharStatus GetStatus() => _status;
-        public void SetStatus(CharStatus newStatus) => _status = newStatus;
-
-
-        // Race
-        public Race GetRace() => _race;
-        public void SetRace(Race race) => _race = race;
-
-        // Background
-        public Background GetBackground() => _background;
-        public void SetBackground(Background background) => _background = background;
-
-        /// Proficiencies
-        // Weapons and armor
-        public bool GetSimpleWeaponProficiency() => _combatProficiencies[0];
-        public bool GetMartialWeaponProficiency() => _combatProficiencies[1];
-        public bool GetLightArmorProficiency() => _combatProficiencies[2];
-        public bool GetMediumArmorProficiency() => _combatProficiencies[3];
-        public bool GetHeavyArmorProficiency() => _combatProficiencies[4];
-        public bool GetShieldsProficiency() => _combatProficiencies[5];
-
-        public void SetSimpleWeaponProficiency(bool newState) => _combatProficiencies[0] = newState;
-        public void SetMartialWeaponProficiency(bool newState) => _combatProficiencies[1] = newState;
-        public void SetLightArmorProficiency(bool newState) => _combatProficiencies[2] = newState;
-        public void SetMediumArmorProficiency(bool newState) => _combatProficiencies[3] = newState;
-        public void SetHeavyArmorProficiency(bool newState) => _combatProficiencies[4] = newState;
-        public void SetShieldsProficiency(bool newState) => _combatProficiencies[5] = newState;
-        
+        // Remarkable Athlete skill check override
         // Str skills
-        public bool GetAthleticsProficiency() => _skillProfiencies[0];
-        // Dex skills
-        public bool GetAcrobaticsProficiency() => _skillProfiencies[1];
-        public bool GetSleightOfHandProficiency() => _skillProfiencies[2];
-        public bool GetStealthProficiency() => _skillProfiencies[3];
-        // Int skills
-        public bool GetArcanaProficiency() => _skillProfiencies[4];
-        public bool GetHistoryProficiency() => _skillProfiencies[5];
-        public bool GetInvestigationProficiency() => _skillProfiencies[6];
-        public bool GetNatureProficiency() => _skillProfiencies[7];
-        public bool GetReligionProficiency() => _skillProfiencies[8];
-        // Wis skills
-        public bool GetAnimalHandlingProficiency() => _skillProfiencies[9];
-        public bool GetInsightProficiency() => _skillProfiencies[10];
-        public bool GetMedicineProficiency() => _skillProfiencies[11];
-        public bool GetPerceptionProficiency() => _skillProfiencies[12];
-        public bool GetSurvivalProficiency() => _skillProfiencies[13];
-        // Cha skills
-        public bool GetDeceptionProficiency() => _skillProfiencies[14];
-        public bool GetIntimidationProficiency() => _skillProfiencies[15];
-        public bool GetPerformanceProficiency() => _skillProfiencies[16];
-        public bool GetPersuasionProficiency() => _skillProfiencies[17];
-
-        // Str skills
-        public void SetAthleticsProficiency(bool newState) => _skillProfiencies[0] = newState;
-        // Dex skills
-        public void SetAcrobaticsProficiency(bool newState) => _skillProfiencies[1] = newState;
-        public void SetSleightOfHandProficiency(bool newState) => _skillProfiencies[2] = newState;
-        public void SetStealthProficiency(bool newState) => _skillProfiencies[3] = newState;
-        // Int skills
-        public void SetArcanaProficiency(bool newState) => _skillProfiencies[4] = newState;
-        public void SetHistoryProficiency(bool newState) => _skillProfiencies[5] = newState;
-        public void SetInvestigationProficiency(bool newState) => _skillProfiencies[6] = newState;
-        public void SetNatureProficiency(bool newState) => _skillProfiencies[7] = newState;
-        public void SetReligionProficiency(bool newState) => _skillProfiencies[8] = newState;
-        // Wis skills
-        public void SetAnimalHandlingProficiency(bool newState) => _skillProfiencies[9] = newState;
-        public void SetInsightProficiency(bool newState) => _skillProfiencies[10] = newState;
-        public void SetMedicineProficiency(bool newState) => _skillProfiencies[11] = newState;
-        public void SetPerceptionProficiency(bool newState) => _skillProfiencies[12] = newState;
-        public void SetSurvivalProficiency(bool newState) => _skillProfiencies[13] = newState;
-        // Cha skills
-        public void SetDeceptionProficiency(bool newState) => _skillProfiencies[14] = newState;
-        public void SetIntimidationProficiency(bool newState) => _skillProfiencies[15] = newState;
-        public void SetPerformanceProficiency(bool newState) => _skillProfiencies[16] = newState;
-        public void SetPersuasionProficiency(bool newState) => _skillProfiencies[17] = newState;
-
-        // Saves
-        public bool GetStrSaveProficiency() => _saveProficiencies[0];
-        public void SetStrSaveProficiency(bool newState) => _saveProficiencies[0] = newState;
-        public bool GetDexSaveProficiency() => _saveProficiencies[1];
-        public void SetDexSaveProficiency(bool newState) => _saveProficiencies[1] = newState;
-        public bool GetConSaveProficiency() => _saveProficiencies[2];
-        public void SetConSaveProficiency(bool newState) => _saveProficiencies[2] = newState;
-        public bool GetIntSaveProficiency() => _saveProficiencies[3];
-        public void SetIntSaveProficiency(bool newState) => _saveProficiencies[3] = newState;
-        public bool GetWisSaveProficiency() => _saveProficiencies[4];
-        public void SetWisSaveProficiency(bool newState) => _saveProficiencies[4] = newState;
-        public bool GetChaSaveProficiency() => _saveProficiencies[5];
-        public void SetChaSaveProficiency(bool newState) => _saveProficiencies[5] = newState;
-
-        // Custom proficiencies? (i.e. tools and such)
-
-        // Proficiency bonus.
-        public int GetProficiencyBonus() => 2 + (_level - 1) / 4;
-
-
-        // Attributes
-        public int GetStr() => _str;
-        public int GetDex() => _dex;
-        public int GetCon() => _con;
-        public int GetInt() => _int;
-        public int GetWis() => _wis;
-        public int GetCha() => _cha;
-
-        public void SetStr(int Str) => _str = Str;
-        public void SetDex(int Dex) => _dex = Dex;
-        public void SetCon(int Con) => _con = Con;
-        public void SetInt(int Int) => _int = Int;
-        public void SetWis(int Wis) => _wis = Wis;
-        public void SetCha(int Cha) => _cha = Cha;
-
-        public int GetStrMod() => _str / 2 - 5;
-        public int GetDexMod() => _dex / 2 - 5;
-        public int GetConMod() => _con / 2 - 5;
-        public int GetIntMod() => _int / 2 - 5;
-        public int GetWisMod() => _wis / 2 - 5;
-        public int GetChaMod() => _cha / 2 - 5;
-
-        // Ability checks
-        public int RollStrCheck() => _rng.d20() + GetStrMod(); // Remarkable Athlete?
-        public int RollDexCheck() => _rng.d20() + GetDexMod();
-        public int RollConCheck() => _rng.d20() + GetConMod();
-        public int RollIntCheck() => _rng.d20() + GetIntMod();
-        public int RollWisCheck() => _rng.d20() + GetWisMod();
-        public int RollChaCheck() => _rng.d20() + GetChaMod();
-
-        // Saving throws
-        public int GetStrSaveMod() => GetStrMod(); // Plus proficiency.
-        public int GetDexSaveMod() => GetDexMod(); // Plus proficiency.
-        public int GetConSaveMod() => GetConMod(); // Plus proficiency.
-        public int GetIntSaveMod() => GetIntMod(); // Plus proficiency.
-        public int GetWisSaveMod() => GetWisMod(); // Plus proficiency.
-        public int GetChaSaveMod() => GetChaMod(); // Plus proficiency.
-        
-        public int RollStrSave() => _rng.d20() + GetStrSaveMod();
-        public int RollDexSave() => _rng.d20() + GetDexSaveMod();
-        public int RollConSave() => _rng.d20() + GetConSaveMod();
-        public int RollIntSave() => _rng.d20() + GetIntSaveMod();
-        public int RollWisSave() => _rng.d20() + GetWisSaveMod();
-        public int RollChaSave() => _rng.d20() + GetChaSaveMod();
-
-        // Death saves
-        public int GetDeathSavesFailed() => _deathSavesFailed;
-        public void SetDeathSavesFailed(int fails) => _deathSavesFailed = fails;
-        public int GetDeathSavesPassed() => _deathSavesPassed;
-        public void SetDeathSavesPassed(int passes) => _deathSavesPassed = passes;
-
-        public int RollDeathSave() => _rng.d20();
-        // Roll, revived, stabilized, died.
-        public Tuple<int, bool, bool, bool> MakeDeathSave()
-        {
-            int roll = this.RollDeathSave();
-            bool revived = false;
-            bool stabilized = false;
-            bool died = false;
-
-            if (roll == 20) // revive to 1 HP
-            {
-                this.SetHP(1);
-                SetStatus(CharStatus.Normal);
-                SetDeathSavesFailed(0);
-                SetDeathSavesPassed(0);
-                revived = true;
-            }
-            else if (roll == 1) // Two failed saves
-            {
-                this._deathSavesFailed = Math.Min(_deathSavesFailed + 2, 3);
-            }
-            else if (roll >= 10) // One passed save
-            {
-                this._deathSavesPassed = Math.Min(_deathSavesPassed + 1, 3);
-            }
-            else // One failed save
-            {
-                this._deathSavesFailed = Math.Min(_deathSavesFailed + 1, 3);
-            }
-
-            if (_deathSavesPassed >= 3) // Stabilized
-            {
-                SetStatus(CharStatus.Stable);
-                SetDeathSavesFailed(0);
-                SetDeathSavesPassed(0);
-                stabilized = true;
-            }
-            if (GetDeathSavesFailed() >= 3)
-            {
-                SetStatus(CharStatus.Dead);
-                died = true;
-            }
-            return new Tuple<int, bool, bool, bool>(roll, revived, stabilized, died);
-        }
-
-        /// Skill checks.
-        // Str skills
-        // Remarkable Athlete applies here, returning half proficiency if no regular proficiency exists.
-        public int RollAthleticsCheck() => _rng.d20() + GetStrMod() + Math.Max(
+        public override int RollAthleticsCheck() => _rng.d20() + GetStrMod() + Math.Max(
             (GetAthleticsProficiency() ? GetProficiencyBonus() : 0), 
             (RemarkableAthlete() ? RemarkableAthleteBonus() : 0));
         // Dex skills
-        public int RollAcrobaticsCheck() => _rng.d20() + GetDexMod() + Math.Max(
+        public override int RollAcrobaticsCheck() => _rng.d20() + GetDexMod() + Math.Max(
             (GetAcrobaticsProficiency() ? GetProficiencyBonus() : 0),
             (RemarkableAthlete() ? RemarkableAthleteBonus() : 0));
-        public int RollSleightOfHandCheck() => _rng.d20() + GetDexMod() + Math.Max(
+        public override int RollSleightOfHandCheck() => _rng.d20() + GetDexMod() + Math.Max(
             (GetSleightOfHandProficiency() ? GetProficiencyBonus() : 0),
             (RemarkableAthlete() ? RemarkableAthleteBonus() : 0));
-        public int RollStealthCheck() => _rng.d20() + GetDexMod() + Math.Max(
+        public override int RollStealthCheck() => _rng.d20() + GetDexMod() + Math.Max(
             (GetStealthProficiency() ? GetProficiencyBonus() : 0),
             (RemarkableAthlete() ? RemarkableAthleteBonus() : 0));
-        // Int skills
-        // Remarkable Athlete stops applying here.
-        public int RollArcanaCheck() => _rng.d20() + GetIntMod() + (GetArcanaProficiency() ? GetProficiencyBonus() : 0);
-        public int RollHistoryCheck() => _rng.d20() + GetIntMod() + (GetHistoryProficiency() ? GetProficiencyBonus() : 0);
-        public int RollInvestigationCheck() => _rng.d20() + GetIntMod() + (GetInvestigationProficiency() ? GetProficiencyBonus() : 0);
-        public int RollNatureCheck() => _rng.d20() + GetIntMod() + (GetNatureProficiency() ? GetProficiencyBonus() : 0);
-        public int RollReligionCheck() => _rng.d20() + GetIntMod() + (GetReligionProficiency() ? GetProficiencyBonus() : 0);
-        // Wis skills
-        public int RollAnimalHandlingCheck() => _rng.d20() + GetWisMod() + (GetAnimalHandlingProficiency() ? GetProficiencyBonus() : 0);
-        public int RollInsightCheck() => _rng.d20() + GetWisMod() + (GetInsightProficiency() ? GetProficiencyBonus() : 0);
-        public int RollMedicineCheck() => _rng.d20() + GetWisMod() + (GetMedicineProficiency() ? GetProficiencyBonus() : 0);
-        public int RollPerceptionCheck() => _rng.d20() + GetWisMod() + (GetPerceptionProficiency() ? GetProficiencyBonus() : 0);
-        public int RollSurvivalCheck() => _rng.d20() + GetWisMod() + (GetSurvivalProficiency() ? GetProficiencyBonus() : 0);
-        // Cha skills
-        public int RollDeceptionCheck() => _rng.d20() + GetChaMod() + (GetDeceptionProficiency() ? GetProficiencyBonus() : 0);
-        public int RollIntimidationCheck() => _rng.d20() + GetChaMod() + (GetIntimidationProficiency() ? GetProficiencyBonus() : 0);
-        public int RollPerformanceCheck() => _rng.d20() + GetChaMod() + (GetPerformanceProficiency() ? GetProficiencyBonus() : 0);
-        public int RollPersuasionCheck() => _rng.d20() + GetChaMod() + (GetPersuasionProficiency() ? GetProficiencyBonus() : 0);
-
-
-        // Attacking
-        public Tuple<int, int> AttackRoll(int advantage)
-        {
-            int roll = _rng.d20();
-            // Advantage/disadvantage roll
-            if(advantage == 1) { roll = Math.Max(roll, _rng.d20()); }
-            else if (advantage == -1) { roll = Math.Min(roll, _rng.d20()); }
-            // Apply modifiers
-            int toHit = roll + GetStrMod() + GetProficiencyBonus();
-            return new Tuple<int, int>(roll, toHit);
-        }
-        public int DamageRoll(bool crit)
-        {
-            int roll = _rng.d8();
-            int critRoll = crit ? _rng.d8() : 0;
-            int damage = roll + critRoll + GetStrMod();
-            return Math.Max(damage, 0);
-        }
-        // Assumes static weapon, will expand later.
-
-        // Armor class
-        // 16 from chainmail + 2 from shield
-        public int GetArmorAC()
-        {
-            // Get max of all owned options.
-            return 16;
-        }
-        public bool GetShield() => true;
-        public int GetAC() => GetArmorAC() + (GetShield() ? 2 : 0);
-
-        // Initiative
-        public int RollInitiative() => RollDexCheck();
-
-        // Speed
-        public int GetSpeed()
-        {
-            return CharRace.GetRacialSpeed(GetRace());
-        }
-
-        // falls unconscious, destabilizes, dies
-        public Tuple<bool, bool, bool> HitByAttack(int damage, bool crit) // Include damage type
-        {
-            bool unconscious = false;
-            bool destabilized = false;
-            bool dead = false;
-
-            if(this.GetStatus() == CharStatus.Normal)
-            {
-                this.Damage(damage);
-                if(GetHP() <= 0)
-                {
-                    SetStatus(CharStatus.Unconscious);
-                    unconscious = true;
-                }
-            }
-            else if(this.GetStatus() == CharStatus.Unconscious)
-            {
-                if (crit) { SetDeathSavesFailed(GetDeathSavesFailed() + 2); }
-                else { SetDeathSavesFailed(GetDeathSavesFailed() + 1); }
-
-                if(GetDeathSavesFailed() >= 3)
-                {
-                    SetStatus(CharStatus.Dead);
-                    dead = true;
-                }
-            }
-            else if(this.GetStatus() == CharStatus.Stable)
-            {
-                this.SetStatus(CharStatus.Unconscious);
-                destabilized = true;
-            }
-            else // Dead
-            {
-
-            }
-
-            return new Tuple<bool, bool, bool>(unconscious, destabilized, dead);
-        }
-
-        public bool IsDead()
-        {
-            return _status == CharStatus.Dead;
-        }
-
-        // Normal maneuvers
-
+        
         // Fighter-specific things
 
         // Fighting styles
@@ -484,8 +142,7 @@ namespace DnD_Duel_Sim
         // Function to determine all actions available to Fighter?
 
         // Take turn
-
-        public void TakeTurn()
+        public override void TakeTurn()
         {
             int standardActions = 1;
             int bonusActions = 1;
@@ -517,11 +174,11 @@ namespace DnD_Duel_Sim
             
         }
 
-        public void TakeShortRest()
+        public override void TakeShortRest()
         {
             SetSecondWindAvailability(true);
         }
-        public void TakeLongRest()
+        public override void TakeLongRest()
         {
 
         }

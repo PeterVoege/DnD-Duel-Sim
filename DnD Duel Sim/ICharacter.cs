@@ -157,6 +157,26 @@ namespace DnD_Duel_Sim
         void SetDeathSavesPassed(int passes);
         int RollDeathSave();
         Tuple<int, bool, bool, bool> MakeDeathSave();
+        
+        /// Skill checks.
+        int RollAthleticsCheck();
+        int RollAcrobaticsCheck();
+        int RollSleightOfHandCheck();
+        int RollStealthCheck();
+        int RollArcanaCheck();
+        int RollHistoryCheck();
+        int RollInvestigationCheck();
+        int RollNatureCheck();
+        int RollReligionCheck();
+        int RollAnimalHandlingCheck();
+        int RollInsightCheck();
+        int RollMedicineCheck();
+        int RollPerceptionCheck();
+        int RollSurvivalCheck();
+        int RollDeceptionCheck();
+        int RollIntimidationCheck();
+        int RollPerformanceCheck();
+        int RollPersuasionCheck();
 
         Tuple<int, int> AttackRoll(int advantage);
         int DamageRoll(bool crit);

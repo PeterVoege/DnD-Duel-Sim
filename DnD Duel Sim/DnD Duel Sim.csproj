@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Character.cs" />
     <Compile Include="CharBackground.cs" />
     <Compile Include="DamageTypes.cs" />
     <Compile Include="DiceRoller.cs" />
